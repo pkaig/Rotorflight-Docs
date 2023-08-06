@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Rotorflight',
+  tagline: 'Open-source Helicopter flight controller',
+  favicon: 'img/rffavicon.ico',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Rotorflight', // Usually your GitHub org/user name.
+  projectName: 'Rotorflight', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -64,10 +64,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Rotorflight',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/Rotorflight_outline.svg',
+          srcDark: 'img/Rotorflight_outline_dark.svg',
         },
         items: [
           {
@@ -78,7 +79,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/rotorflight',
             label: 'GitHub',
             position: 'right',
           },
