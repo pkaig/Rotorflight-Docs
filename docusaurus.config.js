@@ -95,6 +95,18 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              {
+                label: 'Manufacturers',
+                to: '/docs/man_intro',
+              },
+              {
+                label: 'Tuning',
+                to: '/docs/tuning_intro',
+              },
+              {
+                label: 'Developers',
+                to: '/docs/dev_intro',
+              },
             ],
           },
           {
