@@ -10,16 +10,22 @@ const config = {
   tagline: 'Open-source Helicopter flight controller',
   favicon: 'img/rffavicon.ico',
 
+  url: 'https://github.com/', // Your website URL
+  baseUrl: '/',
+  projectName: 'pkaig.github.io',
+  organizationName: 'pkaig',
+  trailingSlash: false,
+  
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  // url: '//pkaig.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Rotorflight', // Usually your GitHub org/user name.
-  projectName: 'Rotorflight', // Usually your repo name.
+  // organizationName: 'pkaig', // Usually your GitHub org/user name.
+  // projectName: 'Rotorflight', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -77,7 +83,24 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Manufacturers',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tuning',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Developers',
+          },          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rotorflight',
             label: 'GitHub',
