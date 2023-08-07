@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# RMP Filters
+# RPM Filters
 
 Page 3
 
