@@ -45,7 +45,7 @@ Your Roll, Pitch and Yaw should all be trimmed to 1500 at centre stick always
 Stability modes will try to stabilise to the calibrated flight controller level. This is rarely perfectly aligned with the actual helicopters attitude where there is no drift (least drift... there will always be some due to wind etc). In order to calibrate this in-flight we have 2 methods:
 
 - Stick controls (needs more work)
-- Using the [Rotorflight Lua Scripts](Lua-Scripts)
+- Using the "Rotorflight Lua Scripts](Lua-Scripts)" ## FIXME
 
 Note that it's also possible to adjust accelerometer trim values in the *Configuration* tab of the Configurator, though it's not recommended to do this in-flight.
  
