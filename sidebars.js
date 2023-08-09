@@ -57,16 +57,7 @@ const sidebars = {
           ],
         },
       ],
-/*  tutorialSidebar: [
-//    'intro',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['Tutorial - Quickstart/Quickstart 1'],
-    },
-  ],*/
   manufactSidebar: [
-//    'Manufacturers/intro',
     {
       type: 'category',
       label: 'Manufacturers',
@@ -79,7 +70,6 @@ const sidebars = {
     },
   ],
   tuningSidebar: [
-//    'Tuning/intro',
     {
       type: 'category',
       label: 'Tuning',
@@ -92,7 +82,6 @@ const sidebars = {
     },
   ],
   developSidebar: [
-    'Developers/intro',
     {
       type: 'category',
       label: 'Developers',

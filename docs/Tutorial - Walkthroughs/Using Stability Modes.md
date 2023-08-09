@@ -1,13 +1,13 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Using Stability Modes
 
 ## Purpose
---------------------------------------
->  6G modes provide self stabilisation/leveling of the helicopter when the sticks are moved to the centre. This is the opposite to the standard Acro mode (used for aerobatics and 3D) which will not self level after sticks are centered and thus is inherently unstable. These modes are generally used for beginners or those wanting more of a drone feel to their helicopter. 6G modes do not provide position fixing as found with GPS systems so the heli will drift around in the wind.
---------------------------------------
+:::info
+  6G modes provide self stabilisation/leveling of the helicopter when the sticks are moved to the centre. This is the opposite to the standard Acro mode (used for aerobatics and 3D) which will not self level after sticks are centered and thus is inherently unstable. These modes are generally used for beginners or those wanting more of a drone feel to their helicopter. 6G modes do not provide position fixing as found with GPS systems so the heli will drift around in the wind.
+:::
 
 ## Aim
 In this example we will configure a 3 position switch (SwC) to select between Stability modes. With the SwC fully down we will have ***Acro*** mode, SwC in the centre will be ***Horizon*** Mode and in the fully up position we will enable ***Angle*** mode.    
