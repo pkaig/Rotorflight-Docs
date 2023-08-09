@@ -15,17 +15,6 @@ const config = {
   projectName: 'pkaig.github.io',
   organizationName: 'pkaig',
   trailingSlash: false,
-  
-  // Set the production url of your site here
-  // url: '//pkaig.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  // baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'pkaig', // Usually your GitHub org/user name.
-  // projectName: 'Rotorflight', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -85,21 +74,24 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'manufactSidebar',
             position: 'left',
             label: 'Manufacturers',
+            to: '/docs/Manufacturers/intro',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'tuningSidebar',
             position: 'left',
             label: 'Tuning',
+            to: '/docs/Tuning/intro',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'developSidebar',
             position: 'left',
             label: 'Developers',
+            to: '/docs/Developers/intro',
           },          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rotorflight',
@@ -120,15 +112,15 @@ const config = {
               },
               {
                 label: 'Manufacturers',
-                to: '/docs/man_intro',
+                to: '/docs/Manufacturers/intro',
               },
               {
                 label: 'Tuning',
-                to: '/docs/tuning_intro',
+                to: '/docs/Tuning/intro',
               },
               {
                 label: 'Developers',
-                to: '/docs/dev_intro',
+                to: '/docs/Developers/intro',
               },
             ],
           },

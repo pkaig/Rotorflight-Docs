@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 2
 ---
 
-# Developers stuff?
+# Manufacturers stuff?
 
 Page 1
 
