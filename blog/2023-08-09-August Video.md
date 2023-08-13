@@ -1,11 +1,11 @@
 ---
 //slug: first-blog-post
-title: August 2023
+title: 2023-08-09-August Video
 authors:
   name: Phil Kaighin
   title: Rotorflight Team member
   url: https://github.com/wgao19
-  image_url: https://github.com/wgao19.png
+  image_url: https://avatars.githubusercontent.com/u/67128886?s=400&u=5c3ead95794ee5b0d50e8957b8601f9ec2bbff6b&v=4
 tags: [Rotorflight]
 ---
 

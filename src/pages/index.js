@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Rotorflightsvg from '/img/Rotorflight.svg';
+import Rotorflightsvg from '/img/Rotorflight2.svg';
 
 import styles from './index.module.css';
 
@@ -15,13 +15,6 @@ function HomepageHeader() {
       <div className="container">      
         <h1 className={styles.Svg}><Rotorflightsvg /></h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
       </div>
     </header>
   );
