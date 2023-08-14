@@ -7,15 +7,48 @@ Open the Servos tab and confirm that you have the correct number of servos. If t
 
 ![Servo Tab](./img/servo_1.png)
 
+### Servo Numbering
+#### Direct  
+Servo 1 - Pitch  
+Servo 2 - Roll  
+Servo 3 - Collective  
+Servo 4 - Rudder  
+
+#### CCPM  
+For 120, 134 and 140 deg CCPM swashplates. 
+Looking from the tail towards the nose of the helicopter:
+
+Servo 1 - Pitch (inline with the centerline of the helicopter)    
+Servo 2 - Left side  
+Servo 3 - Right side  
+Servo 4 - Rudder  
+
+![Servo Tab](./img/servo_2.png)
+
+#### Fixed pitch  
+90deg L  
+Servo 1 - Pitch (inline with the centerline of the helicopter)    
+Servo 2 - Side servo  
+Servo 3 - Rudder  
+
+*** Picture to go here ***
+
+#### 90deg V   
+Servo 1 - Left side    
+Servo 2 - Right side  
+Servo 3 - Rudder  
+
+*** Picture to go here ***
+
 ### Servo Override
 The toggle at the botom of this page enables the servo overrides. The purpose of this is so that each servo can be driven by the slider to calibrate the range and center points. Beside each servo is an individual override.
 
 The servo override slider scale is in degrees
 
-![Servo Tab](./img/servo_2.png)
+![Servo Tab](./img/servo_3.png)
 
 ## Servo Configuration parameters 
-![Servo Tab](./img/servo_3.png)
+![Servo Tab](./img/servo_4.png)
 
 ### Center
 In general this will be 1500us for cyclic servos and 760us
