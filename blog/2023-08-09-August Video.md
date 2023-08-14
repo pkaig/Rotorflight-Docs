@@ -4,9 +4,9 @@ title: 2023-08-09-August Video
 authors:
   name: Phil Kaighin
   title: Rotorflight Team member
-  url: https://github.com/wgao19
-  image_url: https://avatars.githubusercontent.com/u/67128886?s=400&u=5c3ead95794ee5b0d50e8957b8601f9ec2bbff6b&v=4
-tags: [Rotorflight]
+  url: https://github.com/pkaig
+  image_url: https://github.com/pkaig.png
+tags: [Rotorflight, RF2, Jiawen Bao, Robert Burrow]
 ---
 
 Goblin 420 Raw

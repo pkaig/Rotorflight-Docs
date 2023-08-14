@@ -6,6 +6,6 @@ sidebar_position: 3
 
 Page 3
 
-## What's next?
+## What board should I get?
 
 

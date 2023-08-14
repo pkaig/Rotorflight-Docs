@@ -6,6 +6,5 @@ sidebar_position: 2
 
 Page 1
 
-## What's next?
-
+## Some discusstion about the features
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 50
+sidebar_position: 95
 ---
 
-# Servos
+# Modes
 
 Page 2
 

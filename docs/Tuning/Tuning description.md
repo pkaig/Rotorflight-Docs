@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 10
 ---
 
 # Tuning Guide for 0602 version controller (Gyro D)
