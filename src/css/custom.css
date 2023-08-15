@@ -29,8 +29,19 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.Svg {
-  height: 150px;
-  width: 150px;
-  color: pink;
+[data-theme='dark'] .themedPicture [fill='#FFFF50'] {
+  fill: greenyellow;
+}
+
+[data-theme='light'] .themedPicture [fill='#FFFF50'] {
+  fill: blueviolet;
+}
+
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
+
+.category1 > .menu__link {
+  color: red;
 }
