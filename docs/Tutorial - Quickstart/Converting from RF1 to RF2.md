@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 30
 ---
 
 # Converting from RF1 to RF2
