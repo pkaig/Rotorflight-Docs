@@ -2,7 +2,7 @@
 sidebar_position: 110
 ---
 
-# Rotorflight Modes
+# Modes
 
 The mode selector tab enables several modes and functions to be enabled or disabled via the TX. This is done by configuring a channel on the TX, such as a switch, that you wish to use for operating the mode. From the **Modes** tab, select the required Mode you wish to assign and click **Add Range**, then select the Aux channel matching your TX switch and set a range where you wish the mode to be active. If the mode you wish to use is not visible deselect "Hide unused modes".
 
@@ -67,7 +67,12 @@ After enabling Rescue mode configure the rescue settings from the **Profiles** T
 `Max acceleration` - Limit how fast the controller tries to accelerate the helicopter to level or flip. Larger slower helicopters may need this reduced 
 
 ## 6G flight modes
-There are 3 types of self leveling stabilisation modes available in Rototflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.   
+:::info
+There are 3 types of self leveling stabilisation modes available in Rototflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.  
+* Angle  
+* Horizon  
+* Acro Trainer  
+::: 
 
 ![Modes](./img/modes_4.png)
  
