@@ -21,7 +21,7 @@ Rotorflight 2.xx is built on the Betaflight 4.3 platform. This is several releas
 Currently the gyros on all common boards designed for Betaflight are supported. These include:
 * MPU6000, MPU6050, MPU6500
 * BMI270
-* IMC42688
+* ICM42688
 
 ## Size
 How big is your helicopter. Standard sizes are 16mmx16mm, 20mmx20mm, 25.5mm.25.5mm (whoop), 30.5mmx30.5mm. There are also AIO (All in one) boards which contain the flight controller and 4x ESC's on the one board.
