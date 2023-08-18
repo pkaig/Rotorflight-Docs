@@ -25,13 +25,13 @@ The gain factor proportional to the input. In practice, feedforward gain is used
 The limit of how much I-term can be charged. During normal flights, it would not reach this limit. (More info needed)
 
 #### Error Rotation
-If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. 
+If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes refered to as Piro compensation.  
 
 #### Error Decay
 A safety feature. This is to prevent the helicopter from tilting during takeoff.
 
 #### I-term Relax Type
-The axis that I-term relax is applied to
+The axis that I-term relax is applied to. Generally this is Roll, Pitch and Yaw (RPY)
 
 #### I-term Relax Cutoff Point
 The I-term relax corresponds to the speed of control input for a given axis. When the control input exceed a certain speed, I-term would stop charging. This partially solved the slow overshoot at cyclic input stops due to I-gain charging at fast stick input. The cutoff value corresponds to the input FREQUENCY. A lower value gives more I-term relax, and a higher value provides less I-term relax. It is advised to start high and decrease until bounce back disappears.

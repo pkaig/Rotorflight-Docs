@@ -4,7 +4,7 @@ sidebar_position: 30
 
 One of the first things you should do is connect a receiver to the FC. Your FC has several UARTs, and each UART has an RX and a TX. A receiver needs to be connected to an RX and/or TX pad, depending on the kind of receiver.
 * DSM2/DMSX/IBUS/TBS need to be connected to a free UART RX. 
-* SBUS also needs to be connected to an RX pad. However, it's an inverted signal, so `set serialrx_inverted = ON` if you have an F7 processor. If you're using an F4, use the SBUS pad and read [this](F4-and-Inverted-Signals).
+* SBUS also needs to be connected to an RX pad. However, it's an inverted signal, so `set serialrx_inverted = ON` if you have an F7 processor. If you're using an F4, use the SBUS pad and read [this]fix link (F4-and-Inverted-Signals).
 * FPort can be connected to a TX pad. It's also an inverted signal.
 * [ELRS](https://www.expresslrs.org/2.0/quick-start/receivers/wiring-up/) needs an RX and a TX on the same UART. 
 * [SBUS with SmartPort](https://oscarliang.com/sbus-smartport-telemetry-naze32/) needs to be connected to a free UART RX and a TX of *another free UART*. Both signals are inverted.
