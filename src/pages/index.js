@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Rotorflightsvg from '/img/Rotorflight2.svg';
+import Rotorflightsvg from '/img/Rotorflight.svg';
 
 import styles from './index.module.css';
 
