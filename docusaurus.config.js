@@ -12,7 +12,7 @@ const config = {
 
   url: 'https://github.com/', // Your website URL
   baseUrl: '/',
-  projectName: 'pkaig.github.io',
+  projectName: 'rotorflight.github.io',
   organizationName: 'pkaig',
   trailingSlash: false,
 
