@@ -1,5 +1,5 @@
 ---
-sidebar_position: 30
+sidebar_position: 50
 ---
 
 One of the first things you should do is connect a receiver to the FC. Your FC has several UARTs, and each UART has an RX and a TX. A receiver needs to be connected to an RX and/or TX pad, depending on the kind of receiver.
@@ -11,7 +11,7 @@ One of the first things you should do is connect a receiver to the FC. Your FC h
 
 Please see the documentation for your FC for more details on how to connect your receiver. 
 
-![Receiver Tab](./img/reciever_1.png)
+![Receiver Tab](./img/reciever-1.png)
 
 ## Configure your receiver
 

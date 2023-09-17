@@ -1,11 +1,11 @@
 ---
-sidebar_position: 50
+sidebar_position: 60
 ---
 
 # Servos
 Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorised or servo tail) or if you are using a drone FC that your [Remapping](Remapping.md)  is correct.
 
-![Servo Tab](./img/servo_1.png)
+![Servo Tab](./img/servo-1.png)
 
 ### Servo Numbering
 #### Direct  
@@ -23,7 +23,7 @@ Servo 2 - Left side
 Servo 3 - Right side  
 Servo 4 - Rudder  
 
-![Servo Tab](./img/servo_2.png)
+![Servo Tab](./img/servo-2.png)
 
 #### Fixed pitch  
 90deg L  
@@ -45,10 +45,10 @@ The toggle at the botom of this page enables the servo overrides. The purpose of
 
 The servo override slider scale is in degrees
 
-![Servo Tab](./img/servo_3.png)
+![Servo Tab](./img/servo-3.png)
 
 ## Servo Configuration parameters 
-![Servo Tab](./img/servo_4.png)
+![Servo Tab](./img/servo-4.png)
 
 ### Center
 In general this will be 1500us for cyclic servos and 760us
@@ -102,7 +102,7 @@ Calibrate the range. Not all servos move by the same angle for each change in co
 * Set the override to a positive value (e.g. 30deg)
 * measure the current servo arm angle and increase or decrease the [Scale Pos](#scale-neg-and-scale-pos) until the servo arm angle matches the override angle.
 
-![Servo Tab](./img/servo_5.png)
+![Servo Tab](./img/servo-5.png)
 
 
 

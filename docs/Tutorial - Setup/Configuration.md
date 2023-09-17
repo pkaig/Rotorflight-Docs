@@ -1,5 +1,5 @@
 ---
-sidebar_position: 20
+sidebar_position: 40
 ---
 # Configuration
 
@@ -16,7 +16,7 @@ This is used for Altitude hold Rescue which is currently still being developed
 ### Magnetometer
 Currently this does not provide any control functionality; however, can be used for telemetry. 
 
-![Configuration Tab](./img/config_1.png)
+![Configuration Tab](./img/config-1.png)
 ## Serial Ports
 Please choose the functions you wish to assign to your UART. 
 
@@ -43,7 +43,7 @@ This enables a UART for external logging to an OpenLarger.
 *** Link to go here ***
 
 
-![Configuration Tab](./img/config_2.png)
+![Configuration Tab](./img/config-2.png)
 
 ## Board and Sensor alignment
 
@@ -55,14 +55,14 @@ A method of determining what settings to use:
 * Move the FC around until the movement of the FC matches the movement of the helicopter on the "Status" page. You may have to "reset Z axis".  
 * Now take note of how you have to rotate/flip the board in order to get the FC oriented in the way you wish to mount it in the helicopter. An example would be that you have to rotate the board 180 and flip. You would chose 'CW180 Flip' in the Gyro alignment dropdown.    
 
-![Configuration Tab](./img/config_3.png)
+![Configuration Tab](./img/config-3.png)
 
 ## Features
 :::caution
 This section is used to enable or disable features. Features such as the Serial Rx, GPS, ESC Telemetry must be selected in the [Serial ports](#serial-ports) section before selecting the Feature here. 
 :::
 
-![Configuration Tab](./img/config_4.png)
+![Configuration Tab](./img/config-4.png)
 
 
 ## Accelerometer Trim
@@ -72,4 +72,4 @@ The Transmitter trims for each cyclic axis must be at neutral when using Rotorfl
 
 This can be done either directly by the configurator or via the transmitter with Lua or Adjustments *** Links required***
 
-![Configuration Tab](./img/config_5.png)
+![Configuration Tab](./img/config-5.png)

@@ -1,24 +1,24 @@
 ---
-sidebar_position: 110
+sidebar_position: 130
 ---
 
 # Modes
 
 The mode selector tab enables several modes and functions to be enabled or disabled via the TX. This is done by configuring a channel on the TX, such as a switch, that you wish to use for operating the mode. From the **Modes** tab, select the required Mode you wish to assign and click **Add Range**, then select the Aux channel matching your TX switch and set a range where you wish the mode to be active. If the mode you wish to use is not visible deselect "Hide unused modes".
 
-![Modes](./img/modes_1.png)
+![Modes](./img/modes-1.png)
 
 - In the example below Aux1 is assigned to a 3 position switch on the TX. 
 - Horizon mode has been assigned to the Aux1 Range when the middle position of Aux1 switch.
 - Angle mode is assigned to Aux1 at full up position of the Aux1 switch.
 - Nothing is assigned when Aux1 switch fully down. This means the Heli is in Normal or Acro mode. 
 
-![Modes](./img/modes_2.png)    
+![Modes](./img/modes-2.png)    
 
 ## ARM
 All flight controllers need to be enabled before the motors are able to spool up. Once the Arming mode is configured (as shown above) the flight controller can be Armed ready for flight. If the flight controller detects an unsafe condition Arming will be disabled. If this occurs you can look at the Arming flag status on the **Status** Tab to identify what is preventing Arming being enabled.    
 
-![Modes](./img/status_1.png)
+![Modes](./img/status-1.png)
 
 You can find out a description of these flags from the [List of Arming prevention flags](https://github.com/betaflight/betaflight/wiki/Arming-Sequence-%26-Safety#description-of-arming-prevention-flags)
 
@@ -40,7 +40,7 @@ The purpose of the rescue mode is to arrest any decent, then put the helicopter 
 
 After enabling Rescue mode configure the rescue settings from the **Profiles** Tab shown below:
 
-![Modes](./img/modes_3.png)
+![Modes](./img/modes-3.png)
 
 #### Enable Rescue 
 Enable or disable the rescue mode.  
@@ -86,7 +86,7 @@ There are 3 types of self leveling stabilisation modes available in Rototflight.
 * Acro Trainer  
 ::: 
 
-![Modes](./img/modes_4.png)
+![Modes](./img/modes-4.png)
  
 * **Horizon** - Horizon mode provides attitude stabilisation which will level the helicopter when the transmitter sticks are let go. Constant stick input is required to keep the helicopter moving.  
 

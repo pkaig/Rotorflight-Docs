@@ -1,5 +1,5 @@
 ---
-sidebar_position: 90
+sidebar_position: 110
 ---
 
 # ESC Telemetry
@@ -17,14 +17,14 @@ ESC Telemetry currently supported are :
 ### Select Serial Port
 The ESC telemetry pin TX needs to be connected to a spare UART RX. Select the UART from the Configuration page. 
 
-![ESC Telemetry](./img/ESC_Telem_1.png)
+![ESC Telemetry](./img/esc-telem-1.png)
 
 ### Enable the feature
 Select **ESC_SENSOR** from the features to enable reading from the ESC.
 
 If you wish these values to be returned to the Tx you will also have to select the **TELEMETRY** and have a telemetry capable Receiver.  
 
-![ESC Telemetry](./img/ESC_Telem_2.png)
+![ESC Telemetry](./img/esc-telem-2.png)
 
 ### Half Duplex (to be updated)
 The Telemetry wire can be connected to the UART TX (as opposed to the RX) if the UART is set to half duplex. In most cases just leave this OFF. This still needs to be added to the configuration. Currently it is enabled through the CLI.
@@ -51,6 +51,6 @@ Aditional parameters are provided for the current and zero offsets.
 ### Power Config
 Enable the Voltage and Current from the ESC Sensor
 
-![ESC Telemetry](./img/ESC_Telem_3.png)
+![ESC Telemetry](./img/esc-telem-3.png)
 
 

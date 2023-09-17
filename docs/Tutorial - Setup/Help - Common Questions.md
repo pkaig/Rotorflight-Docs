@@ -1,5 +1,5 @@
 ---
-sidebar_position: 150
+sidebar_position: 1
 ---
 
 # Help - Frequent questions?

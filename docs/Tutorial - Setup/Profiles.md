@@ -1,5 +1,5 @@
 ---
-sidebar_position: 140
+sidebar_position: 150
 ---
 
 # Profiles
@@ -8,7 +8,7 @@ The purpose of profiles are to store in flight tuning parameters. The aim is usu
 :::
 
 ## Main Tuning Parameters
-![Profiles](./img/profiles_1.png)
+![Profiles](./img/profiles-1.png)
 
 #### Proportional
 The gain factor that is proportional to the rate error. High proportional gain increase response speed of the helicopter. Low proportional gain results in overall slow system response. Too high results in fast oscillation (~20hz). It also helps reduce the slow oscillation due to high Integral gain.
@@ -23,7 +23,7 @@ The gain factor proportional to the change of error. It is responsible for "damp
 The gain factor proportional to the input. In practice, feedforward gain is used to eliminate I-term windup, which occurs after continuous flips and rolls. If the helicopter does not stop immediately and continue moving in the rolling / flipping direction, feedforward gain needs to be increased. If FF gain is set to be too high, the helicopter may overshoot during such maneuver. Thus it is advised to start tuning from low.
 
 ## Advanced Settings
-![Profiles](./img/profiles_2.png)
+![Profiles](./img/profiles-2.png)
 
 #### Error Limits
 The limit of how much I-term can be charged. During normal flights, it would not reach this limit. (More info needed)
@@ -41,7 +41,7 @@ The axis that I-term relax is applied to. Generally this is Roll, Pitch and Yaw 
 The I-term relax corresponds to the speed of control input for a given axis. When the control input exceed a certain speed, I-term would stop charging. This partially solved the slow overshoot at cyclic input stops due to I-gain charging at fast stick input. The cutoff value corresponds to the input FREQUENCY. A lower value gives more I-term relax, and a higher value provides less I-term relax. It is advised to start high and decrease until bounce back disappears.
 
 ## Yaw Settings
-![Profiles](./img/profiles_4.png)
+![Profiles](./img/profiles-4.png)
 
 #### CW/CCW Stop Gain
 The increase of yaw (what) gain during stops. Higher gain results in crisper stops. Too high may cause fast oscillations.
@@ -56,13 +56,13 @@ The pre-compensation due to the increase of collective pitch. It is advised to t
 The pre-compensation due to the sudden change of collective. Ideally it is designed to clean up any tail movement in small pitch pumps, however, the compensation is generally overcompensating. Thus it is suggested to turn it off for now.
 
 ## Pitch Settings
-![Profiles](./img/profiles_5.png)
+![Profiles](./img/profiles-5.png)
 
 #### Collective Feedforward Gain
 The pre-compensation for pitch axis when collective is high. Since there is drag-induced pitching motion (there is more drag on the tail thus the helicopter would want to have nose-up tendency when climbing), increasing this gain would compensate that. High gain push the nose down during climb ups. However, it is also advised to select a relatively low value to be conservative.
 
 ## PID Controller Bandwidth
-![Profiles](./img/profiles_3.png)
+![Profiles](./img/profiles-3.png)
 
 #### Row/Pitch/Yaw Bandwidth
 An extra low pass filter for each axis. It is specifically designed to preserve a weaker filter on the yaw axis to increase tail performance. High value corresponding to weaker filter. Too high may cause wobbles. Too low may cause delay and even instability in the control loop.
