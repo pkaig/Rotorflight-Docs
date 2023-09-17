@@ -12,7 +12,7 @@ const config = {
 
   url: 'https://github.com/', // Your website URL
   baseUrl: '/',
-  projectName: 'rotorflight.github.io',
+  projectName: 'pkaig.github.io',
   organizationName: 'pkaig',
   trailingSlash: false,
 
@@ -56,14 +56,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // announcementBar: {
-      //   id: 'support_us',
-      //   content:
-      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-      //   backgroundColor: '#fafbfc',
-      //   textColor: '#091E42',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'This website is a work in progress. It is a documentation tool for the upcoming release of ROTORFLIGHT 2',
+        backgroundColor: '#FFCC00',
+        textColor: '#000000',
+        isCloseable: false,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
