@@ -2,7 +2,7 @@
 sidebar_position: 60
 ---
 
-# Motorised Tail and TTA
+# High Speed Integral
 
 Page 1
 
