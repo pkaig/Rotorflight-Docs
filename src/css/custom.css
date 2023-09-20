@@ -16,24 +16,6 @@
   --ifm-code-font-size: 95%;
   --RF-hero-banner-background: rgb(104, 104, 104);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  .navbar{
-    background-color: rgba(129,184,213,0.7);
-    border-radius: 25px;
-    width: 97%;
-    height: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-  }
-  .hero{
-    background-color: #81b8d5;
-    -webkit-text-fill-color : rgb(0, 0, 0);
-  }
-  .background-image{
-    max-height: 20%;
-  }
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -47,12 +29,5 @@
   --ifm-color-primary-lightest: #4da8da;
   --RF-hero-banner-background: rgb(52, 52, 52);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  .navbar{
-    background-color:  rgba(96, 96, 96, 0.7);
-  }
-  .hero{
-    background-color:  rgba(96, 96, 96, 0.7);
-    -webkit-text-fill-color : rgb(255, 255, 255);
-  }
 }
 
