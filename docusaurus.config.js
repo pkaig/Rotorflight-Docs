@@ -62,6 +62,7 @@ const config = {
           'This website is a work in progress. It is a documentation tool for the upcoming release of ROTORFLIGHT 2',
         backgroundColor: '#FFCC00',
         textColor: '#000000',
+
         isCloseable: false,
       },
       // Replace with your project's social card
@@ -92,7 +93,7 @@ const config = {
             sidebarId: 'tuningSidebar',
             position: 'left',
             label: 'Tuning',
-            to: '/docs/Tuning/intro',
+            to: '/docs/Tuning/Tuning-Desciption',
           },
           {
             type: 'docSidebar',
