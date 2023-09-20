@@ -16,7 +16,7 @@
   --ifm-code-font-size: 95%;
   --RF-hero-banner-background: rgb(104, 104, 104);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  .navbar{
+  .rfNavbar .navbar {
     background-color: rgba(129,184,213,0.7);
     border-radius: 25px;
     width: 97%;
