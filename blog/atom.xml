@@ -2,13 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/blog</id>
     <title>Rotorflight Blog</title>
-    <updated>2023-09-19T00:00:00.000Z</updated>
+    <updated>2023-09-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/blog"/>
     <subtitle>Rotorflight Blog</subtitle>
     <icon>https://github.com/img/rffavicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[2023-08-09-August Video]]></title>
+        <title type="html"><![CDATA[2023-09-21-September Video]]></title>
+        <id>https://github.com/blog/2023/09/21/September Video</id>
+        <link href="https://github.com/blog/2023/09/21/September Video"/>
+        <updated>2023-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OMP M4 Morning Stick Bang  - Rotorflight 2]]></summary>
+        <content type="html"><![CDATA[<p>OMP M4 Morning Stick Bang  - Rotorflight 2</p><iframe width="560" height="315" src="https://www.youtube.com/embed/iCM5Kwx2mcs?si=-hTbVoJooJqGIkbC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe><p>HARD smack OMP M4   Rotorflight 2</p><iframe width="560" height="315" src="https://www.youtube.com/embed/kXbHT1Vdjsw?si=7NkDaY847GYqVYqx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>]]></content>
+        <author>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
+        </author>
+        <category label="Rotorflight" term="Rotorflight"/>
+        <category label="RF2" term="RF2"/>
+        <category label="Jiawen Bao" term="Jiawen Bao"/>
+        <category label="OMP M4" term="OMP M4"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023-09-19-September Video]]></title>
         <id>https://github.com/blog/2023/09/19/September Video</id>
         <link href="https://github.com/blog/2023/09/19/September Video"/>
         <updated>2023-09-19T00:00:00.000Z</updated>
@@ -21,6 +37,7 @@
         <category label="Rotorflight" term="Rotorflight"/>
         <category label="RF2" term="RF2"/>
         <category label="Jiawen Bao" term="Jiawen Bao"/>
+        <category label="Nimbus 550" term="Nimbus 550"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[2023-08-23-August Video]]></title>
