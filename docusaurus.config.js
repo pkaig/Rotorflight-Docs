@@ -93,7 +93,7 @@ const config = {
             sidebarId: 'tuningSidebar',
             position: 'left',
             label: 'Tuning',
-            to: '/docs/Tuning/Tuning-Desciption',
+            to: '/docs/Tuning/Tuning-description',
           },
           {
             type: 'docSidebar',
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: 'Tuning',
-                to: '/docs/Tuning/intro',
+                to: '/docs/Tuning/Tuning-description',
               },
               {
                 label: 'Developers',

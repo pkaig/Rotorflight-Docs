@@ -1,13 +1,13 @@
 ---
 //slug: first-blog-post
-title: 2023-08-09-August Video
+title: 2023-09-19-September Video
 authors:
   name: Phil Kaighin
   title: Rotorflight Team member
   url: https://github.com/pkaig
   image_url: https://github.com/pkaig.png
   
-tags: [Rotorflight, RF2, Jiawen Bao]
+tags: [Rotorflight, RF2, Jiawen Bao, Nimbus 550]
 ---
 
 Smacking XLpower Nimbus 550 - Rotorflight 2
