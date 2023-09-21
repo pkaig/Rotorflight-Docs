@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/blog</id>
+    <title>Rotorflight Blog</title>
+    <updated>2023-09-19T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/blog"/>
+    <subtitle>Rotorflight Blog</subtitle>
+    <icon>https://github.com/img/rffavicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023-08-09-August Video]]></title>
+        <id>https://github.com/blog/2023/09/19/September Video</id>
+        <link href="https://github.com/blog/2023/09/19/September Video"/>
+        <updated>2023-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Smacking XLpower Nimbus 550 - Rotorflight 2]]></summary>
+        <content type="html"><![CDATA[<p>Smacking XLpower Nimbus 550 - Rotorflight 2</p><iframe width="560" height="315" src="https://www.youtube.com/embed/-NuSlO-8pko?si=b3-vWuSGdHtDzGvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe><p>HARD Smacking XLpower Nimbus 550 - Rotorflight 2</p><iframe width="560" height="315" src="https://www.youtube.com/embed/B8iFSIXf6O0?si=UwKLg1VYlvxEkBJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>]]></content>
+        <author>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
+        </author>
+        <category label="Rotorflight" term="Rotorflight"/>
+        <category label="RF2" term="RF2"/>
+        <category label="Jiawen Bao" term="Jiawen Bao"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023-08-23-August Video]]></title>
+        <id>https://github.com/blog/2023/08/23/August Video</id>
+        <link href="https://github.com/blog/2023/08/23/August Video"/>
+        <updated>2023-08-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Rotorflight 2]]></summary>
+        <content type="html"><![CDATA[<p>Rotorflight 2</p><iframe width="560" height="315" src="https://www.youtube.com/embed/f632Q1YODBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/DTk57JPrTeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content>
+        <author>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/wgao19</uri>
+        </author>
+        <category label="Rotorflight" term="Rotorflight"/>
+        <category label="RF2" term="RF2"/>
+        <category label="Jonas Wackershauser" term="Jonas Wackershauser"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023-08-09-August Video]]></title>
+        <id>https://github.com/blog/2023/08/09/August Video</id>
+        <link href="https://github.com/blog/2023/08/09/August Video"/>
+        <updated>2023-08-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Goblin 420 Raw]]></summary>
+        <content type="html"><![CDATA[<p>Goblin 420 Raw</p><iframe width="560" height="315" src="https://www.youtube.com/embed/KqCQ4_y-y4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe><p>Specter V2 with Rotorflight 2 Snapshot 20230602</p><iframe width="560" height="315" src="https://www.youtube.com/embed/jOm7vJdtUIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>]]></content>
+        <author>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
+        </author>
+        <category label="Rotorflight" term="Rotorflight"/>
+        <category label="RF2" term="RF2"/>
+        <category label="Jiawen Bao" term="Jiawen Bao"/>
+        <category label="Robert Burrow" term="Robert Burrow"/>
+    </entry>
+</feed>
