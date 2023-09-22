@@ -140,6 +140,10 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/6QUySXdEvd',
               },
+              {
+                label: 'RC Groups',
+                href: 'https://www.rcgroups.com/forums/showthread.php?4000345-Rotorflight-Flight-Control-%28FBL%29-Software-Official-discussion',
+              },
             ],
           },
           {
