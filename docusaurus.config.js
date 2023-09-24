@@ -111,6 +111,11 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          src: 'img/Rotorflight_outline.png',
+          width: 90,
+          height: 50,
+        },
         links: [
           {
             title: 'Docs',
