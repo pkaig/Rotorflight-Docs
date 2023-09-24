@@ -12,7 +12,7 @@ An Initial Attempt in Theorizing Cross-Coupling Oscillation Between Roll and Pit
 ## The problem
 When the helicopter experience high disturbance in the pitch axis, it would wobble to the roll axis. Similarly, when the helicopter experience disturbance in the roll axis, it would transfer to the pitch axis, but to a lesser degree.
 
-![The Coupling Effect](./img/The_Coupling_Effect.png)  
+![The Coupling Effect](./img/the-coupling-effect.png)  
 (Thanks to Jonas for the picture)
 
 
