@@ -6,7 +6,7 @@ sidebar_position: 170
 
 ## What is Blackbox
 
-Blackbox is a flight data recording feature in Rotorflight. A Blackbox log contains a lot of data, such as the attitude of the heli, gyro sensor measurements, RC commands, motor outputs etc. It’s an extremely powerful tool for tuning and troubleshooting the heli.
+Blackbox is a flight data recording feature in Rotorflight. A Blackbox log contains a lot of data, such as the attitude of the heli, gyro sensor measurements, PID data,  RC commands, motor outputs etc. It’s an extremely powerful tool for tuning and troubleshooting the heli.
 
 ## what are the blackbox logging devices?
 
