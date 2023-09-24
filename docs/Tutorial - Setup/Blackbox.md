@@ -32,7 +32,7 @@ OpenLager is a [Blackbox data logger developed by dRonin](https://github.com/d-r
 
 Some versions use an open/lock hinge mechanism instead of a 'push to eject' SD card socket, so you can't wrap it in heat shrink tube. You can fix that by carefully flattening the SD card retainer pin a little bit.
 
-![Blackbox](./img/OpenLager-slide-in-fix.png)
+<img src="./img/OpenLager-slide-in-fix.png" width="30%" height="30%">
 
 ## Configure Blackbox Logging
 
