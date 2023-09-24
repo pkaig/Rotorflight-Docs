@@ -38,11 +38,11 @@ Some versions use an open/lock hinge mechanism instead of a 'push to eject' SD c
 
 After you've connected OpenLog/OpenLager, you should configure your helicopter for logging in Rotorflight Configurator.
 
-* Ensure that your TX output pad has been assigned a resource with resource SERIAL_TX (see Betaflight Unified Targets Repo).
+* Ensure that your TX output pad has been assigned a resource with `resource SERIAL_TX` (see Betaflight Unified Targets Repo).
 * Specify which UART is connected to OpenLog/OpenLager. Go to the Serial Ports tab, then select Blackbox logging under Peripherals for the UART used for logging. For OpenLog, select a baudrate of 250kbps, for OpenLager select 2000kbps. Click Save and Reboot.
 * Now you can assign a transmitter switch for logging under the Modes tab. Find the Blackbox mode and assign a range. You can choose a very broad range in order to log always. Click Save.
 * Configure what to log in the Blackbox tab. Select Serial Port as your Blackbox logging device and a log rate of 500 Hz for OpenLog or 2 kHz for OpenLager. Under Blackbox debug mode you can specify what should be logged. There are a lot of choices, but you can select GYRO_SCALED for PID tuning, GOVERNOR for analyzing the governor or CYCLETIME if you're interested in CPU time. Click Save and Reboot.
-
-When logging mode is active and blackbox_mode is set to NORMAL, logging will start when you arm your helicopter. You can set blackbox_mode to ALWAYS for testing purposes, but be aware that you won't see log files unless the FC is rebooted (using LUA or the Configurator).
+* 
+When logging mode is active and `blackbox_mode` is set to `NORMAL`, logging will start when you arm your helicopter. You can set `blackbox_mode` to `ALWAYS` for testing purposes, but be aware that you won't see log files unless the FC is rebooted (using LUA or the Configurator).
 
 The log files can be read with the Rotorflight Blackbox Explorer.
