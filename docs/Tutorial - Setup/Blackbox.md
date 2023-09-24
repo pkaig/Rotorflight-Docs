@@ -20,7 +20,7 @@ A flash chip or an SD card on the FC are nice, but if your FC doesn't have that 
 
 ## Connecting OpenLog or OpenLager
 
-OpenLog and OpenLager can be connected to the FC using just three wires: +5V, ground and a TX output pad from a free UART on the FC, which is connected to the RX pad of the logging device. As soon as you power the device on, it will create a new log file on the SD card. Then it'll log everything it receives to that file. Simple but effective. For maximum performance the SD card should be formatted with the [SD Association's special formatting tool](https://www.sdcard.org/downloads/formatter/). A fast SD card is needed, e.g. the Sandisk Extreme 16GB Class 10 UHS microSDHC.
+OpenLog and OpenLager can be connected to the FC using just three wires: +5V, ground and a TX output pad from a free UART on the FC, which is connected to the RX pad of the logging device. As soon as you power the device on, it will create a new log file on the SD card. Then it'll log everything it receives to that file. Simple but effective. For maximum performance the SD card should be formatted with the [SD Association's special formatting tool](https://www.sdcard.org/downloads/formatter). A fast SD card is needed, e.g. the Sandisk Extreme 16GB Class 10 UHS microSDHC.
 
 ## OpenLog
 
@@ -32,7 +32,7 @@ OpenLager is a [Blackbox data logger developed by dRonin](https://github.com/d-r
 
 Some versions use an open/lock hinge mechanism instead of a 'push to eject' SD card socket, so you can't wrap it in heat shrink tube. You can fix that by carefully flattening the SD card retainer pin a little bit.
 
-<img src="./img/OpenLager-slide-in-fix.png" width="30%" height="30%">
+![OpenLarger](./img/OpenLager-slide-in-fix.png)
 
 ## Configure Blackbox Logging
 
