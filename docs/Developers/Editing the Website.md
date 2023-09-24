@@ -23,7 +23,11 @@ You can now edit the **Markdown** file as required. When complete click on the *
 
 ## Adding pictures
 
-To add an immage to your page open the img folder that is located in the same directory as your page. Chose **Add file** and upload 
+To add an immage to your page open the img folder that is located in the same directory as your page. Chose **Add file** and upload. 
+
+:::info
+ Please do not use ***Capitals*** or ***Underscore** (_) in the image names.
+:::
 
 ![Editinging](./img/edit-4.png)
 
