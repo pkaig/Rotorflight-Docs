@@ -10,7 +10,7 @@ Blackbox is a flight data recording feature in Rotorflight. A Blackbox log conta
 
 ## what are the blackbox logging devices?
 
-Blackbox data can be logged to:
+### Blackbox data can be logged to:
 
 * An SD card on the FC. This is probably the best way to log: it's fast and storage is only limited by the capacity of the SD card.
 * A flash chip on the FC. Logging is fast, but storage is limited and copying log files can be slow.
