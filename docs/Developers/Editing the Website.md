@@ -26,11 +26,13 @@ You can now edit the **Markdown** file as required. When complete click on the *
 To add an immage to your page open the img folder that is located in the same directory as your page. Chose **Add file** and upload. 
 
 :::info
- Please do not use ***Capitals*** or ***Underscore** (_) in the image names.
+ Please do not use **Capitals*** or **Underscore** (_) in the image names.
 :::
 
 ![Editinging](./img/edit-4.png)
 
 ## Adding a new page
-Duplicate a current page. Open the Markdown (.MD) file in an Editor. At the top of the file change the **Sidebar_Position** to position your new page where you wish it to be in the sidebar. The current pages are numbered with a spacing of 10 so there are free spaces for new pages between each. 
+Download one of the current pages. Open the Markdown (.MD) file in an Editor. At the top of the file change the **Sidebar_Position** to position your new page where you wish it to be in the sidebar. The current pages are numbered with a spacing of 10 so there are free spaces for new pages between each. 
+
+Once complete **add File** and upload the new page. 
 
