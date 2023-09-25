@@ -7,9 +7,8 @@ sidebar_position: 30
 Rotorflight is based on Betaflight which is generally used to control drones. Unfortunately, drones do not have servos and have more motors than we need for a helicopter. In order to use servos we must remap our boards so that we have a pad to connect the servos to.
 
 If using a commercial FC such as the ones in the Manufacturers section. This step is not required.
-:::
 
-:::Disclaimer
+Disclaimer
 
 The pin labeling on commercial flight controllers refers to what the manufacturer has assigned as a function to that pin, in reality these pins are connected to the mcu, and with the power of RF, we can reassign these pins to other functions depending on the available resources on that pin, (you can consult the mcu data sheet STM32 alternate function mapping table to view all the available resources on a particular pin).
 :::
