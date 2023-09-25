@@ -22,11 +22,13 @@ The gain factor proportional to the change of error. It is responsible for "damp
 #### Feedforward
 The gain factor proportional to the input. In practice, feedforward gain is used to eliminate I-term windup, which occurs after continuous flips and rolls. If the helicopter does not stop immediately and continue moving in the rolling / flipping direction, feedforward gain needs to be increased. If FF gain is set to be too high, the helicopter may overshoot during such maneuver. Thus it is advised to start tuning from low.
 
+#### Boost 
+The setpoint boost - or B-term will increase the stick reaction speed. In case the heli is not reacting fast enough, the reaction can be boosted with this new B-gain on each axis separately. This seems to be in the range of 20..50
+
+This provides a rapid short term increase in your command. This parameter is used in conjunction with the time [B-Cuttoff](./Profiles#b-term-cutt-off).
+
 ## Advanced Settings
 ![Profiles](./img/profiles-2.png)
-
-#### Error Limits
-The limit of how much I-term can be charged. During normal flights, it would not reach this limit. (More info needed)
 
 #### Error Rotation
 If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes refered to as Piro compensation.  
@@ -34,11 +36,26 @@ If turned on, the I-term can transfer between pitch and roll axis during pirouet
 #### Error Decay
 A safety feature. This is to prevent the helicopter from tilting during takeoff.
 
+#### Error Limits
+The limit of how much I-term can be charged. During normal flights, it would not reach this limit. (More info needed)
+
 #### I-term Relax Type
 The axis that I-term relax is applied to. Generally this is Roll, Pitch and Yaw (RPY)
 
 #### I-term Relax Cutoff Point
 The I-term relax corresponds to the speed of control input for a given axis. When the control input exceed a certain speed, I-term would stop charging. This partially solved the slow overshoot at cyclic input stops due to I-gain charging at fast stick input. The cutoff value corresponds to the input FREQUENCY. A lower value gives more I-term relax, and a higher value provides less I-term relax. It is advised to start high and decrease until bounce back disappears.
+
+#### Error Limits 
+This is a hard limit for the Error to limit I-term. 
+
+#### Offset Gains
+The offset gains are used for the [High Speed Integral](../Tuning/High%20Speed%20Integral) feature.
+Offset gain or O-Gain is still being tested. It is currently only available if PID mode is set to 3 from the CLI
+
+`set pid_mode = 3`
+
+#### Offset Limits
+This is a hard limit for the O-gain. 
 
 ## Yaw Settings
 ![Profiles](./img/profiles-4.png)
@@ -69,3 +86,7 @@ An extra low pass filter for each axis. It is specifically designed to preserve 
 
 #### Row/Pitch/Yaw D-term cutoff
 An extra first order low pass filter just for the D-gain to further reduce the sensitivity to noise. A high value decreases the effectiveness but may potentially increase the D-gain performance. A low value increase the filter effect but may hinder D-term effectiveness. It is advised to keep it around 20Hz to prevent oscillation.
+
+#### B-Term Cutt-off
+This is controlling how "quick" or "twitchy" the boost is. This works exactly the same as D-cutoff, but on setpoint.
+It is safe to start with the same cutoffs as used with D. Usually in the range of 10..20. This is used in conjunction with [Boost](./Profiles#boost) or [B-gain](./Profiles#boost)
