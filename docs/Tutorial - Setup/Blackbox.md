@@ -46,3 +46,9 @@ After you've connected OpenLog/OpenLager, you should configure your helicopter f
 When logging mode is active and `blackbox_mode` is set to `NORMAL`, logging will start when you arm your helicopter. You can set `blackbox_mode` to `ALWAYS` for testing purposes, but be aware that you won't see log files unless the FC is rebooted (using LUA or the Configurator).
 
 The log files can be read with the [Rotorflight Blackbox Explorer](https://github.com/rotorflight/rotorflight-blackbox).
+
+:::Disclaimer
+
+The pin labeling on commercial flight controllers refers to what the manufacturer has assigned as a function to that pin, in reality these pins are connected to the mcu, and with the power of RF, we can reassign these pins to other functions depending on the available resources on that pin, (you can consult the mcu data sheet STM32 alternate function mapping table to view all the available resources on a particular pin) 
+
+:::
