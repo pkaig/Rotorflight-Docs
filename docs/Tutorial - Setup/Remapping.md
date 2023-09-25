@@ -13,6 +13,19 @@ Disclaimer
 The pin labeling on commercial flight controllers refers to what the manufacturer has assigned as a function to that pin, in reality these pins are connected to the mcu, and with the power of RF, we can reassign these pins to other functions depending on the available resources on that pin, (you can consult the mcu data sheet STM32 alternate function mapping table to view all the available resources on a particular pin).
 :::
 
+## Key concepts
+
+Before you start remapping your drone FC to be used with Rotorflight, keep in mind the following.
+
+    1- Although it is not necessary, but it is advised to keep your cyclic servos on the same Timer.
+
+    2- If you wish to use a narrow band tail servo, then assign that servo to separate timer.
+
+    3- Main motor esc output should on a separate timer.
+
+    4- In case you are using a PWM controlled esc then Rotorflight will require an rpm signal
+       for governor and RPM Filtering, RPM input should be on a 32bit separate timer (TIM2 or TIM5).
+
 ![Mixer Tab](./img/remapping-1.png)
 
 ## Custom defaults remapping spreadsheet
