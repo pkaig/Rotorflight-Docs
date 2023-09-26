@@ -1,7 +1,6 @@
 ---
 sidebar_position: 30
 ---
-
 :::info 
 
 Rotorflight is based on Betaflight which is generally used to control drones. Unfortunately, drones do not have servos and have more motors than we need for a helicopter. In order to use servos we must remap our boards so that we have a pad to connect the servos to.
@@ -39,7 +38,7 @@ Please 'make a copy'.
 ## Rotorflight Hardware config and remapping video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TNAeDaAjzfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Importing new targets ​
+## Importing new targets 
 Some targets in the betaflight target repository have additional #define lines above board_name. Please do not chose them. In the example below copy only from board_name down. The ``Board_name`` MUST be the first line in the spreadsheet.
 
 ![Mixer Tab](./img/remapping-2.png)
