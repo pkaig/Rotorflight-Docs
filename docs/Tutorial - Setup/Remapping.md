@@ -1,14 +1,13 @@
 ---
 sidebar_position: 30
 ---
-:::info
+:::info 
 
 Rotorflight is based on Betaflight which is generally used to control drones. Unfortunately, drones do not have servos and have more motors than we need for a helicopter. In order to use servos we must remap our boards so that we have a pad to connect the servos to.
 
 If using a commercial FC such as the ones in the Manufacturers section. This step is not required.
 
-
-Disclaimer 
+Disclaimer
 
 The pin labeling on commercial flight controllers refers to what the manufacturer has assigned as a function to that pin, in reality these pins are connected to the mcu, and with the power of RF, we can reassign these pins to other functions depending on the available resources on that pin, (you can consult the mcu data sheet STM32 alternate function mapping table to view all the available resources on a particular pin).
 :::
@@ -26,8 +25,6 @@ Before you start remapping your drone FC to be used with Rotorflight, keep in mi
     4- In case you are using a PWM controlled esc then Rotorflight will require an rpm signal
        for governor and RPM Filtering, RPM input should be on a 32bit separate timer (TIM2 or TIM5).
 
-
-
 ![Mixer Tab](./img/remapping-1.png)
 
 ## Custom defaults remapping spreadsheet
@@ -41,7 +38,7 @@ Please 'make a copy'.
 ## Rotorflight Hardware config and remapping video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TNAeDaAjzfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Importing new targets ​
+## Importing new targets 
 Some targets in the betaflight target repository have additional #define lines above board_name. Please do not chose them. In the example below copy only from board_name down. The ``Board_name`` MUST be the first line in the spreadsheet.
 
 ![Mixer Tab](./img/remapping-2.png)

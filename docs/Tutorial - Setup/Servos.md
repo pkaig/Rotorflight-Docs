@@ -65,9 +65,12 @@ This is the servo frequency. This will be specified by the manufacturer. A large
 For Rotorflight 2 it is recomended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)). This means that tail servos can be set to a different frequency (i.e. faster)  
 
 ### Speed
-This is used to slow down servos for use on retracts etc. Additional servos currently have to be configured using CLI commands. 
+Servo Speed Equalisation. The aim of this parameter is to remove the collective "bobbing" when fast elevator changes are applied.
 
-For Cyclic and tail servos this should only be set to 0. 
+The bobbing happens because the elevator servo has to move double distance vs. the aileron servos, when elevator position is changed.
+If the change is faster than the servos can go, the aileron servos will reach the target sooner than the elevator servo, causing the swash to jump slightly in the process.
+
+To tune this value increase the speed value (it's actually ms/60deg, llike in the datasheets) until the bobbing is not visible any more. It should be always ok to use the value from the datasheet if unsure.
 
 ### Reverse
 Toggle for forward or reverse servo direction
