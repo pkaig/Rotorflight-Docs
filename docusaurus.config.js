@@ -27,6 +27,11 @@ const config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
@@ -62,9 +67,9 @@ const config = {
           'This website is a work in progress. It is a documentation tool for the upcoming release of ROTORFLIGHT 2',
         backgroundColor: '#FFCC00',
         textColor: '#000000',
-
         isCloseable: false,
       },
+      
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -175,3 +180,4 @@ const config = {
 };
 
 module.exports = config;
+
