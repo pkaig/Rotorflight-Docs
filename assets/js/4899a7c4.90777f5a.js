@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[9151],{1629:s=>{s.exports=JSON.parse('{"label":"RF2","permalink":"/blog/tags/rf-2","allTagsPath":"/blog/tags","count":5}')}}]);
