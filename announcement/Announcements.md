@@ -1,3 +1,8 @@
+---
+title: Announcements
+sidebar_position: 100
+---
+
 :::danger
  This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care
 

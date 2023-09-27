@@ -4,7 +4,6 @@ authors:
   name: Rotorflight
   image_url: https://github.com/rotorflight.png
 ---
-
 Rotorflight snapshot 2.0.0-20230912 is ready
 NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.
 
