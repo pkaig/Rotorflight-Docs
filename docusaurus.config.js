@@ -32,6 +32,28 @@ const config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'announcement',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'announcement',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './announcement',
+      },
+    ],
+  ],
+
+
   presets: [
     [
       'classic',
@@ -80,6 +102,7 @@ const config = {
           srcDark: 'img/Rotorflight_outline_dark.svg',
         },
         items: [
+          {to: '/announcement', label: 'Announcements', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -162,6 +185,10 @@ const config = {
               {
                 label: 'Video Blog',
                 to: '/blog',
+              },
+              {
+                label: 'Announcements',
+                to: '/announcement',
               },
               {
                 label: 'GitHub',
