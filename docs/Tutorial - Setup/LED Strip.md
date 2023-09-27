@@ -46,7 +46,7 @@ WS2812 LED strips generally require a single data line, 5V and GND.
 WS2812 LEDs on full brightness can consume quite a bit of current.  It is recommended to verify the current draw and ensure your 5V power source can cope with the load.
 uses.  e.g. ESC1/BEC1 -> FC, ESC2/BEC2 -> LED strip.   It's also possible to power one half of the strip from one BEC and the other half
 
-LED Strip pin should have be on a separate timer.
+LED Strip pin should be on a separate timer.
 
 If you have LEDs that are intermittent, flicker or show the wrong colors then drop the VIN to less than 4.7v, e.g. by using an inline
 diode on the VIN to the LED strip. The problem occurs because of the difference in voltage between the data signal and the power
