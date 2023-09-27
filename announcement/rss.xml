@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Rotorflight Blog</title>
+        <link>https://github.com/announcement</link>
+        <description>Rotorflight Blog</description>
+        <lastBuildDate>Wed, 27 Sep 2023 12:18:36 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Announcements]]></title>
+            <link>https://github.com/announcement/Announcements</link>
+            <guid>https://github.com/announcement/Announcements</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-danger alert alert--danger admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_S0QG"><p> This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care</p><p> If you wish to become involved in testing these snapshots please contact us on the <a href="https://discord.gg/6QUySXdEvd" target="_blank" rel="noopener noreferrer">Discord</a> </p></div></div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[configurator snapshot 2.0.0-20230702]]></title>
+            <link>https://github.com/announcement/configurator snapshot 2.0.0-20230702</link>
+            <guid>https://github.com/announcement/configurator snapshot 2.0.0-20230702</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight Configurator snapshot 2.0.0-20230702 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight Configurator snapshot 2.0.0-20230702 is ready
+NOTE! This is a HOTFIX for the Configurator. Please use the other components from the 20230628 snapshot.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230702" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the Configurator:</p><ul><li>Receiver tab channel mixup fixed</li><li>Failsafe tab channel order fixed</li><li>Rates tab collective update fixed</li><li>Missing translations fixed</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230401]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230401</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230401</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230401 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230401 is ready
+NOTE! This is the first public snapshot of Rotorflight-2.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230401" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230401" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230401" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Lots of development time has gone into Rotorflight-2 (RF2). Most features in the firmware have been rewritten, with the knowledge learned from Rotorflight-1. The firmware has been upgraded to the BF4.3 level. Numerous issues have been fixed.</p><p>The development is continuing strong. The firmware is now receiving only minor updates, but the Configurator and Blackbox development is gaining speed.</p><p>New snapshots should arrive biweekly or so.</p><p>Happy flying!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230417]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230417</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230417</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230417 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230417 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230417" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230417" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230510" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the firmware:</p><ul><li>Add throttle command to BlackBox log</li><li>Add crsf_flight_mode_reuse parameter</li><li>Fix Horizon mode gain</li><li>Fix Error Rotation (piro compensation)</li><li>Fix MIXER MSP format (trims + swash phase)</li><li>Refactor Custom Defaults handling</li><li>Refactor Altitude fusion</li><li>Simplify PID Mode#2</li><li>Improve PID parameter defaults</li><li>Improve Gyro filter parameter defaults</li></ul><p>Changes to the Configurator:</p><ul><li>Fix Receiver tab Model Preview</li><li>Add Zoom function on Ctrl-Wheel</li><li>Refactor Custom Defaults handling</li><li>Fix Blackbox Log field selection</li><li>Fix MSP_MIXER_CONFIG parameters</li><li>Fix Gyro &amp; PID loop speed calculation</li></ul><p>Changes to the BlackBox:</p><ul><li>Update Flight Mode flags</li><li>Update Feature flags</li><li>Update Field names</li><li>Update Field value presentations</li><li>Update enabled fields handling</li><li>Remove broken Heading estimation</li><li>Clean up whitespace in the code</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230508]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230508</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230508</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230508 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230508 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230508" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230508" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230510" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the firmware:</p><ul><li>CRSF Flight Mode reuse fixed (system lockup with ELRS)</li><li>Governor Mode1 fixed without Voltage sensor</li><li>Filter stack refactored</li><li>PID loop saturation fixed</li><li>CPU and System Load fixed</li><li>BlackBox header improvements</li><li>DEBUG log improvements</li><li>ARM status LED indication improvements</li></ul><p>Changes to the Configurator:</p><ul><li>Filtering setup refactored</li><li>System and CPU Load fixed</li><li>Beeper flags fixed</li></ul><p>Changes to the BlackBox:</p><ul><li>Add missing Debug in in 'Add Graph'</li><li>Fix gyro graph scaling</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230602]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230602</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230602</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230602 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230602 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230602" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230602" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230602" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the firmware:</p><ul><li>RPM filter refactored</li><li>ESC telemetry refactored</li><li>Gyro filter config sanity checks added</li><li>motor_rpm_lpf default changed to 100Hz</li><li>fterm_filter removed in PID mode 9</li><li>pid_dterm_mode and pid_dterm_mode_yaw enabled</li><li>debug_axis parameter changed to an integer value</li><li>led CLI command fixed to be backwards compatible</li><li>SPI ELRS binding bugfix cherry-picked</li></ul><p>Changes to the Configurator:</p><ul><li>Refactor RPM filter support</li><li>Fix filter config corruption</li><li>Fix debug axis values</li><li>Fix debug mode names</li><li>Reorganise tabs</li></ul><p>Changes to the Blackbox:</p><ul><li>Win32 build added</li><li>More Debug field fixes</li></ul><p>Changes to the LUA Scripts:</p><ul><li>PID Error limits fixed</li><li>Rate selection fixed</li><li>Better labels fox small screens</li><li>Filter config aligned with the firmware</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230628]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230628</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230628</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230628 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230628 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230628" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230628" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230628" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the firmware:</p><ul><li>Servo twitch at reboot fixed</li><li>OMP Hobby ESC telemetry protocol added</li><li>HobbyWing ESC telemetry fixed</li><li>ESC telemetry debug refactored</li><li>ESC telemetry stream collection support added</li><li>BLACKBOX_ERASE mode fixed</li><li>Error decay (I-term decay) parameter added for cyclic and yaw</li><li>Collective to Yaw precompensation refactored</li><li>Unsynced motor update rate limits refactored</li><li>MSP message fixes</li></ul><p>Changes to the Configurator:</p><ul><li>Rates Smoothness added to Rates tab</li><li>Collective added to Rates tab</li><li>ESC Debug modes fixed</li><li>ESC sensor fixed in Power tab</li><li>Receiver tab and support refactored</li><li>Unsynced PWM rate handling fixed</li><li>MSP messages aligned with new firmware</li><li>Localization disabled until translations done</li></ul><p>Changes to the Blackbox:</p><ul><li>ESC Sensor debug fixed</li><li>Custom event types added</li></ul><p>Changes to the LUA Scripts:</p><ul><li>Support for rates smoothness added</li><li>Support for error decay added</li><li>Filter support fixed</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230724]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230724</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230724</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230724 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230724 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230724" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230730" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the Firmware:</p><ul><li>Increase Governer total FF limit to 50%</li><li>Fix Rescue MSP_RESCUE_PROFILE message</li><li>Fix Rescue max_collective parameter handling</li><li>Refactor collective-to-yaw precomp again</li><li>Reorganise Adjustment Functions</li><li>Fix LED strip and ADC on H7</li><li>Change Collective curve (rates) scale</li><li>Change PID gain scaling</li></ul><p>Changes to the Configurator:</p><ul><li>Collective Rates fixed</li><li>Collective-to-Yaw precomp fixed</li><li>Rescue Altitude hold D-gain added</li><li>Mixer Override for Yaw extended to -45°..45°</li><li>Rx signal validity limits moved back to Failsafe</li><li>Rx channel count bug fixed</li></ul><p>Changes to the LUA scripts:</p><ul><li>Profile - Various and Profile - Rescue now work correctly with firmware 20230724</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230822]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230822</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230822</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230822 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230822 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><p>NOTE! The locales (language translations) are now ready for translation. From now on, they will be kept up-to-date.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230822" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the Firmware:</p><ul><li>Add linear decay limit to error decay</li><li>Add tail_center_trim parameter</li><li>Add cyclic servo speed equaliser</li><li>Add cyclic crosstalk precomp</li><li>Add setpoint boost (B-term)</li><li>Fix cyclic limit handling in the mixer</li><li>Fix collective rates default from 25° to 12.5°</li><li>Fix PID gain defaults</li><li>Remove PID Mode 9</li></ul><p>Changes to the Configurator:</p><ul><li>Locales updated for translation effort</li><li>Yaw limits in Mixer extended to 45°</li><li>MSP aligned with the firmware</li></ul><p>Changes to the LUA scripts:</p><ul><li>Aligned MSP messages with firmware 20230822</li><li>Added stick booster to the Profile - PIDs page.</li><li>Added error decay limits to the Profile - Various page</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[snapshot 2.0.0-20230912]]></title>
+            <link>https://github.com/announcement/snapshot 2.0.0-20230912</link>
+            <guid>https://github.com/announcement/snapshot 2.0.0-20230912</guid>
+            <pubDate>Wed, 27 Sep 2023 12:18:36 GMT</pubDate>
+            <description><![CDATA[Rotorflight snapshot 2.0.0-20230912 is ready]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230912 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the Firmware:</p><ul><li>Governor gov_max_throttle parameter added</li><li>Governor tracking_speed fixed in passthrough mode</li><li>RPM filter fixed if only main rotor RPM available</li><li>RPM filter update fixed for lower CPU load</li><li>Cyclic Cross-Coupling refactored</li><li>Collective-to-yaw precomp not used during spoolup</li><li>TTA Collective correction refactored</li><li>TTA not used during spoolup</li><li>H7 TIMUP configuration bug fixed</li><li>BlackBox multi-file logging fixed (works on W25N01G too)</li><li>BlackBox erase refactored - works also while logging</li><li>Boost and Offset terms added to BlackBox</li><li>PID Test Mode 3 added for HSI testing</li><li>Tail center trim scaling changed</li><li>Tail motor thrust law changed to linear</li><li>Many new parameters added to MSP</li><li>Many new parameters added to Adjustment Functions</li></ul><p>Changes to the Configurator:</p><ul><li>Chinese translation added</li><li>MSP aligned with the firmware</li><li>PID Test Mode 3 added to Profiles</li><li>Boost gains and cutoffs added to Profiles</li><li>Offset gains and limits added to Profiles</li><li>Cyclic Cross-coupling compensation added to Profiles</li><li>Governor max throttle added to Profiles</li><li>Tail Center Trim added to Mixer</li></ul><p>Changes to the Blackbox:</p><ul><li>Fix a drag&amp;drop bug</li><li>Fix adjustment labels</li><li>Fix RPM_FILTER debug mode labels</li><li>Fix collective setpoint scaling</li><li>Changes to the LUA Scripts:</li></ul><p>Aligned MSP messages with firmware 20230912
+Added Boost cutoffs
+Added Offset gains
+Added Cyclic Cross-Coupling
+Added Governor Max Throttle</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
