@@ -4,7 +4,7 @@
         <title>Rotorflight Blog</title>
         <link>https://github.com/announcement</link>
         <description>Rotorflight Blog</description>
-        <lastBuildDate>Thu, 28 Sep 2023 22:25:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Sep 2023 23:08:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Announcements]]></title>
             <link>https://github.com/announcement/Announcements</link>
             <guid>https://github.com/announcement/Announcements</guid>
-            <pubDate>Thu, 28 Sep 2023 22:25:16 GMT</pubDate>
+            <pubDate>Thu, 28 Sep 2023 23:08:25 GMT</pubDate>
             <description><![CDATA[This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care]]></description>
             <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-danger alert alert--danger admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_S0QG"><p> This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care</p><p> If you wish to become involved in testing these snapshots please contact us on the <a href="https://discord.gg/6QUySXdEvd" target="_blank" rel="noopener noreferrer">Discord</a> </p></div></div>]]></content:encoded>
         </item>
@@ -20,7 +20,7 @@
             <title><![CDATA[snapshot 2.0.0-20230912]]></title>
             <link>https://github.com/announcement/snapshot 2.0.0-20230912</link>
             <guid>https://github.com/announcement/snapshot 2.0.0-20230912</guid>
-            <pubDate>Thu, 28 Sep 2023 22:25:16 GMT</pubDate>
+            <pubDate>Thu, 28 Sep 2023 23:08:25 GMT</pubDate>
             <description><![CDATA[Rotorflight snapshot 2.0.0-20230912 is ready]]></description>
             <content:encoded><![CDATA[<p>Rotorflight snapshot 2.0.0-20230912 is ready
 NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.</p><ul><li>The Configurator is available to download <a href="https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The Blackbox is available to download <a href="https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li><li>The LUA scripts is available to download <a href="https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230912" target="_blank" rel="noopener noreferrer">here</a>.</li></ul><p>Please also read the Snapshots Wiki page for general information about snapshots.</p><p>Changes to the Firmware:</p><ul><li>Governor gov_max_throttle parameter added</li><li>Governor tracking_speed fixed in passthrough mode</li><li>RPM filter fixed if only main rotor RPM available</li><li>RPM filter update fixed for lower CPU load</li><li>Cyclic Cross-Coupling refactored</li><li>Collective-to-yaw precomp not used during spoolup</li><li>TTA Collective correction refactored</li><li>TTA not used during spoolup</li><li>H7 TIMUP configuration bug fixed</li><li>BlackBox multi-file logging fixed (works on W25N01G too)</li><li>BlackBox erase refactored - works also while logging</li><li>Boost and Offset terms added to BlackBox</li><li>PID Test Mode 3 added for HSI testing</li><li>Tail center trim scaling changed</li><li>Tail motor thrust law changed to linear</li><li>Many new parameters added to MSP</li><li>Many new parameters added to Adjustment Functions</li></ul><p>Changes to the Configurator:</p><ul><li>Chinese translation added</li><li>MSP aligned with the firmware</li><li>PID Test Mode 3 added to Profiles</li><li>Boost gains and cutoffs added to Profiles</li><li>Offset gains and limits added to Profiles</li><li>Cyclic Cross-coupling compensation added to Profiles</li><li>Governor max throttle added to Profiles</li><li>Tail Center Trim added to Mixer</li></ul><p>Changes to the Blackbox:</p><ul><li>Fix a drag&amp;drop bug</li><li>Fix adjustment labels</li><li>Fix RPM_FILTER debug mode labels</li><li>Fix collective setpoint scaling</li><li>Changes to the LUA Scripts:</li></ul><p>Aligned MSP messages with firmware 20230912
