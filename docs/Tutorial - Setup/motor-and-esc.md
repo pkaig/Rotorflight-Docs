@@ -4,7 +4,7 @@ sidebar_position: 80
 
 # Motor and ESC
 
-The *Motors* tab is used to configure the motor and ESC communications protocol as well as to provide the ability to test operation Depending on the selected ESC protocol and selected Rotorflight features, you might need to specify some other parameters as well.
+The *Motors* tab is used to configure the motor and ESC communications protocol as well as to provide the ability to test operation. Depending on the selected ESC protocol and selected Rotorflight features, you might need to specify some other parameters as well.
 
 Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually this would be *PWM* or *DSHOT300*.
 
@@ -39,18 +39,18 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### Bidirectional DSHOT
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](rpm-measurement#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features.
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](rpm-measurement#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 
 ![Motor and ESC](./img/motor-3.png)
 
-Enter the number of teeth for the main rotor gearing [Teeth on Pinion gear]/[Teeth on Main Gear]. For a direct drive Main rotor this is just set to [ 1 ]/[ 1 ].
+Enter the number of teeth for the main rotor gearing [Teeth on Pinion gear]/[Teeth on Main Gear]. For a direct drive Main rotor this is just set to 1 / 1.
 
-Enter the number of teeth for the Tail rotor gearing [Teeth on Tail gear]/[Teeth on Autorotation Gear]. For a direct drive tail this is just set to [ 1 ]/[ 1 ].
+Enter the number of teeth for the Tail rotor gearing [Teeth on Tail gear]/[Teeth on Autorotation Gear]. For a direct drive tail this is just set to 1 / 1.
 
 ::::note
- Some large helicopters may use a 2 stage gearing system (e.g. Pinion-1/Main-1/Pinion-2/Main-2). This will have to be calculated and entered as: [Pinion-1 X Pinion-2] / [Main-1 x Main-2].
+Some large helicopters may use a 2 stage gearing system (e.g. Pinion-1/Main-1/Pinion-2/Main-2). This will have to be calculated and entered as: [Pinion-1 X Pinion-2] / [Main-1 x Main-2].
 ::::
 
 ### Motor Pole Count
@@ -67,7 +67,7 @@ Throttle - This is the command being sent from the flight controller to the ESC.
 
 RPM - The measured RPM telemetry feedback. As the motor spins this should read a value related to the current speed.
 
-Errors - This shows the status of the RPM telemetry signal. This should be 0%
+Errors (only with DSHOT) - This shows the status of the RPM telemetry signal. This should be 0%.
 
 ::::note Slider
 If you use the slider, make sure you release the mouse button. Nothing changes as long as you hold the mouse button down!
@@ -76,5 +76,3 @@ If you use the slider, make sure you release the mouse button. Nothing changes a
 ::::note BLHeliSuite32
 The Test motors function in BLHeliSuite32 doesn't work when using Rotorflight. It will give an error like 'Initialization of Motor Test Mode failed! Please check current Unknown rev 4.3.0 support for this application function!'.
 ::::
-
-
