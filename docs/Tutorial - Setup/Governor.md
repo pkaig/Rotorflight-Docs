@@ -40,7 +40,7 @@ In order to use the governor you must first configure the ESC/Motor features. Th
 
 Spoolup time - This is an acceleration limit (in seconds) used for spooling up. It sets the acceleration limit that is equivalent to total time for spooling up from zero to full headspeed. For example, with a value of 10 and full headspeed of 3000rpm, the main rotor would take 10s to reach 3000rpm.
 
-Tracking time - Acceleration limit (in seconds) for normal operation. This occurs when the requested headspeed command changes while the governor is in the active state. This parameter limits the rpm change speed (acceleration). For example, when set to a value of 10 (which is 10s to ramp 0-100%). If hovering in Normal mode at 1500rpm (50% throttle) and then switching to Idl3 of 3000rpm (100% throttle) the Governor would ramp over 5s. Typical value is 5..20.
+Tracking time - Acceleration limit (in seconds) for normal operation. This occurs when the requested headspeed command changes while the governor is in the active state. This parameter limits the rpm change speed (acceleration). For example, when set to a value of 10 (which is 10s to ramp 0-100%). If hovering in Normal mode at 1500rpm (50% throttle) and then switching to Idl3 of 3000rpm (100% throttle) the Govenor would ramp over 5s. Typical value is 5..20.
 
 Recovery time - Acceleration limit (in seconds) for error recovery. When the governor is recovering from lost headspeed or lost throttle signal, this is the max acceleration for the following (faster) spoolup.
 
@@ -58,7 +58,7 @@ Headspeed Signal Timeout - If the headspeed rpm signal is lost, the governor ent
 
 Headspeed Filter Cutoff [Hz] - The inputs to the governor must be clean from excess noise. The RPM input is filtered with a BIQUAD filter, with the frequency cutoffs set by these variables.
 
-Battery Voltage Filter Cutoff [Hz] - The inputs to the governor must be clean from excess noise. The Batery voltage input is filtered with a BIQUAD filter, with the frequency cutoffs set by these variables.
+Battery Voltage Filter Cutoff [Hz] - The inputs to the governor must be clean from excess noise. The Batery voltaege input is filtered with a BIQUAD filter, with the frequency cutoffs set by these variables.
 
 TTA Filter Cutoff [Hz] - Filter to smooth the Yaw signal before it is used for the TTA function (Torque Tail Assist)
 
@@ -123,11 +123,11 @@ SPOOLING_UP - The input throttle has transitioned from low to high, and the gove
 
 ACTIVE - The governor has reached the target headspeed and is actively maintaining it.
 
-LOST_THROTTLE - The throttle signal has suddenly dropped from high to low. If the throttle returns quickly, a recovery spoolup is performed. This state is for convenience, when the pilot accidentally hits throttle hold, and then realises the mistake.
+LOST_THROTTLE - The throttle signal has suddenly dropped from high to low. If the throttle returns quickly, a recovery spoolup is performed. This state is for convenience, when the pilot accidentially hits throttle hold, and then realises the mistake.
 
 LOST_HEADSPEED - The RPM input signal is lost. The governor will wait for a little while for the signal to return, before spooling down. It the signal returns quickly, a recovery spoolup is performed.
 
-RECOVERY - The governor is performing a recovery spoolup after one of the conditions above.
+RECOVERY - The governor is performing a recovery spoolup after one of the conditiona above.
 
 AUTOROTATION - The throttle has dropped from high to the autorotation range. The governor is expecting the throttle to return once the autorotation has been performed. Once the throttle return, the governor moves to the state below.
 

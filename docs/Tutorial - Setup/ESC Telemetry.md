@@ -42,7 +42,7 @@ Please enter the protocol you wish to use from the following commands:
 * `set esc_sensor_protocol = KONTRONIK`  
 
 **For Hobbywing V4**
-Additional parameters are provided for the current and zero offsets.
+Aditional parameters are provided for the current and zero offsets.
 
 * `set esc_sensor_hw4_current_offset = 15`  
 * `set esc_sensor_hw4_current_gain = 100`  
