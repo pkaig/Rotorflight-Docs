@@ -38,7 +38,7 @@ on a pin that is connected to the FC's solder pads. Negative channels, like CH3N
 frequency sensor use. This can be done via the [Custom defaults remapping spreadsheet](./Remapping) or by reading through the STM32 manual for your processor.
 
 :::note
-We recomend that Freq inputs are alocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorised tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
+We recommend that Freq inputs are allocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorised tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
 :::
 
 In this example, we have chosen to use the LED_STRIP pin as our frequency input. We see there is only one option (Timer1) on AF1. We can use this pin but must not allocate any of the Servos or Motors to Timer1. Only the motor pins share this timer so we can choose either AF2 (timer3) or AF3 (timer8).
@@ -56,7 +56,7 @@ dma pin A09 0 # Freq - 0: DMA2 Stream 6 Channel 0
 Then the frequency sensor can be turned ON with the feature flag located on the ***Configuration*** tab.
 
 [https://github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png"
- (https://github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png)
+ (Governor/github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png)
 
 
 ## Bidirectional DSHOT

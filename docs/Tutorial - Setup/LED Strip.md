@@ -223,11 +223,11 @@ the same time.  Thrust should normally be combined with Color or Mode/Orientatio
 
 This mode is allows you to use a 12, 16 or 24 leds ring (e.g. NeoPixel ring) for an afterburner effect. When armed the leds use the following sequences: 2 On, 4 Off, 2 On, 4 Off, and so on.  The light pattern rotates clockwise as throttle increases. 
 
-A better effect is acheived when LEDs configured for thrust ring have no other functions.
+A better effect is achieved when LEDs configured for thrust ring have no other functions.
 
 LED direction and X/Y positions are irrelevant for thrust ring LED state.  The order of the LEDs that have the state determines how the LED behaves.
 
-Each LED of the ring can be a different color. The color can be selected between the 16 colors availables.
+Each LED of the ring can be a different color. The color can be selected between the 16 colors available.
 
 For example, led 0 is set as a `R`ing thrust state led in color 13 as follow. 
 

@@ -3,7 +3,7 @@ sidebar_position: 60
 ---
 
 # Servos
-Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorised or servo tail) or if you are using a drone FC that your [Remapping](Remapping.md)  is correct.
+Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorized or servo tail) or if you are using a drone FC that your [Remapping](Remapping.md)  is correct.
 
 ![Servo Tab](./img/servo-1.png)
 
@@ -54,7 +54,7 @@ The servo override slider scale is in degrees
 In general this will be 1500us for cyclic servos and 760us
 
 ### Min and Max
-These are hard limits to prevent servos binding or moving outside of their mechanical limits. If a servo is commanded to a point that is greater or less than it is capable it will buzz and likley burn out. These settings should be used to limit the command.
+These are hard limits to prevent servos binding or moving outside of their mechanical limits. If a servo is commanded to a point that is greater or less than it is capable it will buzz and likely burn out. These settings should be used to limit the command.
 
 ### Scale Neg and Scale Pos
 Scales the negative and positive direction of the servo to match the commanded angle.
@@ -62,7 +62,7 @@ Scales the negative and positive direction of the servo to match the commanded a
 ### Rate 
 This is the servo frequency. This will be specified by the manufacturer. A large proportion of servos suitable for cyclic operate at 333Hz.  
 
-For Rotorflight 2 it is recomended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)). This means that tail servos can be set to a different frequency (i.e. faster)  
+For Rotorflight 2 it is recommended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)). This means that tail servos can be set to a different frequency (i.e. faster)  
 
 ### Speed
 Servo Speed Equalisation. The aim of this parameter is to remove the collective "bobbing" when fast elevator changes are applied.
@@ -86,7 +86,7 @@ Confirm and set the servo [rate](#rate) as specified by your manufacturer. For m
 
 ### Step 2
 * Set each of the override sliders to 0 degrees
-* Set [center](#center) to your servo manufacturers recomendation. For Cyclics this will be 1500 or 1520us. 
+* Set [center](#center) to your servo manufacturers recommendation. For Cyclics this will be 1500 or 1520us. 
 * Fit servo arms to as close to 90 degrees as possible.
 
 ### Step 3
