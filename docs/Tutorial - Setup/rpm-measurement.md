@@ -55,7 +55,8 @@ dma pin A09 0 # Freq - 0: DMA2 Stream 6 Channel 0
 
 Then the frequency sensor can be turned ON with the feature flag located on the ***Configuration*** tab.
 
-[https://github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png"] (https://github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png)
+[https://github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png"
+ (Governor/github.com/rotorflight/rotorflight/blob/master/wiki/Setup/frequency_2.png)
 
 
 ## Bidirectional DSHOT
