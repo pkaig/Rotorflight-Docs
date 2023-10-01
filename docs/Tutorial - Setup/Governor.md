@@ -127,7 +127,7 @@ LOST_THROTTLE - The throttle signal has suddenly dropped from high to low. If th
 
 LOST_HEADSPEED - The RPM input signal is lost. The governor will wait for a little while for the signal to return, before spooling down. It the signal returns quickly, a recovery spoolup is performed.
 
-RECOVERY - The governor is performing a recovery spoolup after one of the conditiona above.
+RECOVERY - The governor is performing a recovery spoolup after one of the conditions above.
 
 AUTOROTATION - The throttle has dropped from high to the autorotation range. The governor is expecting the throttle to return once the autorotation has been performed. Once the throttle return, the governor moves to the state below.
 
