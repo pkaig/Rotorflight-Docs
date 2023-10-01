@@ -58,7 +58,7 @@ Values 0.0-100. This is to be set to a level where the helicopter gains height.
 How long Climb collective should be applied. This is usually about 0.5 to 1.5s
 
 #### Hover collective
-Set this to a value where the heli only showly increases 
+Increase this value until the heli hovers at a stable altitude
 
 #### Flip Fail time
 This is a safety feature. If there is a mechanical issue preventing the helicopter from completing the flip during this time the rescue mode will exit
@@ -80,7 +80,7 @@ Limit how fast the controller tries to accelerate the helicopter to level or fli
 
 ## 6G flight modes
 :::info
-There are 3 types of self leveling stabilisation modes available in Rototflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.  
+There are 3 types of self leveling stabilization modes available in Rotorflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.  
 * Angle  
 * Horizon  
 * Acro Trainer  
@@ -88,7 +88,7 @@ There are 3 types of self leveling stabilisation modes available in Rototflight.
 
 ![Modes](./img/modes-4.png)
  
-* **Horizon** - Horizon mode provides attitude stabilisation which will level the helicopter when the transmitter sticks are let go. Constant stick input is required to keep the helicopter moving.  
+* **Horizon** - Horizon mode provides attitude stabilization which will level the helicopter when the transmitter sticks are let go. Constant stick input is required to keep the helicopter moving.  
 
 #### Horizon Mode leveling gain
 Gain to define how aggressively the helicopter levels while in Horizon mode.

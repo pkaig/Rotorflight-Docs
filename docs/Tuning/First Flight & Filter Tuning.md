@@ -27,7 +27,7 @@ A well-tuned filter should have no sharp peaks and might have small bumps at 40-
 # Further Tuning
 The noise is usually much higher during 3D flight especially on the second harmonic of the main blades. If peaks appears after 3D flights, consider lower Q value on the second harmonics. Tall "grass" is usually fine.
 
-## Example: A Relatively Well Tuned Dilter During 3D Maneuvers
+## Example: A Relatively Well Tuned Filter During 3D Maneuvers
 
 ### RAW Gyro:  
 ![First Flight](./img/First_flight_1.png)
