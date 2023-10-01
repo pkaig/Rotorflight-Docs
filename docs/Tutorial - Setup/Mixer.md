@@ -70,7 +70,7 @@ Set the mixer override at the bottom of the pages to **ON**. This will open the 
 ### Collective Calibration
 * Confirm with a blade pitch tool that with collective mixer at 0 deg the blades are also at 0 deg.  
 * Set the collective mixer override to 9 deg. Measure the blade angle.   
-* If the Blade angle is different from the Override angle, increase or dectease [Collective Calibration %](#cyclic-and-collective-calibration) until the bade angle matches.  
+* If the Blade angle is different from the Override angle, increase or decrease [Collective Calibration %](#cyclic-and-collective-calibration) until the bade angle matches.  
 * Set collective back to 0 deg.
 
 ### Cyclic Calibration

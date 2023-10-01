@@ -5,7 +5,7 @@ sidebar_position: 40
 
 ## System Configuration
 ### PID Loop Speed
-This is the frequency that the control loop operates at. Set to between 1kHz and 2kHz. There is limited or no benifit in higher rates and will result in high loads for your flight controller. This could be an issue for F405 and F411 boards.  
+This is the frequency that the control loop operates at. Set to between 1kHz and 2kHz. There is limited or no benefit in higher rates and will result in high loads for your flight controller. This could be an issue for F405 and F411 boards.  
 
 ### Accelerometer
 This must be selected if you wish to use stability (6G modes) such as Angle, Horizon or Rescue modes. 
