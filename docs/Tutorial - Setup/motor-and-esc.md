@@ -4,7 +4,11 @@ sidebar_position: 80
 
 # Motor and ESC
 
-The *Motors* tab is used to configure the motor and ESC communications protocol as well as to provide the ability to test operation. Depending on the selected ESC protocol and selected Rotorflight features, you might need to specify some other parameters as well.
+The *Motors* tab is used to configure the ESC communications protocol as well as to provide the ability to test motor operation. Depending on the selected ESC protocol and selected Rotorflight features, you might need to specify some other parameters as well.
+
+::::info
+This section is about Rotorflight communicating with the ESC. The settings for your motor -such as timing, braking and motor update frequency- can only be set in your ESC, and not in Rotorflight.
+::::
 
 Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually this would be *PWM* or *DSHOT300*.
 
@@ -21,7 +25,7 @@ Traditional helicopter ESCs (e.g. from Hobbywing, YGE, Scorpion or Castle) use [
 
 ![Motor and ESC](./img/motor-1a.png)
 
-**Motor PWM frequency:** the PWM frequency for your ESC. Usually between 50-400Hz.
+**ESC Update Rate:** the PWM update rate for your ESC. Usually between 50-400Hz.
 
 **Disarm Throttle PWM value:** the value that is sent to the ESC when the craft is disarmed. It should stop the motors. Usually 1000µs.
 
