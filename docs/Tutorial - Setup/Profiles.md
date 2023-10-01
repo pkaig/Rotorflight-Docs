@@ -25,13 +25,13 @@ The gain factor proportional to the input. In practice, feedforward gain is used
 #### Boost 
 The setpoint boost - or B-term will increase the stick reaction speed. In case the heli is not reacting fast enough, the reaction can be boosted with this new B-gain on each axis separately. This seems to be in the range of 20..50
 
-This provides a rapid short term increase in your command. This parameter is used in conjunction with the time [B-Cuttoff](./Profiles#b-term-cutt-off).
+This provides a rapid short term increase in your command. This parameter is used in conjunction with the time [B-Cutoff](./Profiles#b-term-cut-off).
 
 ## Advanced Settings
 ![Profiles](./img/profiles-2.png)
 
 #### Error Rotation
-If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes refered to as Piro compensation.  
+If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes referred to as Piro compensation.  
 
 #### Error Decay
 A safety feature. This is to prevent the helicopter from tilting during takeoff.
@@ -87,6 +87,6 @@ An extra low pass filter for each axis. It is specifically designed to preserve 
 #### Row/Pitch/Yaw D-term cutoff
 An extra first order low pass filter just for the D-gain to further reduce the sensitivity to noise. A high value decreases the effectiveness but may potentially increase the D-gain performance. A low value increase the filter effect but may hinder D-term effectiveness. It is advised to keep it around 20Hz to prevent oscillation.
 
-#### B-Term Cutt-off
+#### B-Term Cut-off
 This is controlling how "quick" or "twitchy" the boost is. This works exactly the same as D-cutoff, but on setpoint.
 It is safe to start with the same cutoffs as used with D. Usually in the range of 10..20. This is used in conjunction with [Boost](./Profiles#boost) or [B-gain](./Profiles#boost)

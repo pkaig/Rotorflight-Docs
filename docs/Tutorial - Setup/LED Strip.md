@@ -54,7 +54,7 @@ signal.  The WS2811 LED's require the data signal (Din) to be between 0.3 * Vin 
 low/high signals.  The LED pin on the CPU will always be between 0v to ~3.3v, so the Vin should be 4.7v (3.3v / 0.7 = 4.71v).
 Some LEDs are more tolerant of this than others.
 
-The datasheet can be found here: http://www.adafruit.com/datasheets/WS2812.pdf
+The datasheet can be found here: [WS2812](http://www.adafruit.com/datasheets/WS2812.pdf)
 
 ## Configuration
 
@@ -66,7 +66,7 @@ Enable the Led Strip feature via the GUI under setup.
 Configure the leds from the Led Strip tab in the Rotorflight GUI.
 First setup how the led's are laid out so that you can visualize it later as you configure and so the flight controller knows how many led's there are available.
 
-There is a step by step guide on how to use the GUI to configure the Led Strip feature using the GUI http://blog.oscarliang.net/setup-rgb-led-cleanflight/ which was published early 2015 by Oscar Liang which may or may not be up-to-date by the time you read this.
+There is a step by step guide on how to use the GUI to configure the Led Strip feature using the GUI [Setting up RGB LED](https://oscarliang.com/setup-RGB-LED-cleanflight/) which was published early 2015 by Oscar Liang which may or may not be up-to-date by the time you read this.
 
 CLI:
 Enable the `LED_STRIP` feature via the cli:
@@ -223,7 +223,7 @@ the same time.  Thrust should normally be combined with Color or Mode/Orientatio
 
 This mode is allows you to use a 12, 16 or 24 leds ring (e.g. NeoPixel ring) for an afterburner effect. When armed the leds use the following sequences: 2 On, 4 Off, 2 On, 4 Off, and so on.  The light pattern rotates clockwise as throttle increases. 
 
-A better effect is acheived when LEDs configured for thrust ring have no other functions.
+A better effect is achieved when LEDs configured for thrust ring have no other functions.
 
 LED direction and X/Y positions are irrelevant for thrust ring LED state.  The order of the LEDs that have the state determines how the LED behaves.
 
@@ -257,7 +257,7 @@ Colors can be configured using the cli `color` command.
 
 The `color` command takes either zero or two arguments - an zero-based color number and a sequence which indicates pair of hue, saturation and value (HSV).
 
-See http://en.wikipedia.org/wiki/HSL_and_HSV
+See [HSL and HSV](http://en.wikipedia.org/wiki/HSL_and_HSV)
 
 If used with zero arguments it prints out the color configuration which can be copied for future reference.
 
