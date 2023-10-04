@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Profile (Bank) switching example
@@ -27,6 +27,10 @@ We need to assign a spare channel to your 3 position switch (SwE) (can be any ch
 **Step 2:** looking at the channels in the **receiver** tab we can see that Aux4 is the ninth channel. This matches our TX assignment from step 1.  Confirm the 3 position switch changes the value seen on Aux4,  
 
 ![Change Profiles](./img/Change_Profiles_2.png)
+
+:::note
+The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial%20-%20Walkthroughs/CLI%20Profile%20switching%20example)
+:::
    
 **Step 3:** 
 - Go to the **Adjustments** tab. Enable an adjustment slot and select Aux4 as the control channel. 

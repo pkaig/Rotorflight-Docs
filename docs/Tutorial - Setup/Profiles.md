@@ -4,7 +4,7 @@ sidebar_position: 150
 
 # Profiles
 :::info
-The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](./)
+The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](../Tutorial%20-%20Walkthroughs/Profile%20switching%20example)
 :::
 
 ## Main Tuning Parameters
@@ -90,3 +90,7 @@ An extra first order low pass filter just for the D-gain to further reduce the s
 #### B-Term Cut-off
 This is controlling how "quick" or "twitchy" the boost is. This works exactly the same as D-cutoff, but on setpoint.
 It is safe to start with the same cutoffs as used with D. Usually in the range of 10..20. This is used in conjunction with [Boost](./Profiles#boost) or [B-gain](./Profiles#boost)
+
+## Copy Profile
+
+You can use the _Copy profile_ button at the upper right corner to copy the values of the current profile to another one.

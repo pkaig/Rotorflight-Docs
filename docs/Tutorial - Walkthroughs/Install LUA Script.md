@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 # Rotorflight Lua Scripts for OpenTX and EdgeTX
@@ -8,7 +8,7 @@ sidebar_position: 1
 
 **Rotorflight Lua Scripts** is a package of OpenTX/EdgeTX Lua scripts for accessing and configuring the Rotorflight FC from the transmitter.
 
-Rotorflight does **NOT** support multi-rotor 'drones', nor airplanes; it is only for traditinal RC helicopters, including co-axial and tandem helicopters.
+Rotorflight does **NOT** support multi-rotor 'drones', nor airplanes; it is only for traditional RC helicopters, including co-axial and tandem helicopters.
 
 
 ## Requirements
@@ -48,7 +48,7 @@ SD Card Method
 5. Reinsert your SD card into the transmitter.
 6. Power up your transmitter.
 
-If you copied the files correctly, you can now go into the *Tools* menu on your transmitter and access the Rotorflight Configuration tool. The first time you run the script, a message 'Compiling...' will appear in the display before the script is started. This is normal and is done to minimise the RAM usage of the script.
+If you copied the files correctly, you can now go into the *Tools* menu on your transmitter and access the Rotorflight Configuration tool. The first time you run the script, a message 'Compiling...' will appear in the display before the script is started. This is normal and is done to minimize the RAM usage of the script.
 
 ## Usage
 See the [Lua Scripts Wiki page(https://github.com/rotorflight/rotorflight/wiki/Lua-Scripts).
