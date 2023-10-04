@@ -1,12 +1,12 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Using Stability Modes
 
 ## Purpose
 :::info
-  6G modes provide self stabilisation/leveling of the helicopter when the sticks are moved to the centre. This is the opposite to the standard Acro mode (used for aerobatics and 3D) which will not self level after sticks are centered and thus is inherently unstable. These modes are generally used for beginners or those wanting more of a drone feel to their helicopter. 6G modes do not provide position fixing as found with GPS systems so the heli will drift around in the wind.
+  6G modes provide self stabilization/leveling of the helicopter when the sticks are moved to the centre. This is the opposite to the standard Acro mode (used for aerobatics and 3D) which will not self level after sticks are centered and thus is inherently unstable. These modes are generally used for beginners or those wanting more of a drone feel to their helicopter. 6G modes do not provide position fixing as found with GPS systems so the heli will drift around in the wind.
 :::
 
 ## Aim
@@ -42,7 +42,7 @@ We need to assign a spare channel to your 3 position switch (SwC) (can be any ch
 #### ## Warning ## - do not use your transmitter trims!!
 Your Roll, Pitch and Yaw should all be trimmed to 1500 at centre stick always 
 
-Stability modes will try to stabilise to the calibrated flight controller level. This is rarely perfectly aligned with the actual helicopters attitude where there is no drift (least drift... there will always be some due to wind etc). In order to calibrate this in-flight we have 2 methods:
+Stability modes will try to stabilize to the calibrated flight controller level. This is rarely perfectly aligned with the actual helicopters attitude where there is no drift (least drift... there will always be some due to wind etc). In order to calibrate this in-flight we have 2 methods:
 
 - Stick controls (needs more work)
 - Using the "Rotorflight Lua Scripts](Lua-Scripts)" ## FIXME
