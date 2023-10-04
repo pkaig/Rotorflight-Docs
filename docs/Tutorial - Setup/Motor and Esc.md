@@ -14,7 +14,7 @@ Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually t
 
 ![Motor and ESC](./img/motor-2.png)
 
-If you want to use the Rotorflight *GOVERNOR* or *RPM_FILTER* features, the FC also needs to know the [RPM of the main motor](rpm-measurement), main rotor and optionally the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*. With this info, the FC can calculate the:
+If you want to use the Rotorflight *GOVERNOR* or *RPM_FILTER* features, the FC also needs to know the [RPM of the main motor](Rpm%20Measurement), main rotor and optionally the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*. With this info, the FC can calculate the:
 - Main motor RPM = eRPM / (motor pole count / 2)
 - Main rotor RPM = Main motor RPM * main motor pinion tooth count / main gear tooth count
 
@@ -31,7 +31,7 @@ Traditional helicopter ESCs (e.g. from Hobbywing, YGE, Scorpion or Castle) use [
 
 **0% Throttle PWM value:** the value that is sent to the ESC when the craft is armed and at 0% throttle.
 
-**100% Trottle PWM value:** the value that is sent to the ESC when the craft is armed and at full throttle.
+**100% Throttle PWM value:** the value that is sent to the ESC when the craft is armed and at full throttle.
 
 ### DSHOT Protocol
 Most drone ESCs support DSHOT, a digital protocol. Here's a DSHOT setup of an XK K120.
@@ -43,7 +43,7 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### Bidirectional DSHOT
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](rpm-measurement#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](Rpm%20Measurement#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 

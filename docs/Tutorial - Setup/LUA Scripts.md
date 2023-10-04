@@ -28,6 +28,10 @@ If telemetry is working properly on your system, the Lua scripts should work as 
 
 Download the [latest release](https://github.com/rotorflight/rotorflight-lua-scripts/releases) and copy the contents of the SCRIPTS folder to your transmitter. See also the [readme](https://github.com/rotorflight/rotorflight-lua-scripts#installing).
 
+and copy the contents of the SCRIPTS folder to your transmitter.
+
+You will know if you did this correctly if the `rf2.lua` file shows up in the `/SCRIPTS/TOOLS` directory. Also *Rotorflight conf* should now show up in the *Tools* menu of your transmitter.
+
 ## Usage
 
 On your transmitter, go to the _Tools_ menu of your transmitter and select _Rotorflight conf_.
@@ -55,4 +59,12 @@ There's quite a lot of settings you can adjust on the field. Here's an overview 
 ![Pages](./img/lua-pages.png)
 
 Feel free to have a look at any page. As long as you don't select _Save page_, nothing will be changed.
+
+## Background script
+
+The optional background script offers RTC synchronization and RSSI through MSP. RTC synchronization will send the time of the transmitter to the flight controller. The script will beep if RTC synchronization has been completed. Blackbox logs and files created by the FC will now have the correct timestamp.
+
+The background script can be setup as a special or global function in OpenTX. The image below shows how to configure the background script as a special function. By doing this, the script will automatically run as soon as the model is selected.
+
+![Background script90](./img/lua-bw-bg-script-setup.png)
 
