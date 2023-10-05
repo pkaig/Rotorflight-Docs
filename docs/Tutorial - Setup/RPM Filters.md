@@ -12,7 +12,7 @@ The difference between an unfiltered and filtered signal is significant. Here's 
 
 RPM filtered gyro signals enable you to tune the helicopter better, for example by being able to use higher gains.
 
-The RPM filters require real time motor speed information to be available to the flight controller. This can be obtained with a [frequency sensor](todo) or by using [bidirectional DSHOT](todo).
+The RPM filters require real time motor speed information to be available to the flight controller. This can be obtained with a [Frequency Sensor](Rpm%20Measurement#frequency-sensor) or by using [Bidirectional DSHOT](Rpm%20Measurement#bidirectional-dshot).
 
 Once the FC knows the motor speed, it can calculate the main and tail rotor speeds. For this it needs to know the *Main Rotor Gear Ratio* and the *Tail Rotor Gear Ratio*, which you can specify in the *Motors* tab.
 
@@ -20,9 +20,9 @@ For example, here are the ratios for my Gaui X3.
 
 ![Gear ratios](./img/motors-gear-ratios.png)
 
-::::note
+:::note
 Direct drive motors have a ratio of 1:1.
-::::
+:::
 
 In order to use RPM filters, enable the feature *RPM_FILTER* in the *Configuration* tab.
 
@@ -36,11 +36,11 @@ Filters introduce latency. More filters mean more latency. So try to keep the nu
 
 Double filters provide heavier filtering than single filters, but are also slower. They are sometimes needed on the 1st and/or 2nd harmonic.
 
-::::tip
+:::tip
 The Q factor defines how wide the filter is:
 - Lower Q values make the filter wider
 - Higher Q values make the filter smaller
-::::
+:::
 
 Wider filters are slower than narrow filters, so try to make the filters as small as possible without it being ineffective.
 
