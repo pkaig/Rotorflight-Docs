@@ -28,10 +28,13 @@ We need to assign a spare channel to your 3 position switch (SwE) (can be any ch
 
 ![Change Profiles](./img/Change_Profiles_2.png)
 
+
+**Step 3:**  
 :::note
-The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial%20-%20Walkthroughs/CLI%20Profile%20switching%20example)
+The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial%20-%20Walkthroughs/CLI%20Profile%20switching%20example) on the following page.
 :::
-   
+
+<!--   
 **Step 3:** 
 - Go to the **Adjustments** tab. Enable an adjustment slot and select Aux4 as the control channel. 
 - Stretch the range slider across the entire channel range. This covers the positions for each of the three switch positions.  
@@ -44,5 +47,5 @@ The **Adjustments** tab is not implemented yet in RF2. However you can still per
 **Step 4:** Go to the **Profiles** tab and test and confirm that changing the switch position results in changing of the current Profile.
 
 ![Change Profiles](./img/Change_Profiles_4.png)
-
+-->
 
