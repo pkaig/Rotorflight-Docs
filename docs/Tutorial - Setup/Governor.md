@@ -196,4 +196,4 @@ The governor internal state can be observed in the blackbox log. It is a good in
 
 `AUTOROTATION` The throttle has dropped from high to the autorotation range. The governor is expecting the throttle to return once the autorotation has been performed. Once the throttle return, the governor moves to the state below.
 
-`AUTOROTATION_BAILOUT` Throttle has returned while in AUTOROTATION state, and the governor is performing a autorotation bailout.
+`AUTOROTATION_BAILOUT` Throttle has returned while in AutoRotation state, and the governor is performing an autorotation bailout.
