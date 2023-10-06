@@ -24,7 +24,7 @@ Currently the gyros on all common boards designed for Betaflight are supported. 
 * ICM42688
 
 ## Size
-How big is your helicopter. Standard sizes are 16mmx16mm, 20mmx20mm, 25.5mm.25.5mm (whoop), 30.5mmx30.5mm. There are also AIO (All in one) boards which contain the flight controller and 4x ESC's on the one board.
+How large is the space available for the flight controller? The amount of space may affect the size of boards you choose to use. Standard sizes are 16mmx16mm, 20mmx20mm, 25.5mm.25.5mm (whoop), 30.5mmx30.5mm. There are also AIO (All in one) boards which contain the flight controller and 4x ESC's on the one board.
 
 ## How many pads are available?
 We need to have pads available on the board to connect to our devices such as Servos, Motors, Frequency input, External logger, Receiver etc (GPS in the future).

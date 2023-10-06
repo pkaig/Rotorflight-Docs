@@ -23,3 +23,15 @@ A list of common config issues and the solutions?
 1. 
 2. 
 3.  
+
+## servo don't respond
+1. Are servos visible in the servo Tab? 
+* Review the [remapping](Remapping.md) and add servos
+
+2. From the servo override does the servo move?
+* Confirm connection of the servos
+* Confirm servos are powered
+* Check all servos.
+
+3. Servo moves in override but not 
+* Confirm miser has been chosen from the [Mixer](Mixer.md) tab
