@@ -82,7 +82,7 @@ const config = {
         textColor: '#000000',
         isCloseable: false,
       },
-      
+
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -93,7 +93,7 @@ const config = {
           srcDark: 'img/Rotorflight_outline_dark.svg',
         },
         items: [
-          {to: '/announcement', label: 'Announcements', position: 'left'},
+          { to: '/announcement', label: 'Announcements', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -120,7 +120,7 @@ const config = {
             position: 'left',
             label: 'Developers',
             to: '/docs/Developers/intro',
-          },          {to: '/blog', label: 'Blog', position: 'left'},
+          }, { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/rotorflight',
             label: 'GitHub',
