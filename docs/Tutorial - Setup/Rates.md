@@ -65,6 +65,10 @@ Expo flattens the curve between center stick and full stick. To achieve a more l
 
 While Expo can be as high as 100, excessive Expo might cause decreased center stick sensitivity and make the heli’s response more unpredictable towards full stick (more jumpy).
 
+### Rates Smoothness
+
+During piroflips, one may feel that the cyclic has slight wobbles. Increasing `Rates Smoothness` would help with that given the PID loop is tuned well.
+
 ## Copy Rate Profile
 
 You can use the _Copy rateprofile_ button at the upper right corner to copy the values of the current profile to another one.
