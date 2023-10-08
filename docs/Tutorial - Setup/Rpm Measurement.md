@@ -38,7 +38,7 @@ on a pin that is connected to the FC's solder pads. Negative channels, like CH3N
 frequency sensor use. This can be done via the [Custom defaults remapping spreadsheet](./Remapping) or by reading through the STM32 manual for your processor.
 
 :::note
-We recommend that Freq inputs are alocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorized tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
+We recommend that Freq inputs are allocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorized tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
 :::
 
 In this example, we have chosen to use the LED_STRIP pin as our frequency input. We see there is only one option (Timer1) on AF1. We can use this pin but must not allocate any of the Servos or Motors to Timer1. Only the motor pins share this timer so we can choose either AF2 (timer3) or AF3 (timer8).
@@ -72,7 +72,7 @@ Bidirectional DSHOT is fully supported from firmware version 32.7.0 onward. ESCs
 BLHeli_S ESCs do not support Bidirectional DSHOT. In order to access this functionality with a BLheli_S ESC, alternative firmware must be flashed. There are currently 3 options for this.
 
 ##### 1. Bluejay
-Bluejay is an open source firmware for BLheli_S ESCs which supports Bidirectional DSHOT, see [BlueJay](https://github.com/mathiasvr/bluejay). This firmware has been used successfully for several Rotorflight builds. Bluejay is capable of flashing individual settings to each ESC (tail and main) which is important when using an all in one (AIO) board. Bluejay v0.15 and later also supports disabling *damped light* (regenerative breaking), a must if your helicopter doesn't have a one way bearing. For example, a K110 will yaw/spin rapidly on throttle hold if *damped light* is enabled. See [Flashing Bluejay](Blheli_S-to-Bluejay) for details.
+Bluejay is an open source firmware for BLheli_S ESCs which supports Bidirectional DSHOT, see [BlueJay](https://github.com/mathiasvr/bluejay). This firmware has been used successfully for several Rotorflight builds. Bluejay is capable of flashing individual settings to each ESC (tail and main) which is important when using an all in one (AIO) board. Bluejay v0.15 and later also supports disabling *damped light* (regenerative breaking), a must if your helicopter doesn't have a one way bearing. For example, a K110 will yaw/spin rapidly on throttle hold if *damped light* is enabled. See [Flashing Bluejay](https://oscarliang.com/bluejay-blheli-s/) for details.
 
 ##### 2. BLheli_M
 BLheli_M is developed by JazzMaverick. It supports Bidirectional DSHOT, but you can't disable *damped light* mode and it does not have the ability to download individual config to each ESC. [JazzMaverick on GitHub](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)
