@@ -15,11 +15,11 @@ First activate `Serial Rx` on the UART you have connected your receiver.
 There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./LUA%20Scripts) to perform tuning using you radio.
 
 
-* SBUS needs to be connected to an RX pad. With `Inverted Serial Signaling` activated.
+* SBUS needs to be connected to an RX pad.
 
 ![Receiver Tab](./img/receiver-sbus.png)
 
-* [SBUS with S.Port](https://oscarliang.com/sbus-smartport-telemetry-naze32/): the SBUS pin needs to be connected to a free UART RX, with `Inverted Serial Signaling` activated, and the S.Port pin needs to be connected to a free UART TX (of *another free UART*), and you activate `Telemetry: FrSky SmartPort` on that UART.
+* [SBUS with S.Port](https://oscarliang.com/sbus-smartport-telemetry-naze32/): the SBUS pin needs to be connected to a free UART RX, and the S.Port pin needs to be connected to a free UART TX (of *another free UART*), and you activate `Telemetry: FrSky SmartPort` on that UART.
 
 ![Receiver Tab](./img/receiver-sbus.png)
 ![Receiver Tab](./img/receiver-uart-sport.png)
