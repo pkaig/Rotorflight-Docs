@@ -16,12 +16,12 @@ Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually t
 
 ![Motor and ESC](./img/motor-protocol.png)
 
-Set the ESC [*Telemetry*](ESC%20Telemetry) protocol if your esc supports it.
+Set the ESC [*Telemetry*](ESC-Telemetry.md) protocol if your esc supports it.
 
 ![Motor and ESC](./img/motor-telem.png)
 
 :::note
-If you want to use the Rotorflight *GOVERNOR* or *RPM_FILTER* features, the FC also needs to know the [RPM](Rpm%20Measurement) of the main rotor, and optionally the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*. With this info, the FC can calculate the:
+If you want to use the Rotorflight *GOVERNOR* or *RPM_FILTER* features, the FC also needs to know the [RPM](Rpm-Measurement.md) of the main rotor, and optionally the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*. With this info, the FC can calculate the:
 - Main motor RPM = eRPM / (motor pole count / 2)
 - Main rotor RPM = Main motor RPM * main motor pinion tooth count / main gear tooth count
 

@@ -8,7 +8,7 @@ There are lots of different flight controller boards designed for Betaflight. Mo
 :::info
 There are currently three ways to get a controller suitable for Rotorflight. 
 1. Build a DIY controller based on a Drone flight controller.
-2. Purchase a 'Wing' controller (Must have a Betaflight Target. Not just iNav or Ardupilot.
+2. Purchase a 'Wing' controller **Must have a Betaflight Target. Not just iNav or Ardupilot**.
 3. Purchase one of the ready built Rotorflight Controllers such as:  
 * Flywing Heli F405  
 * Steam FlyDragon F722

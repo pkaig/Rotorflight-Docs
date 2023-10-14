@@ -31,7 +31,7 @@ We need to assign a spare channel to your 3 position switch (SwE) (can be any ch
 
 **Step 3:**  
 :::note
-The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial%20-%20Walkthroughs/CLI%20Profile%20switching%20example) on the following page.
+The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial-Walkthroughs/Profile-switching-example.md) on the following page.
 :::
 
 <!--   

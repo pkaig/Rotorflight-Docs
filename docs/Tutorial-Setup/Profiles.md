@@ -4,7 +4,7 @@ sidebar_position: 150
 
 # Profiles
 :::info
-The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](../Tutorial%20-%20Walkthroughs/Profile%20switching%20example)
+The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](../Tutorial-Walkthroughs/Profile-switching-example.md)
 :::
 
 ## Main Tuning Parameters
@@ -49,7 +49,7 @@ The I-term relax corresponds to the speed of control input for a given axis. Whe
 This is a hard limit for the Error to limit I-term. 
 
 #### Offset Gains
-The offset gains are used for the [High Speed Integral](../Tuning/High%20Speed%20Integral) feature.
+The offset gains are used for the [High Speed Integral](../Tuning/High-Speed-Integral.md) feature.
 Offset gain or O-Gain is still being tested. It is currently only available if PID mode is set to 3 from the CLI
 
 `set pid_mode = 3`

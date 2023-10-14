@@ -12,7 +12,7 @@ First activate `Serial Rx` on the UART you have connected your receiver.
 
 ## Receiver Type
 
-There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./LUA%20Scripts) to perform tuning using you radio.
+There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./LUA-Scripts.md) to perform tuning using you radio.
 
 
 * SBUS needs to be connected to an RX pad.
