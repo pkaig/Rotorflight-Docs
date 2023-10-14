@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/blog</id>
     <title>Rotorflight Blog</title>
-    <updated>2023-10-04T00:00:00.000Z</updated>
+    <updated>2023-10-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/blog"/>
     <subtitle>Rotorflight Blog</subtitle>
     <icon>https://github.com/img/rffavicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023-10-14-October Video]]></title>
+        <id>https://github.com/blog/2023/10/14/October Video</id>
+        <link href="https://github.com/blog/2023/10/14/October Video"/>
+        <updated>2023-10-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tingyang Meng Flying RF on Spector NME - AMOS]]></summary>
+        <content type="html"><![CDATA[<p>Tingyang Meng Flying RF on Spector NME - AMOS</p><iframe width="560" height="315" src="https://www.youtube.com/embed/NSBUHtbj9Vk?si=MzYVdJndxTK9UsDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content>
+        <author>
+            <name>Jiawen Bao</name>
+            <uri>https://github.com/etocii</uri>
+        </author>
+        <category label="Rotorflight" term="Rotorflight"/>
+        <category label="RF2" term="RF2"/>
+        <category label="Tingyang Meng" term="Tingyang Meng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2023-10-04-October Video]]></title>
         <id>https://github.com/blog/2023/10/04/October Video</id>
