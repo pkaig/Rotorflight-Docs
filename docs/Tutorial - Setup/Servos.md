@@ -104,28 +104,29 @@ In order to use this feature it is important to set the servo arm at 90deg (with
 
 ### Step 1
 
-Confirm and set the servo [rate](#rate) as specified by your manufacturer. For many digital servos this is 333Hz.
+* DO NOT CONNECT THE SERVOS YET!
+* Confirm and set the servo [center](#center) to your servo manufacturers recommendation. For Cyclic this will usually be 1500 or 1520us, and for tail it would be 750 or 760us.
+* If a servo's center is 760us, make sure to change the min/max and pos/neg scales to 250 instead of 500.
+* Confirm and set the servo [rate](#rate) as specified by your manufacturer. For many digital cyclic servos this is 333Hz and for most tail servos this is 560Hz
 
 ### Step 2
 
-* Set each of the override sliders to 0 degrees
-* Set [center](#center) to your servo manufacturers recommendation. For Cyclic this will be 1500 or 1520us. 
-* Fit servo arms to as close to 90 degrees as possible.
-
-### Step 3
-
+* Connect the servos
 * Set Servo override to on
+* Fit servo arms to as close to 90 degrees as possible.
 * Slide Servo 1 override in the positive direction (i.e. right)
 * confirm the servo arm travels up towards the swashplate. If not toggle the [servo reverse](#reverse).
 
 Repeat with remaining cyclic servos.
 
-### Step 4
+### Step 3
 
-* Slide the servo override back to 0 degrees. 
-* Slowly increase or decrease the [center](#center) until the servo arm is at 90 degrees
+* Set each of the override sliders to 0 degrees
+* Set [center](#center) to level the servo arm. One quick way is to slide the override bar and copy the output value from the blue bar into the [center](#center) and press save. Make sure to reset the override to see the correct effect.
 
-### Step 5
+Repeat with remaining cyclic servos.
+
+### Step 4 (Usually Optional)
 
 Calibrate the range. Not all servos move by the same angle for each change in command. This step calibrates this range so that the servo's move by the same amount. This means that the Geometric Correction can be used.
 * Set the override to a positive value (e.g. 30deg)
