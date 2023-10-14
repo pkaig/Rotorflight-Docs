@@ -39,17 +39,30 @@ For helicopters with adjustable swash links this should remain at 0 and the link
 #### Cyclic and Collective calibration
 These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](#calibrating-the-mixer) for details.
 
-#### Cyclic and Collective blade pitch limits
-These limits the maximum pitch limits that can be set by the Flight controller. As a guide these could be in the range of:
-* 9-11 deg - scale
-* 10-12 deg - sport 
-* 11-14 deg - 3D 
+#### Collective blade pitch limit
+
+* Ideally, one should use this option to set the maximum allowed collective blade pitch. Therefore, if the person wants to change the collective pitch down the line, they should be able to adjust in the "rates" page confidently without worrying about servos binding.
+
+* Practically, for most 3D helicopters, this is set to the maximum collective you will ever need (15-16deg) if the helicopter is physically capable of doing it
+
+#### Cyclic blade pitch limit
+* This is NOT the same as the collective calibration on other FBLS
+* This is designed to let the FBL know how much cyclic travel the helicopter is PHYSICALLY capable of
+* Usually adjust it so that around zero collective there is no physical interference anywhere. You might want to temporally increase the I gains (to around 200) on cyclic and move the cyclic stick to find the limits. MAKE SURE TO TURN THEM BACK
+* Some 550+ size helicopter might be able to achieve 16+ degree of cyclic pitch, you could set it to the absolutely maximum but It is advised to limit it to around 16degree since practically it should never hit that much cyclic.
+
 
 #### Total blade pitch limit
-
+* This is probably the most difficult limit to understand and setup properly
+* To find the total blade pitch limit, make sure the collective blade pitch limit and cyclic blade pitch limit. You might want to use the I-gain trick mentioned above
+* Set the collective pitch to max, then move the cyclic. Increase the limit until either there is a physical limit or the fish-eye bearing (the ball) in the center of the swash drops at the max cyclic due to one servo reaching its limit.
+* Repeat at lowest collective pitch
+* You could also increase cyclic servo travels to gain more total blade pitch. However, nothing should be interfering
+* Double check that theres NO binding or interference at ANY combination of collective and cyclic in their whole range.
+* Make sure to turn the I-gains back to default in the end if the I-gain trick is used.
 
 #### Swashplate phase angle
-Swashplate phase angle settings 
+Usually set it per manufactur recommendtion. One could consider if theres bobbling that could not be resolved from changing the cross coupling gains or it is known that the rotor head design requires a non-zero phase angle.
 
 ## Tail Rotor Settings
 
@@ -79,8 +92,10 @@ Set the mixer override at the bottom of the pages to **ON**. This will open the 
 * Increase or decrease the [Cyclic Calibration %](#cyclic-and-collective-calibration)
 
 ### Variable pitch Yaw Calibration 
-* Set YAW override to 0 deg.  
-* Adjust linkage to get the tail blades to 0 degrees  
-* Set the Override to a value (e.g. 14 deg)  
-* Measure the tail blade angle  
+* Set YAW override to 0 deg.
+* In servo page, set the center so that the yaw servo arm is leveled.
+* Adjust linkage to get the tail blades to 2-3 degrees or follow the manual
+* Set the Center trim for tail rotor so that the tail blades are at 0 degrees
+* Set the Override to a value (e.g. 30 deg)  
+* Measure the tail blade angle (fold the tail blades and compare the angle to a 60 deg ruler)
 * Adjust the [Yaw Calibration %](#tail-rotor-settings) so that the tail blade angle matches the commanded angle.  
