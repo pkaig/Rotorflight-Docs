@@ -4,7 +4,11 @@ sidebar_position: 70
 
 # Mixer
 
-This section will describe the configuration of the mixer and calibrate the rotor blade angles
+This section will describe the configuration of the mixer and calibrate the rotor blade angles.
+
+:::note
+Before proceeding with setting up the mixer, make sure that [gyro sensor alignment](./Configuration#board-and-sensor-alignment) is correct.
+:::
 
 ### Main Rotor Settings
 #### Swashplate type
