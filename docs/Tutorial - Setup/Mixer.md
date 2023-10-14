@@ -16,10 +16,10 @@ Choose the swash type that suits your helicopter.
 Choose the direction of rotation for the main rotor. This is looking down from on the top of the rotor.
 
 #### Elevator Control direction
-With the helicopter servos powered, push the elevator stick forward (pitch down). The swash should now pitch down towards the nose of the helicopter. If this is not the case, change the control direction from **[NORMAL]** to **[REVERSE]**.
+With the helicopter servos powered, tilt the heli forward (pitch down). The swash should now pitch up towards the tail of the helicopter. If this is not the case, change the control direction from **[NORMAL]** to **[REVERSE]**.
 
 #### Aileron Control direction
-Push the Aileron stick to the right (right Aileron). The swash should also pitch towards the right. If this is not the case, change the control direction from **[NORMAL]** to **[REVERSE]**.
+Roll the heli to the right (right Aileron). The swash should pitch towards the left. If this is not the case, change the control direction from **[NORMAL]** to **[REVERSE]**.
 
 #### Collective Control direction
 Push the collective stick forward (Increasing collective). The swash should now rise up towards the rotor head (to increase collective). If the swash goes down change the control direction from **[NORMAL]** to **[REVERSE]**.
