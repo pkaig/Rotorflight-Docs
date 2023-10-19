@@ -1,0 +1,58 @@
+---
+title: snapshot 2.0.0-20231018
+authors:
+  name: Rotorflight
+  image_url: https://github.com/rotorflight.png
+---
+
+:::danger
+ This snapshot is not suitable for end-users. It is intended for beta-testers. Please realise that this software is under heavy development and as such there may be bugs or unintended control issues. Please test with care
+
+ If you wish to become involved in testing these snapshots please contact us on the [Discord](https://discord.gg/6QUySXdEvd) 
+:::
+
+Rotorflight snapshot 2.0.0-20231018 is ready
+NOTE! This snapshot is not suitable for end-users. It is intended for beta-testers.
+
+* The Configurator is available to download [here](https://github.com/rotorflight/rotorflight-configurator/releases/tag/snapshot%2F2.0.0-20231018).
+* The Blackbox is available to download [here](https://github.com/rotorflight/rotorflight-blackbox/releases/tag/snapshot%2F2.0.0-20231018).
+* The LUA scripts is available to download [here](https://github.com/rotorflight/rotorflight-lua-scripts/releases/tag/snapshot%2F2.0.0-20230912).
+
+Please also read the Snapshots Wiki page for general information about snapshots.
+
+Changes to the Firmware:
+* RX subsystem refactored
+* RX failsafe refactored
+* Dynamic Notch filter adapted for helis
+* ESC telemetry implemented for various ESCs
+- Hobbywing Platinum V4
+- Hobbywing Platinum V5
+- Hobbywing FlyFun V5
+- Scorpion UNC
+- Kontronik
+- OMP Hobby
+- ZTW Skyhawk
+- APD Pro/HV
+* Servo speed calculation fixed to use ms/60°
+* PID Mode 3 fixed to use P-term on error
+* PT1 filter cutoff calculation fixed
+* MSP over FrSky telemetry speed improved
+* RPM calculation accuracy improved
+* More CRSF FM reuse options added
+
+Changes to the Configurator:
+* Receiver tab refactored to match firmware
+* Receiver telemetry added
+* Rates tab fixed to use new MSP messages
+* Status tab fixed to show correct channel values
+* Failsafe refactored - advanced failsafe disabled
+* ESC telemetry added to Motors tab
+* Governor max throttle added to Profiles
+* Governor feature handling simplified
+* RPM filter feature handling simplified
+* Dynamic Notch filter added to Gyro tab
+* Localisation improved - most texts are translated
+* All locales updated with new english messages
+
+Changes to the LUA Scripts:
+* TBD
