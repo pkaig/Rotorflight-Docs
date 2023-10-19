@@ -24,15 +24,15 @@ Changes to the Firmware:
 * RX subsystem refactored
 * RX failsafe refactored
 * Dynamic Notch filter adapted for helis
-* ESC telemetry implemented for various ESCs
-- Hobbywing Platinum V4
-- Hobbywing Platinum V5
-- Hobbywing FlyFun V5
-- Scorpion UNC
-- Kontronik
-- OMP Hobby
-- ZTW Skyhawk
-- APD Pro/HV
+* ESC telemetry implemented for various ESCs  
+  - Hobbywing Platinum V4  
+  - Hobbywing Platinum V5  
+  - Hobbywing FlyFun V5  
+  - Scorpion UNC  
+  - Kontronik  
+  - OMP Hobby  
+  - ZTW Skyhawk  
+  - APD Pro/HV  
 * Servo speed calculation fixed to use ms/60°
 * PID Mode 3 fixed to use P-term on error
 * PT1 filter cutoff calculation fixed
