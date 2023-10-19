@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[6172],{16385:s=>{s.exports=JSON.parse('{"label":"OMP M4","permalink":"/blog/tags/omp-m-4","allTagsPath":"/blog/tags","count":1}')}}]);
