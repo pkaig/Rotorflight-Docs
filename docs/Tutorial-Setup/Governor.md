@@ -8,19 +8,18 @@ The purpose of the governor is to maintain a constant headspeed regardless of fl
 :::
 
 # Governor Feature
-The governor can be turned ON/OFF with the feature flag GOVERNOR from the Configuration Tab.
+The governor can be turned ON/OFF with the dorp down menu within **Governor Features** from the **Motors** Tab.
 
-![Governor](./img/governor-1.png)
+![Governor](./img/governor-features-off.png)
 
 
 If the feature is disabled, all governor functions are disabled, and the throttle output is taken directly from the receiver throttle channel.
 
 # Governor Modes
-Once the governor is enabled the Governor Features panel will be visible on the Motors Tab.
-
-![Governor](./img/governor-2.png)
 
 The governor has multiple operating modes, each using a slightly different method for the throttle control in the PID loop. Select a mode from one of the values below.
+
+![Governor](./img/governor-features-mode.png)
 
 ### OFF
 
@@ -44,13 +43,19 @@ Like MODE1, but with battery voltage compensation. The PID loop does not need to
 
 # Governor Basic Settings
 
-![Governor](./img/governor-3.png)
+![Governor](./img/governor-features.png)
 
 In order to use the governor you must first configure the ESC/Motor features. This defines the motor telemetry (for RPM feedback) and gear ratios for your helicopter which lets the flight controller know how fast the rotor is spinning.
 
+### Startup time
+
+startup time is applied before the RPM is detected.
+Some ESCs require really slow startup ramp to be gentle.
+Some other ESCs need really rapid start for starting at all.
+
 ### Spoolup time
 
-This is an acceleration limit (in seconds) used for spooling up. It sets the acceleration limit that is equivalent to total time for spooling up from zero to full headspeed. For example, with a value of 10 and full headspeed of 3000rpm, the main rotor would take 10s to reach 3000rpm.
+This is an acceleration limit (in seconds) used for spooling up (After a valid rpm signal has been detected). It sets the acceleration limit that is equivalent to total time for spooling up from zero to full headspeed. For example, with a value of 10 and full headspeed of 3000rpm, the main rotor would take 10s to reach 3000rpm.
 
 ### Tracking time
 
@@ -102,11 +107,15 @@ Filter to smooth the Yaw signal before it is used for the TTA function (Torque T
 
 These settings are set from the Profiles Tab. If desired, individual Profiles can be configured via the Adjustments Tab. This enables individual flight modes to have separate tuning and configuration set for each flight mode. (similar to 'Bank Switching').
 
-![Governor](./img/governor-4.png)
+![Governor](./img/governor-settings.png)
 
 ### Full Headspeed
 
 This is the highest headspeed that the governor would ever try to maintain, when the throttle input is at 100%.
+
+### Maximum Throttle
+
+Maximum output throttle the governor is allowed to use.
 
 ### PID Master Gain
 
@@ -128,6 +137,10 @@ Governor Derivative gain
 
 Governor Feedforward gain
 
+### Yaw precompensation
+
+Yaw precompensation weight. Determines how much yaw is mixed into the feed forward. This helps the governor to maintain the headspeed proactively. Usually 20..100
+
 ### Cyclic precompensation
 
 Cyclic precompensation weight. Increasing the cyclic increases load on the rotor and causes it to slow down. This setting determines how much cyclic is mixed into the governor feedforward. This helps the governor maintain the headspeed proactively (i.e. increase power to the motor so it does not slow down). Usually 20..100
@@ -142,17 +155,17 @@ With the governor feature activated, the transmitter throttle channel is control
 
 Depending in which range the throttle value falls into, the governor will function differently.
 
-### THROTTLE < min_check
+### THROTTLE < 0%
 
 This throttle value indicates throttle hold (throttle cut) condition. It's guaranteed that all motors are stopped immediately. The throttle output from the governor is guaranteed to be zero.
 
 :::note
-Make sure your transmitter is sending a value lower than min_check when throttle hold is activated.
+Make sure your transmitter is sending a value lower than 0% when throttle hold is activated.
 
 Throttle hold SHOULD NOT be used for autorotation.
 :::
 
-### min_check < THROTTLE < 1100us
+### 0% < THROTTLE < 10%
 
 In this range, the governor is in idle or autorotation state, and the output is zero - the main motor is stopped.
 
@@ -162,7 +175,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor stopped, use this range!
 :::
 
-### 1100us < THROTTLE < 1200us
+### 10% < THROTTLE < 20%
 
 In this range, the governor is in idle or autorotation state, and the output is in 0% - 10%, increasing linearly through the range.
 
@@ -172,7 +185,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor running, use this range!
 :::
 
-### 1200us < THROTTLE < 2000us
+### 20% < THROTTLE < 100%
 
 In this range, the governor is in active state, and the requested rpm is 20%..100% of the gov_headspeed.
 
