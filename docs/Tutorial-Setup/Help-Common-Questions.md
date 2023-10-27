@@ -6,8 +6,6 @@ sidebar_position: 1
 
 A list of common config issues and the solutions?
 
-
-
 ## Motor won't start
 1. Is ARM mode configured? 
 * Please check your Arm Mode has been enabled. See details in the [Modes](./Modes#arm) 

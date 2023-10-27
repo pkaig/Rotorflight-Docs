@@ -4,7 +4,7 @@ sidebar_position: 140
 
 # Rates
 :::info
-The purpose of rates are to change in flight sensitivity and rotation rates. The aim is usually to have several 'rates' that you can switch between during flight to change flight performance. Please see the [profile switching example](../Tutorial%20-%20Walkthroughs/Profile%20switching%20example)
+The purpose of rates are to change in flight sensitivity and rotation rates. The aim is usually to have several 'rates' that you can switch between during flight to change flight performance. Please see the [profile switching example](../Tutorial-Walkthroughs/Profile-switching-example.md)
 :::
 
 ![Rates](./img/rates-main.png)
