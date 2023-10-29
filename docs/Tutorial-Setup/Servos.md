@@ -2,6 +2,22 @@
 sidebar_position: 60
 ---
 
+:::
+note Servo Configuration & Setup includes a large number of settings that are not needed in the majority of cases. This can lead to confusion and in the end poor swash plate setup.
+
+For the vast majority of setups you should ONLY be adjusting
+
+- servo centre
+- min/max (if required)
+
+The options for scaling a rate adjustments are for advanced use cases only.
+
+The end goal on servos is to align the horn to 90 degrees; avoid 'mechanical binding'.    After that you should be focusing on mechanical swash leveling and then fin trim adjustment on the mixers page.
+
+ :::
+
+
+
 # Servos
 
 Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorized or servo tail) or if you are using a drone FC that your [Remapping](Remapping.md)  is correct.
