@@ -50,15 +50,15 @@ These settings are used to calibrate the mixer so that the blade angle matches t
 * Practically, for most 3D helicopters, this is set to the maximum collective you will ever need (15-16deg) if the helicopter is physically capable of doing it
 
 #### Cyclic blade pitch limit
-* This is NOT the same as the collective calibration on other FBLS
+* This is NOT the same as the cyclic calibration on other FBLs (it's NOT the 8 deg cyclic on vbar for example) 
 * This is designed to let the FBL know how much cyclic travel the helicopter is PHYSICALLY capable of
 * Usually adjust it so that around zero collective there is no physical interference anywhere. You might want to temporally increase the I gains (to around 200) on cyclic and move the cyclic stick to find the limits. MAKE SURE TO TURN THEM BACK
-* Some 550+ size helicopter might be able to achieve 16+ degree of cyclic pitch, you could set it to the absolutely maximum but It is advised to limit it to around 16degree since practically it should never hit that much cyclic.
+* Some 550+ size helicopter might be able to achieve 16+ degree of cyclic pitch, you could set it to the absolutely maximum but it is advised to limit around 16degree since practically it should never hit that much cyclic.
 
 
 #### Total blade pitch limit
 * This is probably the most difficult limit to understand and setup properly
-* To find the total blade pitch limit, make sure the collective blade pitch limit and cyclic blade pitch limit. You might want to use the I-gain trick mentioned above
+* To find the total blade pitch limit, make sure the collective blade pitch limit and cyclic blade pitch limit are set up correctly. You might want to use the I-gain trick mentioned above
 * Set the collective pitch to max, then move the cyclic. Increase the limit until either there is a physical limit or the fish-eye bearing (the ball) in the center of the swash drops at the max cyclic due to one servo reaching its limit.
 * Repeat at lowest collective pitch
 * You could also increase cyclic servo travels to gain more total blade pitch. However, nothing should be interfering
