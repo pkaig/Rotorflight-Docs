@@ -28,24 +28,16 @@ We need to assign a spare channel to your 3 position switch (SwE) (can be any ch
 
 ![Change Profiles](./img/Change_Profiles_2.png)
 
-
-**Step 3:**  
-:::note
-The **Adjustments** tab is not implemented yet in RF2. However you can still perform profile switching using [CLI Profile Switching Method](../Tutorial-Walkthroughs/CLI-Profile-switching-example.md) on the following page.
-:::
-
-<!--   
 **Step 3:** 
-- Go to the **Adjustments** tab. Enable an adjustment slot and select Aux4 as the control channel. 
-- Stretch the range slider across the entire channel range. This covers the positions for each of the three switch positions.  
+- Go to the **Adjustments** tab. Enable an adjustment slot by selecting *Mapped* and select Aux4 as the *Enable Channel* and *Value Channel*. 
+- Stretch the *Enable Channel* and *Value Channel* sliders across the entire channel range. This covers the positions for each of the three switch positions.  
 - Select **Profile Selection** from the dropdown. This means we want to change the 'Profile selection' by the switch position.
-- Set the apply channel to Aux4. 
-- Set Min = 1 and Max = 3. This means over the defined range a value of 1-3 will be chosen based on the switch position. (e.g. SwE down = 0, SwE middle = 1, SwE up = 2). These values are added to the Profile so will result in (e.g. SwE down = Profile 1, SwE middle = Profile 2, SwE up = Profile 3).     
+- Stretch the *Profile Selection* slider from 1 to 3, This means over the defined range a value of 1-3 will be chosen based on the switch position. (e.g. SwE down = 0, SwE middle = 1, SwE up = 2). These values are added to the Profile so will result in (e.g. SwE down = Profile 1, SwE middle = Profile 2, SwE up = Profile 3).     
 
-![Change Profiles](./img/Change_Profiles_3.png)
+![Change Profiles](./img/change-prof-prof-sw-example.png)
 
 **Step 4:** Go to the **Profiles** tab and test and confirm that changing the switch position results in changing of the current Profile.
 
 ![Change Profiles](./img/Change_Profiles_4.png)
--->
+
 
