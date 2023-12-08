@@ -1,7 +1,6 @@
 ---
 sidebar_position: 170
 ---
-
 # Failsafe
 
 ## Valid Pulse Range Settings
