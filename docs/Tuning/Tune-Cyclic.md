@@ -16,11 +16,11 @@ The best way to start tuning cyclic is to find a preset that are close to your o
 * D-gain dampens oscillations caused by P, P-gain dampens oscillations caused by I.
 * I-oscillation are very slow (0.5-1Hz) while P and D oscillations are fast (5-8Hz).
 * If there is I-oscillation, one could lower the I-gain or raise the P-gain.
-* The best maneuver to see I-oscillation is to pirouetting long pitch pumps. If the heli does not stop clean and has a large shake, it is eighter I gain being too high or P-gain being too low.
+* The best maneuver to see I-oscillation is to pirouetting long pitch pumps. If the heli does not stop clean and has a large shake, it is either I-gain being too high or P-gain being too low.
 * It is possible to use the same I-gain on pitch and roll axis.
 * Check tick-tock stops to see if P and D are too high by observing the fast oscillations. If oscillations are mainly slow, I-gain might be too high.
 * The B-gain should be increased incrementally to fit how sharp the response you want. Usually only pitch needs a significant B-gain.
 * Too high on B-gain results in unwanted oscillations at stops if low B-gain did not cause it.
-* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax.
+* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low numbee also hide gain imbalance that could show up during high-demand maneuvers or natural occuring disturbances (like a gust of wind)
 
 
