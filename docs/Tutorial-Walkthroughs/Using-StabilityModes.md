@@ -44,10 +44,10 @@ Your Roll, Pitch and Yaw should all be trimmed to 1500 at centre stick always
 
 Stability modes will try to stabilize to the calibrated flight controller level. This is rarely perfectly aligned with the actual helicopters attitude where there is no drift (least drift... there will always be some due to wind etc). In order to calibrate this in-flight we have 2 methods:
 
-- Stick controls (needs more work)
-- Using the "Rotorflight Lua Scripts](Lua-Scripts)" ## FIXME
+- Using the [Rotorfilght Lua Scripts](../Tutorial-Setup/LUA-Scripts.md)
+- Stick controls
 
-Note that it's also possible to adjust accelerometer trim values in the *Configuration* tab of the Configurator, though it's not recommended to do this in-flight.
+Note that it's also possible to adjust accelerometer trim values in the *Configuration* tab of the Configurator.
  
 #### Calibration using Lua Scripts
 
@@ -55,4 +55,18 @@ Select *Accelerometer Trims* from the Rotorflight main menu. Test fly the heli t
 
 ![Stability Mode](./img/Stability_5.png) 
 
+#### Calibration using Stick Commands
+
+Standard 'Betaflight' stick commands work with Rotorflight. The accelerometer trims can be calibrated using these commands. To do this you must have **Angle or Horizon** Modes enabled.
+
+| Function  | Throttle | Yaw | Pitch | Roll |
+| --------- | ------ | ------ | ------ | ------ |
+| Calibrate Gyro | LOW | LOW | LOW | CENTER |
+| Calibrate Acc | HIGH | LOW | LOW | CENTER |
+| Trim Acc Left | HIGH | CENTER | CENTER | LOW |
+| Trim Acc Right | HIGH | CENTER | CENTER | HIGH |
+| Trim Acc Forwards | HIGH | CENTER | HIGH | CENTER |
+| Trim Acc Backwards | HIGH | CENTER | LOW | CENTER |
+
+For more details of the stick commands. See the [Betaflight Wiki here.](https://betaflight.com/docs/development/Controls#Yaw%20Control%E2%80%8B)
 
