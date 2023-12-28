@@ -9,9 +9,11 @@ There are lots of different flight controller boards designed for Betaflight. Mo
 There are currently three ways to get a controller suitable for Rotorflight. 
 1. Build a DIY controller based on a Drone flight controller.
 2. Purchase a 'Wing' controller **Must have a Betaflight Target. Not just iNav or Ardupilot**.
-3. Purchase one of the ready built Rotorflight Controllers such as:  
-* Flywing Heli F405  
-* Steam FlyDragon F722
+3. Purchase one of the ready built Rotorflight Controllers such as: 
+* [STEAM FlyDragon F722 V2](https://www.aliexpress.us/item/3256805414004383.html) (built-in ELRS receiver)
+* [FLYWING Heli 405 3D](https://www.aliexpress.us/item/3256805063564797.html)
+* [MATEKSYS G474-HELI](https://www.aliexpress.us/item/3256806032945009.html) 
+
 :::
 ## Processors
 We recommend use of a board that has an H743, F7 (F745, F722 etc) or F405 processor for best results. An F411 can (and has) been used but may not be able to run all of the newer features. The newest H7 processors are yet to be supported/fully tested. Please avoid these (or help us with the testing!!) 
