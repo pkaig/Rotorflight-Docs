@@ -86,6 +86,10 @@ Use the below switches to enable/disable the telemetry sensors from the telemetr
 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 
+:::note
+CRSF Protocol does not include as wide range of sensors that can be usefull for rotorflight.  If using CRSF/ELRS and you would like to receive these telemetry sensors: NONE, GOVERNOR, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, ADJFUNC, GOV_ADJFUNC on your radio you will need to use one of the following functions in the CLI.  (crsf_flight_mode_reuse, crsf_att_pitch_reuse, crsf_att_roll_reuse, crsf_att_yaw_reuse)  For example..  set crsf_flight_mode_reuse=HEADSPEED  will send your head speed to your radio using the 'FLIGHT MODE' sensor.  You can then rename the sensor on your radio to suit.
+:::
+
 :::caution
 Calibrating Stability Mode
 The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](https://github.com/rotorflight/rotorflight/wiki/Using-stability-modes/_edit#calibrating-stability-modes). 
