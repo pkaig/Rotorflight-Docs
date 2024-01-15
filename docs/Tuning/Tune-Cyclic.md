@@ -21,6 +21,6 @@ The best way to start tuning cyclic is to find a preset that are close to your o
 * Check tick-tock stops to see if P and D are too high by observing the fast oscillations. If oscillations are mainly slow, I-gain might be too high.
 * The B-gain should be increased incrementally to fit how sharp the response you want. Usually only pitch needs a significant B-gain.
 * Too high on B-gain results in unwanted oscillations at stops if low B-gain did not cause it.
-* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low numbee also hide gain imbalance that could show up during high-demand maneuvers or natural occuring disturbances (like a gust of wind)
+* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low number also hide gain imbalance that could show up during high-demand maneuvers or natural occuring disturbances (like a gust of wind)
 
 
