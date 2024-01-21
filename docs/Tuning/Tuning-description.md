@@ -3,7 +3,7 @@ sidebar_position: 20
 ---
 
 # [OUTDATED] Tuning Guide for 0602 version controller (Gyro D)
-ATTN--THIS ONLY APPLY TO A VERY EARLY VERSION OF RF2. IT IS FOR SOME INSIGHTS ONLY.--ATTN  
+ATTN--THIS ONLY APPLY TO A VERY EARLY VERSION OF RF2. IT IS FOR GAINING INSIGHTS ONLY.--ATTN  
 This guide assumes no super low frequency (< 60Hz) global LPF
 
 ## How should I start tuning?
