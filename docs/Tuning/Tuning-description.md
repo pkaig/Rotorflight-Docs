@@ -2,7 +2,7 @@
 sidebar_position: 20
 ---
 
-# Tuning Guide for 0602 version controller (Gyro D)
+# [OUTDATED] Tuning Guide for 0602 version controller (Gyro D)
 This guide assumes no super low frequency (< 60Hz) global LPF
 
 ## How should I start tuning?
