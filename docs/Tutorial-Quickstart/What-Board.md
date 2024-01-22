@@ -10,7 +10,7 @@ There are currently three ways to get a controller suitable for Rotorflight.
 1. Build a DIY controller based on a Drone flight controller.
 2. Purchase a 'Wing' controller **Must have a Betaflight Target. Not just iNav or Ardupilot**.
 3. Purchase one of the ready built Rotorflight Controllers such as: 
-* [STEAM FlyDragon F722 V2](https://www.aliexpress.us/item/3256805414004383.html) (built-in ELRS receiver)
+* [FlyDragon F722 V2](https://www.aliexpress.us/item/3256805414004383.html) (built-in ELRS receiver)
 * [FLYWING Heli 405 3D](https://www.aliexpress.us/item/3256805063564797.html)
 * [MATEKSYS G474-HELI](https://www.aliexpress.us/item/3256806032945009.html) 
 
