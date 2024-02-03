@@ -144,6 +144,10 @@ const config = {
                 to: '/docs/intro',
               },
               {
+                label: 'Setup',
+                to: '/docs/Tutorial-Setup/Configuration',
+              },
+              {
                 label: 'Manufacturers',
                 to: '/docs/Manufacturers/intro',
               },
