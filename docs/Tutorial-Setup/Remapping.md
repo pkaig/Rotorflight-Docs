@@ -43,13 +43,6 @@ Some targets in the betaflight target repository have additional #define lines a
 
 ![Mixer Tab](./img/remapping-2.png)
 
-## Old Versions
-
-[Rotorflight remapping spreadsheet v1.3](https://docs.google.com/spreadsheets/d/1HzbASoWoV7RriroiCTFbnY3v021HHgxDm2WygzxCVd0/edit?usp=sharing)
-
-[Rotorflight remapping spreadsheet v1.2](https://docs.google.com/spreadsheets/d/1sZSpKEMIQzEMfRpyB8nn1vDn9OlID3vhVT0QTgemIZE/edit?usp=sharing)
-
-[Rotorflight remapping spreadsheet v1.1](https://docs.google.com/spreadsheets/d/1HP9OUTFpjAm42CDiJipmQrPrDtBpTfkJAM1BOtcuZyE/edit?usp=sharing)
 
 
 

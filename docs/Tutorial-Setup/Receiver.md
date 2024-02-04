@@ -29,18 +29,18 @@ There are many receiver protocols supported in Rotorflight, SBUS in the one of t
 
 ![Receiver Tab](./img/receiver-fport.png)
 
+:::note
+The `Inverted Serial Signaling` option will work only on **F7/H7** or **G4** type mcu, if you are using an **F4** mcu, then you need to use and external signal inverter, or hack your receiver to get an Un-Inverted signal for SBUS, S.Port, and F.Port.
+for more info check [Uninverted SBUS and Smart Port on Frsky Receivers](https://oscarliang.com/uninverted-sbus-smart-port-frsky-receivers/)
+:::
+
 * [CRSF/ELRS](https://www.expresslrs.org/2.0/quick-start/receivers/wiring-up/) needs an RX and a TX on the same UART. 
 
 ![Receiver Tab](./img/receiver-crsf.png)
 
-:::note
-The `Inverted Serial Signaling` option will work only on F7/H7 type mcu, if you are using an F4 mcu, then you need to use and external signal inverter, or hack your receiver to get an Un-Inverted signal for SBUS, S.Port, and F.Port.
-for more info check [Uninverted SBUS and Smart Port on Frsky Receivers](https://oscarliang.com/uninverted-sbus-smart-port-frsky-receivers/)
-:::
+
 
 Please see the documentation for your FC for more details on how to connect your receiver. 
-
-![Receiver Tab](./img/receiver-tab.png)
 
 ## Receiver Channels
 
@@ -55,7 +55,7 @@ Select the corresponding channels order based on the selected receiver type.
 * For ELRS receivers, set the channels in your radio as per the below order.
 
 :::note
-For **CRSF/ELRS** always set *ARM* switch to *CH5* on the radio, also set *THR* to *CH6*
+For **CRSF/ELRS** always set *ARM* switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
 :::
 
 ![Receiver Tab](./img/receiver-order-elrs.png)

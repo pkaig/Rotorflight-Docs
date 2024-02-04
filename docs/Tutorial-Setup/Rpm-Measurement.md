@@ -69,16 +69,9 @@ From the **Motors** tab in Rotorflight Configurator select an DSHOT ESC protocol
 Bidirectional DSHOT is fully supported from firmware version 32.7.0 onward. ESCs with earlier firmware will have to be updated before speed telemetry will operate.
 
 #### BLHeli_S
-BLHeli_S ESCs do not support Bidirectional DSHOT. In order to access this functionality with a BLheli_S ESC, alternative firmware must be flashed. There are currently 3 options for this.
+BLHeli_S ESCs do not support Bidirectional DSHOT. In order to access this functionality with a BLheli_S ESC the firmware must be upgraded to Bluejay. Bluejay is an open source firmware for BLheli_S ESCs which supports Bidirectional DSHOT, see [BlueJay](https://github.com/mathiasvr/bluejay). This firmware has been used successfully for several Rotorflight builds. Bluejay is capable of flashing individual settings to each ESC (tail and main) which is important when using an all in one (AIO) board. Bluejay v0.15 and later also supports disabling *damped light* (regenerative breaking), a must if your helicopter doesn't have a one way bearing. For example, a K110 will yaw/spin rapidly on throttle hold if *damped light* is enabled. See [Flashing Bluejay](https://oscarliang.com/bluejay-blheli-s/) for details.
 
-##### 1. Bluejay
-Bluejay is an open source firmware for BLheli_S ESCs which supports Bidirectional DSHOT, see [BlueJay](https://github.com/mathiasvr/bluejay). This firmware has been used successfully for several Rotorflight builds. Bluejay is capable of flashing individual settings to each ESC (tail and main) which is important when using an all in one (AIO) board. Bluejay v0.15 and later also supports disabling *damped light* (regenerative breaking), a must if your helicopter doesn't have a one way bearing. For example, a K110 will yaw/spin rapidly on throttle hold if *damped light* is enabled. See [Flashing Bluejay](https://oscarliang.com/bluejay-blheli-s/) for details.
-
-##### 2. BLheli_M
-BLheli_M is developed by JazzMaverick. It supports Bidirectional DSHOT, but you can't disable *damped light* mode and it does not have the ability to download individual config to each ESC. [JazzMaverick on GitHub](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)
-
-##### 3. JESC
-Jesc is a paid firmware version for BLheli_S ESCs which supports Bidirectional DSHOT. [JESC](https://jflight.net/index.php).
+Please follow the [Blheli_S to Bluejay](../Tutorial-Walkthroughs/Blheli_s-to-Bluejay.md) walkthrough
 
 ## More information
 More details on Bidirectional DSHOT and RPM filtering at [betaflight](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).
