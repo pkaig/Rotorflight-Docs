@@ -73,8 +73,10 @@ For **CRSF/ELRS** always set *ARM* switch to *CH5/AUX1* on the radio, also set *
     * NOTE! Throttle hold must send a value than is lower than 0% level, for example you can set you radio to send 1000us at 0% throttle, and 975us at throttle hold.
 * Adjust **Cyclic Deadband** and **Yaw Deadband** to the smallest possible value that doesn't make your model drift in the *Rates Preview* window.
 
-:::note
-Do not use trim for Roll, Pitch or Yaw on your transmitter. 
+:::caution
+Calibrating Stability Mode
+The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](https://github.com/rotorflight/rotorflight/wiki/Using-stability-modes/_edit#calibrating-stability-modes). 
+**Do not use trim on your transmitter**.
 :::
 
 You should end up with something similar to this:  
@@ -86,12 +88,43 @@ Use the below switches to enable/disable the telemetry sensors from the telemetr
 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 
-:::note
-CRSF Protocol does not include as wide range of sensors that can be usefull for rotorflight.  If using CRSF/ELRS and you would like to receive these telemetry sensors: NONE, GOVERNOR, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, ADJFUNC, GOV_ADJFUNC on your radio you will need to use one of the following functions in the CLI.  (crsf_flight_mode_reuse, crsf_att_pitch_reuse, crsf_att_roll_reuse, crsf_att_yaw_reuse)  For example..  set crsf_flight_mode_reuse=HEADSPEED  will send your head speed to your radio using the 'FLIGHT MODE' sensor.  You can then rename the sensor on your radio to suit.
-:::
 
-:::caution
-Calibrating Stability Mode
-The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](https://github.com/rotorflight/rotorflight/wiki/Using-stability-modes/_edit#calibrating-stability-modes). 
-**Do not use trim on your transmitter**.
-:::
+### ELRS Telemetry (reuse)
+**Why dont I have RPM telemetry to my radio??**  
+The Crossfire Protocol (CRSF) used by ELRS does not include the full range of sensors that can be usefull for rotorflight. Crossfire was specifically designed for Drones, 
+
+As a temporary fix for this issue a series of telemetry items that are currently transferred to the transmitter can be ***re-used*** to transfer information we would rather see. There are four messages that can be chosen, each with a variety of telemetry sensor options.
+
+1. Flight mode. 
+    `set crsf_flight_mode_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, GOVERNOR, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE, ADJFUNC, GOV_ADJFUNC
+2. Pitch attitude. 
+    `set crsf_att_pitch_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
+3. Roll attitude
+    `set crsf_att_roll_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE 
+4. Yaw position
+    `set crsf_att_yaw_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE 
+
+To use this feature:
+* Enable Telemetry. If you have not done so already enable the telemetry toggle on the receiver tab.
+
+![Receiver Tab](./img/receiver-telem-enable.png)
+
+* Enable each of the telemetry messages that you wish to 'reuse'.
+
+![Receiver Tab](./img/receiver-telem-reuse.png)
+
+* In the CLI enter the command and option you wish to use. Enter and save,
+
+![Receiver Tab](./img/receiver-telem-command.png)
+
+* The transmitter will now show the headspeed in the **FM** telemetry. To add the units click on the sensor and "Edit".
+
+![Receiver Tab](./img/receiver-telem-units.png)  
+
+![Receiver Tab](./img/receiver-telem-FM.png)
+
+
