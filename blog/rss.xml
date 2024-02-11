@@ -4,10 +4,22 @@
         <title>Rotorflight Blog</title>
         <link>https://github.com/blog</link>
         <description>Rotorflight Blog</description>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2024-02-06-February Video]]></title>
+            <link>https://github.com/blog/2024/02/06/February Video</link>
+            <guid>https://github.com/blog/2024/02/06/February Video</guid>
+            <pubDate>Tue, 06 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Rotorflight 2]]></description>
+            <content:encoded><![CDATA[<p>Rotorflight 2 </p><iframe width="560" height="315" src="https://www.youtube.com/embed/O5E9HQ5rqU8?si=4cwj7BI901dIVRnW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content:encoded>
+            <category>Rotorflight</category>
+            <category>RF2</category>
+            <category>RT-RC</category>
+            <category>Rob Thompson</category>
+        </item>
         <item>
             <title><![CDATA[2024-02-04-February Video]]></title>
             <link>https://github.com/blog/2024/02/04/February Video</link>
