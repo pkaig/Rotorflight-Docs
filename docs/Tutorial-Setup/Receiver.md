@@ -102,11 +102,24 @@ As a temporary fix for this issue a series of telemetry items that are currently
     `set crsf_att_pitch_reuse = [OPTION]`  
     [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
 3. Roll attitude
-    `set crsf_att_roll_reuse = [OPTION]`  
+    `set crsf_att_roll_reuse = [OPTION]`   
     [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE 
 4. Yaw position
     `set crsf_att_yaw_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE 
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
+5. GPS Heading
+    `set crsf_gps_heading_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
+6. GPS Ground Speed
+    `set crsf_gps_ground_speed_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
+7. GPS Altitude
+    `set crsf_gps_altitude_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
+8. GPS Sats
+    `set crsf_gps_sats_reuse = [OPTION]`  
+    [Option] Allowed values: NONE, ESC_TEMP, MCU_TEMP, PROFILE, RATE_PROFILE, LED_PROFILE
+
 
 To use this feature:
 * Enable Telemetry. If you have not done so already enable the telemetry toggle on the receiver tab.
