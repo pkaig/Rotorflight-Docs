@@ -95,10 +95,10 @@ The Crossfire Protocol (CRSF) used by ELRS does not include the full range of se
 
 As a temporary fix for this issue a series of telemetry items that are currently transferred to the transmitter can be ***re-used*** to transfer information we would rather see. There are four messages that can be chosen, each with a variety of telemetry sensor options.
 
-1. Flight mode. 
+1. Flight mode 
     `set crsf_flight_mode_reuse = [OPTION]`  
     [Option] Allowed values: NONE, GOVERNOR, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE, ADJFUNC, GOV_ADJFUNC
-2. Pitch attitude. 
+2. Pitch attitude 
     `set crsf_att_pitch_reuse = [OPTION]`  
     [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
 3. Roll attitude
