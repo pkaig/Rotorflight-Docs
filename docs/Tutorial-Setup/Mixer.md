@@ -1,5 +1,5 @@
 ---
-sidebar_position: 70
+sidebar_position: 120
 ---
 
 # Mixer
@@ -42,6 +42,10 @@ For helicopters with adjustable swash links this should remain at 0 and the link
 
 #### Cyclic and Collective calibration
 These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](#calibrating-the-mixer) for details.
+
+#### Collective geometry correction
+
+Adjust until the collective positive and negative deflections are equal.
 
 #### Collective blade pitch limit
 

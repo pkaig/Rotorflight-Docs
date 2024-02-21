@@ -1,10 +1,7 @@
 ---
-sidebar_position: 170
+sidebar_position: 190
 ---
 
 # Beepers
-Coming soon
-## Buzzer configuration
-Coming soon
-## ESC Beacon configuration
-Coming soon
+
+To Do
