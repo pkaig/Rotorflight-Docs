@@ -1,9 +1,6 @@
 ---
-sidebar_position: 170
+sidebar_position: 80
 ---
 # Failsafe
 
-## Valid Pulse Range Settings
-Coming soon
-## Channel Fallback Settings
-Coming soon
+To Do

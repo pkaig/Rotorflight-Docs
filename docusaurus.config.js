@@ -145,7 +145,7 @@ const config = {
               },
               {
                 label: 'Setup',
-                to: '/docs/Tutorial-Setup/Configuration',
+                to: '/docs/Tutorial-Setup/Status',
               },
               {
                 label: 'Manufacturers',

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 50
+sidebar_position: 70
 ---
 
 One of the first things you should do is to connect a receiver to the FC. Your FC has several UARTs, and each UART has a TX and an RX. A receiver needs to be connected to an RX and/or TX pad, depending on the type of receiver.
@@ -66,12 +66,13 @@ For **CRSF/ELRS** always set *ARM* switch to *CH5/AUX1* on the radio, also set *
 
 ![Receiver Tab](./img/receiver-settings.png)
 
-* Adjust **Stick Center** as required by your radio to achieve 0% when the _ROLL, PITCH, YAW_ sticks are centered. 
-* Adjust **Stick Maximum Travel** achieve 100% at the sticks limits.
-* Adjust **Throttle Channel value for 0% throttle** to achieve 0% on the channel bar.
-* Adjust **Throttle Channel value for 100% throttle** to achieve 100% on the channel bar.
+* **Stick Center** - adjust as required by your radio to achieve 0% when the _ROLL, PITCH, YAW_ sticks are centered. 
+* **Stick Maximum Travel** - adjust achieve 100% at the sticks limits.
+* **Throttle Channel value for arming** - channel value under which arming is allowed.
+* **Throttle Channel value for 0% throttle** - adjust to achieve 0% on the channel bar.
+* **Throttle Channel value for 100% throttle** - adjust to achieve 100% on the channel bar.
     * NOTE! Throttle hold must send a value than is lower than 0% level, for example you can set you radio to send 1000us at 0% throttle, and 975us at throttle hold.
-* Adjust **Cyclic Deadband** and **Yaw Deadband** to the smallest possible value that doesn't make your model drift in the *Rates Preview* window.
+* **Cyclic Deadband** and **Yaw Deadband** - adjust to the smallest possible value that doesn't make your model drift in the *Rates Preview* window.
 
 :::caution
 Calibrating Stability Mode

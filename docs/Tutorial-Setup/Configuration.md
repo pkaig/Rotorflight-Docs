@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 60
 ---
 # Configuration
 
@@ -30,7 +30,7 @@ This section is used to enable or disable features.
 ![Configuration Tab](./img/config-features.png)
 
 :::tip
-Features such as the Serial Rx, GPS, ESC Telemetry must be selected in the [Serial ports](#serial-ports) section before selecting the Feature here. 
+Features such as the GPS must be selected in the [Serial ports](#serial-ports) section before selecting the Feature here. 
 :::
 
 ## Serial Ports
