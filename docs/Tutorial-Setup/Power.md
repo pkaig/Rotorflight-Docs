@@ -8,11 +8,11 @@ Set up all your power and battery related settings. Set the voltage and current 
 ![Power](./img/power-main.png)
 
 ## Power State
-* Connected - Yes/No, if Yes, also shows cell count
-* Voltage - Voltage of the battery
-* Current - Current draw
-* mAh Used - Capacity used in mAh
-* Charge Level - Battery charge percentage
+* **Connected** - Yes/No, if Yes, also shows cell count
+* **Voltage** - Voltage of the battery
+* **Current** - Current draw
+* **mAh Used** - Capacity used in mAh
+* **Charge Level** - Battery charge percentage
 
 
 ## Battery
@@ -46,6 +46,9 @@ If you fly a battery to less than 3.3V, it will start to be damaged and will not
 
 ### Capacity
 The capacity of the battery in mAh. This is used to calculate the remaining battery capacity in percent.
+
+### Cell Count
+Force cell count to avoid confusion between full 11S and flat 12S for example.
 
 ## Voltage Meters
 Settings for the voltage meter to measure the battery voltage correctly.
