@@ -11,43 +11,26 @@ ESC Telemetry currently supported are :
 * BLheli  
 * HOBBYWING Platinum PRO V4, V4.1,& V5
 * HOBBYWING FLYFUN V5 
-* KONTRONIK  
 * SCORPION
+* KONTRONIK  
 * OMPHOBBY
 * ZTW
 * APD (HV Pro UART telemetry)
+* OpenYGE
 :::
 
 ### Select Serial Port
-The ESC telemetry pin TX needs to be connected to a spare UART RX. Select the UART from the Configuration page. 
+The ESC telemetry pin TX needs to be connected to a spare UART RX.
 
-![ESC Telemetry](./img/esc-telem-1.png)
+Select the UART from the Configuration page. 
 
-### Enable the feature
-Select **ESC_SENSOR** from the features to enable reading from the ESC.
+![ESC Telemetry](./img/esc-telem-uart.png)
 
-If you wish these values to be returned to the Tx you will also have to select the **TELEMETRY** and have a telemetry capable Receiver.  
+### Select the Protocol
 
-![ESC Telemetry](./img/esc-telem-2.png)
+Select the correct ESC telemetry protocol based on the one you are using.
 
-### Half Duplex (to be updated)
-The Telemetry wire can be connected to the UART TX (as opposed to the RX) if the UART is set to half duplex. In most cases just leave this OFF. This still needs to be added to the configuration. Currently it is enabled through the CLI.
-
-`set esc_sensor_halfduplex = ON` 
-
-### Set the Protocol
-This still needs to be added to the configuration. Currently it is enabled through the CLI.
-
-Please enter the protocol you wish to use from the following commands:  
-* `set esc_sensor_protocol = NONE`  
-* `set esc_sensor_protocol = BLHELI32`  
-* `set esc_sensor_protocol = HOBBYWINGV4`  
-* `set esc_sensor_protocol = HOBBYWINGV5`
-* `set esc_sensor_protocol = KONTRONIK`
-* `set esc_sensor_protocol = SCORPION`  
-* `set esc_sensor_protocol = OMPHOBBY` 
-* `set esc_sensor_protocol = ZTW` 
-* `set esc_sensor_protocol = APD` 
+![ESC Telemetry](./img/esc-telem-sel-p.png)
 
 **For Hobbywing V4**
 Additional parameters are provided for the voltage and current gains, and zero offsets.
@@ -56,7 +39,7 @@ Additional parameters are provided for the voltage and current gains, and zero o
 * `set esc_sensor_hw4_current_gain = 0` 
 * `set esc_sensor_hw4_current_offset = 0`  
 
-Setting these parameters to zero will enable the Auto-Calculation within the firmware.
+These parameters are set to zero by default to enable the Auto-Calculation within the firmware.
 If you wish to fine tune the voltage and current you can use the below values as a starting point.
 
 
@@ -70,8 +53,8 @@ If you wish to fine tune the voltage and current you can use the below values as
 | FlyFun HV 160A       |      210     |     66       |        381     |
 
 ### Power Config
-Enable the Voltage and Current from the ESC Sensor
+Enable the Voltage and Current from the `Power` Tab.
 
-![ESC Telemetry](./img/esc-telem-3.png)
+![ESC Telemetry](./img/esc-telem-power.png)
 
 
