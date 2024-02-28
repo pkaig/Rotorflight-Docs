@@ -40,11 +40,8 @@ Please choose the functions you wish to assign to your UART.
 
 ### MSP
 
-As the name suggests, usually only used for lower-level communication using the MSP (MultiWii Serial Protocol) for configuration done by external devices, or to allow a more direct way of control. You can also set a specific baud rate
-
-:::caution
-This is not to be used as a "toggle" for the current UART when setting it (for example) for Serial RX. It's a relatively common mistake to make, and then cause your config to not save to prevent unwanted behavior when conflicting options are set
-:::x
+As the name suggests, usually only used for lower-level communication using the MSP (MultiWii Serial Protocol) for configuration done by external devices, or to allow a more direct way of control. 
+You can also set a specific baud rate.
 
 ### GPS
 GPS is not currently used for Rotorflight for any flight controls. This can be used for telemetry purposes.
