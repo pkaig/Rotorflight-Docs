@@ -8,7 +8,7 @@ The Crossfire Protocol (CRSF) used by ELRS does not include the full range of se
 
 This tutorial will guide you through the process of *re-using/transforming* the unused ELRS sensor into a more useful Rotorflight sensors.
 
-the following procedure will allow you to get the following telemetry sensors on your radio, these sensors are:
+The following procedure will allow you to get the following telemetry sensors on your radio, these sensors are:
 
 * Flight/Governor status and adjustment functions
 * BEC Voltage
@@ -19,7 +19,7 @@ the following procedure will allow you to get the following telemetry sensors on
 * Headspeed
 * MCU Temperature
 
-To begin, enter CLI tab, copy and paste the below commands, then save and exit.
+To begin, enter CLI tab, copy and paste the below commands, then type `save` and hit enter.
 
 ```
 set crsf_flight_mode_reuse = GOV_ADJFUNC
@@ -30,7 +30,6 @@ set crsf_gps_heading_reuse = THROTTLE
 set crsf_gps_ground_speed_reuse = ESC_TEMP
 set crsf_gps_altitude_reuse = HEADSPEED
 set crsf_gps_sats_reuse = MCU_TEMP
-save
 ```
 
 Next, go to your radio telemetry page and discover new sensors.
