@@ -19,7 +19,7 @@ the following procedure will allow you to get the following telemetry sensors on
 * Headspeed
 * MCU Temperature
 
-To begin, enter CLI tab, copy and paste the below commands, and save and exit.
+To begin, enter CLI tab, copy and paste the below commands, then save and exit.
 
 ```
 set crsf_flight_mode_reuse = GOV_ADJFUNC
@@ -30,6 +30,7 @@ set crsf_gps_heading_reuse = THROTTLE
 set crsf_gps_ground_speed_reuse = ESC_TEMP
 set crsf_gps_altitude_reuse = HEADSPEED
 set crsf_gps_sats_reuse = MCU_TEMP
+save
 ```
 
 Next, go to your radio telemetry page and discover new sensors.
