@@ -91,8 +91,8 @@ Use the below switches to enable/disable the telemetry sensors from the telemetr
 
 
 ### ELRS Telemetry (reuse)
-**Why dont I have RPM telemetry to my radio??**  
-The Crossfire Protocol (CRSF) used by ELRS does not include the full range of sensors that can be usefull for rotorflight. Crossfire was specifically designed for Drones, which generally have different parameters that are useful to the pilot.
+**Why don't I have RPM telemetry to my radio??**  
+The Crossfire Protocol (CRSF) used by ELRS does not include the full range of sensors that can be useful for rotorflight. Crossfire was specifically designed for Drones, which generally have different parameters that are useful to the pilot.
 
 As a temporary fix for this issue a series of telemetry items that are currently transferred to the transmitter can be ***re-used*** to transfer information we would rather see. There are four messages that can be chosen, each with a variety of telemetry sensor options.
 
@@ -141,4 +141,5 @@ To use this feature:
 
 ![Receiver Tab](./img/receiver-telem-FM.png)
 
+Follow the following tutorial for a practical example on ELRS sensors Reuse and Setup [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md)
 
