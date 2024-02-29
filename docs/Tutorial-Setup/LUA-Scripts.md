@@ -44,15 +44,15 @@ The first time you do this all scripts will be compiled and the _Tools_ menu wil
 
 Power up the receiver. The script will retrieve the API version used by Rotorflight and the device ID of the flight controller. After this you will see the main menu.
 
-![MainMenu](./img/lua-main-menu.png)
+![MainMenu](./img/lua-main.png)
 
 Here you can select what you want to change. For example, select _PIDs_.
 
-![PID](./img/lua-pids.png)
+![PID](./img/lua-profile-pid.png)
 
 Now you can change the values of your PIDs. If you want to save your changes, long press the wheel/roller. The _Page_ menu should now pop up. Select _Save page_ to send your changes to the flight controller. Or press Exit to exit the _Page_ menu.
 
-![PageMenu](./img/lua-page-menu.png)
+![PageMenu](./img/lua-save.png)
 
 There's quite a lot of settings you can adjust on the field. Here's an overview of all the pages:
 
