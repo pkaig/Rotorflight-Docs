@@ -77,8 +77,8 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'This website is a work in progress. It is a documentation tool for the upcoming release of ROTORFLIGHT 2',
-        backgroundColor: '#FFCC00',
+          'ROTORFLIGHT 2 Release Candidate 1 is now available. See Announcements to download',
+        backgroundColor: '#FF01D9',
         textColor: '#000000',
         isCloseable: false,
       },
