@@ -61,7 +61,7 @@ Enter the number of teeth for the main rotor gearing [Teeth on Pinion gear]/[Tee
 
 Enter the number of teeth for the Tail rotor gearing [Teeth on Tail gear]/[Teeth on Autorotation Gear]. For a direct drive tail this is just set to 1 / 1.
 
-:::note
+:::tip
 If the gear tooth count is not know, you can use the gear ratio instead.
 
 For example if the main gear ratio is 11.8 then you set *[Teeth on Pinion gear =10]/[Teeth on Main Gear =118]*.
