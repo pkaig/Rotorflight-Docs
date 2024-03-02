@@ -50,10 +50,10 @@ GPS is not currently used for Rotorflight for any flight controls. This can be u
 Check [Receiver](./Receiver) page for detailed info. 
 
 ### ESC Telemetry
-Set a UART to ESC Telemetry if you wish to use the [ESC_Sensor Feature](#features).
+Check [ESC Telemetry](./ESC-Telemetry) page for detailed info. 
 
 ### Blackbox Logging
-This enables a UART for external logging to an [OpenLager](./Blackbox#openlager).
+This enables a UART for an external logging device such as [OpenLager](./Blackbox#openlager).
 
 ### Telemetry: FrSky SmartPort
 This is used when connecting an FrSky SmartPort receiver pin to this UART.
