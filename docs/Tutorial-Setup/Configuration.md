@@ -10,8 +10,16 @@ Allows you to set your heli name to be shown in the OSD, blackbox logs and diff/
 
 ## System Configuration
 
+![Configuration Tab](./img/config-sys-conf.png)
+
+### Gyro Update Frequency
+
+This indicates the current gyro update frequencyc.
+
 ### PID Loop Frequency
-This is the frequency that the control loop operates at. Set to between 1kHz and 2kHz. There is limited or no benefit in higher rates and will result in high loads for your flight controller. This could be an issue for F405 and F411 boards.  
+This is the frequency that the control loop operates at. Set to between 1kHz and 2kHz. 
+
+There is limited or no benefit in higher rates and will result in high loads for your flight controller. This could be an issue for F405 and F411 boards.  
 
 ### Accelerometer
 This must be selected if you wish to use stability (6G modes) such as Angle, Horizon or Rescue modes. 
@@ -20,9 +28,7 @@ This must be selected if you wish to use stability (6G modes) such as Angle, Hor
 This is used for Altitude hold Rescue which is currently still being developed
 
 ### Magnetometer
-Currently this does not provide any control functionality; however, can be used for telemetry. 
-
-![Configuration Tab](./img/config-sys-conf.png)
+Currently this does not provide any control functionality, however, it can be used for telemetry. 
 
 ## Features
 This section is used to enable or disable features.
