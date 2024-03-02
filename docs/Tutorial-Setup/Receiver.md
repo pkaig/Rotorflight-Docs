@@ -141,5 +141,7 @@ To use this feature:
 
 ![Receiver Tab](./img/receiver-telem-FM.png)
 
-Follow the following tutorial for a practical example on ELRS sensors Reuse and Setup [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md)
+:::ELRS Telemetry Reuse WalkTrough
+Follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
+:::
 
