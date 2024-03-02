@@ -7,7 +7,7 @@ sidebar_position: 20
 Start by downloading and installing the latest Rotorflight Configurator release. This walk-through uses Windows, but it should also work on Linux or macOS.
 
 ## Install Drivers
-On Windows, install the STM USB Drivers from the links on the Rotorflight Configurator page.
+On Windows, install the **STM USB VCP Drivers** from the links on the Rotorflight Configurator page.
 
 ## Back up Betaflight Config
 Rotorflight is based on Betaflight and uses the Betaflight configuration as its base. You should make a copy of the configuration that the flight controller (FC) shipped with. Back up the Betaflight configuration as shown in Back up and restore.
@@ -21,29 +21,29 @@ Identify the Betaflight target. This can be found in the dump file specified by 
 ![Flashing](./img/flash-1.png)
 
 ### Step 2.
-Open the Rotorflight configurator and click on [Update Firmware]
+Open the Rotorflight configurator and click on **Update Firmware**.
 
-Chose All release and Snapshots from the dropdown
+Choose All release and Snapshots from the dropdown.
 
 Select the Target you identified in Step 1.
 
-Select Full chip Erase. This will remove all previous configurations.
+Select Full chip Erase, this will remove all previous configurations.
 
-Click on [Load firmware[online]]
+Click on **Load firmware[online]**
 
 ![Flashing](./img/flash-2.png)
 
 ### Step 3.
 Check and confirm the target board is correct.
 
-Click on [Flash Firmware]
+Click on **Flash Firmware**.
 
 ![Flashing](./img/flash-3.png)
 
 ### Step 4.
-When the programming is successful click on [Connect].
+When the programming is successful click on **Connect**.
 
-Click [Apply Custom Defaults] from the popup. The FC will now reboot.
+Click **Apply Custom Defaults** from the popup. The FC will now reboot.
 
 ![Flashing](./img/flash-4.png)
 
@@ -79,4 +79,7 @@ Ok, so after rebooting you are no longer able to connect to the FC via USB. This
 Rotorflight Configurator will display DFU - STM32 BOOTLOADER at the top of the page after a successful DFU connection. Click on the Update Firmware and follow the steps above to re-flash the firmware as required.
 
 ![Flashing](./img/flash-7.png)
+
+If you still having problem connecting to the MCU, install the [**Impulse-RC Driver Fixer**](https://impulserc.com/pages/downloads).
+
 
