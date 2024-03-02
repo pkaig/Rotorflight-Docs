@@ -30,11 +30,11 @@ Download the [latest release](https://github.com/rotorflight/rotorflight-lua-scr
 
 and copy the contents of the SCRIPTS folder to your transmitter.
 
-You will know if you did this correctly if the `rf2.lua` file shows up in the `/SCRIPTS/TOOLS` directory. Also *Rotorflight conf* should now show up in the *Tools* menu of your transmitter.
+You will know if you did this correctly if the `rf2.lua` file shows up in the `/SCRIPTS/TOOLS` directory. Also *Rotorflight 2* should now show up in the *Tools* menu of your transmitter.
 
 ## Usage
 
-On your transmitter, go to the _Tools_ menu of your transmitter and select _Rotorflight conf_.
+On your transmitter, go to the _Tools_ menu of your transmitter and select _Rotorflight 2_.
 
 ![Tools](./img/lua-tools.png)
 
@@ -62,9 +62,18 @@ Feel free to have a look at any page. As long as you don't select _Save page_, n
 
 ## Background script
 
-The optional background script offers RTC synchronization and RSSI through MSP. RTC synchronization will send the time of the transmitter to the flight controller. The script will beep if RTC synchronization has been completed. Blackbox logs and files created by the FC will now have the correct timestamp.
+This optional background script offers RTC synchronization and RSSI through MSP.
 
-The background script can be setup as a special or global function in OpenTX. The image below shows how to configure the background script as a special function. By doing this, the script will automatically run as soon as the model is selected.
+RTC synchronization will send the time of the transmitter to the flight controller. The script will beep if RTC synchronization has been completed.
 
-![Background script90](./img/lua-bw-bg-script-setup.png)
+Blackbox logs and files created by the FC will now have the correct timestamp.
 
+The background script can be setup as a special or global function in EdgeTX. 
+
+The image below shows how to configure the background script as a special function.
+
+By doing this, the script will automatically run as soon as the model is selected.
+
+![Background script](./img/lua-bg-script-setup-1.png)
+
+![Background script](./img/lua-bg-script-setup-2.png)
