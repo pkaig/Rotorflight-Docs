@@ -28,10 +28,14 @@ The below table shows some gear/pulley tooth counts for some famous two-stage he
 
 | Heli Model | Z1 (Motor Pulley) | Z2 | Z3 | Z4 | Z5 | Z6 (Tail Pulley) |
 |--|--|--|--|--|--|--|
-|SAB Raw 580 | 18 to 26 ( Std 22T ) | 50 | 14 | 58 | 27 | 23 |
-|SAB Raw 700 | 18 to 25 ( Std 21T ) | 56 | 18 | 69 | 34 | 26 |
-|SAB Raw Piuma | 18 to 26 ( Std 20T ) | 52 | 14 | 58 | 27 | 22 |
+|SAB Goblin 500 Sport | 15 to 24 ( Std 18T ) | 48 | 18 | 62 | 28 | 21 |
 |SAB Black Thunder 700 | 18 to 25 ( Std 21T ) | 60 | 19 | 68 | 37 | 26 |
+|SAB Raw 580 | 18 to 26 ( Std 22T ) | 50 | 14 | 58 | 27 | 23 |
+|SAB Raw 580 Nitro | 26 to 28 ( Std 26T ) | 50 | 14 | 58 | 27 | 23 |
+|SAB Raw 700 | 18 to 25 ( Std 21T ) | 56 | 18 | 69 | 34 | 26 |
+|SAB Raw 700 Nitro | 26 to 28 ( Std 27T ) | 52 | 14 | 58 | 27 | 22 |
+|SAB Raw Piuma | 18 to 26 ( Std 20T ) | 52 | 14 | 58 | 27 | 22 |
+
 
 For example for the Raw 700 with STD 21T motor pulley, the calculation will be as follow:
 
