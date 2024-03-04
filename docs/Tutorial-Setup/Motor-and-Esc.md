@@ -71,6 +71,10 @@ Similarly if the tail gear ratio is 4.8 then you set *[Teeth on Tail gear =10]/[
 note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](./RPM-Filters).
 :::
 
+:::note
+For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../Tutorial-Walkthroughs/Two-Stage-Gear-Train-Ratios.md)
+:::
+
 ### Motor Pole Count
 Determine the number of magnetic poles for each motor. Count the number of magnets on the motors rotor. In the example below the magnets (circled) are fixed to the outer bell which in total has 14. This allows the flight controller to know how many electrical phase rotations are required to complete one physical motor revolution.
 
