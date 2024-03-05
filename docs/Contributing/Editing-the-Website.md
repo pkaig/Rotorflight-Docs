@@ -1,5 +1,5 @@
 ---
-sidebar_position: 70
+sidebar_position: 20
 ---
 # Editing the Website
 Website is built using Docusaurus

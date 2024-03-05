@@ -118,8 +118,8 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'developSidebar',
             position: 'left',
-            label: 'Developers',
-            to: '/docs/Developers/intro',
+            label: 'Contributing',
+            to: '/docs/Contributing/intro',
           }, { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/rotorflight',
