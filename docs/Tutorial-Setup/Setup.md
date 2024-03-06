@@ -22,9 +22,7 @@ The magnetometer calibration process is time limited, you only have 30 seconds t
 
 ## Reset Settings
 
-:::danger
-This will reset ALL settings to default, leading to an empty config. This is not a "Factory Reset" for your heli or flight controller, nor will it reset your just-changed settings. It's to be used as a hard reset, and can lead to unpredictable results, or you may even need to re-flash in order to even be able to connect again.
-:::
+Reset Flight Controller to target default parameters.
 
 ## Bootloader/DFU
 
