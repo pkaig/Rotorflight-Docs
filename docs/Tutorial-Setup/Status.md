@@ -29,6 +29,8 @@ Remove blades for safety.
 
 * **Arming Disable Flags:** Shows all of the "errors" that prevent the flight controller from arming. This is useful to check if you're having issues arming.
 
+You can find out a description of these flags from the [List of Arming prevention flags](https://betaflight.com/docs/wiki/guides/current/Arming-Sequence-And-Safety#description-of-arming-prevention-flags)
+
 ## Battery
 
 ![Status Tab](./img/status-battery.png)
