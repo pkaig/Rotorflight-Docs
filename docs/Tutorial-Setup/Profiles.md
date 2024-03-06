@@ -120,12 +120,68 @@ It is safe to start with the same cutoffs as used with D. Usually in the range o
 ## Auto Leveling Settings
 ![Profiles](./img/profiles-auto-leveling-settings.png)
 
-To Do
+#### Acro Trainer gain
+
+This determines how aggressively the heli tilt back to the maximum angle (if exceeded) while in *TRAINER* mode.
+
+#### Acro Trainer angle limit
+
+This determines the maximum angle the heli can tilt to while in *TRAINER* mode.
+
+#### Angle Mode leveling gain
+
+This determines how aggressively the heli tilt back to level while in *ANGLE* mode.
+
+#### Angle Mode maximum angle
+
+This determines the maximum angle the heli can tilt to while in *ANGLE* mode.
+
+#### Horizon Mode leveling gain
+
+This determines how aggressively the heli tilt back to level while in *HORIZON* mode.
+
 
 ## Rescue Settings
-![Profiles](./img/profiles-rescue-settings.png)
+![Profiles](./img/profiles-rescue.png)
 
-To Do
+### Enable Rescue 
+Enable or disable the rescue mode.  
+
+#### Flip to upright
+Activate flip to upright option when the heli is inverted.
+
+#### Pull-up Collective
+Values 0.0-100. This is to be set to a level where the helicopter rapidly gains height.  
+
+#### Pull-up Time
+How long pull up collective should be applied. This is usually about 0.3 to 0.5s
+
+#### Climb Collective
+Values 0.0-100. This is to be set to a level where the helicopter gains height. 
+
+#### Climb Time
+How long Climb collective should be applied. This is usually about 0.5 to 1.5s
+
+#### Hover Collective
+Increase this value until the heli hovers at a stable altitude
+
+#### Flip Fail Time
+This is a safety feature. If there is a mechanical issue preventing the helicopter from completing the flip during this time the rescue mode will exit
+
+#### Exit Time
+This slows the transition from rescue back to normal mode. This is helpful if you have rescued from inverted where your collective may be in the opposite direction. This prevents it from rapidly pitching down.
+
+#### Leveling Gain
+How strong the helicopter will level. Too low and the helicopter will be sluggish to level. Too high and it will wobble/vibrate.
+
+#### Flip-to-Upright Gain
+How strong the helicopter will flip to upright.
+
+#### Max Leveling Rate
+Used to control how fast the helicopter levels. Set this to a value that is achievable by your helicopter. Larger slower helicopters may need this reduced.
+
+#### Max Leveling Acceleration
+Limit how fast the controller tries to accelerate the helicopter to level or flip. Larger slower helicopters may need this reduced.
 
 ## Copy Profile
 
