@@ -4,10 +4,22 @@
         <title>Rotorflight Blog</title>
         <link>https://github.com/blog</link>
         <description>Rotorflight Blog</description>
-        <lastBuildDate>Wed, 21 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2024-03-06-March Video]]></title>
+            <link>https://github.com/blog/2024/03/06/February Video</link>
+            <guid>https://github.com/blog/2024/03/06/February Video</guid>
+            <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Rainbowing with Rainbow - OMP M7]]></description>
+            <content:encoded><![CDATA[<p>Rainbowing with Rainbow - OMP M7</p><iframe width="560" height="315" src="https://www.youtube.com/embed/aoH5-a3kw2k?si=GIGVNBsniTLee3Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>]]></content:encoded>
+            <category>Rotorflight</category>
+            <category>RF2</category>
+            <category>Jiawen Bao</category>
+            <category>OMP M7</category>
+        </item>
         <item>
             <title><![CDATA[2024-02-21-February Video]]></title>
             <link>https://github.com/blog/2024/02/21/February Video</link>
