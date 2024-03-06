@@ -36,14 +36,9 @@ Here you can select the device type.
 Select the preferred logging mode.
 
 * **No Logging**: Disable Logging.
-* **Normal**: Start logging when both *Armed* and *Blackbox* switches are active.
-
-:::note 
-Assign a transmitter switch for logging under the Modes tab. Find the Blackbox mode and assign a range. You can choose a very broad range in order to log always. Click Save.
-:::
-
-* **Armed**: Start logging when *Armed* switch is active.
-* **Switch**: Start logging when *Blackbox* switch is active.
+* **Normal**: Start logging when both [**ARM**](./Modes.md#arm) and [**BLACKBOX**](./Modes.md#blackbox) switches are active.
+* **Armed**: Start logging when [**ARM**](./Modes.md#arm) switch is active.
+* **Switch**: Start logging when [**BLACKBOX**](./Modes.md#blackbox) switch is active.
 
 ### Logging Rate
 
