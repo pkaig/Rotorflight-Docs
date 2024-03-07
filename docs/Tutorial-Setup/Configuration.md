@@ -14,7 +14,7 @@ Allows you to set your heli name to be shown in the OSD, blackbox logs and diff/
 
 ### Gyro Update Frequency
 
-This indicates the current gyro update frequencyc.
+This indicates the current gyro update frequency.
 
 ### PID Loop Frequency
 This is the frequency that the control loop operates at. Set to between 1kHz and 2kHz. 
