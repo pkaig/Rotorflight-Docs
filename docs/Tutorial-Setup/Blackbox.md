@@ -67,6 +67,17 @@ Here you activate the parameters that you want to log.
 
 For general use activate the following options `Command` `Setpoint` `Mixer` `PID` `Raw Gyro` `Gyro` `Battery` `RSSI` `RPM` `Motors` `Servos`.
 
-## Blackbox Explorer
+## Onboard dataflash chip
+
+![Blackbox Tab](./img/blackbox-save.png)
+
+* **Erase** - Erase Blackbox Data.
+* **Save to file** - Download Blackbox Data.
+
+## Mass Storage Mode
+
+![Blackbox Tab](./img/blackbox-mass.png)
+
+# Blackbox Explorer
 
 The log files can be read with the [Rotorflight Blackbox Explorer](https://github.com/rotorflight/rotorflight-blackbox).
