@@ -8,7 +8,7 @@ Rotorflight supports the use of addressable LED strips.  Addressable LED strips 
 
 ## LED Strip Profiles
 
-The LED strip feature supports 4 LED strip profiles: RACE, BEACON, STATUS and STATUS_ALT. The selected profile can be changed from the CLI, OSD LED strip menu or from an adjustment channel, i.e. switch on your radio.  Take note that the adjustment channel from your radio overrides all other LED strip profile selection options.
+The LED strip feature supports 4 LED strip profiles: RACE, BEACON, STATUS and STATUS_ALT. The selected profile can be changed from the Configurator, CLI, OSD LED strip menu or from an adjustment channel, i.e. switch on your radio.  Take note that the adjustment channel from your radio overrides all other LED strip profile selection options.
 
 
 ### STATUS Profile
@@ -30,7 +30,7 @@ Addressable LED strips can be used to show information from the flight controlle
 
 ### STATUS_ALT Profile
 
-The STATUS_ALT profile works just like the STATUS_PROFILE, except for LEDs with the Fade overlay. LEDs with the Fade overlay will use their alternate color when the STATUS_ALT profile is active.
+The STATUS_ALT profile works just like the STATUS profile, except for LEDs with the Fade overlay. LEDs with the Fade overlay will use their alternate color when the STATUS_ALT profile is active.
 
 ### RACE Profile
 
@@ -56,7 +56,6 @@ The BEACON profile is used to find a lost heli, it flashes all LEDs white once p
     - For the adjustment select *LED Profile Selection* and set the range to 1-4.
     - Save
 2. Configure the AUX channel on your radio.  When this channel is changed the selected LED strip profile will change between RACE, BEACON, STATUS and STATUS_ALT. You should see the LED function change as you do this.
-
 
 ###### OPTION 3: Use the CLI to select the LED strip profile (i.e. not selecting the LED strip profile with your radio)
 1. Open the CLI.
