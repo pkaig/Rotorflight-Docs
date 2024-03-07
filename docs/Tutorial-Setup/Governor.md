@@ -7,7 +7,7 @@ sidebar_position: 106
 The purpose of the governor is to maintain a constant headspeed regardless of flight inputs, flying conditions, battery voltage, external disturbances, etc. In Rotorflight, the governor also provides other motor related features, like slow spoolup, autorotation control, battery voltage drop compensation, and fault detection and recovery.
 :::
 
-# Governor Feature
+# Governor Features
 The governor can be turned ON/OFF with the dorp down menu within **Governor Features** from the **Motors** Tab.
 
 ![Governor](./img/governor-features-off.png)
@@ -15,7 +15,7 @@ The governor can be turned ON/OFF with the dorp down menu within **Governor Feat
 
 If the feature is disabled, all governor functions are disabled, and the throttle output is taken directly from the receiver throttle channel.
 
-# Governor Modes
+## Governor Mode
 
 The governor has multiple operating modes, each using a slightly different method for the throttle control in the PID loop. Select a mode from one of the values below.
 
@@ -41,11 +41,15 @@ Like STANDARD, but with collective/cyclic precompensation. This is similar to go
 
 Like MODE1, but with battery voltage compensation. The PID loop does not need to react to battery voltage fluctuations, as it is taken into account outside the PID loop. This is usually the best choice. Can be used only if the battery voltage is connected to the FC.
 
-# Governor Basic Settings
+## Governor Basic Settings
 
 ![Governor](./img/governor-features.png)
 
 In order to use the governor you must first configure the ESC/Motor features. This defines the motor telemetry (for RPM feedback) and gear ratios for your helicopter which lets the flight controller know how fast the rotor is spinning.
+
+### Handover throttle
+
+The throttle level above which the governor is activated. Below this level the input throttle is passed to the ESC, above this level the governor is enabled and the input throttle is used for calculating the target headspeed. The motor must be able to start below this throttle level.
 
 ### Startup time
 
@@ -99,11 +103,15 @@ The inputs to the governor must be clean from excess noise. The RPM input is fil
 
 The inputs to the governor must be clean from excess noise. The Battery voltage input is filtered with a BIQUAD filter, with the frequency cutoffs set by these variables.
 
-### TTA Filter Cutoff [Hz]
+### TTA Bandwidth [Hz]
 
-Filter to smooth the Yaw signal before it is used for the TTA function (Torque Tail Assist)
+Cutoff for the TTA (Torque Tail Assist) lowpass filter.
 
-# Governor Profiles Settings
+### Precomp Bandwidth [Hz]
+
+Cutoff for the cyclic/collective precompensation lowpass filter.
+
+## Governor Profiles Settings
 
 These settings are set from the Profiles Tab. If desired, individual Profiles can be configured via the Adjustments Tab. This enables individual flight modes to have separate tuning and configuration set for each flight mode. (similar to 'Bank Switching').
 
@@ -149,7 +157,7 @@ Cyclic precompensation weight. Increasing the cyclic increases load on the rotor
 
 Collective precompensation weight. Increasing the collective increases load on the rotor and causes it to slow down. This setting determines how much collective is mixed into the governor feedfoward. This helps the governor maintain the headspeed proactively (i.e. increase power to the motor so it does not slow down). Usually 20..100
 
-# Governor throttle input ranges
+## Governor throttle input ranges
 
 With the governor feature activated, the transmitter throttle channel is controlling the governor, rather than the ESC directly.
 
@@ -189,7 +197,7 @@ If you want to perform autorotation with the main motor running, use this range!
 
 In this range, the governor is in active state, and the requested rpm is 20%..100% of the gov_headspeed.
 
-# Governor State
+## Governor State
 
 The governor internal state can be observed in the blackbox log. It is a good indication on what the governor is trying to do.
 

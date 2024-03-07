@@ -10,11 +10,17 @@ The *Motors* tab is used to configure the ESC communications protocols **( Motor
 This section is about Rotorflight communicating with the ESC. The settings for your motor (such as timing, braking and motor update frequency) can only be set in your ESC, and not in Rotorflight.
 :::
 
+## ESC/Motor Features
+
 ![Motor and ESC](./img/motor-main.png)
+
+### ESC Throttle Protocol
 
 Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually this would be *PWM* or *DSHOT300*.
 
 ![Motor and ESC](./img/motor-protocol.png)
+
+### ESC Telemetry Protocol
 
 Set the ESC [*Telemetry*](ESC-Telemetry.md) protocol if your esc supports it.
 
@@ -33,6 +39,8 @@ Most RC helicopter ESCs manufacturers (e.g. Hobbywing, YGE, Scorpion ,or Castle)
 
 ![Motor and ESC](./img/motor-pwm.png)
 
+**RPM Sensor:** Activate the RPM Sensor input for motor RPM, you can connect an RPM signal from the ESC, or from an external RPM sensor device.
+
 **ESC Update Frequency:** the PWM update frequency for your ESC. Usually between 50-400Hz.
 
 **Disarm Throttle PWM value:** the value that is sent to the ESC when the craft is disarmed. It should stop the motors. Usually 1000µs.
@@ -50,7 +58,7 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - BLHeli_32: set *Non Damped Mode* to *On* on the main motor ESC
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
-#### Bidirectional DSHOT
+#### DShot RPM Telemetry 
 This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](Rpm-Measurement.md#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
@@ -81,6 +89,8 @@ Determine the number of magnetic poles for each motor. Count the number of magne
 ![Motor and ESC](./img/motor-pole-count-1.png)
 
 ![Motor and ESC](./img/motor-pole-count-2.png)
+
+## [Governor Features](./Governor.md/#governor-modes)
 
 ## Motor Override
 Motor Override functionality is provided to test the operation of each motor directly. This functionality will make the motors spool up. Do this WITHOUT the main or tail rotors fitted!
