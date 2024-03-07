@@ -4,18 +4,18 @@ sidebar_position: 180
 
 # LED Strip
 
-Rotorflight supports the use of addressable LED strips.  Addressable LED strips allow each LED in the strip to be programmed with a unique and independent color. This is far more advanced than the normal RGB strips which require that all the LEDs in the strip show the same color.
+Rotorflight supports the use of addressable LEDs. Addressable LEDs allow each LED in the strip to be programmed with a unique and independent color. Addressable LEDs are available as individual LEDs (usually 5mm or 8mm) or LED strips. 
 
 ## LED Strip Profiles
 
-The LED strip feature supports 4 LED strip profiles: RACE, BEACON, STATUS and STATUS_ALT. The selected profile can be changed from the Configurator, CLI, OSD LED strip menu or from an adjustment channel, i.e. switch on your radio.  Take note that the adjustment channel from your radio overrides all other LED strip profile selection options.
+The LED strip feature supports 4 LED Strip profiles: RACE, BEACON, STATUS and STATUS_ALT. The selected profile can be changed from the Configurator, CLI, OSD LED strip menu or from an adjustment channel, i.e. switch on your radio.  Take note that the adjustment channel from your radio overrides all other LED strip profile selection options.
 
 
 ### STATUS Profile
 
-The STATUS profile is used to display all the information mentioned below, i.e. warning indications, Larson scanner etc, positional lights, ACL.
+The STATUS profile is used to display all the information mentioned below, i.e. warning indications, Larson scanner, positional lights, ACL, etc.
 
-Addressable LED strips can be used to show information from the flight controller system and supports:
+Addressable LEDs can be used to show information from the flight controller system and supports:
 
 * Up to 32 LEDs.
 * User definable blink patterns.
@@ -34,7 +34,7 @@ The STATUS_ALT profile works just like the STATUS profile, except for LEDs with 
 
 ### RACE Profile
 
-The RACE profile is used to set ALL strip LEDs to the selected color for racing, i.e. to identify quads based on LED color.  The LED color is fixed and no other information is displayed.
+The RACE profile is used to set ALL LEDs to the selected color for racing, i.e. to identify helis based on LED color.  The LED color is fixed and no other information is displayed.
 
 
 ### BEACON Profile
@@ -143,7 +143,7 @@ set ledstrip_inverted_format = 9
 
 WS2812 LED strips generally require a single data line, 5V and GND.
 
-WS2812 LEDs on full brightness can consume quite a bit of current.  It is recommended to verify the current draw and ensure your supply can cope with the load. On a multirotor that uses multiple BEC ESC's you can try use a different BEC to the one the FC uses.  e.g. ESC1/BEC1 -> FC, ESC2/BEC2 -> LED strip.   It's also possible to power one half of the strip from one BEC and the other half from another BEC.  Just ensure that the GROUND is the same for all BEC outputs and LEDs.
+WS2812 LEDs on full brightness can consume quite a bit of current.  It is recommended to verify the current draw and ensure your supply can cope with the load. It's also possible to power one half of the LEDs from one BEC and the other half from another BEC.  Just ensure that the GROUND is the same for all BEC outputs and LEDs.
 
 LED Strip pin should be:
 - on a separate timer
@@ -166,7 +166,7 @@ First enable the *LED_STRIP* feature in the *Configuration* tab. The *LED Strip*
 
 Now go to the *LED Strip* tab and configure the LEDs. First setup how the LEDs are laid out so that you can visualize it later as you configure and so the flight controller knows how many LEDs there are available.
 
-There is a step by step guide on how to use the Configurator to [configure the Led Strip feature](http://blog.oscarliang.net/setup-rgb-led-cleanflight/) which was published early 2015 by Oscar Liang.
+There is a step by step guide on how to use the Configurator to [configure the Led Strip feature](https://oscarliang.com/setup-led-betaflight/) which was published in 2018 by Oscar Liang.
 
 ### CLI
 Enable the `LED_STRIP` feature via the cli:
@@ -252,6 +252,8 @@ It is best to erase all LEDs that you do not have connected.
 
 ### Modes
 
+Note: though this section does apply to Rotorflight, it mainly stems form Betaflight and is thus very quad oriented.
+
 #### Warning
 
 This mode simply uses the LEDs to flash when warnings occur.
@@ -315,7 +317,7 @@ This overlay makes the LED flicker, a bit like a candle. Set the flicker rate us
 
 #### Fade to alt color
 
-A LED with this overlay will fade to the alternate color in the profile STATUS_ALT. Specify Black as the alternate color to turn LEDs of (e.g. for switching off landing lights). You can set the fade rate with `ledstrip_fade_rate`.
+A LED with this overlay will fade to the alternate color in the profile STATUS_ALT. Specify Black as the alternate color to turn LEDs off (e.g. for switching off landing lights). You can set the fade rate with `ledstrip_fade_rate`.
 
 #### Larson Scanner (Cylon Effect)
 
@@ -707,14 +709,3 @@ led 27 2,9:S:FWT:0
 ```
 
 All LEDs should face outwards from the chassis in this configuration.
-
-Note:
-This configuration is specifically designed for the [Alien Spider AQ50D PRO 250mm frame](http://www.goodluckbuy.com/alien-spider-aq50d-pro-250mm-mini-quadcopter-carbon-fiber-micro-multicopter-frame.html).
-
-
-## Troubleshooting
-
-On initial power up the LEDs on the strip will be set to WHITE.  This means you can attach a current meter to verify the current draw if your measurement equipment is fast enough.  Most 5050 LEDs will draw 0.3 Watts a piece.
-This also means that you can make sure that each R,G and B LED in each LED module on the strip is also functioning. After a short delay the LEDs will show the unarmed color sequence and or low-battery warning sequence.
-
-Also check that the feature `LED_STRIP` was correctly enabled and that it does not conflict with other features, as above.
