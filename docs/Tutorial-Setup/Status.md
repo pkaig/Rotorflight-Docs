@@ -19,7 +19,7 @@ Shows some basic data from the flight controller and model. This includes:
 
 ![Status Tab](./img/status-arming.png)
 
-* **Enable Arming:** Use thr switch to enable arming while the configurator is connected.
+* **Enable Arming:** Use this switch to enable arming while the configurator is connected.
 
 :::caution
 With the arming enabled, the motor can spoolup when the throttle is released.
