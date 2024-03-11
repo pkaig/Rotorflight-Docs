@@ -24,13 +24,13 @@ For example, here are the ratios for my Gaui X3.
 Direct drive motors have a ratio of 1:1.
 :::
 
-In order to use RPM filters, enable the feature *RPM_FILTER* in the *Configuration* tab.
+In order to use RPM filters, proceed to the *Gyro* tab, and enable the filters as shown below.
 
-![RPM feature](./img/rpm-feature.png)
+These settings should be ok for a first flight.
 
-Next, enable the *Gyro RPM Notch Filters* in the *Gyro* tab. These settings should be ok for a first flight.
+![RPM Filters](./img/rpm-filters-set-1.png)
 
-![RPM enable](./img/rpm-enable-filters.png)
+![RPM Filters](./img/rpm-filters-set-2.png)
 
 Filters introduce latency. More filters mean more latency. So try to keep the number of filters low.
 
