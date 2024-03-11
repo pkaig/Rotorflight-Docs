@@ -53,7 +53,7 @@ timer A09 AF1 # Freq - pin A09: TIM1 CH2 (AF1)
 dma pin A09 0 # Freq - 0: DMA2 Stream 6 Channel 0
 ```
 
-Then the frequency sensor can be turned ON with the feature flag located on the ***Configuration*** tab.
+Then the frequency sensor can be turned ON with the feature flag located on the [***Motors***](./Motor-and-Esc.md#pwm-protocol) tab.
 
 ![frequency_2](./img/frequency_2.png)
 
@@ -72,4 +72,4 @@ Bidirectional DSHOT is fully supported from firmware version 32.7.0 onward. ESCs
 BLHeli_S ESCs do not support Bidirectional DSHOT. In order to access this functionality with a BLheli_S ESC the firmware must be upgraded to Bluejay. Bluejay is an open source firmware for BLheli_S ESCs which supports Bidirectional DSHOT, see [BlueJay](https://github.com/mathiasvr/bluejay). This firmware has been used successfully for several Rotorflight builds. Bluejay is capable of flashing individual settings to each ESC (tail and main) which is important when using an all in one (AIO) board. Bluejay v0.15 and later also supports disabling *damped light* (regenerative breaking), a must if your helicopter doesn't have a one way bearing. For example, a K110 will yaw/spin rapidly on throttle hold if *damped light* is enabled. Please follow the [Blheli_S to Bluejay](../Tutorial-Walkthroughs/Blheli_s-to-Bluejay.md) walkthrough
 
 ## More information
-More details on Bidirectional DSHOT and RPM filtering at [betaflight](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter).
+More details on Bidirectional DSHOT and RPM filtering at [Betaflight](https://betaflight.com/docs/wiki/guides/current/DSHOT-RPM-Filtering).
