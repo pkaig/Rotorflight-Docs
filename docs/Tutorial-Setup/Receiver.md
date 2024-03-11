@@ -55,7 +55,7 @@ Select the corresponding channels order based on the selected receiver type.
 * For ELRS receivers, set the channels in your radio as per the below order.
 
 :::note
-For **CRSF/ELRS** always set *ARM* switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
+For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
 :::
 
 ![Receiver Tab](./img/receiver-order-elrs.png)
