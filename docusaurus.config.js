@@ -153,11 +153,11 @@ const config = {
               },
               {
                 label: 'Tuning',
-                to: '/docs/Tuning/Tuning-description',
+                to: '/docs/Tuning/First-Flight-Filter-Tuning',
               },
               {
-                label: 'Developers',
-                to: '/docs/Developers/intro',
+                label: 'Contributing',
+                to: '/docs/Contributing/intro',
               },
             ],
           },
