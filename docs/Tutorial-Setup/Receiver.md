@@ -85,63 +85,15 @@ You should end up with something similar to this:
 
 ## Telemetry Sensors
 
-Use the below switches to enable/disable the telemetry sensors from the telemetry stream sent to your radio.
+Use the below switch to enable/disable the telemetry stream sent to your radio.
+
+![Receiver Tab](./img/receiver-telem-switch.png)
+
+Use the below switches to enable/disable individual telemetry sensors.
 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 
-
-### ELRS Telemetry (reuse)
-**Why don't I have RPM telemetry to my radio??**  
-The Crossfire Protocol (CRSF) used by ELRS does not include the full range of sensors that can be useful for rotorflight. Crossfire was specifically designed for Drones, which generally have different parameters that are useful to the pilot.
-
-As a temporary fix for this issue a series of telemetry items that are currently transferred to the transmitter can be ***re-used*** to transfer information we would rather see. There are four messages that can be chosen, each with a variety of telemetry sensor options.
-
-1. Flight mode 
-    `set crsf_flight_mode_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, GOVERNOR, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE, ADJFUNC, GOV_ADJFUNC
-2. Pitch attitude 
-    `set crsf_att_pitch_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
-3. Roll attitude
-    `set crsf_att_roll_reuse = [OPTION]`   
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE 
-4. Yaw position
-    `set crsf_att_yaw_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD, BEC_VOLTAGE, BUS_VOLTAGE, MCU_VOLTAGE
-5. GPS Heading
-    `set crsf_gps_heading_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
-6. GPS Ground Speed
-    `set crsf_gps_ground_speed_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
-7. GPS Altitude
-    `set crsf_gps_altitude_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, HEADSPEED, THROTTLE, ESC_TEMP, MCU_TEMP, MCU_LOAD, SYS_LOAD, RT_LOAD
-8. GPS Sats
-    `set crsf_gps_sats_reuse = [OPTION]`  
-    [Option] Allowed values: NONE, ESC_TEMP, MCU_TEMP, PROFILE, RATE_PROFILE, LED_PROFILE
-
-
-To use this feature:
-* Enable Telemetry. If you have not done so already enable the telemetry toggle on the receiver tab.
-
-![Receiver Tab](./img/receiver-telem-enable.png)
-
-* Enable each of the telemetry messages that you wish to 'reuse'.
-
-![Receiver Tab](./img/receiver-telem-reuse.png)
-
-* In the CLI enter the command and option you wish to use. Enter and save,
-
-![Receiver Tab](./img/receiver-telem-command.png)
-
-* The transmitter will now show the headspeed in the **FM** telemetry. To add the units click on the sensor and "Edit".
-
-![Receiver Tab](./img/receiver-telem-units.png)  
-
-![Receiver Tab](./img/receiver-telem-FM.png)
-
 :::tip
-Follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
+For ELRS receivers, follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
 :::
 
