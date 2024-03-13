@@ -6,13 +6,16 @@ sidebar_position: 9
 
 ## Channels Arrangement
 
-This walkthrough will guide through to create a basic radio model for rotorflight controller.
+This walkthrough will guide you through to create a basic radio model for rotorflight controller.
 
 This is a guide for EdgeTx/OpenTx radios, it will work with both ELRS and F.port receivers.
 
 The Channel order is AECR1T23 which required by ELRS receiver, but it will also works for F.Port, SBUS, and others.
 
+:::note
 The Rotorflight basic operation will require 6 channels, but this is for basic operation only, additional channels will be required for other options, such as profile switching, Rescue, etc.
+Normally you will need a total of 8 channels if you want to have options like *Profile switching* and *Rescue*.
+:::
 
 This following radio model uses 12 channels to get the best of Rotorflight options, the user can add or delete channels depending on his specific application, and required features.
 
