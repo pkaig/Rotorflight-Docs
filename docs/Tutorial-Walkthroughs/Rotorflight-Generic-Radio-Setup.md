@@ -38,12 +38,20 @@ These channels are configured as follows:
 | CH12 | AUX7 - Adjustment Value Channel |
 
 :::note
-The ELRS module needs to be in [**Wide Mode**](https://www.expresslrs.org/software/switch-config/) so that we can get four full resolution channels, one 2-position channel, and seven 128-position channels.
+Use the below recommended setting for the ELRS Tx module.
+
+* [Baud Rate](https://www.expresslrs.org/quick-start/transmitters/tx-prep/#radio-settings): *5.25M*
+* [Packet Rate](https://www.expresslrs.org/software/switch-config/#channel-update-rate-versus-packet-rate): *500Hz*
+* Telemetry Ratio: *1:32*
+* [Switch Mode](https://www.expresslrs.org/software/switch-config/#summary-of-switch-configuration-modes): *Wide*
+* [Tx Power](https://www.expresslrs.org/software/dynamic-transmit-power/#description): *250mW Dynamic*
+
+Consult [ELRS Website](https://www.expresslrs.org/software/switch-config/) for more info.
 :::
 
 ## Radio Setup
 
-This [Generic Rotorflight Radio Model](./files/Generic_RF.yml) file contain the all the options listed above.
+This [Generic Rotorflight Radio Model](./files/Generic_RF.yml) Yaml file contain all the options listed above.
 
 ### Radio Inputs Page Setup
 
