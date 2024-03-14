@@ -40,11 +40,11 @@ These channels are configured as follows:
 :::note
 Use the below recommended setting for the ELRS Tx module.
 
-* [Baud Rate](https://www.expresslrs.org/quick-start/transmitters/tx-prep/#radio-settings): *5.25M*
+* [Baud Rate](https://www.expresslrs.org/quick-start/transmitters/tx-prep/#radio-settings): *921k*
 * [Packet Rate](https://www.expresslrs.org/software/switch-config/#channel-update-rate-versus-packet-rate): *500Hz*
 * Telemetry Ratio: *1:32*
 * [Switch Mode](https://www.expresslrs.org/software/switch-config/#summary-of-switch-configuration-modes): *Wide*
-* [Tx Power](https://www.expresslrs.org/software/dynamic-transmit-power/#description): *250mW Dynamic*
+* [Tx Max Power](https://www.expresslrs.org/software/dynamic-transmit-power/#description): *250mW Dynamic*
 
 Consult [ELRS Website](https://www.expresslrs.org/software/switch-config/) for more info.
 :::
