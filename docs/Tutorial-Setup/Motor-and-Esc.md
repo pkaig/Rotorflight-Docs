@@ -35,8 +35,6 @@ With this info, the FC can calculate the:
 
 - Main motor RPM = eRPM / (motor pole count / 2)
 - Main rotor RPM = Main motor RPM / ( main gear tooth count / main motor pinion tooth count )
-
-If you don't use those features, you don't have to specify the gear ratios and motor pole counts.
 :::
 
 ### PWM Protocol
