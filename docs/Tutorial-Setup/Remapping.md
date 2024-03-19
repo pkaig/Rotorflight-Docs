@@ -30,7 +30,7 @@ Before you start remapping your drone FC to be used with Rotorflight, keep in mi
 ## Custom defaults remapping spreadsheet
 Spreadsheet for remapping Betaflight targets for use with Rotorflight. The spreadsheet re-allocates features for motors and servos and configures associated timers and dma.
 
-Please 'make a copy'. 
+* Please 'make a copy'. 
 
 [Rotorflight remapping spreadsheet v1.4.1](https://docs.google.com/spreadsheets/d/1m-DhCcTTKnMhXicMjBQc5EqCSAowDk0TqXpZUyZq--A/edit?usp=drivesdk)
 
