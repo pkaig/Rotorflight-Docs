@@ -4,8 +4,6 @@ sidebar_position: 9
 
 # Rotorflight Generic Radio Setup
 
-## Channels Arrangement
-
 This walkthrough will guide you through to create a basic radio model for rotorflight controller.
 
 This is a guide for EdgeTx/OpenTx radios, it will work with both ELRS and F.port receivers.
@@ -17,6 +15,8 @@ The Rotorflight basic operation will require a minimum of 6 channels, but this i
 
 Normally you will need a total of 8 channels if you want to have options like *Profile switching* and *Rescue*.
 :::
+
+## Channels Arrangement
 
 This following radio model uses 12 channels to get the best of Rotorflight options, the user can add or delete channels depending on his specific application, and required features.
 
