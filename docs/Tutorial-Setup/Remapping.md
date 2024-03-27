@@ -34,6 +34,7 @@ Spreadsheet for remapping Betaflight targets for use with Rotorflight. The sprea
 
 [Rotorflight remapping spreadsheet v1.4.1](https://docs.google.com/spreadsheets/d/1m-DhCcTTKnMhXicMjBQc5EqCSAowDk0TqXpZUyZq--A/edit?usp=drivesdk)
 
+[Rotorflight remapping spreadsheet v2.0](https://docs.google.com/spreadsheets/d/1m-DhCcTTKnMhXicMjBQc5EqCSAowDk0TqXpZUyZq--A/edit?usp=drivesdk)
 
 ## Rotorflight Hardware config and remapping video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TNAeDaAjzfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
