@@ -65,7 +65,7 @@ The servo override slider scale is in degrees
 
 ### Center
 
-In general this will be 1500us for cyclic servos and 760us
+In general this will be 1520us for cyclic servos and 760us for tail servos.
 
 ### Min and Max
 
@@ -79,7 +79,11 @@ Scales the negative and positive direction of the servo to match the commanded a
 
 This is the servo frequency. This will be specified by the manufacturer. A large proportion of servos suitable for cyclic operate at 333Hz.  
 
-For Rotorflight 2 it is recommended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)). This means that tail servos can be set to a different frequency (i.e. faster)  
+:::note
+For Rotorflight 2 it is recommended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)).
+
+This means that tail servos can be set to a different frequency (i.e. faster).
+:::
 
 ### Speed
 
@@ -88,11 +92,11 @@ Servo Speed Equalization. The aim of this parameter is to remove the collective 
 The bobbing happens because the elevator servo has to move double distance vs. the aileron servos, when elevator position is changed.
 If the change is faster than the servos can go, the aileron servos will reach the target sooner than the elevator servo, causing the swash to jump slightly in the process.
 
-To tune this value increase the speed value (it's actually ms/60deg, like in the datasheet) until the bobbing is not visible any more. It should be always ok to use the value from the datasheet if unsure.
+To tune this value increase the speed value (it's actually ms/60deg, like in the servo datasheet) until the bobbing is not visible any more. It should be always ok to use the value from the servo datasheet if unsure.
 
 ### Reverse
 
-Toggle for forward or reverse servo direction
+Toggle for forward or reverse servo direction.
 
 ### Geo Cor
 
@@ -105,28 +109,34 @@ In order to use this feature it is important to set the servo arm at 90deg (with
 ### Step 1
 
 * DO NOT CONNECT THE SERVOS YET!
-* Confirm and set the servo [center](#center) to your servo manufacturers recommendation. For Cyclic this will usually be 1500 or 1520us, and for tail it would be 750 or 760us.
+* Confirm and set the servo [center](#center) to your servo manufacturers recommendation. For Cyclic this will usually be 1520us, and for Tail it would be 760us.
 * If a servo's center is 760us, make sure to change the min/max and pos/neg scales to 250 instead of 500.
-* Confirm and set the servo [rate](#rate) as specified by your manufacturer. For many digital cyclic servos this is 333Hz and for most tail servos this is 560Hz
+* Confirm and set the servo [rate](#rate) as specified by your manufacturer. For many digital cyclic servos this is 333Hz and for most tail servos this is 560Hz.
 
 ### Step 2
 
-* Connect the servos
-* Set Servo override to on
+* Connect the servos.
+* Set Servo override to `ON`.
 * Fit servo arms to as close to 90 degrees as possible.
-* Slide Servo 1 override in the positive direction (i.e. right)
-* confirm the servo arm travels up towards the swashplate. If not toggle the [servo reverse](#reverse).
+* Slide Servo 1 override in the positive direction (i.e. right).
+* Confirm the servo arm travels up towards the swashplate. If not toggle the [servo reverse](#reverse).
 
 Repeat with remaining cyclic servos.
 
 ### Step 3
 
-* Set each of the override sliders to 0 degrees
-* Set [center](#center) to level the servo arm. One quick way is to slide the override bar and copy the output value from the blue bar into the [center](#center) and press save. Make sure to reset the override to see the correct effect.
+* Set each of the override sliders to 0 degrees.
+* Adjust [center](#center) to level the servo arm (0° or 90° dependind on servo installation orientation). One quick way is to slide the override bar and copy the output value from the blue bar into the [center](#center) and press save. Make sure to reset the override to see the correct effect.
 
 Repeat with remaining cyclic servos.
 
-### Step 4 (Usually Optional)
+### Step 4 (Usually Not Required)
+
+With the servos installed in the helicopter, adjust [Min/Max](#min-and-max)  so that the arm + ball won't hit anything (servo override @ 80 / -80).
+
+Repeat with remaining cyclic/tail servos.
+
+### Step 5 (Usually Optional)
 
 Calibrate the range. Not all servos move by the same angle for each change in command. This step calibrates this range so that the servo's move by the same amount. This means that the Geometric Correction can be used.
 * Set the override to a positive value (e.g. 30deg)
