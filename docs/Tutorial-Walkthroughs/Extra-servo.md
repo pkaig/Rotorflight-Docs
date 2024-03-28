@@ -23,4 +23,4 @@ Sometimes we may wish to add an extra servo to our helicopter to be controlled b
 
 **Step 4:** Open the configurator and go to the CLI page. Paste the config from the mixer into the command line and click [ENTER]. Type save and click [ENTER].
 
-![Adding Servo](./img/remapping-servo-CLI.png)
+![Adding Servo](./img/remapping-servo-cli.png)
