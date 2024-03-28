@@ -111,11 +111,15 @@ Set the mixer override at the bottom of the pages to **ON**. This will open the 
 * Measure the blade pitch  
 * Increase or decrease the [Cyclic Calibration %](#cyclic-and-collective-calibration)
 
-### Variable pitch Yaw Calibration 
+### Variable Pitch Yaw Calibration
 * Set YAW override to 0 deg.
-* In servo page, set the center so that the yaw servo arm is leveled.
-* Adjust linkage to get the tail blades to 2-3 degrees or follow the manual
-* Set the Center trim for tail rotor so that the tail blades are at 0 degrees
-* Set the Override to a value (e.g. 30 deg)  
-* Measure the tail blade angle (fold the tail blades and compare the angle to a 60 deg ruler)
-* Adjust the [Yaw Calibration %](#tail-rotor-settings) so that the tail blade angle matches the commanded angle.  
+* Adjust the push rod length so that the rear tail L arm is 90°.
+* If this does not give 0° blade pitch, adjust Center trim until you have 0° blade pitch.
+* Set mixer yaw override to 30deg CW/CCW, adjust [Yaw Calibration %](#tail-rotor-settings) until you have around 30deg both ways.
+* Set mixer yaw override to 60deg CW/CCW, adjust CW / CCW limits to the maximum number that does not causing binding.
+
+:::note
+* The calibration and CW / CCW limits vs. blade pitch is never perfect, because of the geometry assymmetry. It does not matter.
+* The reason for doing the calibration is to make the PID defaults better. Without the calibration, all defaults in PID Profile are probably wrong.
+* The Centre trim is mostly needed for making the CW/CCW limit numbers to match the blade angles. It also helps the feedforwards to work correctly.
+:::
