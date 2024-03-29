@@ -92,7 +92,7 @@ Servo Speed Equalization. The aim of this parameter is to remove the collective 
 The bobbing happens because the elevator servo has to move double distance vs. the aileron servos, when elevator position is changed.
 If the change is faster than the servos can go, the aileron servos will reach the target sooner than the elevator servo, causing the swash to jump slightly in the process.
 
-To tune this value increase the speed value (it's actually ms/60deg, like in the servo datasheet) until the bobbing is not visible any more. It should be always ok to use the value from the servo datasheet if unsure.
+To tune this value increase the speed value (it's actually ms/60°, like in the servo datasheet) until the bobbing is not visible any more. It should be always ok to use the value from the servo datasheet if unsure.
 
 ### Reverse
 
@@ -102,7 +102,7 @@ Toggle for forward or reverse servo direction.
 
 Geometry Correction. Servos are rotary, so at high angles this results in smaller swashplate movement for each degree of servo movement. Geometry correction accounts for this and provides better control at high angles (e.g. 3D flight).
 
-In order to use this feature it is important to set the servo arm at 90deg (with servo center) and calibrating the servo scale. 
+In order to use this feature it is important to set the servo arm at 90° (with servo center) and calibrating the servo scale. 
 
 ## Servo Setup and Calibration
 
@@ -110,7 +110,7 @@ In order to use this feature it is important to set the servo arm at 90deg (with
 
 * DO NOT CONNECT THE SERVOS YET!
 * Confirm and set the servo [center](#center) to your servo manufacturers recommendation. For Cyclic this will usually be 1520us, and for Tail it would be 760us.
-* If a servo's center is 760us, make sure to change the min/max and pos/neg scales to 250 instead of 500.
+* If a servo's center is 760us, make sure to change the min/max to -350/350 instead of -700/700, and pos/neg scales to 250 instead of 500.
 * Confirm and set the servo [rate](#rate) as specified by your manufacturer. For many digital cyclic servos this is 333Hz and for most tail servos this is 560Hz.
 
 ### Step 2
@@ -126,20 +126,20 @@ Repeat with remaining cyclic servos.
 ### Step 3
 
 * Set each of the override sliders to 0 degrees.
-* Adjust [center](#center) to level the servo arm (0° or 90° dependind on servo installation orientation). One quick way is to slide the override bar and copy the output value from the blue bar into the [center](#center) and press save. Make sure to reset the override to see the correct effect.
+* Adjust [center](#center) to level the servo arm (0° or 90° depending on servo installation orientation). One quick way is to slide the override bar and copy the output value from the blue bar into the [center](#center) and press save. Make sure to reset the override to see the correct effect.
 
 Repeat with remaining cyclic servos.
 
 ### Step 4 (Usually Not Required)
 
-With the servos installed in the helicopter, adjust [Min/Max](#min-and-max)  so that the arm + ball won't hit anything (servo override @ 80 / -80).
+With the servos installed in the helicopter, adjust [Min/Max](#min-and-max)  so that the arm & ball won't hit anything in the heli frame (servo override @ 80° / -80°).
 
 Repeat with remaining cyclic/tail servos.
 
 ### Step 5 (Usually Optional)
 
 Calibrate the range. Not all servos move by the same angle for each change in command. This step calibrates this range so that the servo's move by the same amount. This means that the Geometric Correction can be used.
-* Set the override to a positive value (e.g. 30deg)
+* Set the override to a positive value (e.g. 30°)
 * measure the current servo arm angle and increase or decrease the [Scale Pos](#scale-neg-and-scale-pos) until the servo arm angle matches the override angle.
 
 ![Servo Tab](./img/servo-5.png)
