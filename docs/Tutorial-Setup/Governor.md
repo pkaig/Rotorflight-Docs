@@ -183,7 +183,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor stopped, use this range!
 :::
 
-### 10% < THROTTLE < 20%
+### 10% < THROTTLE < Handover throttle%
 
 In this range, the governor is in idle or autorotation state, and the output is in 0% - 10%, increasing linearly through the range.
 
@@ -193,7 +193,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor running, use this range!
 :::
 
-### 20% < THROTTLE < 100%
+### Handover throttle% < THROTTLE < 100%
 
 In this range, the governor is in active state, and the requested rpm is 20%..100% of the gov_headspeed.
 
