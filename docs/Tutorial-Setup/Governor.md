@@ -195,7 +195,7 @@ If you want to perform autorotation with the main motor running, use this range!
 
 ### Handover throttle% < THROTTLE < 100%
 
-In this range, the governor is in active state, and the requested rpm is 20%..100% of the gov_headspeed.
+In this range, the governor is in active state, and the requested rpm is *Handover throttle%..100%* of the gov_headspeed.
 
 ## Governor State
 
