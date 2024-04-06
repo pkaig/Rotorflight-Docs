@@ -163,7 +163,7 @@ With the governor feature activated, the transmitter throttle channel is control
 
 Depending in which range the throttle value falls into, the governor will function differently.
 
-### THROTTLE < 0%
+### THROTTLE < *0%*
 
 This throttle value indicates throttle hold (throttle cut) condition. It's guaranteed that all motors are stopped immediately. The throttle output from the governor is guaranteed to be zero.
 
@@ -173,7 +173,7 @@ Make sure your transmitter is sending a value lower than 0% when throttle hold i
 Throttle hold SHOULD NOT be used for autorotation.
 :::
 
-### 0% < THROTTLE < 10%
+### *0%* < THROTTLE < *10%*
 
 In this range, the governor is in idle or autorotation state, and the output is zero - the main motor is stopped.
 
@@ -183,7 +183,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor stopped, use this range!
 :::
 
-### 10% < THROTTLE < Handover throttle%
+### *10%* < THROTTLE < *Handover throttle%*
 
 In this range, the governor is in idle or autorotation state, and the output is in 0% - 10%, increasing linearly through the range.
 
@@ -193,7 +193,7 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor running, use this range!
 :::
 
-### Handover throttle% < THROTTLE < 100%
+### *Handover throttle%* < THROTTLE < *100%*
 
 In this range, the governor is in active state, and the requested rpm is *Handover throttle%..100%* of the gov_headspeed.
 
