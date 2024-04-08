@@ -8,15 +8,15 @@ sidebar_position: 110
 The purpose of ESC telemetry is to provide a method of reading the values provided by the ESC. These are things such as RPM, Temperature, Voltage, Current and mAh consumed. This is accomplished by connecting the ESC telemetry wire to the flight controller with a spare UART. 
 
 ESC Telemetry currently supported are :  
-* BLheli  
-* HOBBYWING Platinum PRO V4, V4.1,& V5
-* HOBBYWING FLYFUN V5 
-* SCORPION
-* KONTRONIK  
-* OMPHOBBY
-* ZTW
-* APD (HV Pro UART telemetry)
-* OpenYGE
+* **BLHELI32**: BLheli and KISS 
+* **HOBBYWING V4**:  Platinum PRO V4, V4.1,& FLYFUN V5
+* **HOBBYWING V5**: Platinum V5 
+* **SCORPION**: Unsc Telem
+* **KONTRONIK**: Kosmik
+* **OMPHOBBY**
+* **ZTW**: Skyhawk
+* **APD**: HV Pro UART telemetry
+* **OpenYGE**
 :::
 
 ### Select Serial Port
