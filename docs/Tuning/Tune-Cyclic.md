@@ -4,7 +4,7 @@ sidebar_position: 30
 
 # Tune Cyclic
 
-Important: the filter has to be tuned properly before any flight tuning. A imporperly tuned filter could result in poor performance or even shorten servo lifespan.
+Important: the filter has to be tuned properly before any flight tuning. An improperly tuned filter could result in poor performance or even shorten servo lifespan.
 
 The best way to start tuning cyclic is to find a preset that are close to your own model. If it is a aggressive tune, it is advised to lower PID gains by around 10-20% of the current value to avoid instability.
 
