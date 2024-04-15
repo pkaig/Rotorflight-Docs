@@ -122,6 +122,11 @@ const config = {
             to: '/docs/Contributing/intro',
           }, { to: '/blog', label: 'Blog', position: 'left' },
           {
+            href: 'https://www.paypal.com/donate/?hosted_button_id=LLP4MT8C8TPVJ',
+            label: 'PayPal',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/rotorflight',
             label: 'GitHub',
             position: 'right',
@@ -171,6 +176,15 @@ const config = {
               {
                 label: 'RC Groups',
                 href: 'https://www.rcgroups.com/forums/showthread.php?4000345-Rotorflight-Flight-Control-%28FBL%29-Software-Official-discussion',
+              },
+            ],
+          },
+          {
+            title: 'Assist us',
+            items: [
+              {
+                label: 'PayPal',
+                href: 'https://www.paypal.com/donate/?hosted_button_id=LLP4MT8C8TPVJ',
               },
             ],
           },
