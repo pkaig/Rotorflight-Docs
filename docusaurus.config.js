@@ -77,7 +77,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'ROTORFLIGHT 2 Release Candidate 1 is now available. See Announcements to download',
+          'ROTORFLIGHT 2 Release Candidate 2 is now available. See Announcements to download',
         backgroundColor: '#FF01D9',
         textColor: '#000000',
         isCloseable: false,
