@@ -4,7 +4,9 @@ sidebar_position: 20
 # Flashing the firmware
 
 ## Install Rotorflight Configurator
-Start by downloading and installing the latest Rotorflight Configurator release. This walk-through uses Windows, but it should also work on Linux or macOS.
+Start by downloading and installing the latest [Rotorflight Configurator release](https://github.com/rotorflight/rotorflight-configurator/releases). 
+
+This walk-through uses Windows, but it should also work on Linux or macOS.
 
 ## Install Drivers
 On Windows, install the **STM USB VCP Drivers** from the links on the Rotorflight Configurator page.
