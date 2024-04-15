@@ -4,6 +4,8 @@ sidebar_position: 130
 
 # RPM Filters
 
+## Introduction
+
 RPM filters clean up the gyro signals by filtering out vibrations that are coming from the rotating parts in a helicopter: the main rotor, tail rotor and motor(s).
 
 The difference between an unfiltered and filtered signal is significant. Here's an example of filtered and unfiltered gyro signals:
@@ -26,6 +28,8 @@ Direct drive motors have a ratio of 1:1.
 
 In order to use RPM filters, proceed to the *Gyro* tab, and enable the filters as shown below.
 
+## Basic RPM Filters Settings
+
 These settings should be ok for a first flight.
 
 ![RPM Filters](./img/rpm-filters-set-1.png)
@@ -44,7 +48,7 @@ The Q factor defines how wide the filter is:
 
 Wider filters are slower than narrow filters, so try to make the filters as small as possible without it being ineffective.
 
-# Filter tuning
+## Filter Tuning
 
 Make a blackbox log of a short flight with constant headspeed. Scroll to the point where the heli has spooled up and is hovering. Mark that point with the `I` key. Scroll near the end and mark that with the `O` key. Now bring up the *Analyzer Display* and enlarge it. It might look like:
 
