@@ -122,7 +122,7 @@ const config = {
             to: '/docs/Contributing/intro',
           }, { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://www.paypal.com/donate/?hosted_button_id=LLP4MT8C8TPVJ',
+            href: 'https://paypal.me/rotorflightfc/',
             label: 'PayPal',
             position: 'right',
           },
@@ -184,7 +184,7 @@ const config = {
             items: [
               {
                 label: 'PayPal',
-                href: 'https://www.paypal.com/donate/?hosted_button_id=LLP4MT8C8TPVJ',
+                href: 'https://paypal.me/rotorflightfc/',
               },
             ],
           },
