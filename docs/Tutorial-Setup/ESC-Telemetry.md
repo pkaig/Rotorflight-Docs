@@ -12,11 +12,11 @@ ESC Telemetry currently supported are :
 * **HOBBYWING V4**:  Platinum PRO V4, V4.1,& FLYFUN V5
 * **HOBBYWING V5**: Platinum V5 
 * **SCORPION**: Unsc Telem
-* **KONTRONIK**: Kosmik
+* **KONTRONIK**: Kosmik & Kolibri
 * **OMPHOBBY**
 * **ZTW**: Skyhawk
 * **APD**: HV Pro UART telemetry
-* **OpenYGE**
+* **YGE**: OpenYGE V1.03547 or above
 :::
 
 ### Select Serial Port
