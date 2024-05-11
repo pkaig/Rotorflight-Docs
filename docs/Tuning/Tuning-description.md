@@ -28,7 +28,7 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 2. Increase Proportional (P) on each axis individually, until it wobbles, then back off a bit.
 3. Increase Integral (I) on each axis individually, until it wobbles, then back off a bit.
  
-4. Set Feedforward so that you get good response and I remains near 0 in full stick flips and rolls (viewed using the blackbox logs). Feedforward can also be tuned by following the desctiption in [Tune Feedforward](Tune-Feedforward.md). 
+4. Set Feedforward so that you get good response and Integral (I) remains near 0 in full stick flips and rolls (viewed using the blackbox logs). Feedforward can also be tuned by following the desctiption in [Tune Feedforward](Tune-Feedforward.md). 
  
 5. If necessary, then tweak P:D ratio to tweak stick response damping to your liking.
 
