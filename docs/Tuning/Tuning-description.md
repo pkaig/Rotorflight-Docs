@@ -15,6 +15,14 @@ These tuning parameters are located on the Profile tab in the [Configurator](../
 Please start by confirming your filters are working correctly before you increase your tuning parameters. If you do not have filters enabled it is particularly important that you do not use Derivative. This can result in hot Motors and Servos. 
 :::
 
+:::note
+What do we mean "wobble"??
+When tuning parameters are too high the helicopter will wobble or shake during some movements. Each time we increase a tuning value we need to test fly and see if the new setting is too high. Test this in the following way:
+* Beginner: Tap the stick and see if it shakes/shudders/wobbles
+* Average: Do some flips with sudden stops, try going fast and tapping the stick, do some Tictocs
+* Advanced: Do crazy high speed high rate stuff that makes the FC sweat and see if it freaks out :stuck_out_tongue_winking_eye:.
+:::
+
 1. Increase Derivative (D) on each axis individually, (roll, pitch, yaw) until it wobbles, then back off a bit. **(remember!! don't do this of your filters are not working)**.  
 
 2. Increase Proportional (P) on each axis individually, until it wobbles, then back off a bit.
