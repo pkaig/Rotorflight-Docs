@@ -8,7 +8,7 @@ sidebar_position: 240
 
 You can adjust a variety of settings using only your transmitter with the [Rotorflight Lua scripts](https://github.com/rotorflight/rotorflight-lua-scripts). They allow you to change things like PIDs, rates, filters, failsafe and governed headspeed on the field. Prerequisites:
 
-* OpenTX 2.3.12, EdgeTX 2.5.0 or newer or Ethos 1.4 or newwer on the transmitter and
+* OpenTX 2.3.12, EdgeTX 2.5.0 or newer or Ethos 1.4 or newer on the transmitter and
 * a FrSky SmartPort or F.Port receiver
 * or a Crossfire v2.11 or newer receiver
 * or an ELRS 2.0.1 or newer receiver.
