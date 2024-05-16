@@ -8,7 +8,7 @@ sidebar_position: 240
 
 You can adjust a variety of settings using only your transmitter with the [Rotorflight Lua scripts](https://github.com/rotorflight/rotorflight-lua-scripts). They allow you to change things like PIDs, rates, filters, failsafe and governed headspeed on the field. Prerequisites:
 
-* OpenTX 2.3.12 or EdgeTX 2.5.0 or newer on the transmitter and
+* OpenTX 2.3.12, EdgeTX 2.5.0 or newer or Ethos 1.4 or newwer on the transmitter and
 * a FrSky SmartPort or F.Port receiver
 * or a Crossfire v2.11 or newer receiver
 * or an ELRS 2.0.1 or newer receiver.
@@ -16,6 +16,7 @@ You can adjust a variety of settings using only your transmitter with the [Rotor
 Examples:
 
 * TX16S with a FrSky X4R using the [FrSkyX2](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/blob/master/Protocols_Details.md#frskyx2---64) protocol.
+* Frsky Ethos Radio (X20, X18, X14 etc) with either SPORT,FPORT receiver or ELRS with an external module.
 * Taranis X9D with a TBS Crossfire TX/RX module.
 * Taranis QX7 and a FrSky R-XSR, using the FrSky D16 protocol (as long as you don't use the ACCST D16 2.1.1 LBT firmware on the R-XSR, because this firmware has telemetry bugs).
 * TX16S with an ELRS 2.0.1 module and receiver.
