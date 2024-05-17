@@ -52,7 +52,7 @@ const FeatureList = [
     Svg: require('@site/static/img/esc-telemetry.svg').default,
     description: (
       <>
-        Read telemetry data from a wide range of ESC's
+        Read telemetry data from a wide range of ESCs
       </>
     ),
   },
