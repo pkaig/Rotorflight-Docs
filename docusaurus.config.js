@@ -78,7 +78,8 @@ const config = {
         id: 'support_us',
         content:
           'ROTORFLIGHT 2 Official Release 2.0.0 is now available. See Announcements to download',
-        backgroundColor: '#FF01D9',
+        backgroundColor: '#007cc7',  
+//        backgroundColor: '#FF01D9',
         textColor: '#000000',
         isCloseable: false,
       },
