@@ -29,9 +29,7 @@ Servo 2 - Left side
 Servo 3 - Right side  
 Servo 4 - Rudder  
 
-![Servo Tab](./img/servo-120deg-x3.png)
-
-![Servo Tab](./img/servo-2.png)
+![Servo Tab](./img/ccpm.svg)
 
 ### Fixed pitch  
 
@@ -41,7 +39,7 @@ Servo 1 - Pitch (inline with the centerline of the helicopter)
 Servo 2 - Side servo  
 Servo 3 - Rudder  
 
-![Servo Tab](./img/servo-90deg-x2.png)
+![Servo Tab](./img/90deg-l.svg)
 
 #### 90deg V   
 
@@ -49,7 +47,7 @@ Servo 1 - Left side
 Servo 2 - Right side  
 Servo 3 - Rudder  
 
-![Servo Tab](./img/servo-45deg-x2.png)
+![Servo Tab](./img/90deg-v.svg)
 
 ## Servo Override
 

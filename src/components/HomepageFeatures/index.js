@@ -4,56 +4,55 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Governor',
+    Svg: require('@site/static/img/governor.svg').default,
+    description: (
+      <>Governor with precompensation
+      </>
+    ),
+},
+{
     title: 'Advanced Filtering',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/advanced-filtering.svg').default,
     description: (
       <>
-         Filtering stuff blah
+        Identify and filter
       </>
     ),
   },
   {
-    title: 'Governor',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Tuning from the Transmitter',
+    Svg: require('@site/static/img/radio-tuning.svg').default,
     description: (
       <>
-        Makes the motor go round and round.
+        Use 'LUA script' or 'adjustments' to tune your helicopter at the field 
       </>
     ),
   },
   {
     title: 'Rescue Mode',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/rescue-Mode.svg').default,
     description: (
       <>
-        Keeps it in the blue bit...
+        Rescue mode to auto level and gain altitude
       </>
     ),
   },
   {
     title: 'Motorised tail support',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/motorised.svg').default,
     description: (
       <>
-        Motorised tail.
+        Motorised tail support with TTA
       </>
     ),
   },
   {
     title: 'ESC Telemetry',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/esc-telemetry.svg').default,
     description: (
       <>
-        The Volts and the Amps
-      </>
-    ),
-  },
-  {
-    title: 'Other cool stuff',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        ..........
+        Read telemetry data from a wide range of ESC's
       </>
     ),
   },
