@@ -16,7 +16,7 @@ The accelerometer is used for self stabilization features, like angle, horizon, 
 
 ## Calibrate Magnetometer
 
-The magnetometer (compass) is used to determine the heading of the flight controller in 3d space. This is useful for more accurate information for GPS rescue. Calibrate it following the instructions
+The magnetometer (compass) is used to determine the heading of the flight controller in 3d space. This is useful for more accurate information for GPS rescue( Not yet implemented ). Calibrate it following the instructions
 
 The magnetometer calibration process is time limited, you only have 30 seconds to do the movements.
 
