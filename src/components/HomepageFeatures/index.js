@@ -31,7 +31,7 @@ const FeatureList = [
   },
   {
     title: 'Rescue Mode',
-    Svg: require('@site/static/img/rescue-mode.svg').default,
+    Svg: require('@site/static/img/rescue-mode1.svg').default,
     description: (
       <>
         Rescue mode to auto level and gain altitude
