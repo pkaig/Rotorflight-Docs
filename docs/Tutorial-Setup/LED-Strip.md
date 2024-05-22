@@ -8,7 +8,7 @@ sidebar_position: 180
 
 ### Introduction
 
-Rotorflight supports up to 32 individually addressable WS2811/2812 RGB LEDs. You can control them with just one data pin, and set the brightness and color of each led individually. LEDs can have different functions, for example display a color, visualize warnings or battery state, or just blink. This Quick Start will show you how to set up a simple LED Strip.
+Rotorflight supports up to 32 individually addressable WS2811/2812 RGB LEDs. You can control them with just one data pin, and set the brightness and color of each led individually. LEDs can have different functions, for example display a color, visualize warnings or battery state, or just blink. This Quick Start will show you how to set up a simple LED strip with some scale lights.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GB6hGU9MKpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
@@ -35,22 +35,24 @@ save
 
 Now go to the *Configuration* tab and enable *LED_STRIP* under *Features*. Press *Save and reboot*.
 
-### The *LED Strip* tab
+### The hardware
 
-A LED strip is ideal for testing. I'll be using one with 3 LEDs connected to Port B on the Nexus. Wiring is simple: just connect 5V, ground and LED_STRIP (formerly known as TX6) to the strip.
+A piece of LED strip is ideal for testing. I'll be using one with 3 LEDs connected to Port B on the Nexus. Wiring is simple: just connect 5V, ground and LED_STRIP (formerly known as TX6) to the strip.
 
 ![Wiring](./img/ledstrip-wiring.jpg)
 
-Now go to the *LED Strip* tab. This tab will only be visible if you have the *LED_STRIP* feature enabled under *Configuration*.
+### The *LED Strip* tab
+
+Now go to the *LED Strip* tab. Note that this tab will only be visible if you have the *LED_STRIP* feature enabled under *Configuration*.
 
 We're going to define:
 - a green navigation light that also functions as a strobe
 - a red ACL light that slowly blinks
 - a white landing light that can be operated from the TX.
 
-Power on the FC and make sure the 5V is working. On the HELI405 you'll need to attach a BEC to get 5V on the UART1 port.
+Connect the Nexus to the Configurator using USB. 5V will now be available on port A, B and C. If you're using many LEDs, consider using an external 5V power supply.
 
-Define the 3 LEDs
+#### Define the 3 LEDs
 - Click on *Wire Ordening Mode*. The 16x16 matrix will become greenish.
 - Select a square in the matrix. A '0' should now be displayed in it.
 - Select *Color* as *Function*
@@ -60,7 +62,11 @@ Define the 3 LEDs
 - Select *Color* as *Function*
 - Press *Save*
 
-To create the green navigation light:
+Your screen might now look like this, although the actual position of the three squares will likely be different:
+
+![LED Profile Adjustments](./img/ledstrip-grid.png)
+
+#### To create the green navigation light
 - Select the square with '0' in it
 - In the color palette, left-click on green. The LED should now light up.
 - If you find the LED too bright, adjust the overal LED brightness under *LED Strip Global Settings*
@@ -68,13 +74,13 @@ To create the green navigation light:
 - In the color palette, right-click on white. Now the LED will shortly flash a white light.
 - Press *Save*
 
-To create the red ACL light:
+#### To create the red ACL light
 - Select the square with '1' in it
 - Select *Blink* and set some check marks next to each other
 - Right-click the red color. The second LED should now flash red
 - Press *Save*
 
-To create the white landing light:
+#### To create the white landing light
 - Select the square with '2' in it
 - Enable the *Fade to alt color* feature
 - Left-click white. The LED should now light up
