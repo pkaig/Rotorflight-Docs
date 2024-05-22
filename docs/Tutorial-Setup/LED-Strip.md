@@ -91,6 +91,10 @@ Your screen might now look like this, although the actual position of the three 
 
 ![LED Profile Adjustments](./img/ledstrip-adjustments.png)
 
+Here's another video showing the techniques used in this Quick Start on a Walkera 4F200LM, for which I used two 3mm and four 5mm LEDs.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/72LsrcEJEK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+
 #### Flywing HELI405: remap SBUS to LED strip
 
 To remap SBUS to LED strip on the Flywing HELI405, enter the following in the CLI:
