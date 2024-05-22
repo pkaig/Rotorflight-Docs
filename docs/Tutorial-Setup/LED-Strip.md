@@ -4,7 +4,106 @@ sidebar_position: 180
 
 # LED Strip
 
-Rotorflight supports the use of addressable LEDs. Addressable LEDs allow each LED to be programmed with a unique and independent color. Addressable LEDs are available as individual LEDs (usually 5mm or 8mm) or LED strips. 
+## Quick Start
+
+### Introduction
+
+Rotorflight supports up to 32 individually addressable WS2811/2812 RGB LEDs. You can control them with just one data pin, and set the brightness and color of each led individually. LEDs can have different functions, for example display a color, visualize warnings or battery state, or just blink. This Quick Start will show you how to set up a simple LED Strip.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GB6hGU9MKpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
+
+Each LED has 4 pins: 5V, ground, *data in* and *data out*. The FC should be connected to *data in* of the first LED. *Data out* of the first LED should be connected to *data in* of the second LED. And the *data out* of the second LED should again be connected to *data in* of the third LED. And so on.
+
+There are ready made WS2812 strips with 30, 60 or 144 LEDs per meter. That's great for testing or maybe on the boom for some night flying, but there are also more conventional WS2811 5mm and 8mm LEDs available. Those are more suited for scale lighting.
+
+There are quite a lot of tutorials/videos for Betaflight, and Rotorflight supports all the functions of Betaflight 4.3. In addition, Rotorflight supports *scale lights*, with which you can program anti collision lights, strobe lights or landing lights.
+
+
+### Create a LED_STRIP resource
+
+In order to use a LED strip, you'll need a LED_STRIP resource to which you can connect your LEDs. A LED_STRIP resource requires a timer and DMA should be enabled.
+
+Some FCs might already have a LED_STRIP resource and then you can just use that pin. But if you want to use another pin on your FC, or if your FC doesn't have a LED_STRIP resource, you'll need to do some resource remapping. For example, to use the TX pin of port B on the Radiomaster Nexus as LED_STRIP, enter the following in the CLI:
+
+```
+resource SERIAL_TX 6 NONE
+resource LED_STRIP 1 C07
+timer C07 AF3    # TIM8, default is also AF3
+dma pin C07 0    # default is NONE
+save
+```
+
+Now go to the *Configuration* tab and enable *LED_STRIP* under *Features*. Press *Save and reboot*.
+
+### The *LED Strip* tab
+
+A LED strip is ideal for testing. I'll be using one with 3 LEDs connected to Port B on the Nexus. Wiring is simple: just connect 5V, ground and LED_STRIP (formerly known as TX6) to the strip.
+
+![Wiring](./img/ledstrip-wiring.jpg)
+
+Now go to the *LED Strip* tab. This tab will only be visible if you have the *LED_STRIP* feature enabled under *Configuration*.
+
+We're going to define:
+- a green navigation light that also functions as a strobe
+- a red ACL light that slowly blinks
+- a white landing light that can be operated from the TX.
+
+Power on the FC and make sure the 5V is working. On the HELI405 you'll need to attach a BEC to get 5V on the UART1 port.
+
+Define the 3 LEDs
+- Click on *Wire Ordening Mode*. The 16x16 matrix will become greenish.
+- Select a square in the matrix. A '0' should now be displayed in it.
+- Select *Color* as *Function*
+- Now select another square in the matrix. A '1' should now be displayed in it.
+- Select *Color* again as *Function*
+- Select yet another square in the matrix. A '2' should now be displayed in it.
+- Select *Color* as *Function*
+- Press *Save*
+
+To create the green navigation light:
+- Select the square with '0' in it
+- In the color palette, left-click on green. The LED should now light up.
+- If you find the LED too bright, adjust the overal LED brightness under *LED Strip Global Settings*
+- Enable *Blink* and set one checkmark. The LED wil now shortly turn off (=black).
+- In the color palette, right-click on white. Now the LED will shortly flash a white light.
+- Press *Save*
+
+To create the red ACL light:
+- Select the square with '1' in it
+- Select *Blink* and set some check marks next to each other
+- Right-click the red color. The second LED should now flash red
+- Press *Save*
+
+To create the white landing light:
+- Select the square with '2' in it
+- Enable the *Fade to alt color* feature
+- Left-click white. The LED should now light up
+- Select *Status Alt* next to *Profile*, under *LED Strip Global Settings*. The LED should now dim.
+- Set *Fade rate* to 10 to dim slowly
+- Press *Save*
+- You can use *Adjustments* to switch the LED profile from your transmitter. It might look something like:
+
+![LED Profile Adjustments](./img/ledstrip-adjustments.png)
+
+#### Flywing HELI405: remap SBUS to LED strip
+
+To remap SBUS to LED strip on the Flywing HELI405, enter the following in the CLI:
+
+```
+resource SERIAL_RX 2 NONE
+resource LED_STRIP 1 A03
+timer A03 AF2
+dma pin A03 1
+save
+```
+
+---
+
+# LED Strip Reference Documentation
+
+---
+
+Rotorflight supports the use of addressable LEDs. Addressable LEDs allow each LED to be programmed with a unique and independent color. Addressable LEDs are available as individual LEDs (usually 5mm or 8mm) or LED strips.
 
 ## LED Strip Profiles
 
