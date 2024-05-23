@@ -95,9 +95,41 @@ Here's another video showing the techniques used in this Quick Start on a Walker
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/72LsrcEJEK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
-#### Flywing HELI405: remap SBUS to LED strip
+#### FlyDragon F722
 
-To remap SBUS to LED strip on the Flywing HELI405, enter the following in the CLI:
+The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are two options: RPM-S and F.Port.
+
+##### 1. Remap RPM-S to LED_STRIP
+
+RPM-S isn't connected to VBec and supplies 5V, which will probably be all right for a couple of LEDs.
+
+To remap RPM-S to LED_STRIP, enter the following in the CLI:
+
+```
+resource LED_STRIP 1 A08   # default is B08
+timer A08 AF1              # TIM1
+dma pin A08 0
+save
+```
+
+##### 2. Remap F.Port to LED_STRIP
+
+Be careful: F.Port uses VBec, which might be too high for your LEDs. Most LEDs require 5V.
+
+To remap F.Port to LED_STRIP, enter the following in the CLI:
+
+```
+resource LED_STRIP 1 A02   # default is B08
+timer A02 AF1              # TIM2
+dma pin A02 0
+# Change motor 1 timer from TIM2 to TIM5
+timer A00 AF2
+save
+```
+
+#### Flywing HELI405
+
+You can remap SBUS to LED_STRIP on the Flywing HELI405. To do this, enter the following in the CLI:
 
 ```
 resource SERIAL_RX 2 NONE
