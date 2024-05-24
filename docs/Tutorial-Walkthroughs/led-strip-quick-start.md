@@ -14,22 +14,13 @@ Each LED has 4 pins: 5V, ground, *data in* and *data out*. The FC should be conn
 
 There are ready made WS2812 strips with 30, 60 or 144 LEDs per meter. That's great for testing or maybe on the boom for some night flying, but there are also more conventional WS2811 5mm and 8mm LEDs available. Those are more suited for scale lighting.
 
-There are quite a lot of tutorials/videos for Betaflight, and Rotorflight supports all the functions of Betaflight 4.3. In addition, Rotorflight supports *scale lights*, with which you can program anti collision lights, strobe lights or landing lights.
-
+There are quite a lot of tutorials/videos for Betaflight, and Rotorflight supports all the functions of Betaflight 4.3. In addition, Rotorflight supports *scale lights*, with which you can program anti-collision lights, strobe lights or landing lights. Here we'll focus on those scale lights.
 
 ## Create a LED_STRIP resource
 
 In order to use a LED strip, you'll need a LED_STRIP resource to which you can connect your LEDs. A LED_STRIP resource requires a timer and DMA should be enabled.
 
-Some FCs might already have a LED_STRIP resource and then you can just use that pin. But if you want to use another pin on your FC, or if your FC doesn't have a LED_STRIP resource, you'll need to do some resource remapping. For example, to use the TX pin of port B on the Radiomaster Nexus as LED_STRIP, enter the following in the CLI:
-
-```
-resource SERIAL_TX 6 NONE
-resource LED_STRIP 1 C07
-timer C07 AF3    # TIM8, default is also AF3
-dma pin C07 0    # default is NONE
-save
-```
+Some FCs might already have a LED_STRIP resource and then you can just use that pin. But if you want to use another pin on your FC, or if your FC doesn't have a LED_STRIP resource, you'll need to do some [resource remapping](#remapping-to-led_strip). For this walk-through I'm going to use the Radiomaster Nexus, so go to the CLI and [remap TX6 to LED_STRIP](#radiomaster-nexus).
 
 Now go to the *Configuration* tab and enable *LED_STRIP* under *Features*. Press *Save and reboot*.
 
@@ -64,7 +55,7 @@ Your screen might now look like this, although the actual position of the three 
 
 ![LED Profile Adjustments](./img/ledstrip-grid.png)
 
-### To create the green navigation light
+### Create the green navigation light
 - Select the square with '0' in it
 - In the color palette, left-click on green. The LED should now light up.
 - If you find the LED too bright, adjust the overal LED brightness under *LED Strip Global Settings*
@@ -72,13 +63,13 @@ Your screen might now look like this, although the actual position of the three 
 - In the color palette, right-click on white. Now the LED will shortly flash a white light.
 - Press *Save*
 
-### To create the red ACL light
+### Create the red anti-collision light
 - Select the square with '1' in it
 - Select *Blink* and set some check marks next to each other
 - Right-click the red color. The second LED should now flash red
 - Press *Save*
 
-### To create the white landing light
+### Create the white landing light
 - Select the square with '2' in it
 - Enable the *Fade to alt color* feature
 - Left-click white. The LED should now light up
@@ -93,9 +84,46 @@ Here's another video showing the techniques used in this Quick Start on a Walker
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/72LsrcEJEK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
+## Molex PicoBlade bus
+
+Here's a simple bus system for connecting individual LEDs using 4-pin Molex PicoBlade connectors. It can be used for connecting individual WS2811/2812 LEDs as well as conventional LEDs.
+
+![C189 PicoBlade Bus](./img/ledstrip-c189.jpg)
+
+Conventional LEDs should come after the WS2811/2812 LEDs since they don't support *data in* and *data out*. Also, you can use 2-pin PicoBlade connectors for them.
+
+### Building the PicoBlade bus
+
+- Glue some 4-pin PicoBlade headers together
+- Bend the pins for 5V and GND so they form two rails
+- Carefully solder the 5V and GND rails
+- Bend the *data out* pin of the first header to the *data in* pin of the second header and repeat
+- Solder the *data out* pins to the next *data in* pins
+- Connect wires for 5V, GND and *data in* to the bus
+- Isolate the bottom of the bus with hot glue or epoxy
+- Connect the bus to the FC
+
+![Building a PicoBlade Bus](./img/ledstrip-picobus.jpg)
+
+## Remapping to LED_STRIP
+
+### Radiomaster Nexus
+
+On the Nexus Port B is the best choice for creating a LED_STRIP resource. Here's how to remap TX6 to LED_STRIP.
+
+```
+resource SERIAL_TX 6 NONE
+resource LED_STRIP 1 C07
+timer C07 AF3    # TIM8, default is also AF3
+dma pin C07 0    # default is NONE
+save
+```
+
+Note that altough we remapped TX6, RX6 is still there and functional.
+
 ### FlyDragon F722
 
-The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are two options: RPM-S and F.Port.
+The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../Tutorial-Setup/LED-Strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are two options: RPM-S and F.Port.
 
 #### 1. Remap RPM-S to LED_STRIP
 
