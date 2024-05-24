@@ -6,7 +6,7 @@ sidebar_position: 20
 
 ## Introduction to LED strips
 
-Rotorflight supports up to 32 individually addressable WS2811/2812 RGB LEDs. You can control them with just one data pin, and set the brightness and color of each led individually. LEDs can have different functions, for example display a color, visualize warnings or battery state, or just blink. This walk-through will show you how to set up a simple LED strip with some scale lights.
+Rotorflight supports up to 32 individually addressable WS2811/2812 RGB LEDs. You can control them with just one data pin, and set the brightness and color of each LED individually. LEDs can have different functions, for example display a color, visualize warnings or battery state, or just blink. This walk-through will show you how to set up a simple LED strip with some scale lights.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GB6hGU9MKpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 
@@ -109,7 +109,7 @@ Conventional LEDs should come after the WS2811/2812 LEDs since they don't suppor
 
 ### Radiomaster Nexus
 
-On the Nexus Port B is the best choice for creating a LED_STRIP resource. Here's how to remap TX6 to LED_STRIP.
+On the Nexus Port B is the best choice for creating a LED_STRIP resource. Port B provides RX6 and TX6 by default. To remap TX6 to LED_STRIP, enter the following in the CLI:
 
 ```
 resource SERIAL_TX 6 NONE
