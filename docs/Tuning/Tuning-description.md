@@ -25,7 +25,7 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 ## Please also see the General Guidlines below for more specific descriptions
 :::
 
-1. Increase Derivative (D) on each axis individually, (roll, pitch, yaw) until it wobbles, then back off a bit. **(remember!! don't do this of your filters are not working)**.  
+1. Increase Derivative (D) on each axis individually, (roll, pitch, yaw) until it wobbles, then back off a bit. **(remember!! don't do this if your filters are not working)**.  
 
 2. Increase Proportional (P) on each axis individually, until it wobbles, then back off a bit.
 3. Increase Integral (I) on each axis individually, until it wobbles, then back off a bit.
