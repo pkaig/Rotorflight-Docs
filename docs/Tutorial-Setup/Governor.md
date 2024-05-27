@@ -8,7 +8,7 @@ The purpose of the governor is to maintain a constant headspeed regardless of fl
 :::
 
 # Governor Features
-The governor can be turned ON/OFF with the dorp down menu within **Governor Features** from the **Motors** Tab.
+The governor can be turned ON/OFF with the drop down menu within **Governor Features** from the **Motors** Tab.
 
 ![Governor](./img/governor-features-off.png)
 
