@@ -44,7 +44,7 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 
 * The higher the gains are, the better the heli response to inputs, the more "locked in" heli feels.
 * The pitch axis is the most difficult axis to tune. It is advised to start here.
-* The roll ais is the easiest. Many different gains works on the roll axis. It is advised to tune last.
+* The roll axis is the easiest. Many different gains works on the roll axis. It is advised to tune last.
 * D-gain dampens oscillations caused by P, P-gain dampens oscillations caused by I.
 * I-oscillation are very slow (0.5-1Hz) while P and D oscillations are fast (5-8Hz).
 * If there is I-oscillation, one could lower the I-gain or raise the P-gain.
