@@ -40,7 +40,7 @@ We need to assign a spare channel to your 3 position switch (SwC) (can be any ch
 
 ### Calibrating stability modes
 #### ## Warning ## - do not use your transmitter trims!!
-Your Roll, Pitch and Yaw should all be trimmed to 1500 at centre stick always 
+Your Roll, Pitch and Yaw should all be trimmed to the stick centre configured in the receiver tab. This will be 1500 or 1520 depending on your radio.
 
 Stability modes will try to stabilize to the calibrated flight controller level. This is rarely perfectly aligned with the actual helicopters attitude where there is no drift (least drift... there will always be some due to wind etc). In order to calibrate this in-flight we have 2 methods:
 
@@ -59,6 +59,9 @@ Select *Accelerometer Trims* from the Rotorflight main menu. Test fly the heli t
 
 Standard 'Betaflight' stick commands work with Rotorflight. The accelerometer trims can be calibrated using these commands. To do this you must have **Angle or Horizon** Modes enabled.
 
+You will also need to enable this in the CLI  
+`set enable_stick_commands = ON`
+
 | Function  | Throttle | Yaw | Pitch | Roll |
 | --------- | ------ | ------ | ------ | ------ |
 | Calibrate Gyro | LOW | LOW | LOW | CENTER |
@@ -67,6 +70,8 @@ Standard 'Betaflight' stick commands work with Rotorflight. The accelerometer tr
 | Trim Acc Right | HIGH | CENTER | CENTER | HIGH |
 | Trim Acc Forwards | HIGH | CENTER | HIGH | CENTER |
 | Trim Acc Backwards | HIGH | CENTER | LOW | CENTER |
+
+![Stick Commands](./img/stick-commands.png)
 
 For more details of the stick commands. See the [Betaflight Wiki here.](https://betaflight.com/docs/development/Controls#Yaw%20Control%E2%80%8B)
 
