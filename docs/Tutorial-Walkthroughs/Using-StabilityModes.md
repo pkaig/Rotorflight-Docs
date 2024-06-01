@@ -62,7 +62,7 @@ Standard 'Betaflight' stick commands work with Rotorflight. The accelerometer tr
 You will also need to enable this in the CLI  
 `set enable_stick_commands = ON`
 
-| Function  | Throttle | Yaw | Pitch | Roll |
+| Function  | Collective | Yaw | Pitch | Roll |
 | --------- | ------ | ------ | ------ | ------ |
 | Calibrate Gyro | LOW | LOW | LOW | CENTER |
 | Calibrate Acc | HIGH | LOW | LOW | CENTER |
