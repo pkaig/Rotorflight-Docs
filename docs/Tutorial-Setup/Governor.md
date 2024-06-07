@@ -173,7 +173,7 @@ Make sure your transmitter is sending a value lower than 0% when throttle hold i
 Throttle hold SHOULD NOT be used for autorotation.
 :::
 
-### *0%* < THROTTLE < *10%*
+### *0%* < THROTTLE < *5%*
 
 In this range, the governor is in idle or autorotation state, and the output is zero - the main motor is stopped.
 
@@ -183,9 +183,9 @@ Motorized tail is fully active in this range.
 If you want to perform autorotation with the main motor stopped, use this range!
 :::
 
-### *10%* < THROTTLE < *Handover throttle%*
+### *5%* < THROTTLE < *Handover throttle%*
 
-In this range, the governor is in idle or autorotation state, and the output is in 0% - 10%, increasing linearly through the range.
+In this range, the governor is in idle or autorotation state, and the output is in 5% - H.Thr%, increasing linearly through the range.
 
 :::note
 Motorized tail is fully active in this range.
