@@ -1,22 +1,24 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Rotorflightsvg from '/img/Rotorflight.svg';
-
+import Rotorflightsvg from '/img/Rotorflight3.svg';
+import BGV from '/img/BGV.webm'
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundImage: `url('/img/RFpattern.png')`}}>
-      <div className="container">      
-        <h1 className={styles.Svg}><Rotorflightsvg /></h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-      </div>
-    </header>
+        <header className={clsx('box', styles.box)}>
+            <video src={BGV} className={clsx('Video', styles.video)} loop autoPlay />
+            <div className={clsx('Banner', styles.Banner)}>
+                <h1 className={styles.Svg}><Rotorflightsvg /></h1>
+            </div>
+        </header>
+
   );
 }
 
