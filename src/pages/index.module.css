@@ -26,4 +26,43 @@
   justify-content: center;
 }
 
+.video {
+  width: 100%;
+}
 
+.box {
+    width: 100%;
+}
+
+@media screen and (max-width: 996px) {
+    .Banner {
+      padding: 2rem;
+      top: 10%;
+    }
+  }
+
+.Banner {
+    position: absolute;
+    /*width: 100%;*/
+    scale: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+    padding: 10%;
+    /*padding-left: 15%;*/
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+Svg {
+    max-width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+}
