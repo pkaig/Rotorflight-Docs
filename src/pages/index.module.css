@@ -32,7 +32,12 @@
 
 .box {
     width: 100%;
+    background-color: #81b8d5;
 }
+
+[data-theme='dark'] .box {
+    background-color: rgb(96, 96, 96);
+  }
 
 @media screen and (max-width: 996px) {
     .Banner {
@@ -43,14 +48,12 @@
 
 .Banner {
     position: absolute;
-    /*width: 100%;*/
     scale: 150%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     top: 10%;
     padding: 10%;
-    /*padding-left: 15%;*/
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
