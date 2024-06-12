@@ -33,6 +33,7 @@
 .box {
     width: 100%;
     background-color: #81b8d5;
+    max-width:100%;
 }
 
 [data-theme='dark'] .box {
