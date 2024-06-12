@@ -44,6 +44,7 @@
     .Banner {
       padding: 2rem;
       top: 10%;
+      max-width: fit-content;
     }
   }
 
@@ -58,11 +59,10 @@
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    max-width: 100;
 }
 
 Svg {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .overlay {
