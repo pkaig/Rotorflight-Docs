@@ -13,7 +13,8 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
         <header className={clsx('box', styles.box)}>
-            <video src={BGV} className={clsx('Video', styles.video)} loop autoPlay muted content="user-scalable=no,width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+            <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1"></meta>
+            <video src={BGV} className={clsx('Video', styles.video)} loop autoPlay muted/>
             <div className={clsx('Banner', styles.Banner)}>
                 <h1 className={styles.Svg}><Rotorflightsvg /></h1>
             </div>
