@@ -101,7 +101,7 @@ Additionally you can use CH11-AUX6 and CH12-AUX7 to perform in flight parameter 
 
 ![Generic Setup](./img/generic-setup-mixer.png)
 
-The above settings will allow you to adjust ddd parameters in flight using the radio trim switches with combination of the 6-position buttons.
+The above settings will allow you to adjust 36 parameters in flight using the radio trim switches with combination of the 6-position buttons.
 
 The below table explain how each parameter can be accessed.
 
