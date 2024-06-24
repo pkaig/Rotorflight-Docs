@@ -1,17 +1,17 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  padding: 5rem 0;
+  width: 100vw;
 }
 
 .featureSvg {
-  height: 40%;
-  width: 40%;
+  height: 8vh;
+  width: 8vh;
 }
 
 .Svg {
-  height: 150px;
-  width: 150px;
-  color: pink;
+  height: 40vw;
+  width: 40vw;
+  padding: 5rem 0;
 }
