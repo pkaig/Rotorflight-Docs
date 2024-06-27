@@ -28,6 +28,7 @@
 
 .video {
   width: 100%;
+  overflow: hidden
 }
 
 .box {
@@ -43,7 +44,6 @@
 @media screen and (max-width: 996px) {
     .Banner {
       padding: 2rem;
-      top: 15%;
       max-width: fit-content;
     }
   }
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 18%;
+    top: 11vh;
     padding: 10%;
     align-items: center;
     margin-left: 10%;
@@ -72,8 +72,15 @@ Svg {
     flex-direction: column;
     justify-content:center;
     width: 100vw;
-    height: 41.5vw;
+    height: 42vw;
     top: 11.5vh
 }
+
+.wrapper * {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+  }
 
 
