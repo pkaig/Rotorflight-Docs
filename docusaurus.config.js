@@ -103,6 +103,13 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'ControllerSidebar',
+            position: 'left',
+            label: 'Controllers',
+            to: '/docs/Controllers/intro',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'manufactSidebar',
             position: 'left',
             label: 'Manufacturers',

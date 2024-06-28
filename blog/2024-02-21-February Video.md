@@ -3,7 +3,7 @@
 title: 2024-02-21-February Video
 authors:
   name: Phil Kaighin
-  title: Rotorflight Controller Designer
+  title: Rotorflight Team member
   url: https://github.com/etocii
   image_url: https://github.com/pkaig.png
   

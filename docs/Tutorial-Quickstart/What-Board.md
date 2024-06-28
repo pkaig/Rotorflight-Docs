@@ -9,13 +9,14 @@ There are lots of different flight controller boards designed for Betaflight. Mo
 There are currently three ways to get a controller suitable for Rotorflight.
 1. Build a DIY controller based on a Drone flight controller.
 2. Purchase a 'Wing' controller **Must have a Betaflight Target. Not just iNav or Ardupilot**.
-3. Purchase one of the ready built Rotorflight Controllers.
+3. Purchase one of the ready built **[Rotorflight Controllers](../Controllers/intro.md)**.
 
-    #### Such as:
-* [Radiomaster NEXUS](https://www.radiomasterrc.com/products/nexus-helicopter-flight-controller) + [Radiomaster RP3-H ELRS Receiver](https://www.radiomasterrc.com/products/rp3-h-expresslrs-2-4ghz-nano-receiver)
-* [FlyDragon F722 V2](https://www.aliexpress.us/item/3256805414004383.html) (built-in ELRS receiver)
-* [FLYWING Heli 405 3D](https://www.aliexpress.us/item/3256805063564797.html)
-* [MATEKSYS G474-HELI](https://www.aliexpress.us/item/3256806032945009.html)
+#### Such as:
+* [Radiomaster NEXUS](../Controllers/rm-nexus.md)  
+* [FlyDragon F722 V2](../Controllers/flydragon2.2.md)  
+* [FLYWING Heli 405 3D](../Controllers/flywingf405heli.md)  
+* [MATEKSYS G474-HELI](../Controllers/matek_heli.md)  
+* [MATEKSYS G474-HLITE](../Controllers/matek_hlite.md)  
 
 :::
 ## Processors
