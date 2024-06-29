@@ -8,7 +8,7 @@ A list of common config issues and the solutions?
 
 ## Motor won't start
 1. Is ARM mode configured? 
-    * Please check your Arm Mode has been enabled. See details in the [Modes](./Modes#arm) 
+    * Please check your Arm Mode has been enabled. See details in the [Modes](../Tutorial-Setup/Modes#arm) 
     * Note!! Arm and Throttle hold need to be on different switches. The FC must see minimum throttle before Arm is enabled; therefore, if Arm activates at the same time as throttle hold is removed, it will fail the minimum check. 
     * Check status page for Arming disables  
 3. Using a Governor?  
@@ -19,7 +19,7 @@ A list of common config issues and the solutions?
 
 ## Servo don't respond
 1. Are servos visible in the servo Tab? 
-    * Review the [remapping](Remapping.md) and add servos
+    * Review the [remapping](../Tutorial-Setup/Remapping.md) and add servos
 
 2. From the servo override does the servo move?
     * Confirm connection of the servos
@@ -27,4 +27,4 @@ A list of common config issues and the solutions?
     * Check all servos.
 
 3. Servo moves in override but not 
-    * Confirm miser has been chosen from the [Mixer](Mixer.md) tab.
+    * Confirm miser has been chosen from the [Mixer](../Tutorial-Setup/Mixer.md) tab.

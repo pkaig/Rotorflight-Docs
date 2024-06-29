@@ -7,7 +7,7 @@ sidebar_position: 30
 It is a good practice to check for the feed forward tune after adjusting other parameters. To do this, you would need to have some basic 3D skills to do continuous flips and rolls.
 
 ## Steps
-* If it is the first time, make sure to start low (usually <=100 on the cyclic and 0 on the tail)
+* If it is the first time, make sure to start low (usually < =100 on the cyclic and 0 on the tail)
 * Do continuous flips, rolls, or pirouetting.
 * Stop the flip/roll or piro, observe the stopping behavior
 * If the heli does not stop cleanly and kept moving a little bit, increase the FF gain on its corresponding axis
