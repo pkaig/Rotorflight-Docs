@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[780],{4551:s=>{s.exports=JSON.parse('{"label":"SimonSummer","permalink":"/blog/tags/simon-summer","allTagsPath":"/blog/tags","count":1}')}}]);
