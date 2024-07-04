@@ -10,7 +10,14 @@ import styles from './index.module.css';
 function HomepageHeader() {
   return (
     <div className={styles.wrapper}>
-      <video src={BGV} className={styles.video} loop autoPlay muted />
+      <video
+        src={BGV}
+        className={styles.video}
+        autoPlay
+        playsInline
+        loop
+        muted
+      />
       <div className={styles.mask}></div>
       <Rotorflightsvg className={styles.content} />
     </div>
