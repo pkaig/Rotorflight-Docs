@@ -60,7 +60,9 @@ To use the Flydragon with a motorised tail the Servo 4 needs to be remapped to M
 
 ![Wiring Diagram v2.2](./img/wiring-diagram-v2.png)
 
-* WARNING: The RPM-S Port is powered via the internal 5V supply which is also powered during USB connection. If you have any power supplies connected or innapropriate loads you are likely to damage your board. DO NOT plug in your ESCs BEC wire into here, many BECs act like a deadshort if you attempt to backfeed them and you WILL blow out the 5V supply on your board when you connect USB if you do this. Power to the rest of the ports is all common power you can connect whatever to.
+:::caution
+ WARNING: The RPM-S Port is powered via the internal 5V supply which is also powered during USB connection. If you have any power supplies connected or innapropriate loads you are likely to damage your board. DO NOT plug in your ESCs BEC wire into here, many BECs act like a deadshort if you attempt to backfeed them and you WILL blow out the 5V supply on your board when you connect USB if you do this. Power to the rest of the ports is all common power you can connect whatever to.
+:::
 
 ### UART ports
 
@@ -90,5 +92,6 @@ the Rotorflight Configurator. Go to CLI (command line) page:
 
 ### Manuals
 
-[Flydragon V2.2 Flight Controller Manual](./pdf/FlyDragonF722_v2_ELRS_Receiver_Manual.pdf)  
+[Flydragon V2.2 Flight Controller Manual](./pdf/FlyDragonF722_v2.2_FBL_Specfications.pdf)  
+[Flydragon V2 Flight Controller Manual](./pdf/FlyDragonF722_v2_FBL_Specfications.pdf)  
 [Flydragon V2 internal ELRS Manual](./pdf/FlyDragonF722_v2_ELRS_Receiver_Manual.pdf)
