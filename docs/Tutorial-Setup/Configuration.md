@@ -81,6 +81,6 @@ This section is used to trim the roll and pitch axis while the helicopter is in 
 
 The Transmitter trims for each cyclic axis must be at neutral when using Rotorflight (at 1500us). This will usually result in the helicopter drifting while in a stable hover. To correct for this drift the Accelerometer roll and pitch trims are to be used. 
 
-This can be done either directly by the configurator or via the transmitter with [Lua](https://github.com/rotorflight/rotorflight/wiki/Using-stability-modes/_edit#calibrating-stability-modes) or Adjustments.
+This can be done either directly by the configurator or via the transmitter with [Lua](../Tutorial-Walkthroughs/Using-StabilityModes.md) or Adjustments.
 
 ![Configuration Tab](./img/config-accel-trim.png)

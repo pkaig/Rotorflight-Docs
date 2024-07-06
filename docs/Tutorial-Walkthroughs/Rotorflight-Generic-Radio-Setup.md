@@ -220,4 +220,4 @@ adjfunc 30 58 5 1950 2100 6 1175 1225 1775 1825 5 10 200
 adjfunc 31 48 5 1950 2100 6 1250 1300 1700 1750 5 10 200
 ```
 
-Consult [Rotorflight 2 CLI Changes](https://github.com/rotorflight/rotorflight/wiki/Rotorflight-2-CLI-Changes) for more info on how to setup the above adjustments.
+Consult [Rotorflight Adjustments](../Tutorial-Setup/Adjustments.md) for more info on how to setup the above adjustments.

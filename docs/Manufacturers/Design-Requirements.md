@@ -6,7 +6,7 @@ sidebar_position: 40
 
 This page collects the generic hardware requirements for all Flight Controller designs for Rotorflight.
 
-The actual Reference Designs for Rotorflight-2 can be found [here](https://github.com/rotorflight/rotorflight/wiki/Rotorflight-FC-Reference-Design).
+The actual Reference Designs for Rotorflight-2 can be found [here](./Reference-Design.md).
 
 __For an FC to be fully supported by Rotorflight-2 (RF2), it must follow one of the Reference Designs.__
 

@@ -34,8 +34,7 @@ After the command is complete click **_[Save to File]_** and store on your compu
 
 ## Load/Restore Config
 Use this process to load remapping config files for your specific flight controller if available.
-
-You can also restore config files to your flight controller you have previously saved or have been shared by other users. There is an [Examples repository](https://github.com/rotorflight/rotorflight/tree/master/examples/contrib) (**Please note this needs more work**) which has dump and diff files for a variety of helicopters. These can be used to configure a large portion of your FC. If there is not a config file suitable for your helicopter please ask at the [Discord discussion](https://discord.gg/kSfAWyMz) and we may be able to help.    
+You can also restore config files to your flight controller you have previously saved or have been shared by other users. 
 
 ### Step 1.
 ![Step 1](./img/restore-4.png)

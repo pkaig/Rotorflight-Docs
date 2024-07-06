@@ -4,7 +4,7 @@ sidebar_position: 50
 
 # Reference Design
 Design
-Please read the page [Rotorflight FC Design Requirements](https://github.com/rotorflight/rotorflight/wiki/Rotorflight-FC-Design-Requirements) first. It is explaining the generic requirements for all Rotorflight designs.
+Please read the page [Rotorflight FC Design Requirements](./Design-Requirements.md) first. It is explaining the generic requirements for all Rotorflight designs.
 
 __For an FC to be fully supported by Rotorflight-2, it _must_ follow one of the reference designs.__
 

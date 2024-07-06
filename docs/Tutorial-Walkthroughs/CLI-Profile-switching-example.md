@@ -34,6 +34,3 @@ Also you can use the below example to switch between three Rate Profiles using A
 adjfunc 1 1 1 900 2100 1 975 2025 975 2025 0 0 3
 ```
 
-# Rotorflight 2 CLI Changes
-
-For more info regarding the changes that have been made to RF2 CLI Commands, please visit [Rotorflight 2 CLI Changes](https://github.com/rotorflight/rotorflight/wiki/Rotorflight-2-CLI-Changes)
