@@ -5,7 +5,7 @@ sidebar_position: 30
 
 Rotorflight is based on Betaflight which is generally used to control drones. Unfortunately, drones do not have servos and have more motors than we need for a helicopter. In order to use servos we must remap our boards so that we have a pad to connect the servos to.
 
-If using a commercial FC such as the ones in the Manufacturers section. This step is not required.
+**If using a commercial Rotorflight controllers (NEXUS, Flydragon, Flywing, MatekG474 etc). This step is not required as these controllers are supplied with servos already configured**
 
 Disclaimer
 
@@ -44,6 +44,31 @@ Some targets in the betaflight target repository have additional #define lines a
 
 ![Mixer Tab](./img/remapping-2.png)
 
+ ## Configuring a Motor output
 
+ 
+ ## Configuring a Frequency input
+
+The frequency input pin _must_ be connected to a timer with exclusive access.
+In other words, there must be a free timer, not used by anything else, and one of its positive channels must be available
+on a pin that is connected to the FC's solder pads. Negative channels, like CH3N, can't be used as inputs. Once we know which timer and pin we can use, it can be configured for
+frequency sensor use. 
+
+:::note
+We recommend that Freq inputs are allocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorized tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
+:::
+
+In this example, we have chosen to use the LED_STRIP pin as our frequency input. We see there is only one option (Timer1) on AF1. We can use this pin but must not allocate any of the Servos or Motors to Timer1. Only the motor pins share this timer so we can choose either AF2 (timer3) or AF3 (timer8).
+
+![frequency_1](./img/frequency_1.png)
+
+### The lines which configure the frequency signal
+```
+resource LED_STRIP 1 NONE
+resource Freq  1 A09
+timer A09 AF1 # Freq - pin A09: TIM1 CH2 (AF1)
+dma pin A09 0 # Freq - 0: DMA2 Stream 6 Channel 0
+
+```
 
 
