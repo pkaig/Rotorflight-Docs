@@ -85,11 +85,7 @@ You should end up with something similar to this:
 
 ## Telemetry Sensors
 
-Use the below switch to enable/disable the telemetry stream sent to your radio.
-
-![Receiver Tab](./img/receiver-telem-switch.png)
-
-Use the below switches to enable/disable individual telemetry sensors.
+Use the below switch to enable/disable the telemetry stream sent to your radio. Each sensor can then be enabled or disabled individual depending on your requirement.
 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 

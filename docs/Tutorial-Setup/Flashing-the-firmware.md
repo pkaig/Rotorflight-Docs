@@ -45,16 +45,12 @@ Click on **Flash Firmware**.
 ### Step 4.
 When the programming is successful click on **Connect**.
 
-Click **Apply Custom Defaults** from the popup. The FC will now reboot.
-
 ![Flashing](./img/flash-4.png)
 
 ### Step 5.
-Configure the pin remapping. There are two options for this:
+Configure the pin remapping. If you are using a commercial Rotorflight controller (NEXUS, Flydragon, Flywing, MatekG474 etc) this step is not required. These boards are configured with the required servos etc already. 
 
-If you have one of the boards listed in the Boards and Configuration Files section of the wiki (e.g. Matek F722 wpx) you can use a pre-configured custom defaults config file. These files have already had pins remapped for servos and motors. Choose a pin configuration (e.g. (a), (b) etc) that suits your helicopter best and either the Motorized Tail (MT) or Servo Tail (ST) as required. These files can be downloaded from the Rotorflight-targets repo. See the Custom Defaults page for more info. If this is your first Rotorflight controller or have no experience remapping pins then we recommend this method. If you have a different board and wish to use this method please ask on the Discord discussion and we can build one.
-
-The second option is to manually re-map your pins to add your servos and motors, or by using the Custom defaults remapping spreadsheet.
+If building a custom controller you will need to apply the remapping config to add your servos and motors. Please see the [Remapping  page](Remapping.md) for details on how to use the Custom defaults remapping spreadsheet.
 
 ## Troubleshooting
 'Initiating reboot to bootloader' hangs

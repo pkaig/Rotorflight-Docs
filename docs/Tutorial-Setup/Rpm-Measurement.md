@@ -9,7 +9,7 @@ In order to use the Governor or RPM filters (and why wouldn't you!!) you must me
 2. Bidirectional DSHOT
 
 :::info
-RPM can sometimes also be read via ESC telemetry. However, this is at a refresh frequency that is generally too slow to be used for filtering of governing.
+RPM can sometimes also be read via ESC telemetry. However, this is at a refresh frequency that is **too slow to be used for filtering of governing**.
 :::
 
 :::caution
@@ -30,29 +30,13 @@ Up to two frequency sensors are supported, for acquiring motor #1 and motor #2 s
 
 If both Frequency Sensor and telemetry RPM signals are available, the Frequency Sensor has precedence.
 
+### Connection
+
+Plug the ESC RPM wire (often yellow wire) or separate RPM sensor (Hobbywing RPM etc) into the FC RPM input.  
+
+![Frequency input](./img/frequency-connection.png)
+
 ### Configuration
-
-First, a pin must be configured for frequency sensor use. The pin _must_ be connected to a timer with exclusive access.
-In other words, there must be a free timer, not used by anything else, and one of its positive channels must be available
-on a pin that is connected to the FC's solder pads. Negative channels, like CH3N, can't be used as inputs. Once we know which timer and pin we can use, it can be configured for
-frequency sensor use. This can be done via the [Custom defaults remapping spreadsheet](./Remapping) or by reading through the STM32 manual for your processor.
-
-:::note
-We recommend that Freq inputs are allocated to pins that have Timer 2 or Timer 5 available. If 2 Freq inputs are required (e.g. Motorized tail) then both inputs can share the same timer. In the remapping spreadsheet these pins are indicated by the green box marked Freq.
-:::
-
-In this example, we have chosen to use the LED_STRIP pin as our frequency input. We see there is only one option (Timer1) on AF1. We can use this pin but must not allocate any of the Servos or Motors to Timer1. Only the motor pins share this timer so we can choose either AF2 (timer3) or AF3 (timer8).
-
-![frequency_1](./img/frequency_1.png)
-
-### The lines which configure the frequency signal
-```
-resource LED_STRIP 1 NONE
-resource Freq  1 A09
-timer A09 AF1 # Freq - pin A09: TIM1 CH2 (AF1)
-dma pin A09 0 # Freq - 0: DMA2 Stream 6 Channel 0
-```
-
 Then the frequency sensor can be turned ON with the feature flag located on the [***Motors***](./Motor-and-Esc.md#pwm-protocol) tab.
 
 ![frequency_2](./img/frequency_2.png)
