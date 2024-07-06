@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - test
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
@@ -22,16 +22,8 @@ jobs:
       - name: output
         id: output
         run: |
-          if [ ${{ github.repository_owner }} == 'egonl' ]; then
-            echo "URL=https://egonl.rotorflight.org" >> $GITHUB_OUTPUT
-            echo "BASE_PATH=/" >> $GITHUB_OUTPUT
-          elif [ ${{ github.repository_owner }} == 'pkaig' ]; then
-            echo "URL=https://rotorflight.org" >> $GITHUB_OUTPUT
-            echo "BASE_PATH=/" >> $GITHUB_OUTPUT
-          else
             echo "URL=https://${{ github.repository_owner }}.github.io" >> $GITHUB_OUTPUT
             echo "BASE_PATH=/${GITHUB_REPOSITORY#*/}/" >> $GITHUB_OUTPUT
-          fi
 
       - name: prepare env
         run: |
