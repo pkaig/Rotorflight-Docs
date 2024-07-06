@@ -9,8 +9,8 @@ import TabItem from '@theme/TabItem';
 :::caution
   Please use the supplied defaults until a maiden flight has been conducted and the filtering is confirmed. Once this is done higher gains can be tested. Skipping this step and using these settings without adequate filtering could result in an uncontrollable helicopter. 
 :::
-:::warning
-⚠ THE CREATOR ASSUMES NO RESPONSIBILITY OR LIABILITY FOR DAMAGE CAUSED BY USING THIS DIFF. IMPROPER USE MAY LEAD TO LOSS OF VEHICLE, INJURY OR DEATH. PROCEED AT YOUR OWN RISK. ⚠
+:::danger
+⚠ THE CREATORS OF THESE PRE-SETS ASSUMES NO RESPONSIBILITY OR LIABILITY FOR DAMAGE CAUSED BY USING THIS DIFF. IMPROPER USE MAY LEAD TO LOSS OF VEHICLE, INJURY OR DEATH. PROCEED AT YOUR OWN RISK. ⚠
 :::
 ## OMP M7
 
@@ -52,7 +52,7 @@ Use defaults as supplied
     **Swash Servos:** 	KST HLS X20-2208  
     **Yaw Servo:**		KST HLS X20-1035  
     **FBL/Receiver:**	RadioMaster NEXUS & RP3-H  
-    **Motor:**			SUNNYSKY R4530-518Kv  
+    **Motor:**			SUNNYSKY R4530-518KV  
     **Pinion:**			13t  
     **ESC:**			Scorpion Tribunus II 14-200A  
     **Battery:**		OMPHOBBY 12S 5100mAh 70C  
@@ -70,7 +70,8 @@ Use defaults as supplied
 
   <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
     #### Diff all
-    [JW-M7 Diff All](./diff-all/RTFL_cli_OMP_M7_Jonas_W_20240703_140425.txt)  
+    [JW-M7 Diff All](./diff-all/RTFL_cli_OMP_M7_Jonas_W_20240703_140425.txt)  This is suitable for all Rotorflight Controllers  
+
     #### Servos
     ![M7 Servos](./img/jw_m7_servos.png)  
     Mixer: Calibration  
@@ -106,7 +107,7 @@ Use defaults as supplied
     **Rotorflight Hardware:**&emsp;&emsp;RadioMaster NEXUS  
     **Tune Attributes:**&emsp;&emsp;&emsp;&emsp;&emsp;Precise, Locked-In, 3D, Robotic  
 
-    Hey there! As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.  
+Hey there! As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This setup is for my light, low RPM M7 setup on 6S, weighing only 4.1kg RTF! Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.  
 
     This tune is set up to work with a universal transmitter profile. Channel order is AECR1T23.  
     Ensure all channels reach ±100% travel!  
@@ -121,20 +122,19 @@ Use defaults as supplied
 
     **Helicopter:** 		OMPHOBBY M7  
     **Main Rotor Blades:** 	RotorTech 700mm Ultimate  
-    **Tail Rotor Blades:**	RotorTech 106mm Ultimate  
-    **Swash Servos:** 	KST HLS X20-2208  
-    **Yaw Servo:**		KST HLS X20-1035  
+    **Tail Rotor Blades:**	RotorTech 116mm Ultimate  
+    **Swash Servos:** 	KST X20-1806 Low Profile  
+    **Yaw Servo:**		KST X20-1806 Low Profile  
     **FBL/Receiver:**	RadioMaster NEXUS & RP3-H  
-    **Motor:**			SUNNYSKY R4530-518Kv  
+    **Motor:**			SUNNYSKY R4520-840Kv  
     **Pinion:**			13t  
-    **ESC:**			Scorpion Tribunus II 14-200A  
+    **ESC:**			Scorpion Tribunus III 06-160A  
     **Battery:**		OMPHOBBY 6S 5100mAh 70C  
-    **Backup:**		    ----  
-    **Dampers:** 		90° Shore Rubber, 0.2mm Compression per side  
-    **Servo Arms:**		OMPHOBBY 18mm Aluminium  
+    **Backup:**		-  
+    **Dampers:** 		90° Shore Rubber  
+    **Servo Arms:**		OMPHOBBY 18mm Plastic  
     **Geometry:**	 	32mm 3D  
-    **ESC Setup:**		BEC 8V2, ESC Governor Prestored Values  
-    **Tx Settings:**	ELRS 500Hz Wide  
+    **ESC Setup:**		BEC 8V2, ESC Governor Prestored Values   
 
   </TabItem>
   <TabItem value="Recommended Filters" label="Recommended Filters" default>
