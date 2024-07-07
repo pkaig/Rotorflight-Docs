@@ -10,6 +10,16 @@ Therefore it is best to count the tooth on the main and tail gear/pulley reducti
 
 This is relatively easy in single stage drive train that are used on most helicopters.
 
+:::note
+You can use the online spreadsheet to easily get the calculated Tooth Counts for Common Helis.
+
+The Spreadsheet is accessible using the below link: 
+
+* Please 'make a copy'. 
+
+[Two-Stage Gear Train Ratios](https://docs.google.com/spreadsheets/d/1PmYWWJfdmIFtDW_hZc1i-MhdTOnUqErDWB5Yag176pk/edit?usp=sharing)
+:::
+
 ## SAB Style Two-Stage Gear Train
 
 The SAB Goblin helis have a two-stage transmission, therefore you have double the amount of gears/pulleys, also the main tail pulley is mounted on the intermediate shaft, which make the tail ratio a little more complicated to determine.
