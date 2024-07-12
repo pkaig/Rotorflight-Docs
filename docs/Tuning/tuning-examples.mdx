@@ -1,13 +1,31 @@
 ---
 sidebar_position: 90
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs     from '@theme/Tabs';
+import TabItem  from '@theme/TabItem';
+
+import noFilter         from './img/no-filter.png';
+import Filter           from './img/working-filter.png';
+
+import jonas_m7         from './img/jw-m7.jpeg';
+import jonas_m7_light   from './img/jw-m7-light.jpeg';
+import Jiawen_M7        from './img/jiawen-m7.jpeg';
+import Jiawen_nimbus    from './img/jiawen-nimbus.png';
 
 # Tuning examples and presets
 
 :::caution
   Please use the supplied defaults until a maiden flight has been conducted and the filtering is confirmed. Once this is done higher gains can be tested. Skipping this step and using these settings without adequate filtering could result in an uncontrollable helicopter. 
+    <table>
+        <td>
+            **No filter**
+            <img src={noFilter} alt="No Filter"/>
+        </td>
+        <td>
+            **Filters are working**
+            <img src={Filter} alt="Filter" width="200%"/>
+        </td>
+    </table> 
 :::
 :::danger
 ⚠ THE CREATORS OF THESE PRE-SETS ASSUME NO RESPONSIBILITY OR LIABILITY FOR DAMAGE CAUSED BY USING THEIR PARAMETERS. IMPROPER USE MAY LEAD TO LOSS OF VEHICLE, INJURY OR DEATH. PROCEED AT YOUR OWN RISK. ⚠
@@ -26,7 +44,9 @@ There are two options for using these pre-sets.
 This is a high headspeed version of my M7 tune. 
 <Tabs>
     <TabItem value="OMPHOBBY M7" label="OMPHOBBY M7" default>
-        ![Jonas M7](./img/jw-m7.jpeg)
+    <div style={{textAlign: 'center'}}>
+        <img src={jonas_m7} alt="Jonas M7" width="60%"/>
+    </div>
     </TabItem>
     <TabItem value="View Pre-set" label="View Pre-set">
         <Tabs>
@@ -75,12 +95,6 @@ This is a high headspeed version of my M7 tune.
         </TabItem>
         <TabItem value="Recommended Filters" label="Recommended Filters" default>
             ![M7 Servos](./img/jw-m7-filters.png)  
-
-            The filter settings above should reduce the gyro peaks as shown below:  
-            Roll axis rate gyroscope - Unfiltered:  
-            ![No Filters](./img/no-filter.png)
-            Roll axis rate gyroscope - Filtered:  
-            ![No Filters](./img/working-filter.png)
         </TabItem>
         <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
             #### Diff all
@@ -111,7 +125,9 @@ This is a low headspeed version of my M7 tune.
 
 <Tabs>
     <TabItem value="OMPHOBBY M7" label="OMPHOBBY M7" default>
-        ![Jonas M7](./img/jw-m7-light.jpeg)
+    <div style={{textAlign: 'center'}}>
+        <img src={jonas_m7_light} alt="Jonas M7 light" width="60%"/>
+    </div>
     </TabItem>
     <TabItem value="View Pre-set" label="View Pre-set">
         <Tabs>
@@ -158,12 +174,6 @@ This is a low headspeed version of my M7 tune.
         </TabItem>
         <TabItem value="Recommended Filters" label="Recommended Filters" default>
             ![M7 Servos](./img/jw-m7-filters-light.png)  
-
-            The filter settings above should reduce the gyro peaks as shown below:  
-            Roll axis rate gyroscope - Unfiltered:  
-            ![No Filters](./img/no-filter.png)
-            Roll axis rate gyroscope - Filtered:  
-            ![No Filters](./img/working-filter.png)
         </TabItem>
         <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
             #### Diff all
@@ -182,6 +192,114 @@ This is a low headspeed version of my M7 tune.
             ![M7 2100 RPM](./img/jw-m7-pf3-light.png)  
             #### Autorotation
             ![M7 Autorotation](./img/jw-m7-pf4-light.png)
+        </TabItem>
+    </Tabs>
+    </TabItem>
+</Tabs>
+:::
+
+:::info[OMPHOBBY M7]
+### Jiawen Bao - M7 3D.  
+
+<Tabs>
+    <TabItem value="OMPHOBBY M7" label="OMPHOBBY M7" default>
+    <div style={{textAlign: 'center'}}>
+        <img src={Jiawen_M7} alt="Jiawen M7" width="60%"/>
+    </div>
+    </TabItem>
+    <TabItem value="View Pre-set" label="View Pre-set">
+        <Tabs>
+        <TabItem value="Author’s Notes" label="Author’s Notes" default>
+            Author’s Notes - READ BEFORE USING THIS TUNE  
+
+            **Creator:**&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Jiawen Bao @etocii   
+            **Rotorflight Version:**&emsp;&emsp;&emsp;&nbsp;2.0.0 Release  
+            **Rotorflight Hardware:**&emsp;&emsp;&nbsp;Flydragon F722 v2.2  
+            **Tune Attributes:**&emsp;&emsp;&emsp;&emsp;&emsp;Precise, Locked-In, 3D, Robotic   
+
+            This tune has a single profile using the Rotorflight Governor with maximum headspeed of 2200RPM. 
+
+            **Helicopter:** 		OMPHOBBY M7  
+            **Main Rotor Blades:** 	RotorTech 715mm Ultimate  
+            **Tail Rotor Blades:**	RotorTech 106mm Ultimate  
+            **FBL/Receiver:**	Flydragon F722v2  
+            **Motor:**			SUNNYSKY R4530  
+            **Pinion:**			13t  
+            **ESC:**			Hobbywing 260A v5  
+            **Dampers:** 		POM  
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lk8hiFstBJM?si=nfFoVsEjYLGLDJU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </TabItem>
+        <TabItem value="Recommended Filters" label="Recommended Filters" default>
+            ![M7 Servos](./img/jiawen-m7-filters.png)  
+        </TabItem>
+        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
+            #### Diff all
+            [**Jiawen M7 Diff All**](./diff-all/RTFL_cli_OMP_M7_Jiawen_20240708_212743.txt)  - This is suitable for all Rotorflight Controllers  
+
+            #### Servos
+            ![M7 Servos](./img/jiawen-m7-servos.png)  
+            Mixer: Calibration  
+            ![M7 Mixer](./img/jiawen-m7-mixer.png)  
+
+            #### Headspeed: 2200RPM  
+            ![M7 2200 RPM](./img/jiawen-m7-pf1.png)  
+        </TabItem>
+    </Tabs>
+    </TabItem>
+</Tabs>
+:::
+
+## XLPower Nitro Nimbus
+:::info[XLPower Nitro Nimbus]
+### Jiawen Bao.  
+
+<Tabs>
+    <TabItem value="Nitro Nimbus" label="Nitro Nimbus" default>
+    <div style={{textAlign: 'center'}}>
+        <img src={Jiawen_nimbus} alt="Jiawen Nimbus" width="60%"/>
+    </div>
+    </TabItem>
+    <TabItem value="View Pre-set" label="View Pre-set">
+        <Tabs>
+        <TabItem value="Author’s Notes" label="Author’s Notes" default>
+            Author’s Notes - READ BEFORE USING THIS TUNE  
+
+            **Creator:**&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Jiawen Bao @etocii   
+            **Rotorflight Version:**&emsp;&emsp;&emsp;&nbsp;2.0.0 Release  
+            **Rotorflight Hardware:**&emsp;&emsp;&nbsp;Flydragon F722 v2.2  
+            **Tune Attributes:**&emsp;&emsp;&emsp;&emsp;&emsp;Precise, Locked-In, 3D, Robotic   
+
+            This tune has a single profile using the Rotorflight Governor with maximum headspeed of 2200RPM. 
+
+            **Helicopter:** 		XLPower Nitro Nimbus  
+            **Main Rotor Blades:** 	RotorTech 580mm Ultimate  
+            **Tail Rotor Blades:**	RotorTech 96mm Ultimate  
+            **FBL/Receiver:**	    Flydragon F722v2  
+            ***Servos:***           Theta C1, D1  
+            **Engine:**			    OS55HZR  
+            **RPM sensor:**			ALIGN sensor   
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SX1gI6EBy5k?si=LQsTeogDzOPADhxx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </TabItem>
+        <TabItem value="Recommended Filters" label="Recommended Filters" default>
+            ![Nimbus Servos](./img/jiawen-nimbus-filters.png)  
+        </TabItem>
+        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
+            #### Diff all
+            [**Jiawen Nimbus Diff All**](./diff-all/RTFL_cli_Nimbus_Nitro_20240712_125546.txt)  - This is suitable for all Rotorflight Controllers  
+              
+            [**S5 on SBUS Port**](./diff-all/S5-on-Sbus.txt) - Jiawen uses the SBUS port as an extra servo. This file will configur the extra servo. This file is suitable for Flydragon F722V2, FlywingF405 and NEXUS.
+
+            #### Servos
+            ![Nimbus Servos](./img/jiawen-nimbus-servos.png)  
+            Mixer: Calibration  
+            ![Nimbus Mixer](./img/jiawen-nimbus-mixer.png)  
+
+            #### Headspeed: 2600RPM  
+            ![Nimbus 2600 RPM](./img/jiawen-nimbus-pf1-1.png)  
+            ![Nimbus 2600 RPM](./img/jiawen-nimbus-pf1-2.png)  
         </TabItem>
     </Tabs>
     </TabItem>
