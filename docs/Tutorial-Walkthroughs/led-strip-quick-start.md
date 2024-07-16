@@ -129,7 +129,15 @@ The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [War
 
 RPM-S isn't connected to VBec and supplies 5V, which will probably be all right for a couple of LEDs.
 
-To remap RPM-S to LED_STRIP, enter the following in the CLI:
+To remap RPM-S to LED_STRIP on the FlyDragon V2 or V2.2, enter the following in the CLI:
+
+```
+resource LED_STRIP 1 A15   # default is B08
+timer A15 AF1              # TIM1
+dma pin A15 0
+```
+
+To remap RPM-S to LED_STRIP on the FlyDragon V1, enter the following in the CLI:
 
 ```
 resource LED_STRIP 1 A08   # default is B08
