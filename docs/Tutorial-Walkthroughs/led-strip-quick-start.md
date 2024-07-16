@@ -123,11 +123,35 @@ Note that altough we remapped TX6, RX6 is still there and functional.
 
 ### FlyDragon F722
 
-The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../Tutorial-Setup/LED-Strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are two options: RPM-S and F.Port.
+The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../Tutorial-Setup/LED-Strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are several options: SCL, SDA, RPM-S and F.Port. SCL and SDA are located on the GPS port, which also provides 5V. SCL or SDA is preferred because they can have their own dedicated timer.
 
-#### 1. Remap RPM-S to LED_STRIP
+#### 1. Remap SCL to LED_STRIP
 
-RPM-S isn't connected to VBec and supplies 5V, which will probably be all right for a couple of LEDs.
+To remap SCL to LED_STRIP, enter the following in the CLI:
+
+```
+resource I2C_SCL 1 NONE
+resource LED_STRIP 1 B06   # default is B08
+timer B06 AF2              # TIM4
+dma pin B06 0
+save
+```
+
+#### 2. Remap SDA to LED_STRIP
+
+To remap SDA to LED_STRIP, enter the following in the CLI:
+
+```
+resource I2C_SDA 1 NONE
+resource LED_STRIP 1 B07   # default is B08
+timer B07 AF2              # TIM4
+dma pin B07 0
+save
+```
+
+#### 3. Remap RPM-S to LED_STRIP
+
+RPM-S isn't connected to VBec and supplies 5V, which is all right for a couple of LEDs.
 
 To remap RPM-S to LED_STRIP on the FlyDragon V2 or V2.2, enter the following in the CLI:
 
@@ -147,11 +171,9 @@ dma pin A08 0
 save
 ```
 
-#### 2. Remap F.Port to LED_STRIP
+#### 4. Remap F.Port to LED_STRIP
 
 Be careful: F.Port uses VBec, which might be too high for your LEDs. Most LEDs require 5V.
-
-To remap F.Port to LED_STRIP, enter the following in the CLI:
 
 ```
 resource LED_STRIP 1 A02   # default is B08
