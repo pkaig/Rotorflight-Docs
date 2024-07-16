@@ -135,6 +135,7 @@ To remap RPM-S to LED_STRIP on the FlyDragon V2 or V2.2, enter the following in 
 resource LED_STRIP 1 A15   # default is B08
 timer A15 AF1              # TIM1
 dma pin A15 0
+save
 ```
 
 To remap RPM-S to LED_STRIP on the FlyDragon V1, enter the following in the CLI:
