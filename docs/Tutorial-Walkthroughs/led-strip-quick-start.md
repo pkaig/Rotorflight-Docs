@@ -121,9 +121,19 @@ save
 
 Note that altough we remapped TX6, RX6 is still there and functional.
 
+Alternatively you can remap RX6 to LED_STRIP:
+
+```
+resource SERIAL_RX 6 NONE
+resource LED_STRIP 1 C06
+timer C06 AF3    # TIM8, default is also AF3
+dma pin C06 0    # default is NONE
+save
+```
+
 ### FlyDragon F722
 
-The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../Tutorial-Setup/LED-Strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are several options: SCL, SDA, RPM-S and F.Port. SCL and SDA are located on the GPS port, which also provides 5V. SCL or SDA is preferred because they can have their own dedicated timer.
+The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../Tutorial-Setup/LED-Strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are several options: SCL, SDA, RPM-S and F.Port. SCL and SDA are located on the GPS port, which also provides 5V. Using SCL or SDA is preferred because they can have their own dedicated timer.
 
 #### 1. Remap SCL to LED_STRIP
 
