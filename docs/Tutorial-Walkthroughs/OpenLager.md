@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # OpenLager
 
-OpenLager is a [Blackbox data logger developed by dRonin](https://github.com/d-ronin/openlager/wiki). It can log a lot faster than OpenLog (up to 2470kbps) and uses a write buffer. 
+OpenLager is a [Blackbox data logger developed by dRonin](https://github.com/d-ronin/openlager/wiki).
 
 :::note
 An OpenLager is not the much cheaper OpenLog. They can log much faster and is more reliable than the OpenLog because it uses a dedicated MCU for logging. The OpenLog; while looking very similar, really is not suitable for use in Rotorflight.

@@ -12,9 +12,9 @@ Blackbox is a flight data recording feature in Rotorflight. A Blackbox log conta
 
 * A flash chip on the FC. Logging is fast, but storage is limited, unless you are using a dedicated RF controller(FlyDragon F7 has 128MByte Flash), and copying log files can be slow.
 * An SD card on the FC, it's fast and storage is only limited by the capacity of the SD card.
-* An external logging device: [OpenLog or OpenLager](../Tutorial-Walkthroughs/OpenLog-OpenLager.md). Both devices use a micro SD card. OpenLog is slow, OpenLager is a lot faster.
+* An external logging device: [OpenLager](../Tutorial-Walkthroughs/OpenLager.md). These devices write the log to a micro SD card.
   
-A flash chip or an SD card on the FC are nice, but if your FC doesn't have that you can connect an OpenLog or OpenLager logging device.
+A flash chip or an SD card on the FC are nice, but if your FC doesn't have that you can connect an OpenLager logging device.
 
 ![Blackbox Tab](./img/blackbox-main.png)
 
@@ -29,7 +29,7 @@ Here you can select the device type.
 * **No Logging**: Disable Logging.
 * **Onboard Flash**: Log to the onboard flash chip (if available).
 * **SD Card**: Log to the onboard SD Card (if available).
-* **Serial Port**: Log to an external logging device (eg. [OpenLager](../Tutorial-Walkthroughs/OpenLog-OpenLager.md)).
+* **Serial Port**: Log to an external logging device (eg. [OpenLager](../Tutorial-Walkthroughs/OpenLager.md)).
 
 ### Logging Mode
 
@@ -44,7 +44,6 @@ Select the preferred logging mode.
 
 The log data is saved to the logging device with this rate. For logging to an external device, lower speed may be required.
 
-Set it to 500Hz for onboard flash or OpenLog.
 Set it to 2kHz for OpenLager.
 
 ### Debug Mode
