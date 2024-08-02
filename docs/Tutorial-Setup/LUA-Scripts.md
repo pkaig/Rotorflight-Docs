@@ -2,7 +2,7 @@
 sidebar_position: 240
 ---
 
-# LUA Scripts
+# Lua Scripts
 
 ## Introduction
 
