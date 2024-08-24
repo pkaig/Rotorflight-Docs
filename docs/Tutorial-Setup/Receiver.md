@@ -58,7 +58,7 @@ Select the corresponding channels order based on the selected receiver type.
 For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
 :::
 
-![Receiver Tab](./img/receiver-order-elrs.)
+![Receiver Tab](./img/receiver-order-elrs.png)
 
 * Reverse channels on your transmitter if a channel responds the wrong way around. Stick to the right should move the bar to the right. Push stick forward and bar should move to the right.
 
