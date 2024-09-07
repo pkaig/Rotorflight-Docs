@@ -68,10 +68,9 @@ For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the
 
 * **Stick Center** - adjust as required by your radio to achieve 0% when the _ROLL, PITCH, YAW_ sticks are centered. 
 * **Stick Maximum Travel** - adjust achieve 100% at the sticks limits.
-* **Throttle Channel value for arming** - channel value under which arming is allowed.
-* **Throttle Channel value for 0% throttle** - adjust to achieve 0% on the channel bar.
-* **Throttle Channel value for 100% throttle** - adjust to achieve 100% on the channel bar.
-    * NOTE! Throttle hold must send a value than is lower than 0% level, for example you can set you radio to send 1000us at 0% throttle, and 975us at throttle hold.
+* **Throttle Channel value for arming** - channel value under which arming is allowed.Throttle must be below this limit prior to ARM mode being selected. 
+* **Throttle Channel value for 0% throttle** - The channel value (in µS) for the channel to be considered 0%.
+* **Throttle Channel value for 100% throttle** - The channel value (in µS) for the channel to be considered 100%.
 * **Cyclic Deadband** and **Yaw Deadband** - adjust to the smallest possible value that doesn't make your model drift in the *Rates Preview* window.
 
 :::caution
