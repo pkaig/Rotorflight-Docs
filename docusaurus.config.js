@@ -60,7 +60,18 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/pkaig/Rotorflight-Docs/tree/main',
-        },
+            //Versioning
+            //includeCurrentVersion: false,
+    //        lastVersion: 'current',
+            versions: {
+              current: {
+                label: 'Development Snapshots',
+                //path: '2.1.0',
+                banner: 'unreleased'
+              },
+            },
+
+        }, 
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -132,7 +143,14 @@ const config = {
             position: 'left',
             label: 'Contributing',
             to: '/docs/Contributing/intro',
-          }, { to: '/blog', label: 'Blog', position: 'left' },
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            banner: 'unreleased',
+        //   dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            //dropdownActiveClassDisabled: true,
+          },// { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://paypal.me/rotorflightfc/',
             label: 'PayPal',

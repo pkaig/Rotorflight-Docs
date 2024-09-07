@@ -41,91 +41,41 @@ Continuous adjustment is enabled by setting the step size to zero.
 
 The adjustment function assigns the control AUX channel to a configuration parameter or a special function. The supported functions are listed below.
 
-    // Profile change
-    ADJUSTMENT_RATE_PROFILE             = 1,
-    ADJUSTMENT_PID_PROFILE              = 2,
-    ADJUSTMENT_LED_PROFILE              = 3,
-    ADJUSTMENT_OSD_PROFILE              = 4,
+    **Profile change**  
+![Profiles](./img/adjustments-profiles.png)  
 
-    // Rates
-    ADJUSTMENT_PITCH_RATE               = 5,
-    ADJUSTMENT_ROLL_RATE                = 6,
-    ADJUSTMENT_YAW_RATE                 = 7,
-    ADJUSTMENT_PITCH_RC_RATE            = 8,
-    ADJUSTMENT_ROLL_RC_RATE             = 9,
-    ADJUSTMENT_YAW_RC_RATE              = 10,
-    ADJUSTMENT_PITCH_RC_EXPO            = 11,
-    ADJUSTMENT_ROLL_RC_EXPO             = 12,
-    ADJUSTMENT_YAW_RC_EXPO              = 13,
+    **Rates**  
+![Profiles](./img/adjustments-rates.png)  
 
-    // PID
-    ADJUSTMENT_PITCH_P_GAIN             = 14,
-    ADJUSTMENT_PITCH_I_GAIN             = 15,
-    ADJUSTMENT_PITCH_D_GAIN             = 16,
-    ADJUSTMENT_PITCH_F_GAIN             = 17,
-    ADJUSTMENT_ROLL_P_GAIN              = 18,
-    ADJUSTMENT_ROLL_I_GAIN              = 19,
-    ADJUSTMENT_ROLL_D_GAIN              = 20,
-    ADJUSTMENT_ROLL_F_GAIN              = 21,
-    ADJUSTMENT_YAW_P_GAIN               = 22,
-    ADJUSTMENT_YAW_I_GAIN               = 23,
-    ADJUSTMENT_YAW_D_GAIN               = 24,
-    ADJUSTMENT_YAW_F_GAIN               = 25,
+    **PID**  
+    ![Profiles](./img/adjustments-pid.png)  
 
-    ADJUSTMENT_YAW_CW_GAIN              = 26,
-    ADJUSTMENT_YAW_CCW_GAIN             = 27,
-    ADJUSTMENT_YAW_CYCLIC_FF            = 28,
-    ADJUSTMENT_YAW_COLLECTIVE_FF        = 29,
-    ADJUSTMENT_YAW_COLLECTIVE_DYN       = 30,
-    ADJUSTMENT_YAW_COLLECTIVE_DECAY     = 31,
-    ADJUSTMENT_PITCH_COLLECTIVE_FF      = 32,
+    **Gyro cutoffs**  
+![Profiles](./img/adjustments-cuttoff.png)  
 
-    // Gyro cutoffs
-    ADJUSTMENT_PITCH_GYRO_CUTOFF        = 33,
-    ADJUSTMENT_ROLL_GYRO_CUTOFF         = 34,
-    ADJUSTMENT_YAW_GYRO_CUTOFF          = 35,
+    **Dterm cutoffs**  
+![Profiles](./img/adjustments-dterm.png)  
 
-    // Dterm cutoffs
-    ADJUSTMENT_PITCH_DTERM_CUTOFF       = 36,
-    ADJUSTMENT_ROLL_DTERM_CUTOFF        = 37,
-    ADJUSTMENT_YAW_DTERM_CUTOFF         = 38,
+    **Rescue**  
+![Profiles](./img/adjustments-rescue.png)  
 
-    // Rescue
-    ADJUSTMENT_RESCUE_CLIMB_COLLECTIVE  = 39,
-    ADJUSTMENT_RESCUE_HOVER_COLLECTIVE  = 40,
-    ADJUSTMENT_RESCUE_HOVER_ALTITUDE    = 41,
-    ADJUSTMENT_RESCUE_ALT_P_GAIN        = 42,
-    ADJUSTMENT_RESCUE_ALT_I_GAIN        = 43,
-    ADJUSTMENT_RESCUE_ALT_D_GAIN        = 44,
+    **Leveling**  
+![Profiles](./img/adjustments-level.png)  
 
-    // Leveling
-    ADJUSTMENT_ANGLE_LEVEL_GAIN         = 45,
-    ADJUSTMENT_HORIZON_LEVEL_GAIN       = 46,
-    ADJUSTMENT_ACRO_TRAINER_GAIN        = 47,
+    **Governor**  
+![Profiles](./img/adjustments-gov.png)  
 
-    // Governor
-    ADJUSTMENT_GOV_GAIN                 = 48,
-    ADJUSTMENT_GOV_P_GAIN               = 49,
-    ADJUSTMENT_GOV_I_GAIN               = 50,
-    ADJUSTMENT_GOV_D_GAIN               = 51,
-    ADJUSTMENT_GOV_F_GAIN               = 52,
-    ADJUSTMENT_GOV_TTA_GAIN             = 53,
-    ADJUSTMENT_GOV_CYCLIC_FF            = 54,
-    ADJUSTMENT_GOV_COLLECTIVE_FF        = 55,
+    **Boost gains**  
+![Profiles](./img/adjustments-boost.png)  
 
-    // Boost gains
-    ADJUSTMENT_PITCH_B_GAIN             = 56,
-    ADJUSTMENT_ROLL_B_GAIN              = 57,
-    ADJUSTMENT_YAW_B_GAIN               = 58,
+    **Offset gains**  
+![Profiles](./img/adjustments-offset.png)  
 
-    // Offset gains
-    ADJUSTMENT_PITCH_O_GAIN             = 59,
-    ADJUSTMENT_ROLL_O_GAIN              = 60,
+    **Cross-coupling**  
+![Profiles](./img/adjustments-coupling.png)  
 
-    // Cross-coupling
-    ADJUSTMENT_CROSS_COUPLING_GAIN      = 61,
-    ADJUSTMENT_CROSS_COUPLING_RATIO     = 62,
-    ADJUSTMENT_CROSS_COUPLING_CUTOFF    = 63,
+    **Accelerometer trims**  
+![Profiles](./img/adjustments-trim.png)  
 
 
 ### Parameter Change Functions
