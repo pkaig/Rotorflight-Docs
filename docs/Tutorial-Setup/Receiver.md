@@ -19,6 +19,10 @@ There are many receiver protocols supported in Rotorflight, SBUS in the one of t
 
 ![Receiver Tab](./img/receiver-sbus.png)
 
+* SBUS2 needs to be connected to an TX pad.
+
+![Receiver Tab](./img/receiver-sbus2.png)
+
 * [SBUS with S.Port](https://oscarliang.com/sbus-smartport-telemetry-naze32/): the SBUS pin needs to be connected to a free UART RX, and the S.Port pin needs to be connected to a free UART TX (of *another free UART*), and you activate `Telemetry: FrSky SmartPort` on that UART.
 
 ![Receiver Tab](./img/receiver-sbus.png)

@@ -1,0 +1,14 @@
+
+# resources
+resource SERIAL_RX 2 NONE
+resource SERVO 5 A03
+
+# timer
+timer A03 AF3
+# pin A03: TIM9 CH2 (AF3)
+
+# servo
+servo 5 1000 0 1000 100 1000 333 0 0
+
+# mixer rule
+mixer rule 10 set AUX2 S5 1000 0

@@ -18,32 +18,28 @@ Rotorflight is based on Betaflight and uses the Betaflight configuration as its 
 Connect the FC to your computer with an USB data cable. Now you are ready to install the Rotorflight firmware to your FC. There are five different versions of the firmware, each version targeting a specific microprocessor: F405, F411, F7X2, F745, and H743. Your FC must use one of those processors. Besides firmware, each FC has it's own configuration. The configuration specifies the FC board, e.g. what pads are used for what.
 
 ### Step 1.
-Identify the Betaflight target. This can be found in the dump file specified by board_name saved in your backup or on the manufacturers website.
+* Identify the Betaflight target. This can be found in the dump file specified by board_name saved in your backup or on the manufacturers website.
 
 ![Flashing](./img/flash-1.png)
 
 ### Step 2.
 Open the Rotorflight configurator and click on **Update Firmware**.
 
-Choose All release and Snapshots from the dropdown.
-
-Select the Target you identified in Step 1.
-
-Select Full chip Erase, this will remove all previous configurations.
-
-Click on **Load firmware[online]**
+* Choose **All release and Snapshots** from the dropdown. **Note:** ***Snapshots are for development and testing purposes. They may contain bugs!! We recommend using snapshot firmware with care and to assist the project with testing. Choose "Releases" if you would rather use the latest stable firmware*** 
+* Select the Target you identified in Step 1. You can also click on the "detect" buton to auto detect the target.  
+* Select Full chip Erase, this will remove all previous configurations.
+* Click on **Load firmware[online]**  
 
 ![Flashing](./img/flash-2.png)
 
 ### Step 3.
-Check and confirm the target board is correct.
-
-Click on **Flash Firmware**.
+* Check and confirm the target board is correct.
+* Click on **Flash Firmware**.
 
 ![Flashing](./img/flash-3.png)
 
 ### Step 4.
-When the programming is successful click on **Connect**.
+* When the programming is successful click on **Connect**.
 
 ![Flashing](./img/flash-4.png)
 
