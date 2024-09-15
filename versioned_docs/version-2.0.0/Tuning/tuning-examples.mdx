@@ -8,6 +8,7 @@ import noFilter         from './img/no-filter.png';
 import Filter           from './img/working-filter.png';
 
 import jonas_m4         from './img/jw-m4.jpeg';
+import jonas_m4_max     from './img/jw-m4-max.jpeg';
 import jonas_m7         from './img/jw-m7.jpeg';
 import jonas_m7_light   from './img/jw-m7-light.jpeg';
 import Jiawen_M7        from './img/jiawen-m7.jpeg';
@@ -77,7 +78,7 @@ There are two options for using these pre-sets.
             **Tail Rotor Blades:**	APEX 71mm  
             **Swash Servos:** 	OMPHOBBY DS2312C  
             **Yaw Servo:**		OMPHOBBY DS2312T  
-            **Servo Arms:**		OMPHOBBY Plastic
+            **Servo Arms:**		OMPHOBBY Plastic  
             **FBL/Receiver:**	RadioMaster NEXUS & RP3-H  
             **Motor:**			SUNNYSKY R80-5  
             **ESC:**			OMPHOBBY 65A  
@@ -94,7 +95,7 @@ There are two options for using these pre-sets.
             #### Diff all
             [**Jonas M4 Diff All**](./diff-all/RTFL_cli_M4_Jonas_W_20240903_155036.txt)  - This is suitable if you have the same equipment and setup as Jonas.   
 
-            [**Jonas M4 (Universal) Diff All**](./diff-all/RTFL_cli_M4_Jonas_W_20240903_universal.txt)  - This is aa Universal version that can be loaded to other Flight controllers. Some additional setup will be required.     
+            [**Jonas M4 (Universal) Diff All**](./diff-all/RTFL_cli_M4_Jonas_W_20240903_universal.txt)  - This is a Universal version that can be loaded to other Flight controllers. Some additional setup will be required.     
 
             #### Servos
             ![M4 Servos](./img/jw-m4-servos.png)  
@@ -116,7 +117,79 @@ There are two options for using these pre-sets.
 :::
 ## OMP M4 - max
 
-***Coming Soon***  
+:::info[OMPHOBBY M4 - Max]
+### Jonas Wackershauser - M4 Max  
+
+<Tabs>
+    <TabItem value="OMPHOBBY M4 Max" label="OMPHOBBY M4 Max" default>
+    <div style={{textAlign: 'center'}}>
+        <img src={jonas_m4_max} alt="Jonas M4 Max" width="60%"/>
+    </div>
+    </TabItem>
+    <TabItem value="View Pre-set" label="View Pre-set">
+        <Tabs>
+            <TabItem value="Author’s Notes" label="Author’s Notes" default>
+            Author’s Notes - READ BEFORE USING THIS TUNE  
+
+            **Creator:**&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Jonas Wackershauser @Johnny31297   
+            **Revision Date:**&ensp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;03.09.2024  
+            **Rotorflight Version:**&emsp;&emsp;&emsp;&nbsp;2.0.0 Release  
+            **Rotorflight Hardware:**&emsp;&emsp;&nbsp;RadioMaster NEXUS  
+            **Tune Attributes:**&emsp;&emsp;&emsp;&emsp;&emsp;Precise, Locked-In, 3D, Robotic  
+
+            Hey there! As the creator of the OMPHOBBY M4 Max and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M4, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for OMPHOBBY’s stock components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.  
+
+            This tune is set up to work with a universal transmitter profile. Channel order is AECR1T23.  
+            Ensure all channels reach ±100% travel!  
+            AUX1 for arming as per ELRS convention.  
+            AUX2 for profile switching. ⚠ Mind the profile assignments, ensure proper AUX2 mapping ⚠  
+            Profile #1 at -100% for 1800RPM  
+            Profile #2 at -33% for 2400RPM  
+            Profile #3 at +33% for 2750RPM  
+            Profile #4 at +100% for Autorotation with bailout.  
+
+            Enjoy!  
+
+            **Helicopter:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OMPHOBBY M4  
+            **Main Rotor Blades:**&nbsp;&nbsp;&nbsp;RotorTech 420mm Ultimate  
+            **Tail Rotor Blades:**	APEX 71mm  
+            **Swash Servos:** 	OMPHOBBY DS2312C  
+            **Yaw Servo:**		OMPHOBBY DS2312T  
+            **Servo Arms:**		OMPHOBBY Plastic  
+            **FBL/Receiver:**	RadioMaster NEXUS & RP3-H  
+            **Motor:**			SUNNYSKY R80-7  
+            **ESC:**			OMPHOBBY 85A  
+            **Battery:**		OMPHOBBY 6S 2000mAh HV  
+            **Geometry:**	 	Stock 3D Geometry  
+            **ESC Setup:**		BEC 8V4, Governor Store, Governor mode M4  
+            **Tx Settings:**	ELRS 500Hz Wide  
+
+        </TabItem>
+        <TabItem value="Recommended Filters" label="Recommended Filters" default>
+            ![M4 Max Filters](./img/jw-m4-max-filters.png)  
+        </TabItem>
+        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
+            #### Diff all
+            [**Jonas M4 Max Diff All**](./diff-all/RTFL_cli_M4_MAX_Jonas_W_20240913_164513.txt)  - This diff version that can be loaded to all Flight controllers.  
+
+            #### Servos
+            ![M4 Max Servos](./img/jw-m4-max-servos.png)  
+            Mixer: Calibration  
+            ![M4 Max Mixer](./img/jw-m4-max-mixer.png)  
+
+            #### Headspeed: 1800RPM  
+            ![M4 Max 1800 RPM](./img/jw-m4-max-pf1.png)  
+            #### Headspeed: 2400RPM
+            ![M4 Max 2400 RPM](./img/jw-m4-max-pf2.png)  
+            #### Headspeed: 2750RPM
+            ![M4 Max 2750 RPM](./img/jw-m4-max-pf3.png)  
+            #### Autorotation
+            ![M4 Max Autorotation](./img/jw-m4-max-pf4.png)
+        </TabItem>
+    </Tabs>
+    </TabItem>
+</Tabs>
+:::
 
 ## OMP M7
 
