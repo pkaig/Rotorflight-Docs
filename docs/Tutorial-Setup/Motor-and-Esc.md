@@ -26,6 +26,25 @@ Set the ESC [*Telemetry*](ESC-Telemetry.md) protocol if your esc supports it.
 
 ![Motor and ESC](./img/motor-telem.png)
 
+### ESC Forward Programming
+
+Forward programming is a feature used to access and program your ESC via your Transmitter via your Rotorflight FC.  
+Currently there are several ESC types that are compatible with Forward programming 
+#### EdgeTX 
+**Edge Tx Tools (Bob00)**
+* YGE  
+* Scorpion  
+* Hobbywing V5  
+* FLYROTOR (comming)  
+* ZTW (comming)  
+
+Please go to the [ETX-tools Github](https://github.com/bob01/etx-tools/blob/main/README.md) to download  
+
+#### Frsky Ethos
+**
+Info to go here?? 
+
+
 :::note
 A correct RPM measurment is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurment setup. 
 

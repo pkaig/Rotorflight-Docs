@@ -10,10 +10,22 @@ First activate `Serial Rx` on the UART you have connected your receiver.
 
 ![Receiver Tab](./img/receiver-uart.png)
 
+## Receiver Options 
+![Receiver Tab](./img/receiver-options.png)
+
+* One Wire Communication - 
+
+The following options are only available on **F7/H7** and **G4** MCUs
+* Inverted serial signaling - Some protoculs such as SBUS and FPORT
+* Pin Swap - This feature can be 
+
 ## Receiver Type
 
 There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./LUA-Scripts.md) to perform tuning using you radio.
 
+* [CRSF/ELRS](https://www.expresslrs.org/2.0/quick-start/receivers/wiring-up/) needs an RX and a TX on the same UART. 
+
+![Receiver Tab](./img/receiver-crsf.png)
 
 * SBUS needs to be connected to an RX pad.
 
@@ -37,11 +49,6 @@ There are many receiver protocols supported in Rotorflight, SBUS in the one of t
 The `Inverted Serial Signaling` option will work only on **F7/H7** or **G4** type mcu, if you are using an **F4** mcu, then you need to use and external signal inverter, or hack your receiver to get an Un-Inverted signal for SBUS, S.Port, and F.Port.
 for more info check [Uninverted SBUS and Smart Port on Frsky Receivers](https://oscarliang.com/uninverted-sbus-smart-port-frsky-receivers/)
 :::
-
-* [CRSF/ELRS](https://www.expresslrs.org/2.0/quick-start/receivers/wiring-up/) needs an RX and a TX on the same UART. 
-
-![Receiver Tab](./img/receiver-crsf.png)
-
 
 
 Please see the documentation for your FC for more details on how to connect your receiver. 
