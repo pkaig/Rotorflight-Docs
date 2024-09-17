@@ -13,6 +13,7 @@ import jonas_m7         from './img/jw-m7.jpeg';
 import jonas_m7_light   from './img/jw-m7-light.jpeg';
 import Jiawen_M7        from './img/jiawen-m7.jpeg';
 import Jiawen_nimbus    from './img/jiawen-nimbus.png';
+import Jiawen_specter    from './img/jiawen-specter.png';
 
 # Tuning examples and presets
 
@@ -456,6 +457,69 @@ This is a low headspeed version of my M7 tune.
             With a throttle signal of 100%  
             ![Nimbus 2100 RPM](./img/jiawen-nimbus-pf1-1.png)  
             ![Nimbus 2100 RPM](./img/jiawen-nimbus-pf1-2.png)  
+        </TabItem>
+    </Tabs>
+    </TabItem>
+</Tabs>
+:::
+
+## XLPower Specter Nitro
+:::info[XLPower Specter Nitro]
+### Jiawen Bao - Specter Nitro.  
+
+<Tabs>
+    <TabItem value="Specter Nitro" label="Specter Nitro" default>
+    <div style={{textAlign: 'center'}}>
+        <img src={Jiawen_specter} alt="Jiawen Nimbus" width="60%"/>
+    </div>
+    </TabItem>
+    <TabItem value="View Pre-set" label="View Pre-set">
+        <Tabs>
+        <TabItem value="Author’s Notes" label="Author’s Notes" default>
+            Author’s Notes - READ BEFORE USING THIS TUNE  
+
+            **Creator:**&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Jiawen Bao @etocii   
+            **Rotorflight Version:**&emsp;&emsp;&emsp;&nbsp;2.0.0 Release  
+            **Rotorflight Hardware:**&emsp;&emsp;&nbsp;Flydragon F722 v2.2  
+            **Tune Attributes:**&emsp;&emsp;&emsp;&emsp;&emsp;Precise, Locked-In, 3D, Robotic   
+
+            This tune has a single profile using the Rotorflight Governor with maximum headspeed of 2280RPM. 
+
+            Setup:  
+            **Helicopter:** 		Specter Nitro  
+            **Main Rotor Blades:** 	RotorTech 700mm Ultimate  
+            **Tail Rotor Blades:**	RotorTech 116mm Ultimate  
+            **Engine:**				OS91speed  
+            **Pipe:**				Kenny Ko pipe  
+            **Servos:**				Theta Kenny Ko 12V servos  
+            **Throttle Servo:**		GDW G28-06  
+            **FBL/Receiver:**		Flydragon F722v2  
+            **Battery:**			Gens ACE 3S 2200mah  
+            **RPM sensor:**			XGuard Back Plate Sensor  
+            **Glow Ignighter:**		XGlow Pro ICE igniter  
+            **Capacitor:**			Panasonic 16V 2200μF  
+            **Fuel:**				VP30%  
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YqX0sLBM68Y?si=-JR9_gq1iSERcdCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </TabItem>
+        <TabItem value="Recommended Filters" label="Recommended Filters" default>
+            ![Nimbus Filters](./img/jiawen-specter-filters.png)  
+        </TabItem>
+        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
+            #### Diff all
+            [**Jiawen Nimbus Diff All**](./diff-all/RTFL_cli_Nimbus_Nitro_20240712_125546.txt)  - This is suitable for all Rotorflight Controllers  
+              
+            [**S5 on SBUS Port**](./diff-all/S5-on-Sbus.txt) - Jiawen uses the SBUS port as an extra servo output which is used to control the glow ignighter. This file will configure the extra servo and is suitable for Flydragon F722V2 and NEXUS. It can also be used for the FlywingF405; however, it is output on the DSM port. 
+
+            #### Servos
+            ![Nimbus Servos](./img/jiawen-specter-servos.png)  
+            Mixer: Calibration  
+            ![Nimbus Mixer](./img/jiawen-specter-mixer.png)  
+
+            #### Headspeed: 2280RPM  
+            With a throttle signal of 100%  
+            ![Nimbus 2100 RPM](./img/jiawen-specter-pf1-1.png)  
+
         </TabItem>
     </Tabs>
     </TabItem>
