@@ -1,17 +1,11 @@
-.red:hover {
+.red {
     color: red;
-    text-decoration: double;
   }
 
 .red[aria-selected='true'] {
-    border-color: blue;
-
+    border-bottom-color: red;
   }
-
-.red[data-theme='dark'] {
-    background-color: red;
-    }
-
+  
 .orange {
     color: orange;
   }
@@ -20,10 +14,6 @@
   }
 
   .ethos {
-    background-color: #007cc7;
+    background-color: grey;
     width: 15%;
   }
-
-  [data-theme='dark'] {
-    background-color:#242424;
-    }
