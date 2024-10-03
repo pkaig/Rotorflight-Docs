@@ -1,0 +1,29 @@
+.red:hover {
+    color: red;
+    text-decoration: double;
+  }
+
+.red[aria-selected='true'] {
+    border-color: blue;
+
+  }
+
+.red[data-theme='dark'] {
+    background-color: red;
+    }
+
+.orange {
+    color: orange;
+  }
+.orange[aria-selected='true'] {
+    border-bottom-color: orange;
+  }
+
+  .ethos {
+    background-color: #007cc7;
+    width: 15%;
+  }
+
+  [data-theme='dark'] {
+    background-color:#242424;
+    }
