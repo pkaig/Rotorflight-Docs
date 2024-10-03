@@ -1,0 +1,102 @@
+---
+sidebar_position: 115
+---
+
+import Tabs     from '@theme/Tabs';
+import TabItem  from '@theme/TabItem';
+import styles   from './styles.module.css';
+
+import EdgeTX   from './img/edgetx-logo.png';
+import ETHOS    from './img/ethos-logo.png';
+
+Forward programming enables the connected ESC to be programmed via your transmitter rather than requiring a vendor programming box.  
+
+A number of ESC vendor/models have forward programming support from the transmitter via Rotorflight’s Lua script. The ESCs currently supported are:  
+* Hobbywing Platinum V5  
+* Scorpion Tribunus  
+* YGE  
+* Flyrotor  
+* ZTW  
+
+## Configure the Flight controller  
+### Set the UART 
+Enable the UART port for ESC telemetry on the Configuration Tab.
+
+![Forward Programming](./img/forward-uart.png)  
+
+### ESC telemetry protocol
+Select one of the ESCs above that support Forward Programming. Enter this in the ESC telemetry protocol
+
+### One Wire Communication (half-duplex)
+Most ESCs have a single telemetry wire. This is used to transmit telemetry information from the ESC to the flight controller. For forward programming functionality, this wire also need's to transmit information from the Flight controller to the ESC. By enabling the half-duplex bi-directional communications are enabled. 
+
+![Forward Programming](./img/forward-duplex.png)
+
+### Pin Swap
+For standard ESC telemetry we need to connect to a UART RX (receive) pin; however, as we are using bi-directional communication this will require the telemetry wire being connected to the UART TX (transmit) pin. 
+
+#### Option 1
+Wire the ESC telemetry to any spare ***UART TX*** pin on the flight controller. If we are using a TX pin then Pin-swap remains off.
+
+![Forward Programming](./img/forward-swap-off.png)
+
+#### Option 2
+Wire the ESC telemetry to the FC ***UART RX***. This may be desirable if you wish to use the ***SBUS*** or ***DSM*** ports (which are RX) or do not wish to solder or change connectors.  
+
+![Forward Programming](./img/forward-swap-on.png)  
+
+## Setup the LUA scripts
+:::info Please choose to suit your Radio - EdgeTX or ETHOS
+<Tabs groupId="operating-systems">
+  <TabItem value="EdgeTX" label="EdgeTX">
+
+## EdgeTX
+<img src={EdgeTX} alt="EdgeTX" width="12%"/> 
+
+### Load LUA scripts onto radio
+Ensure the latest version of Lua script is installed on your radio’s SD card.  
+To access ESC Forward Programming, run the Rotorflight lua script on your transmitter by pressing the ‘Sys’ button on your radio and selecting ‘Rotorflight 2’ (under Tools). Ensure the FBL and ESC are powered up (in most cases, the battery pack will need to be connected to the ESC).
+
+![Forward Programming](./img/forward-etx-1.png)
+
+### Choose the connected ESC
+Scroll down to the bottom of the page and select the ESC you have in your Helicopter (will match the ESC Telemetry Protocol set in the FC).  
+![Forward Programming](./img/forward-etx-2.png)
+
+### Make your changes
+#### Page 1  
+![Forward Programming](./img/forward-etx-3.png)
+
+#### Page 2  
+![Forward Programming](./img/forward-etx-4.png)  
+
+#### Page 3  
+![Forward Programming](./img/forward-etx-5.png)  
+
+#### Page 4  
+![Forward Programming](./img/forward-etx-6.png)  
+
+  </TabItem>
+  <TabItem value="ETHOS" label="ETHOS">
+  ## ETHOS
+  <img src={ETHOS} alt="ETHOS" width="30%" c/>
+
+### Hardware
+From the Hardware section select ESC.  
+![Forward Programming](./img/ethos-1.png)
+
+### Esc Type
+Choose your ESC.  
+![Forward Programming](./img/ethos-2.png)
+
+### Basic/Advanced/Other
+Different parameters are available in the Basic/Advanced/Other sections.  
+![Forward Programming](./img/ethos-3.png)
+
+Change your settings as required.  
+![Forward Programming](./img/ethos-4.png)
+
+  </TabItem>
+</Tabs>
+
+:::
