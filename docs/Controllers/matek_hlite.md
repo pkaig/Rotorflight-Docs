@@ -50,5 +50,5 @@ The H-Lite FC is configured with 4 servos and 1 motor. If you wish to use this b
 ![UARTS](./img/mt-hl-ports.png)
 
 ### Manuals
-Detail specifications and doccumentation available at the Matek website.  
+Detail specifications and documentation available at the Matek website.  
 [Matek G474-HLite website](https://www.mateksys.com/?portfolio=g474-hlite)

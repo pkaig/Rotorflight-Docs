@@ -26,7 +26,7 @@ Connect the FC to your computer with an USB data cable. Now you are ready to ins
 Open the Rotorflight configurator and click on **Update Firmware**.
 
 * Choose **All release and Snapshots** from the dropdown. **Note:** ***Snapshots are for development and testing purposes. They may contain bugs!! We recommend using snapshot firmware with care and to assist the project with testing. Choose "Releases" if you would rather use the latest stable firmware*** 
-* Select the Target you identified in Step 1. You can also click on the "detect" buton to auto detect the target.  
+* Select the Target you identified in Step 1. You can also click on the "detect" button to auto detect the target.  
 * Select Full chip Erase, this will remove all previous configurations.
 * Click on **Load firmware[online]**  
 

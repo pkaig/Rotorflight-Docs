@@ -33,7 +33,7 @@ This provides a rapid short term increase in your command. This parameter is use
 ![Profiles](./img/profiles-pid-controller-settings.png)
 
 #### Error Rotation
-If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes referred to as Piro compensation.  
+If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes referred to as piro compensation.  
 
 #### Ground Error Decay
 A safety feature. This is to prevent the helicopter from tilting during takeoff.
@@ -49,15 +49,6 @@ The limit of how much I-term can be charged. During normal flights, it would not
 
 ### Offset Limit/Gain
 The offset gains are used for the [High Speed Integral](../Tuning/High-Speed-Integral.md) feature.
-
-:::note
-Offset feature is still being tested. It is currently only available if PID mode is set to 3 from the CLI
-
-```
-set pid_mode = 3
-```
-:::
-
 
 ![Profiles](./img/profiles-offset-limit.png)
 

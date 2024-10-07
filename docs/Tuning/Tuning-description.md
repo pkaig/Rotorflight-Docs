@@ -4,7 +4,7 @@ sidebar_position: 20
 
 # Tuning your Helicopter
 
-The default tuning parameters supplied with Rotorflight are designed to be safe and flyable for all helicoptes. This means in most cases the helicopter will not be responsive and locked in on your first flight and some tuning will be required. 
+The default tuning parameters supplied with Rotorflight are designed to be safe and flyable for all helicopters. This means in most cases the helicopter will not be responsive and locked in on your first flight and some tuning will be required. 
 
 These tuning parameters are located on the Profile tab in the [Configurator](../Tutorial-Setup/Profiles.md) and could also be changed via the [LUA Scripts](../Tutorial-Setup/LUA-Scripts.md) or [Adjustments](../Tutorial-Setup/Adjustments.md)
 
@@ -30,7 +30,7 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 2. Increase Proportional (P) on each axis individually, until it wobbles, then back off a bit.
 3. Increase Integral (I) on each axis individually, until it wobbles, then back off a bit.
  
-4. Set Feedforward so that you get good response and Integral (I) remains near 0 in full stick flips and rolls (viewed using the blackbox logs). Feedforward can also be tuned by following the desctiption in [Tune Feedforward](Tune-Feedforward.md). 
+4. Set Feedforward so that you get good response and Integral (I) remains near 0 in full stick flips and rolls (viewed using the blackbox logs). Feedforward can also be tuned by following the description in [Tune Feedforward](Tune-Feedforward.md). 
  
 5. If necessary, then tweak P:D ratio to tweak stick response damping to your liking.
 
@@ -53,4 +53,4 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 * Check tick-tock stops to see if P and D are too high by observing the fast oscillations. If oscillations are mainly slow, I-gain might be too high.
 * The B-gain should be increased incrementally to fit how sharp the response you want. Usually only pitch needs a significant B-gain.
 * Too high on B-gain results in unwanted oscillations at stops if low B-gain did not cause it.
-* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low number also hide gain imbalance that could show up during high-demand maneuvers or natural occuring disturbances (like a gust of wind)
+* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low number also hide gain imbalance that could show up during high-demand maneuvers or natural occurring disturbances (like a gust of wind)

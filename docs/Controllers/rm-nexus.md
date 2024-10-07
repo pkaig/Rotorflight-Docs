@@ -27,7 +27,7 @@ Telemetry: S.BUS, HoTT, S.Port, MSP, EDGETX, ELRS
 ESC: PWM, Oneshot, Multishot, Dshot  
 Support Tail ESC: 760μs/1520μs Servo  
 Support Tail Motor: Yes  
-Demensions: 41.3 X 25.4 X 13.1mm  
+Dimensions: 41.3 X 25.4 X 13.1mm  
 Weight: 16.8g   
 
 :::
@@ -48,7 +48,7 @@ Nexus supports F.Port on:
 The 'TX' pin of Port A, B or C or by remapping the SBUS to a TX for F.Port.  
 ![F.PORT](./img/nexus-fport.png)
 
-F.Port is an Unverted protocol over a single wire so must configured with both of these options enabled.  
+F.Port is an Un-iverted protocol over a single wire so must configured with both of these options enabled.  
 ![Remap SBUS to F.PORT](./img/nexus-remap.png) 
 
 ### Motorised Tail

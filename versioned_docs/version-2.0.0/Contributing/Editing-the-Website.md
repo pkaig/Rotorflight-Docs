@@ -4,7 +4,7 @@ sidebar_position: 20
 # Editing the Website
 Website is built using Docusaurus
 
-If you are interested in assisting us doccument Rotorflight please sign up to Github and send us your username so we can add you to the permissions. 
+If you are interested in assisting us document Rotorflight please sign up to Github and send us your username so we can add you to the permissions. 
 
 There are two ways you can Edit the Rotorflight Website. Directly online through the Github project repository or locally on your machine 
 
@@ -23,7 +23,7 @@ You can now edit the **Markdown** file as required. When complete click on the *
 
 ## Adding pictures
 
-To add an immage to your page open the img folder that is located in the same directory as your page. Chose **Add file** and upload. 
+To add an image to your page open the img folder that is located in the same directory as your page. Chose **Add file** and upload. 
 
 :::info
  Please do not use **Capitals*** or **Underscore** (_) in the image names.

@@ -19,7 +19,7 @@ If theres a peak that is not divisible by main or tail blade fundamental and per
 
 If there is a "bump" at the fundamental & second harmonic, consider lowering the Q values or use double filter on the fundamental. However, it is not advised to lower the Q value below 2.0 as it might significantly affect performance. Two of the main reasons that cause high vibration at those frequencies are blade tracking and blade imbalance. Check them first if you want to achieve a higher performance.
 
-For the low pass filter, it is not advised to lower it below 60hz, which might start to affect performance significantly. When there is no peak existing but there is high "grass" at around 60-80hz especailly when doing maneuvers, try lower it. Remember, its better if this cutoff is high so lower it (especially below 80hz) if absolutely necessary.
+For the low pass filter, it is not advised to lower it below 60hz, which might start to affect performance significantly. When there is no peak existing but there is high "grass" at around 60-80hz especially when doing maneuvers, try lower it. Remember, its better if this cutoff is high so lower it (especially below 80hz) if absolutely necessary.
 
 A well-tuned filter should have no sharp peaks and might have small bumps at 40-80hz. 
 

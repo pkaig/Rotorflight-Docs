@@ -119,7 +119,7 @@ Proceed to Modes Tab and setup arming as per below picture.
 
 ![Generic Setup](./img/generic-setup-arm.png)
 
-Alternatively you can paste ans save the below commands in CLI to easily achieve the same result.
+Alternatively you can paste and save the below commands in CLI to easily achieve the same result.
 
 ```
 aux 0 0 0 1800 2100 0 0

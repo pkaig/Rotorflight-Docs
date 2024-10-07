@@ -15,7 +15,7 @@ Any changes are taking effect immediately, and are saved in the configuration.
 
 ## Example - Select a Profile In-Flight
 
-Being able to switch between profiles in-flight allows you to use different headspeeds with differently tuned PIDs. It can also help with PID tuning, since it makes A/B testing possible with the flick of a switch.
+Being able to switch between profiles in-flight allows you to use different head-speeds with differently tuned PIDs. It can also help with PID tuning, since it makes A/B testing possible with the flick of a switch.
 
 ### Simple example
 

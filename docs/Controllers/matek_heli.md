@@ -42,7 +42,7 @@ When updating Rotorflight firmware. Please use the MATEKG474HELI target.
 ![UARTS](./img/mt-ports.png)
 
 ### Onboard BEC
- The Matec G474Heli contains a 5A-8A peak, Variable voltage (5v or 7.2v) BEC to supply the servos. The BEC will supply 5v by default and 7.2 v when the solder bridge is connected. THis is powered by the VBat connection.
+ The Matek G474Heli contains a 5A-8A peak, Variable voltage (5v or 7.2v) BEC to supply the servos. The BEC will supply 5v by default and 7.2 v when the solder bridge is connected. THis is powered by the VBat connection.
 
 :::caution
 If using an external BEC the internal BEC MUST be disabled via the [Vx Off] solder bridge.  
@@ -51,5 +51,5 @@ If using an external BEC the internal BEC MUST be disabled via the [Vx Off] sold
 ![BEC](./img/mt-bec.png)
 
 ### Manuals
-Detail specifications and doccumentation available at the Matek website.  
+Detail specifications and documentation available at the Matek website.  
 [Matek G474-HELI website](https://www.mateksys.com/?portfolio=g474-heli)

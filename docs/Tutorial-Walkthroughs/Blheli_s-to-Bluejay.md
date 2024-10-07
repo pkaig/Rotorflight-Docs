@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Flashing Blheli_S ESC to Bluejay firmware
 
-Rotorflight requires motor RPM telemetry to provide the Govenor function and filtering of the gyro signal. This can be provided by the ESC via bidirectional D-shot telemetry. Blheli_S ESC's do not provide this feature as standard and the firmware has to be updated. Bluejay has been tested with many Rotorflight builds and is preferred due to the ability to disable Damped Light mode and loading individual ESC config.   
+Rotorflight requires motor RPM telemetry to provide the Governor function and filtering of the gyro signal. This can be provided by the ESC via bidirectional D-shot telemetry. Blheli_S ESC's do not provide this feature as standard and the firmware has to be updated. Bluejay has been tested with many Rotorflight builds and is preferred due to the ability to disable Damped Light mode and loading individual ESC config.   
 
 ## Bluejay Configurator web page
 Bluejay can be flashed via the web page application at https://esc-configurator.com/ 

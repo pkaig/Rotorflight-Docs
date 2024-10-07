@@ -119,7 +119,7 @@ Set the mixer override at the bottom of the pages to **ON**. This will open the 
 * Set mixer yaw override to 60deg CW/CCW, adjust CW / CCW limits to the maximum number that does not causing binding.
 
 :::note
-* The calibration and CW / CCW limits vs. blade pitch is never perfect, because of the geometry assymmetry. It does not matter.
+* The calibration and CW / CCW limits vs. blade pitch is never perfect, because of the geometry asymmetry. It does not matter.
 * The reason for doing the calibration is to make the PID defaults better. Without the calibration, all defaults in PID Profile are probably wrong.
 * The Centre trim is mostly needed for making the CW/CCW limit numbers to match the blade angles. It also helps the feedforwards to work correctly.
 :::

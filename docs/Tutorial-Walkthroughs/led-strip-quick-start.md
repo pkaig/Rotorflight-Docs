@@ -42,7 +42,7 @@ We're going to define:
 Connect the Nexus to the Configurator using USB. 5V will now be available on port A, B and C. If you're using many LEDs, consider using an external 5V power supply.
 
 ### Define the 3 LEDs
-- Click on *Wire Ordening Mode*. The 16x16 matrix will become greenish.
+- Click on *Wire Ordering Mode*. The 16x16 matrix will become greenish.
 - Select a square in the matrix. A '0' should now be displayed in it.
 - Select *Color* as *Function*
 - Now select another square in the matrix. A '1' should now be displayed in it.
@@ -58,7 +58,7 @@ Your screen might now look like this, although the actual position of the three 
 ### Create the green navigation light
 - Select the square with '0' in it
 - In the color palette, left-click on green. The LED should now light up.
-- If you find the LED too bright, adjust the overal LED brightness under *LED Strip Global Settings*
+- If you find the LED too bright, adjust the overall LED brightness under *LED Strip Global Settings*
 - Enable *Blink* and set one checkmark. The LED wil now shortly turn off (=black).
 - In the color palette, right-click on white. Now the LED will shortly flash a white light.
 - Press *Save*
@@ -119,7 +119,7 @@ dma pin C07 0    # default is NONE
 save
 ```
 
-Note that altough we remapped TX6, RX6 is still there and functional.
+Note that although we remapped TX6, RX6 is still there and functional.
 
 Alternatively you can remap RX6 to LED_STRIP:
 

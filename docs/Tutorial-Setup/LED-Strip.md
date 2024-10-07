@@ -497,7 +497,7 @@ color 14 0,0,0
 color 15 0,0,0
 ```
 
-### Mode Colors Assignement
+### Mode Colors Assignment
 
 Mode Colors can be configured using the cli `mode_color` command.
 

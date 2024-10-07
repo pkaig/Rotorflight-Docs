@@ -46,7 +46,7 @@ Info to go here??
 
 
 :::note
-A correct RPM measurment is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurment setup. 
+A correct RPM measurement is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurement setup. 
 
 The FC also needs to know the [RPM](Rpm-Measurement.md) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
 
