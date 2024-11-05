@@ -15,6 +15,11 @@ The ELRS (which uses the Crossfire protocol) has a limited array of parameters t
 Custom telemetry has been implemented for ELRS in Rotorflight 2.1. This allows many more sensors that was previously not possible with CRSF. Currently there are over 100 sensors to choose from, and a maximum of 40 sensors can be used in total. With the ELRS configurable telemetry ratio, the sensors can be updated up to 20 times per second.  
 
 ***Note: ‘Telemetry Reuse’ (from Rotorflight 2) has been removed as it is no longer required***
+:::caution note
+For elrs custom telemetry to work as expected it is essential to use elrs 3.5 or higher. Using lower versions will result in intermittent telemetry lost warnings. 
+
+If you still get warnings after upgrading your elrs to 3.5 or higher - reducing the frame rate on the rotorflight config page to a value lower than your elrs module will prevent the receiver being overrun by telemetry data.
+:::
 
 :::info Please choose to suit your Radio - EdgeTX or ETHOS
 <Tabs groupId="operating-systems">
@@ -32,6 +37,7 @@ This is located under the Receiver tab in Rotorflight Configurator.
 ![Telemetry Tab](./img/telemetry-1.png)
 
 ### 2. Set ELRS Packet rate
+
 Set ‘Telemetry Rate’ to match the ‘Packet Rate’ you’ve set for ELRS (500 in the example below). Then set ‘Telemetry Ratio’ to match the ‘Telem Ratio’ you’ve set in ELRS (32 in the example below). The screenshot below is from Express LRS Lua script’s main screen  
 
 ![Telemetry Tab](./img/telemetry-2.png)
@@ -65,7 +71,8 @@ Contents of your SD card should look something like this:
 - [Update your EdgeTX firmware](https://edgetx.org/getedgetx/)  
 
 **Note:** b&w radios (Boxer, Zorro, T-LITE, X7, etc) don't have the Custom Scripts feature.  
-You will need to flash your radio with the [luamixer firmware](https://github.com/pfeerick/lang-firmwares/releases/tag/v2.10.5) 
+You will need to flash your radio with the following firmware. This addition will be merged into the next EdgeTX release.
+- [luamixer firmware](https://github.com/pfeerick/lang-firmwares/releases/tag/v2.10.5) 
 
 ![Telemetry Tab](./img/telemetry-7.png)
 
