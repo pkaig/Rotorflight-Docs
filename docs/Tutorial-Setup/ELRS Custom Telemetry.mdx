@@ -47,7 +47,7 @@ Next, select the sensors you want enabled. Each added sensor can be dragged up a
 
 ![Telemetry Tab](./img/telemetry-3.png)
 
-### 4. Download telemetry LUA Script
+### 4. Download telemetry Lua Script
 NOTE! Lua script is required for Custom Telemetry
 Custom telemetry requires the radio to run a telemetry Lua script in the background. You need to install all the Lua scripts coming with the release, and then enable rf2tlm.lua as a ‘Custom Script’ in your EdgeTx model. The steps below explain how to to this and discover the newly added sensors on your EdgeTx radio.  
 
@@ -55,7 +55,7 @@ Custom telemetry requires the radio to run a telemetry Lua script in the backgro
 
 ![Telemetry Tab](./img/telemetry-4.png)
 
-### 5. Add LUA to SD card
+### 5. Add Lua to SD card
 2. Copy the ‘Script’ folder from the zip file into your EdgeTx radio’s SD card (root directory). There will be a Scripts folder already in your SD card. You can safely overwrite any existing files. (Note: As with any upgrades, ensure you have already backed up your SD card in case anything goes wrong)
 Contents of the zip file:  
 
@@ -98,6 +98,38 @@ Still on your EdgeTx radio, navigate to Model settings -> Custom Scripts page. L
 To set up ELRS custom telemetry, first enable telemetry and CRSF Custom Telemetry for telemetry stream to be sent to your radio. This is located under the Receiver tab in Rotorflight Configurator.  
 
 ![Telemetry Tab](./img/telemetry-1.png)
+
+### 2. Open Rotorflight on Tx
+
+![Telemetry Tab](./img/telem-ethos-1.png)
+
+### 3. Configure the external module
+Chose ELRS protocol on your external module
+
+![Telemetry Tab](./img/telem-ethos-2.png)
+
+### 4. Setup Tx
+Set the Packet rate and telemetry ratio to match whet has been configured in the Flight controller in step 1.
+
+![Telemetry Tab](./img/telem-ethos-3.png)
+
+### 5. Enable RF custom Lua
+Exit the Tx screen and navigate to the Lua icon. Select and enable the Rotorflight background task.
+
+![Telemetry Tab](./img/telem-ethos-4.png)
+
+![Telemetry Tab](./img/telem-ethos-5.png)
+
+### 6. Telemetry
+Navigate to the telemetry page
+
+![Telemetry Tab](./img/telem-ethos-6.png)
+
+### 7. Sensors
+Discover new sensors.
+
+![Telemetry Tab](./img/telem-ethos-7.png)
+
 
   </TabItem>
 </Tabs>
