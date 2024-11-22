@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 70
 ---
 
 # Flashing Blheli_S ESC to Bluejay firmware

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 30
 ---
 
-# Using Stability Modes
+# Using Stability Modes example
 
 ## Purpose
 :::info
