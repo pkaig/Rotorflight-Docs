@@ -100,6 +100,6 @@ Use the below switch to enable/disable the telemetry stream sent to your radio. 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 
 :::tip
-For ELRS receivers, follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
+For ELRS receivers, follow the [ELRS Custom Telemetry](./ELRS%20Custom%20Telemetry.mdx) page for how to setup. This is new for Rotorflight 2.1 and ELRS Re-use is no longer available.  
 :::
 
