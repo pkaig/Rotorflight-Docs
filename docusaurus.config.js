@@ -65,7 +65,7 @@ const config = {
     //        lastVersion: 'current',
             versions: {
               current: {
-                label: 'Development Snapshots',
+                label: 'Version 2.1.0',
                 //path: '2.1.0',
                 banner: 'unreleased'
               },
@@ -109,19 +109,26 @@ const config = {
           srcDark: 'img/Rotorflight_outline_dark.svg',
         },
         items: [
-          { to: '/announcement', label: 'Announcements', position: 'left' },
-          {
+ //         { to: '/announcement', label: 'Announcements', position: 'left' },
+//          {
+//            type: 'doc',
+//            docId: 'wiki',
+//            position: 'left',
+//            label: 'Wiki',
+//          },
+                   {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+            to: '/docs/wiki/intro',
           },
           {
             type: 'docSidebar',
             sidebarId: 'ControllerSidebar',
             position: 'left',
-            label: 'Controllers',
-            to: '/docs/Controllers/intro',
+            label: 'Download',
+            to: '/docs/download/intro',
           },
           {
             type: 'docSidebar',
@@ -183,6 +190,10 @@ const config = {
                 to: '/docs/Tutorial-Setup/Status',
               },
               {
+                label: 'Download',
+                to: '/docs/download/intro',
+              },
+              {
                 label: 'Manufacturers',
                 to: '/docs/Manufacturers/intro',
               },
@@ -221,14 +232,15 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+/*              {
                 label: 'Video Blog',
                 to: '/blog',
               },
               {
                 label: 'Announcements',
                 to: '/announcement',
-              },
+              },    
+*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/rotorflight',

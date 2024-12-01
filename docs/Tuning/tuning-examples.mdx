@@ -3,6 +3,7 @@ sidebar_position: 90
 ---
 import Tabs     from '@theme/Tabs';
 import TabItem  from '@theme/TabItem';
+import tabStyles   from './tabs.module.css';
 
 import noFilter         from './img/no-filter.png';
 import Filter           from './img/working-filter.png';
@@ -45,14 +46,14 @@ There are two options for using these pre-sets.
 ### Jonas Wackershauser - M4  
 
 <Tabs>
-    <TabItem value="OMPHOBBY M4" label="OMPHOBBY M4" default>
+    <TabItem value="OMPHOBBY M4" label="OMPHOBBY M4" default attributes={{className: tabStyles.tab}}>
     <div style={{textAlign: 'center'}}>
         <img src={jonas_m4} alt="Jonas M4" width="60%"/>
     </div>
     </TabItem>
-    <TabItem value="View Pre-set" label="View Pre-set">
+    <TabItem value="View Pre-set" label="View Pre-set" attributes={{className: tabStyles.tab}}>
         <Tabs>
-            <TabItem value="Author’s Notes" label="Author’s Notes" default>
+            <TabItem value="Author’s Notes" label="Author’s Notes" attributes={{className: tabStyles.tab}}>
             Author’s Notes - READ BEFORE USING THIS TUNE  
 
             **Creator:**&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Jonas Wackershauser @Johnny31297   
@@ -89,10 +90,10 @@ There are two options for using these pre-sets.
             **Tx Settings:**	ELRS 500Hz Wide  
 
         </TabItem>
-        <TabItem value="Recommended Filters" label="Recommended Filters" default>
+        <TabItem value="Recommended Filters" label="Recommended Filters" attributes={{className: tabStyles.tab}}>
             ![M4 Filters](./img/jw-m4-filters.png)  
         </TabItem>
-        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working">
+        <TabItem value="I have checked and filters are enabled and working" label="I have checked: filters are enabled and working" attributes={{className: tabStyles.tab}}>
             #### Diff all
             [**Jonas M4 Diff All**](./diff-all/RTFL_cli_M4_Jonas_W_20240903_155036.txt)  - This is suitable if you have the same equipment and setup as Jonas.   
 
@@ -122,7 +123,7 @@ There are two options for using these pre-sets.
 ### Jonas Wackershauser - M4 Max  
 
 <Tabs>
-    <TabItem value="OMPHOBBY M4 Max" label="OMPHOBBY M4 Max" default>
+    <TabItem value="OMPHOBBY M4 Max" label="OMPHOBBY M4 Max" default attributes={{className: tabStyles.tab}}>
     <div style={{textAlign: 'center'}}>
         <img src={jonas_m4_max} alt="Jonas M4 Max" width="60%"/>
     </div>
