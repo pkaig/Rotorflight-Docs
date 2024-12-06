@@ -8,6 +8,7 @@ If required the Beeper function can be enabled on UART pin, the example below ca
 
 
 resource SERIAL_RX 6 NONE
+
 resource BEEPER 1 C06
 
 The Beeper required MUST be a 5v active low and buffered to protect the UART output.
