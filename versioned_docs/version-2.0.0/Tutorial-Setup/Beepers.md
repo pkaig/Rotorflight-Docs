@@ -4,7 +4,7 @@ sidebar_position: 190
 
 # Beepers
 
-If required the Beeper function can be enabled on UART pin, the example below can be copied and pasted into the CLI section then type save and enter. This example has the Beeper on UART(B) RX pin
+If required the Beeper function can be enabled on any UART pin, the example below can be copied and pasted into the CLI section then type save and enter. This example has the Beeper on UART(B) RX pin
 
 
 resource SERIAL_RX 6 NONE
