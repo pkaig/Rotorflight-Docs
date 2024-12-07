@@ -15,9 +15,6 @@ The Beeper required MUST be a 5v active low and buffered to protect the UART out
 
 These have been tested and working, you may find these or similar local to your location.
 
-### Matek 
-
-
 
 [Beeper1](https://www.aliexpress.com/item/1005004267414201.html?spm=a2g0o.order_list.order_list_main.64.739a1802Yex7Yd)
 
@@ -25,4 +22,4 @@ These have been tested and working, you may find these or similar local to your 
 
 Under the Beepers tab in the Rotorflight configurator you can select the required alerts 
 
-![Step 1](./img/beeper-1.png)
+![Step 1](./img/beeper-3.png)
