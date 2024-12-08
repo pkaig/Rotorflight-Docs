@@ -48,7 +48,8 @@
 </ul>
 <p><strong>Wishing everybody a great flying season with RF2!</strong></p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -103,7 +104,8 @@ that is improving stability in hover. It should not affect flight performance ot
 </ul>
 <p><strong>Happy tweaking and flying!</strong></p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -179,7 +181,8 @@ Also, the Configurator is now translated to a few language (pending polishing).<
 </ul>
 <p><strong>Happy tweaking and flying!</strong></p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -229,7 +232,8 @@ Also, the Configurator is now translated to a few language (pending polishing).<
 <li>Ethos: added support for dark and normal mode</li>
 </ul>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -297,7 +301,8 @@ E.g. 25.5, 255, 2550, 25500. (including RPM!)</p>
 <p>Next one will be a Release Candidate, so please report any issues promptly!</p>
 <p>Happy tuning (and maybe even flying)!</p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -357,7 +362,8 @@ This is especially neat for scale flying, or just for the pilots preference.</p>
 <p>Servo limits have been extended to 70deg, as requested.
 As before, they need to be adjusted if the default value is not suitable for the heli.</p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -393,7 +399,8 @@ As before, they need to be adjusted if the default value is not suitable for the
 <li>Update locales for translation</li>
 </ul>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -432,7 +439,8 @@ As before, they need to be adjusted if the default value is not suitable for the
 <li>N/A</li>
 </ul>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -495,7 +503,8 @@ NOTE! This snapshot is not suitable for end-users. It is intended for beta-teste
 <li>Cleaned up code</li>
 </ul>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
     <entry>
@@ -557,7 +566,8 @@ Added Offset gains
 Added Cyclic Cross-Coupling
 Added Governor Max Throttle</p>]]></content>
         <author>
-            <name>Rotorflight</name>
+            <name>Phil Kaighin</name>
+            <uri>https://github.com/pkaig</uri>
         </author>
     </entry>
 </feed>

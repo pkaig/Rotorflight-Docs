@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[9385],{40600:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":13,"previousPage":"/blog","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

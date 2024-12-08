@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[8947],{56600:t=>{t.exports=JSON.parse('{"authors":[{"name":"Phil Kaighin","title":"Maintainer of Docusaurus","url":"https://github.com/pkaig","imageURL":"https://github.com/pkaig.png","key":"PDK","page":null,"count":0}]}')}}]);
