@@ -65,7 +65,7 @@ const config = {
     //        lastVersion: 'current',
             versions: {
               current: {
-                label: 'Development Snapshots',
+                label: '2.1.0',
                 //path: '2.1.0',
                 banner: 'unreleased'
               },

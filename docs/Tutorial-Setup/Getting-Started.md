@@ -20,4 +20,4 @@ sidebar_position: 1
 14. Setup [ARMING](Modes.md#arm), and other required modes.
 15. Setup [Profile Switching](../Tutorial-Walkthroughs/Profile-switching-example.md) and other [Adjustments](Adjustments.md) if required.
 16. Setup [BLACKBOX](Blackbox.md#what-is-blackbox) Logging.
-17. Optional: Setup [LUA Script](LUA-Scripts.md#introduction) on radio.
+17. Optional: Setup [LUA Script](Lua-Scripts.mdx#introduction) on radio.
