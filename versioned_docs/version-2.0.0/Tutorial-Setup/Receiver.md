@@ -24,6 +24,10 @@ There are many receiver protocols supported in Rotorflight, SBUS in the one of t
 ![Receiver Tab](./img/receiver-sbus.png)
 ![Receiver Tab](./img/receiver-uart-sport.png)
 
+* F.Bus needs to be connected to a TX pad, with `Inverted Serial Signaling` activated ,and `Half-Duplex` activated. F.Bus is the preffered Frsky connection method, its faster that F.Port *
+
+  
+
 
 * F.Port needs be connected to a TX pad, with `Inverted Serial Signaling` activated ,and `Half-Duplex` activated.
 
