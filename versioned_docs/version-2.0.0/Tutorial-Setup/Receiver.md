@@ -12,7 +12,7 @@ First activate `Serial Rx` on the UART you have connected your receiver.
 
 ## Receiver Type
 
-There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./LUA-Scripts.md) to perform tuning using you radio.
+There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./Lua-Scripts.mdx) to perform tuning using you radio.
 
 
 * SBUS needs to be connected to an RX pad.
@@ -74,7 +74,7 @@ For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the
 
 :::caution
 Calibrating Stability Mode
-The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](../Tutorial-Walkthroughs/Using-StabilityModes.md). 
+The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](../Tutorial-Walkthroughs/Using-Stability-Modes-Example.md). 
 **Do not use trim on your transmitter**.
 :::
 
