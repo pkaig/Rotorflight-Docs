@@ -49,7 +49,7 @@ The below table shows some gear/pulley tooth counts for some famous two-stage he
 |SAB Raw 700 | 18 to 25 ( Std 21T ) | 56 | 18 | 69 | 34 | 26 |
 |SAB Raw 700 Nitro | 26 to 28 ( Std 27T ) | 52 | 14 | 58 | 27 | 22 |
 |SAB Raw Piuma | 18 to 26 ( Std 20T ) | 52 | 14 | 58 | 27 | 22 |
-
+|SAB ilGoblin 700 RAW/PRO | 18 to 25 ( Std 21T ) | 56 | 18 | 68 | 34 | 26 |
 
 For example for the Raw 700 with STD 21T motor pulley, the calculation will be as follow:
 
