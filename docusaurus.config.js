@@ -45,17 +45,6 @@ const config = {
         path: './announcement',
       },
     ],
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          {
-            from: ["/docs/test"],
-            to: "/docs/Tutorial-Setup",
-          },
-        ],
-      },
-    ],
     require.resolve('docusaurus-lunr-search'),
   ],
 
