@@ -6,7 +6,7 @@ sidebar_position: 20
 
 The default tuning parameters supplied with Rotorflight are designed to be safe and flyable for all helicopters. This means in most cases the helicopter will not be responsive and locked in on your first flight and some tuning will be required. 
 
-These tuning parameters are located on the Profile tab in the [Configurator](../Tutorial-Setup/Profiles.md) and could also be changed via the [LUA Scripts](../Tutorial-Setup/Lua-Scripts.mdx) or [Adjustments](../Tutorial-Setup/Adjustments.md)
+These tuning parameters are located on the Profile tab in the [Configurator](../Wiki/Configurator/Profiles.md) and could also be changed via the [LUA Scripts](../Wiki/Tutorial-Setup/Lua-Scripts.mdx) or [Adjustments](../Wiki/Configurator/Adjustments.md)
 
 ## Tuning Profile PID:  
 ![Profile PID](./img/tuning-pid.png)

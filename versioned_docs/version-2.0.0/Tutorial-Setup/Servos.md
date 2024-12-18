@@ -140,7 +140,8 @@ Calibrate the range. Not all servos move by the same angle for each change in co
 * Set the override to a positive value (e.g. 30°)
 * measure the current servo arm angle and increase or decrease the [Scale Pos](#scale-neg-and-scale-pos) until the servo arm angle matches the override angle.
 
-![Servo Tab](./img/servo-5.png)
+![Servo Tab](../Tutorial-Setup/img/servo-5.png)
+
 
 
 

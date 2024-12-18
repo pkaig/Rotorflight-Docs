@@ -1,0 +1,49 @@
+---
+sidebar_position: 200
+---
+
+import Arm_succeed from './img/arming-succeed.mp4';
+import Arm_fail from './img/arming-fail.mp4';
+
+
+# Swashplate Wiggle
+
+The swashplate can be configured to 'wiggle' as an indication for when you are
+* Ready to fly
+* Armed (default is disabled)
+* FC Error detected
+* FC Fatal Error
+
+## FC is ready to fly
+
+If arming is successful and ready to fly the swashplate will wiggle as an indication.
+
+      <video
+        src={Arm_succeed}
+        controls 
+        playsInline
+        muted
+        width="85%"
+      />
+
+## FC Error
+If the flight controller identifies a configuration fault it will do an error movement by cycling collective several times.
+
+      <video
+        src={Arm_fail}
+        controls
+        playsInline
+        muted
+        width="85%"
+      />
+
+These can be enaabled (currently only via the CLI) using the following commands.
+
+`set wiggle_enable_ready = ON or OFF (default ON)`  
+`set wiggle_enable_armed = ON or OFF (default OFF)`  
+`set wiggle_enable_error = ON or OFF (default ON)`  
+`set wiggle_enable_fatal = ON or OFF (default ON)`  
+
+The 'amount' (strength) of wiggle and 'speed' (frequency) can be modified by changing the values below.  
+`set wiggle_strength = 50`  
+`set wiggle_frequency = 10`  
