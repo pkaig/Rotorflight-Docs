@@ -9,7 +9,7 @@ This is a release candidate (RC) for the upcoming release of Rotorflight v2.1. T
 :::
 
 :::info Download Here!!
-[Download the Release Candidate v2.1](https://github.com/rotorflight/rotorflight-configurator/releases/tag/release/2.1.0-RC2)
+[Download the Release Candidate v2.1](https://github.com/rotorflight/rotorflight-configurator/releases/tag/release/2.1.0-RC3)
 :::
 
 ![Configurator](./img/configurator.png)

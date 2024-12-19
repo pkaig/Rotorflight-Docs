@@ -32,16 +32,23 @@ Select the correct ESC telemetry protocol based on the one you are using.
 
 ![ESC Telemetry](./img/esc-telem-sel-p.png)
 
+### Power Config
+Enable the Voltage and Current from the `Power` Tab.
+
+![ESC Telemetry](./img/esc-telem-power.png)
+
 **For Hobbywing V4**
 Additional parameters are provided for the voltage and current gains, and zero offsets.
 
+:::info note
+These parameters are set to **zero by default** to enable the **Auto-Calculation** within the firmware.
+Only change these values if Auto-calculation is inaccurate and you wish to fine tune the voltage and current.  
+You can use the below values as a starting point.
+:::
+
 * `set esc_sensor_hw4_voltage_gain = 0` 
 * `set esc_sensor_hw4_current_gain = 0` 
-* `set esc_sensor_hw4_current_offset = 0`  
-
-These parameters are set to zero by default to enable the Auto-Calculation within the firmware.
-If you wish to fine tune the voltage and current you can use the below values as a starting point.
-
+* `set esc_sensor_hw4_current_offset = 0` 
 
 | Model                | Voltage gain | Current gain | Current offset |
 | :------------------- | -----------: | -----------: | -------------: |
@@ -51,10 +58,5 @@ If you wish to fine tune the voltage and current you can use the below values as
 | Platinum HV 130A     |      210     |     157      |        0       |
 | Platinum HV 200A     |      210     |     157      |        477     |
 | FlyFun HV 160A       |      210     |     66       |        381     |
-
-### Power Config
-Enable the Voltage and Current from the `Power` Tab.
-
-![ESC Telemetry](./img/esc-telem-power.png)
 
 
