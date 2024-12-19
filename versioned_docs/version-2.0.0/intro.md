@@ -14,7 +14,7 @@ Rotorflight does NOT support multi-rotor drones, nor airplanes; it is only for t
 
 Most Betaflight F4, F7 and H7 flight controllers are compatible with Rotorflight. They usually require some soldering. 
 
-Since 2023 there are also commercial [**Rotorflight controllers**](../Wiki/Controllers/intro.md) available, such as the 
+Since 2023 there are also commercial [**Rotorflight controllers**](../version-2.0.0/Controllers/intro.md) available, such as the 
 * [**Flywing HELI-F405**](./Controllers/flywingf405heli.md)  
 * [**FlyDragon F722 v2.2**](./Controllers/flydragon2.2.md)  
 * [**Radiomaster Nexus**](./Controllers/rm-nexus.md)  
