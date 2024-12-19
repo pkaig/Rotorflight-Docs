@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrotorflight_docs=self.webpackChunkrotorflight_docs||[]).push([[5266],{69064:t=>{t.exports=JSON.parse('{"blogBasePath":"/announcement","blogTitle":"Blog","authorsListPath":"/announcement/authors"}')}}]);
