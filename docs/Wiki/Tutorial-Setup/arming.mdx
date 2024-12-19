@@ -17,7 +17,7 @@ import Arming3 from './img/arming-3.mp4';
 * Arming should be on a separate switch and preferably one that is not easy to get to and switch by accident. Flick this switch to Arm the Flight controller, then once successful you turn off throttle hold (on an easy to get to switch so you can hold quickly if you need to) and let it spool up.
 * Arm is entwined in a lot of the Rotorflight code (from the betaflight base). Lots of components are disabled while it is not armed. As a result if you disable in flight you are probably going to crash. 2 switches is the key.
 
-The latest v2.1 when you Arm successfully the swashplate will do a wiggle to indicate everything is ok.
+The latest v2.1 when your helicopter Arm flags are clear and you are ok to Arm, the swashplate will do a wiggle to indicate everything is ready.
 
 **Arming is different to throttle hold**. Throttle hold is just a switch that sets the throttle signal to minimum. It is only on the Transmitter and not on the Flight Controller. 
 
@@ -64,7 +64,7 @@ As shown in the video below:
       />
 
 ## Swashplate Wiggle indication
-The swashplate is configured to indicated successful Arming as well as Errors. More details can be found on the [Swashplate wiggle](../Tutorial-Setup/Swash-wiggle.mdx) page.
+The swashplate is configured to indicated ready for Arming as well as Errors. More details can be found on the [Swashplate wiggle](../Tutorial-Setup/Swash-wiggle.mdx) page.
 
 ## Arming Disable flags
 The Arming disable flags are a list of issues that could be preventing your helicopter from Arming. These are things like Gyro not configured, Receiver fail ot throttle not at minimum. Please see the list below for details of each flag and how to fix it.   
