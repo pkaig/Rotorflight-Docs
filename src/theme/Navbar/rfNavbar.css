@@ -8,6 +8,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px 10px;
+    filter: blur(8px)
+    -webkit-filter: blur(8px)
 }
 
 [data-theme='dark'] .rfNavbar .navbar {
