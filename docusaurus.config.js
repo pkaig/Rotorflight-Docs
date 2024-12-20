@@ -185,10 +185,10 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
-              {
+         /*     {
                 label: 'Setup',
                 to: '/docs/Tutorial-Setup/Status',
-              },
+              },*/
               {
                 label: 'Download',
                 to: '/docs/download/intro',
