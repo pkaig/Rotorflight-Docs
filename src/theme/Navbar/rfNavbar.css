@@ -1,5 +1,5 @@
 .rfNavbar .navbar {
-    background-color: rgba(77,168,218,0.92);
+    background-color: rgba(77,168,218,0.7);
     border-radius: 25px;
     width: 97%;
     height: 50px;
@@ -12,5 +12,5 @@
 }
 
 [data-theme='dark'] .rfNavbar .navbar {
-    background-color: rgba(96, 96, 96, 0.92);
+    background-color: rgba(96, 96, 96, 0.7);
   }
