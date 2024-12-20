@@ -30,7 +30,7 @@ It is only for traditional RC helicopters.
 :::
 
 ## Latest Rotorflight 2 Version  
-The Rotorflight 2 Snapshots for testing can be found on the [**Announcements**](/announcement/) page. 
+The Rotorflight 2 [**Downloads**](/docs/download/configurator) page. 
 
 ## Discussion & Help
 

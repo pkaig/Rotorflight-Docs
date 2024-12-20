@@ -89,15 +89,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
+/*      announcementBar: {
         id: 'support_us',
         content:
           'ROTORFLIGHT 2 Official Release 2.0.0 is now available. See Announcements to download',
         backgroundColor: '#007cc7',  
-//        backgroundColor: '#FF01D9',
+        backgroundColor: '#FF01D9',
         textColor: '#000000',
         isCloseable: false,
-      },
+      }, */
 
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -128,7 +128,7 @@ const config = {
             sidebarId: 'ControllerSidebar',
             position: 'left',
             label: 'Download',
-            to: '/docs/download/intro',
+            to: '/docs/download/configurator',
           },
           {
             type: 'docSidebar',
@@ -155,7 +155,10 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
             banner: 'unreleased',
-        //   dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+      /*      dropdownItemsAfter: [{
+                to: '/versions', label: 'All versions'
+            }
+            ],*/
             //dropdownActiveClassDisabled: true,
           },// { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -191,7 +194,7 @@ const config = {
               },*/
               {
                 label: 'Download',
-                to: '/docs/download/intro',
+                to: '/docs/download/configurator',
               },
               {
                 label: 'Manufacturers',
