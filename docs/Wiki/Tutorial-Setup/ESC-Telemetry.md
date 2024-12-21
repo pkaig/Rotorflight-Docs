@@ -41,16 +41,18 @@ Enable the Voltage and Current from the `Power` Tab.
 
 **For Hobbywing V4**
 Additional parameters are provided for the voltage and current gains, and zero offsets.
-
-:::info note
 These parameters are set to **zero by default** to enable the **Auto-Calculation** within the firmware.
-Only change these values if Auto-calculation is inaccurate and you wish to fine tune the voltage and current.  
-You can use the below values as a starting point.
-:::
 
 * `set esc_sensor_hw4_voltage_gain = 0` 
 * `set esc_sensor_hw4_current_gain = 0` 
 * `set esc_sensor_hw4_current_offset = 0` 
+
+:::info note
+Only change these values if Auto-calculation is inaccurate and you wish to fine tune the voltage and current.  
+You can use the below values as a starting point.
+:::
+
+
 
 | Model                | Voltage gain | Current gain | Current offset |
 | :------------------- | -----------: | -----------: | -------------: |
