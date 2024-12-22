@@ -2,32 +2,44 @@
 sidebar_position: 200
 ---
 
-import Arm_succeed from './img/arming-succeed.mp4';
+import Arm_ready from './img/arming-ready.mp4';
 import Arm_fail from './img/arming-fail.mp4';
 
 
 # Swashplate Wiggle
 
 The swashplate can be configured to 'wiggle' as an indication for when you are
-* Ready to fly
+* Ready to Arm
 * Armed (default is disabled)
 * FC Error detected
 * FC Fatal Error
 
-## FC is ready to fly
-
-If arming is ready to be enabled and there is no prevention flags active (ready to arm) the swashplate will wiggle as an indication.
+## FC is ready to Arm
+If arming is ready to be enabled and there is no prevention flags active (ready to arm) the swashplate will wiggle as an indication.  
+It can be enabled or disabled from the cli:  
+`set wiggle_enable_ready = ON or OFF (default ON)  `  
+`save`
 
       <video
-        src={Arm_succeed}
+        src={Arm_ready}
         controls 
         playsInline
         muted
         width="85%"
       />
 
+## FC Armed
+* This is just a very brief single collective movement indicating the FC has just armed. This is disabled by default.  
+It can be enabled or disabled from the cli:  
+`set wiggle_enable_armed = ON or OFF (default OFF)  `
+`save`
+
 ## FC Error
 If the flight controller identifies a configuration fault it will do an error movement by cycling collective several times.
+* Arm switch is active  
+It can be enabled or disabled from the cli:  
+`set wiggle_enable_error = ON or OFF (default ON)  `  
+`save`
 
       <video
         src={Arm_fail}
@@ -37,12 +49,20 @@ If the flight controller identifies a configuration fault it will do an error mo
         width="85%"
       />
 
-These can be enaabled (currently only via the CLI) using the following commands.
+## FC Fatal error
+The following [**Arm disable flags**](arming.mdx#disable-flags-description) will trigger a FC fatal error.  
+It can be enabled or disabled from the cli:  
+`set wiggle_enable_fatal = ON or OFF (default ON)  `  
+`save`  
 
-`set wiggle_enable_ready = ON or OFF (default ON)`  
-`set wiggle_enable_armed = ON or OFF (default OFF)`  
-`set wiggle_enable_error = ON or OFF (default ON)`  
-`set wiggle_enable_fatal = ON or OFF (default ON)`  
+* 'NOGYRO'
+* 'LOAD' 
+* 'GOVERNOR'
+* 'RPMFILTER'
+* 'REBOOT_REQD'
+* 'NO_ACC_CAL'
+* 'MOTOR_PROTO'
+* 'DSHOT_BBANG'  
 
 The 'amount' (strength) of wiggle and 'speed' (frequency) can be modified by changing the values below.  
 `set wiggle_strength = 50`  

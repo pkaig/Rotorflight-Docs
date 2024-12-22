@@ -64,7 +64,7 @@ const config = {
         path: './announcement',
       },
     ],
-    require.resolve('docusaurus-lunr-search'),
+//    require.resolve('docusaurus-lunr-search'),
   ],
 
 
