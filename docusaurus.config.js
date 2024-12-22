@@ -44,10 +44,7 @@ const config = {
         toExtensions: ['exe', 'zip'], // /myAsset -> /myAsset.zip (if latter exists)
         redirects: [
           // /docs/oldDoc -> /docs/newDoc
-          {
-            to: '/docs/next/Wiki/intro',
-            from: '/docs/testing',
-          },
+          { from: '/docs/testing/intro', to: '/docs/next/Wiki/intro', },
         //  Redirect from multiple old paths to the new path
         //  {
         //    to: '/docs/newDoc2',

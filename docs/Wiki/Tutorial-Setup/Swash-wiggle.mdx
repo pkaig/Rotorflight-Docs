@@ -17,7 +17,7 @@ The swashplate can be configured to 'wiggle' as an indication for when you are
 ## FC is ready to Arm
 If arming is ready to be enabled and there is no prevention flags active (ready to arm) the swashplate will wiggle as an indication.  
 It can be enabled or disabled from the cli:  
-`set wiggle_enable_ready = ON or OFF (default ON)  `  
+`set wiggle_enable_ready = ON or OFF (default ON)`  
 `save`
 
       <video
@@ -31,14 +31,14 @@ It can be enabled or disabled from the cli:
 ## FC Armed
 * This is just a very brief single collective movement indicating the FC has just armed. This is disabled by default.  
 It can be enabled or disabled from the cli:  
-`set wiggle_enable_armed = ON or OFF (default OFF)  `
+`set wiggle_enable_armed = ON or OFF (default OFF)`  
 `save`
 
 ## FC Error
 If the flight controller identifies a configuration fault it will do an error movement by cycling collective several times.
 * Arm switch is active  
 It can be enabled or disabled from the cli:  
-`set wiggle_enable_error = ON or OFF (default ON)  `  
+`set wiggle_enable_error = ON or OFF (default ON)`  
 `save`
 
       <video
@@ -52,7 +52,7 @@ It can be enabled or disabled from the cli:
 ## FC Fatal error
 The following [**Arm disable flags**](arming.mdx#disable-flags-description) will trigger a FC fatal error.  
 It can be enabled or disabled from the cli:  
-`set wiggle_enable_fatal = ON or OFF (default ON)  `  
+`set wiggle_enable_fatal = ON or OFF (default ON)`  
 `save`  
 
 * 'NOGYRO'
