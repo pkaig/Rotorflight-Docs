@@ -44,7 +44,23 @@ const config = {
         toExtensions: ['exe', 'zip'], // /myAsset -> /myAsset.zip (if latter exists)
         redirects: [
           // /docs/oldDoc -> /docs/newDoc
-          { from: '/docs/testing/intro', to: '/docs/next/Wiki/intro', },
+          
+          { from: '/docs/Tutorial-Setup/Configuration', to: '/docs/Wiki/Configurator/Configuration', },
+          { from: '/docs/Tutorial-Setup/Receiver', to: '/docs/Wiki/Configurator/Receiver', },
+          { from: '/docs/Tutorial-Setup/Failsafe', to: '/docs/Wiki/Configurator/Failsafe', },
+          { from: '/docs/Tutorial-Setup/Beepers', to: '/docs/Wiki/Configurator/Beepers', },
+          { from: '/docs/Tutorial-Setup/Power', to: '/docs/Wiki/Configurator/Power', },
+          { from: '/docs/Tutorial-Setup/RPM-Filters', to: '/docs/Wiki/Tutorial-Setup/RPM-Filters', },
+          { from: '/docs/Tutorial-Setup/Motor-and-Esc', to: '/docs/Wiki/Tutorial-Setup/Motor-and-Esc', },
+          { from: '/docs/Tutorial-Setup/Servos', to: '/docs/Wiki/Configurator/Servos', },
+          { from: '/docs/Tutorial-Setup/Mixer', to: '/docs/Wiki/Configurator/Mixer', },
+          { from: '/docs/Tutorial-Setup/Rates', to: '/docs/Wiki/Configurator/Rates', },
+          { from: '/docs/Tutorial-Setup/Profiles', to: '/docs/Wiki/Configurator/Profiles', },
+          { from: '/docs/Tutorial-Setup/Modes', to: '/docs/Wiki/Configurator/Modes', },
+          { from: '/docs/Tutorial-Setup/Adjustments', to: '/docs/Wiki/Configurator/Adjustments', },
+          { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
+          { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
+          { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
         //  Redirect from multiple old paths to the new path
         //  {
         //    to: '/docs/newDoc2',

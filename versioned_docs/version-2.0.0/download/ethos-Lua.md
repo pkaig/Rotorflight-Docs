@@ -13,6 +13,6 @@ Lua script **must match** the current firmware version loaded into your Flight C
 Ethos RF Touch Suite - Not released in v2.0. This is only available from v2.1 onwards.
 :::
 
-![Ethos Tx](../Tutorial-Setup/img/ethos-logo.png)
+![Ethos Tx](../img/ethos-logo.png)
 
 
