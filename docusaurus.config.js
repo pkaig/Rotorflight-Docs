@@ -51,7 +51,7 @@ const config = {
           { from: '/docs/Tutorial-Setup/Beepers', to: '/docs/Wiki/Configurator/Beepers', },
           { from: '/docs/Tutorial-Setup/Power', to: '/docs/Wiki/Configurator/Power', },
           { from: '/docs/Tutorial-Setup/RPM-Filters', to: '/docs/Wiki/Tutorial-Setup/RPM-Filters', },
-          { from: '/docs/Tutorial-Setup/Motor-and-Esc', to: '/docs/Wiki/Tutorial-Setup/Motor-and-Esc', },
+          { from: '/docs/Tutorial-Setup/Motor-and-Esc', to: '/docs/Wiki/Configurator/Motor-and-Esc', },
           { from: '/docs/Tutorial-Setup/Servos', to: '/docs/Wiki/Configurator/Servos', },
           { from: '/docs/Tutorial-Setup/Mixer', to: '/docs/Wiki/Configurator/Mixer', },
           { from: '/docs/Tutorial-Setup/Rates', to: '/docs/Wiki/Configurator/Rates', },
