@@ -36,9 +36,9 @@ Here you can select the device type.
 Select the preferred logging mode.
 
 * **No Logging**: Disable Logging.
-* **Normal**: Start logging when both [**ARM**](./Modes.md#arm) and [**BLACKBOX**](./Modes.md#blackbox) switches are active.
-* **Armed**: Start logging when [**ARM**](./Modes.md#arm) switch is active.
-* **Switch**: Start logging when [**BLACKBOX**](./Modes.md#blackbox) switch is active.
+* **Normal**: Start logging when both [**ARM**](../Tutorial-Setup/arming.mdx) and [**BLACKBOX**](../Configurator/Modes.md#blackbox) switches are active.
+* **Armed**: Start logging when [**ARM**](../Tutorial-Setup/arming.mdx) switch is active.
+* **Switch**: Start logging when [**BLACKBOX**](../Configurator/Modes.md#blackbox) switch is active.
 
 ### Logging Rate
 

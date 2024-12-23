@@ -14,7 +14,7 @@ This process is generic and may be slightly different, depending on your particu
 4. Check you [Board alignment](../Configurator/Configuration.md#board-and-sensor-alignment) setting and adjust if necessary.
 5. Connect [Receiver](../Configurator/Receiver.mdx) to a free UART and select corresponding receiver settings.
 6. Select [Battery Voltage and Current Source](../Configurator/Power.md#battery) as per you setup, and Set Battery [Capacity](../Configurator/Power.md#capacity) and [Cell Count](../Configurator/Power.md#cell-count).
-7. Select [ESC Throttle protocol](../Configurator/Motor.md#esc-throttle-protocol), and Optional: [ESC Telemetry protocol](../Configurator/Motor.md#esc-telemetry-protocol), Set [Gear Ratios](../Configurator/Motor.md#gear-ratio-configuration), and [Motor Pole Count](../Configurator/Motor.md#motor-pole-count).
+7. Select [ESC Throttle protocol](../Configurator/Motor-and-Esc.md#esc-throttle-protocol), and Optional: [ESC Telemetry protocol](../Configurator/Motor-and-Esc.md#esc-telemetry-protocol), Set [Gear Ratios](../Configurator/Motor-and-Esc.md#gear-ratio-configuration), and [Motor Pole Count](../Configurator/Motor-and-Esc.md#motor-pole-count).
 8. Optional: Select and Setup the [Governor](../Tutorial-Setup/Governor.md).
 9. Setup [Servos](../Configurator/Servos.mdx#servo-setup-and-calibration).
 10. Setup and Calibrate the [Mixer](../Configurator/Mixer.md#calibrating-the-mixer).

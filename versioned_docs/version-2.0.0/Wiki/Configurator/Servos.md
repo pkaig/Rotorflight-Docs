@@ -4,7 +4,7 @@ sidebar_position: 80
 
 # Servos tab
 
-Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorized or servo tail) or if you are using a drone FC that your [Remapping](Remapping.md)  is correct.
+Open the Servos tab and confirm that you have the correct number of servos. If this is not the case, please confirm you have installed the correct firmware (either 'M' motorized or servo tail) or if you are using a drone FC that your [Remapping](../Tutorial-Setup/Remapping.md)  is correct.
 
 ![Servo Tab](./img/servo-1.png)
 
@@ -78,7 +78,7 @@ Scales the negative and positive direction of the servo to match the commanded a
 This is the servo frequency. This will be specified by the manufacturer. A large proportion of servos suitable for cyclic operate at 333Hz.  
 
 :::note
-For Rotorflight 2 it is recommended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](Remapping.md)).
+For Rotorflight 2 it is recommended that tail servos are assigned to a different timer than cyclic servos (see [Remapping](../Tutorial-Setup/Remapping.md)).
 
 This means that tail servos can be set to a different frequency (i.e. faster).
 :::

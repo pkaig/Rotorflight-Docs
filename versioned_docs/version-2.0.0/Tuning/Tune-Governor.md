@@ -4,7 +4,7 @@ sidebar_position: 50
 # Tune the Governor
 
 :::note
-If using the governor you must first enable the [RPM Measurement](../Tutorial-Setup/Rpm-Measurement.md) and configure the [Governor](../Tutorial-Setup/Governor.md) 
+If using the governor you must first enable the [RPM Measurement](/versioned_docs/version-2.0.0/Wiki/Tutorial-Setup/Rpm-Measurement.mdx) and configure the [Governor](/versioned_docs/version-2.0.0/Wiki/Tutorial-Setup/Governor.md) 
 :::
 
 Our goal here is to have a more or less constant headspeed, without any motor oscillations. Ideally the feedforward term should do most of the work, while the P-term is only used for quick corrections. The I-term should maintain the headspeed over time. 
@@ -19,7 +19,7 @@ But beware: a well tuned governor might generate too much torque for the tail to
 
 ## Tuning steps
 
-When you're using the [Rotorflight Lua scripts](../Tutorial-Setup/Lua-Scripts.mdx), you can change all gain values on the field. My routine is to make logs of 3 or 4 different values around the default value for one specific gain. Example: the governor F-gain has a default value of 15, so try 10, 15, 20 and 25. Start with 10, do some pitch pumps (give it full collective for a short period of time) and disarm. Change the value to 15 and save, arm, do some pitch pumps, and so on. The result will be one log file with 4 partial logs, which you can select with the dropdown in the upper-right corner of the Blackbox Explorer. Then look in the Blackbox Explorer to see what gain value works best. If you think you might need higher or lower values for a specific gain, make a new log with adjusted values.
+When you're using the [Rotorflight Lua scripts](/versioned_docs/version-2.0.0/Wiki/Tutorial-Setup/Lua-Scripts.mdx), you can change all gain values on the field. My routine is to make logs of 3 or 4 different values around the default value for one specific gain. Example: the governor F-gain has a default value of 15, so try 10, 15, 20 and 25. Start with 10, do some pitch pumps (give it full collective for a short period of time) and disarm. Change the value to 15 and save, arm, do some pitch pumps, and so on. The result will be one log file with 4 partial logs, which you can select with the dropdown in the upper-right corner of the Blackbox Explorer. Then look in the Blackbox Explorer to see what gain value works best. If you think you might need higher or lower values for a specific gain, make a new log with adjusted values.
 
 Try increments of 10 for the F-gain, increments of 25 for the I-gain and increments of 10 for the P-gain.
 

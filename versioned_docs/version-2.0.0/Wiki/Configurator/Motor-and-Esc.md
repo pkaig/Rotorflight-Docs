@@ -22,14 +22,14 @@ Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually t
 
 ### ESC Telemetry Protocol
 
-Set the ESC [*Telemetry*](ESC-Telemetry.md) protocol if your esc supports it.
+Set the ESC [*Telemetry*](../Tutorial-Setup/ESC-Telemetry.md) protocol if your esc supports it.
 
 ![Motor and ESC](./img/motor-telem.png)
 
 :::note
 A correct RPM measurement is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurement setup. 
 
-The FC also needs to know the [RPM](Rpm-Measurement.md) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
+The FC also needs to know the [RPM](../Tutorial-Setup/Rpm-Measurement.mdx) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
 
 With this info, the FC can calculate the:
 
@@ -62,7 +62,7 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### DShot RPM Telemetry 
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](Rpm-Measurement.md#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../Tutorial-Setup/Rpm-Measurement.mdx#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 
@@ -83,7 +83,7 @@ note that counting the gear tooth is preferable because an accurate gear ratio i
 :::
 
 :::note
-For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../Tutorial-Walkthroughs/Two-Stage-Gear-Train-Ratios.md)
+For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../Tutorial-Setup/Two-Stage-Gear-Train-Ratios.md)
 :::
 
 ### Motor Pole Count

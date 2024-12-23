@@ -13,7 +13,7 @@ First activate `Serial Rx` on the UART you have connected your receiver.
 
 ## Receiver Type
 
-There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](./Lua-Scripts.mdx) to perform tuning using you radio.
+There are many receiver protocols supported in Rotorflight, SBUS in the one of the most known receiver protocols, however it is not telemetry capable. On the Other hand FrSky F.Port and ELRS are the most used protocols because they support _telemetry_ and thus allow you to use the [Rotorflight LUA app](../Tutorial-Setup/Lua-Scripts.mdx) to perform tuning using you radio.
 
 
 * SBUS needs to be connected to an RX pad.
@@ -55,7 +55,7 @@ Select the corresponding channels order based on the selected receiver type.
 * For ELRS receivers, set the channels in your radio as per the below order.
 
 :::note
-For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
+For **CRSF/ELRS** always set [*ARM*](../Tutorial-Setup/arming.mdx) switch to *CH5/AUX1* on the radio, also set *THR* to *CH6*
 :::
 
 ![Receiver Tab](./img/receiver-order-elrs.png)
@@ -75,7 +75,7 @@ For **CRSF/ELRS** always set [*ARM*](./Modes.md#arm) switch to *CH5/AUX1* on the
 
 :::caution
 Calibrating Stability Mode
-The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](../Tutorial-Walkthroughs/Using-Stability-Modes-Example.md). 
+The stability modes (Angle, Horizon or Rescue) can be calibrated so that the heli doesn't drift much when using such a mode. This can only be done via the [accelerometer trims](../Tutorial-Setup/Using-Stability-Modes-Example.md). 
 **Do not use trim on your transmitter**.
 :::
 
@@ -89,6 +89,6 @@ Use the below switch to enable/disable the telemetry stream sent to your radio. 
 ![Receiver Tab](./img/receiver-telem-sensors.png)
 
 :::tip
-For ELRS receivers, follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Walkthroughs/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
+For ELRS receivers, follow the [ELRS Telemetry Reuse WalkTrough](../Tutorial-Setup/ELRS-telemetry-reuse.md) for a practical example on ELRS sensors Reuse and Setup.
 :::
 

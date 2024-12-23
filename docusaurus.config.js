@@ -218,7 +218,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/Wiki/intro',
               },
          /*     {
                 label: 'Setup',

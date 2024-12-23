@@ -53,13 +53,13 @@ You can also set a specific baud rate.
 GPS is not currently used for Rotorflight for any flight controls. This can be used for telemetry purposes.
 
 ### Serial Rx
-Check [Receiver](./Receiver) page for detailed info. 
+Check [Receiver](../Configurator/Receiver.mdx) page for detailed info. 
 
 ### ESC Telemetry
-Check [ESC Telemetry](./ESC-Telemetry) page for detailed info. 
+Check [ESC Telemetry](../Tutorial-Setup/ESC-Telemetry.md) page for detailed info. 
 
 ### Blackbox Logging
-This enables a UART for an external logging device such as [OpenLager](./Blackbox#openlager).
+This enables a UART for an external logging device such as [OpenLager](../Configurator/Blackbox.md#openlager).
 
 ### Telemetry: FrSky SmartPort
 This is used when connecting an FrSky SmartPort receiver pin to this UART.

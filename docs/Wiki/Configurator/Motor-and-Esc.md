@@ -95,7 +95,7 @@ Determine the number of magnetic poles for each motor. Count the number of magne
 
 ![Motor and ESC](./img/motor-pole-count-2.png)
 
-## [Governor Features](./Governor#governor-mode)
+## [Governor Features](../Tutorial-Setup/Governor.md#governor-mode)
 
 ## Motor Override
 Motor Override functionality is provided to test the operation of each motor directly. This functionality will make the motors spool up. Do this WITHOUT the main or tail rotors fitted!
