@@ -57,4 +57,4 @@ copy screen output to a file and save it.
 
 ### Backup/Restore via CLI
 
-Go to [Backup and Restore](./Backup-and-restore)
+Go to [Backup and Restore](../Tutorial-Setup/Backup-and-restore.md)

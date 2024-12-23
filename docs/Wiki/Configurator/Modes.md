@@ -91,7 +91,7 @@ After enabling 3G modes you can configure their settings from the [**Profiles**]
 
 ## BLACKBOX
 
-When you select [**Normal**](../Configurator/Blackbox#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
+When you select [**Normal**](../Configurator/Blackbox.md#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
 
 Enable Blackbox from the tabs. Allocate an AUX channel and range to suit.
 

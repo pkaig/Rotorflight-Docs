@@ -40,11 +40,10 @@ const config = {
     [
         '@docusaurus/plugin-client-redirects',
       {
-        fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
-        toExtensions: ['exe', 'zip'], // /myAsset -> /myAsset.zip (if latter exists)
+        fromExtensions: ['html', 'htm'],
+        toExtensions: ['exe', 'zip'],
         redirects: [
-          // /docs/oldDoc -> /docs/newDoc
-          
+          //Redirect Rotorflight v2.0 configurator links to new website links
           { from: '/docs/Tutorial-Setup/Configuration', to: '/docs/Wiki/Configurator/Configuration', },
           { from: '/docs/Tutorial-Setup/Receiver', to: '/docs/Wiki/Configurator/Receiver', },
           { from: '/docs/Tutorial-Setup/Failsafe', to: '/docs/Wiki/Configurator/Failsafe', },
@@ -61,11 +60,7 @@ const config = {
           { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
           { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
-        //  Redirect from multiple old paths to the new path
-        //  {
-        //    to: '/docs/newDoc2',
-        //    from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
-        //  },
+
         ],
       },
     ],
@@ -77,7 +72,7 @@ const config = {
         path: './announcement',
       },
     ],
-//    require.resolve('docusaurus-lunr-search'),
+    require.resolve('docusaurus-lunr-search'),
   ],
 
 

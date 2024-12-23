@@ -62,7 +62,7 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### DShot RPM Telemetry 
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../Tutorial-Setup/Rpm-Measurement.mdx#bidirectional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../Tutorial-Setup/Rpm-Measurement.mdx#bi-directional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 
@@ -79,7 +79,7 @@ For example if the main gear ratio is 11.8 then you set *[Teeth on Pinion gear =
 
 Similarly if the tail gear ratio is 4.8 then you set *[Teeth on Tail gear =10]/[Teeth on Autorotation Gear =48]*.
 
-note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](./RPM-Filters).
+note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](../Tutorial-Setup/RPM-Filters.md).
 :::
 
 :::note
@@ -93,7 +93,7 @@ Determine the number of magnetic poles for each motor. Count the number of magne
 
 ![Motor and ESC](./img/motor-pole-count-2.png)
 
-## [Governor Features](./Governor#governor-mode)
+## [Governor Features](../Tutorial-Setup/Governor.md#governor-mode)
 
 ## Motor Override
 Motor Override functionality is provided to test the operation of each motor directly. This functionality will make the motors spool up. Do this WITHOUT the main or tail rotors fitted!

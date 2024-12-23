@@ -62,7 +62,7 @@ The purpose of the rescue mode is to arrest any decent, then put the helicopter 
 * Hover collective is now applied.
 :::
 
-After enabling Rescue mode configure the rescue settings from the [**Profiles**](../Tutorial-Setup/Profiles#rescue-settings) Tab.
+After enabling Rescue mode configure the rescue settings from the [**Profiles**](../Configurator/Profiles.md#rescue-settings) Tab.
 
 ## 6G flight modes
 There are 3 types of self leveling stabilization modes available in Rotorflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.  
@@ -87,11 +87,11 @@ In the example above AUX3, and AUX6 are each assigned to a separate 3 position s
 - Nothing is assigned when AUX3 switch fully down. This means the Heli is in Normal or 3D mode. 
 - Trainer mode is assigned to AUX6 at full up position of the AUX6 switch.
 
-After enabling 3G modes you can configure their settings from the [**Profiles**](../Tutorial-Setup/Profiles#auto-leveling-settings) Tab.
+After enabling 3G modes you can configure their settings from the [**Profiles**](../Configurator/Profiles#auto-leveling-settings) Tab.
 
 ## BLACKBOX
 
-When you select [**Normal**](../Tutorial-Setup/Blackbox#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
+When you select [**Normal**](../Configurator/Blackbox.md#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
 
 Enable Blackbox from the tabs. Allocate an AUX channel and range to suit.
 

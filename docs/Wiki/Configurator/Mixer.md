@@ -41,7 +41,7 @@ For helicopters with adjustable swash links this should remain at 0 and the link
 ![Mixer Tab](./img/mixer-main-rotor-geometry.png)
 
 #### Cyclic and Collective calibration
-These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](#calibrating-the-mixer) for details.
+These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](../Tutorial-Setup/setup-mixer.mdx#calibrating-the-mixer) for details.
 
 #### Collective geometry correction
 
