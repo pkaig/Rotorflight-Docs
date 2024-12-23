@@ -61,7 +61,7 @@ To use the Flydragon with a motorised tail the Servo 4 needs to be remapped to M
 ![Wiring Diagram v2.2](./img/wiring-diagram-v2.png)
 
 :::caution
- WARNING: The RPM-S Port is powered via the internal 5V supply which is also powered during USB connection. If you have any power supplies connected or inappropriate loads you are likely to damage your board. DO NOT plug in your ESCs BEC wire into here, many BECs act like a dead short if you attempt to backfeed them and you WILL blow out the 5V supply on your board when you connect USB if you do this. Power to the rest of the ports is all common power you can connect whatever to.
+ WARNING: The RPM-S Port is powered via the internal 5V supply which is also powered during USB connection. If you have any power supplies connected or innapropriate loads you are likely to damage your board. DO NOT plug in your ESCs BEC wire into here, many BECs act like a deadshort if you attempt to backfeed them and you WILL blow out the 5V supply on your board when you connect USB if you do this. Power to the rest of the ports is all common power you can connect whatever to.
 :::
 
 ### UART ports
@@ -73,10 +73,45 @@ To use the Flydragon with a motorised tail the Servo 4 needs to be remapped to M
 
 ![Save](./img/fd-uarts.png)
 
-### Can I use a receiver other than ELRS?
+## Remapping
+Several of the ports can be remapped for other purposes.
+
+### Use RPM-E for Motor 1 RPM (default)
+`resource FREQ 1 A01`  
+`save`  
+
+### Use RPM-S for Motor 1 RPM   
+`resource FREQ 1 A15`  
+`save`  
+
+### Use both RPM-E and RPM-S 
+* RPM-E port for Motor 1  
+* RPM-S port for Motor 2  
+
+`resource FREQ 1 A01`  
+`resource FREQ 2 A15`  
+`save`  
+
+### remap SBUS to SERVO 5
+`resource SERIAL_RX 2 none`  
+`resource SERVO 5 A03`  
+`timer A03 AF3`  
+`mixer input CH10 -1000 1000 1000`  
+`mixer rule 10 set CH10 S5 1000 0`  
+`save`  
+
+### remap F.PORT to SERVO 5
+`resource SERIAL_TX 2 none`  
+`resource SERVO 5 A02`  
+`timer A02 AF3`  
+`mixer input CH10 -1000 1000 1000`  
+`mixer rule 10 set CH10 S5 1000 0`  
+`save`  
+
+## Can I use a receiver other than ELRS?
 External receivers can be connected to the SBUS, FPORT or any of the Extension UART ports (UART 3 or 5). If not using the inbuilt ELRS receiver it should be disabled. 
 
-#### How to Enable/Disable the Internal Receiver: 
+### How to Enable/Disable the Internal Receiver: 
 * The internal receiver is default turned on. When using external receivers, we need to turn it off. Connect the Flydragon F722 V2 to 
 the Rotorflight Configurator. Go to CLI (command line) page:
 
@@ -90,7 +125,7 @@ the Rotorflight Configurator. Go to CLI (command line) page:
 
 ![Enable](./img/enable.png)
 
-### Manuals
+## Manuals
 
 [Flydragon V2.2 Flight Controller Manual](./pdf/FlyDragonF722_v2.2_FBL_Specfications.pdf)  
 [Flydragon V2 Flight Controller Manual](./pdf/FlyDragonF722_v2_FBL_Specfications.pdf)  
