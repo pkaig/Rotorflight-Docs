@@ -61,6 +61,8 @@ const config = {
           { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
+          //Redirect for Radio setups to point to downloads
+          { from: '/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/download/edge-tx-Lua', }
         ],
       },
     ],
