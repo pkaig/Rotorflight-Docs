@@ -62,7 +62,7 @@ const config = {
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
           //Redirect for Radio setups to point to downloads
-          { from: '/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/download/edge-tx-Lua', }
+          { from: '/docs/next/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', }
         ],
       },
     ],
