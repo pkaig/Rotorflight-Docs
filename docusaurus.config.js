@@ -64,6 +64,15 @@ const config = {
           //Redirect for Radio setups to point to downloads
           { from: '/docs/next/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
         ],
+        createRedirects(existingPath) {
+            if (existingPath.includes('/test')) {
+              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+              return [
+                existingPath.replace('/docs/test', '/docs/next'),
+              ];
+            }
+            return undefined; // Return a falsy value: no redirect created
+          },
       },
     ],
     [
