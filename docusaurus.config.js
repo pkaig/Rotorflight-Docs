@@ -60,6 +60,8 @@ const config = {
           { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
           { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
+          { from: '/docs/2.1.0/Wiki/Configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
+          { from: '/docs/2.1.0/Wiki/Configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
           //Redirect for Radio setups to point to downloads
           { from: '/docs/next/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
