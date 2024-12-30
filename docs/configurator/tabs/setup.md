@@ -1,9 +1,6 @@
----
-sidebar_position: 20
----
-# Setup tab
+# Setup
 
-![Setup Tab](./img/setup-main.png)
+![Setup](../img/setup-main.png)
 
 ## Calibrate Accelerometer
 

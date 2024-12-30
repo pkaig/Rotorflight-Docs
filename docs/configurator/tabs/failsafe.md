@@ -1,9 +1,6 @@
----
-sidebar_position: 50
----
-# Failsafe tab
+# Failsafe
 
-![Failsafe Tab](./img/failsafe-main.png)
+![Failsafe Tab](../img/failsafe-main.png)
 
 In the event of receiver failsafe the flight controller can be configured to set the commands to a predetermined position. 
 

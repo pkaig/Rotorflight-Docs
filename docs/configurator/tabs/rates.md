@@ -1,13 +1,9 @@
----
-sidebar_position: 110
----
-
-# Rates tab
+# Rates
 :::info
-The purpose of rates are to change in flight sensitivity and rotation rates. The aim is usually to have several 'rates' that you can switch between during flight to change flight performance. Please see the [profile switching example](../Tutorial-Setup/Profile-switching-example.md)
+The purpose of rates are to change in flight sensitivity and rotation rates. The aim is usually to have several 'rates' that you can switch between during flight to change flight performance. Please see the [profile switching example](../../Wiki/Tutorial-Setup/Profile-switching-example.md)
 :::
 
-![Rates](./img/rates-main.png)
+![Rates](../img/rates-main.png)
 
 Rotorflight offers a total of five rate systems:
 
@@ -25,7 +21,7 @@ However, the most widely adopted is Actual Rates.
 
 There are 3 values in Actual Rates: Center Sensitivity, Max Rate, Expo.
 
-![Rates](./img/rates-actual.png)
+![Rates](../img/rates-actual.png)
 
 ### Center Sensitivity
 
@@ -49,7 +45,7 @@ Actual Rates can be a little bit tricky for someone that does not have Betafligh
 
 There are 3 values in Raceflight Rates: Rate, Acro+, Expo.
 
-![Rates](./img/rates-raceflight.png)
+![Rates](../img/rates-raceflight.png)
 
 ### Rate
 
@@ -67,7 +63,7 @@ While Expo can be as high as 100, excessive Expo might cause decreased center st
 
 ## Dynamics
 
-![Rates](./img/rates-dynamics.png)
+![Rates](../img/rates-dynamics.png)
 
 * **Response Time** - corresponds the smoothness of the reaction to stick inputs, also called  time constant of the input filter.
 

@@ -1,10 +1,6 @@
----
-sidebar_position: 130
----
+# Modes
 
-# Modes tab 
-
-![Modes](./img/modes-main.png)
+![Modes](../img/modes-main.png)
 
 | **ID** | **Mode Name** | **Function** |
 |--|--|--|
@@ -27,7 +23,7 @@ sidebar_position: 130
 
 The mode selector tab enables several modes and functions to be enabled or disabled via the TX. This is done by configuring a channel on the TX, such as a switch, that you wish to use for operating the mode. From the **Modes** tab, select the required Mode you wish to assign and click **Add Range**, then select the AUX channel matching your TX switch and set a range where you wish the mode to be active. If the mode you wish to use is not visible deselect "Hide unused modes".
 
-![Modes](./img/modes-1.png)
+![Modes](../img/modes-1.png)
 
 ## ARM
 :::caution ELRS
@@ -38,11 +34,11 @@ If using an ELRS receiver you must configure the ARM switch to AUX1 (1000 = Disa
 ARM and throttle hold are not the same. Do not configure the ARM and throttle hold on the same channel. The Flight controller needs to see minimum throttle before it can arm and if they are both on the same channel it will fail the minimum throttle check and will not ARM.
 :::
 
-![Modes](./img/modes-arm.png)
+![Modes](../img/modes-arm.png)
 
 All flight controllers need to be **ARMED** before the motors are able to spool up. Once the Arming mode is configured (as shown above) the flight controller can be Armed ready for flight. If the flight controller detects an unsafe condition Arming will be disabled. If this occurs you can look at the Arming flag status on the **Status** Tab to identify what is preventing Arming being enabled.    
 
-![Modes](./img/modes-flags.png)
+![Modes](../img/modes-flags.png)
 
 You can find out a description of these flags from the [List of Arming prevention flags](https://betaflight.com/docs/wiki/guides/current/Arming-Sequence-And-Safety#description-of-arming-prevention-flags)
 
@@ -51,7 +47,7 @@ This function can also provide the ability to prevent arming of the heli unless 
 ## RESCUE
 Enable Rescue mode from the tabs. Allocate the AUX channel and range to suit.
 
-![Modes](./img/modes-rescue.png)
+![Modes](../img/modes-rescue.png)
 
 :::info
 The purpose of the rescue mode is to arrest any decent, then put the helicopter at a safe altitude in a stable attitude. It does this in stages.   
@@ -62,7 +58,7 @@ The purpose of the rescue mode is to arrest any decent, then put the helicopter 
 * Hover collective is now applied.
 :::
 
-After enabling Rescue mode configure the rescue settings from the [**Profiles**](../Configurator/Profiles.md#rescue-settings) Tab.
+After enabling Rescue mode configure the rescue settings from the [**Profiles**](./profiles.md#rescue-settings) Tab.
 
 ## 6G flight modes
 There are 3 types of self leveling stabilization modes available in Rotorflight. 6G modes (unlike the normal Acro) will auto level when the transmitter sticks are released. These modes make the heli fly more like a drone.  
@@ -78,7 +74,7 @@ Acro trainer mode does not provide self leveling of the helicopter. It does howe
 
 Enable ANGLE/HORIZON/TRAINER modes from the tabs. Allocate the AUX channel and range to suit.
 
-![Modes](./img/modes-3g.png)
+![Modes](../img/modes-3g.png)
 
 In the example above AUX3, and AUX6 are each assigned to a separate 3 position switches on the TX. 
 
@@ -87,14 +83,14 @@ In the example above AUX3, and AUX6 are each assigned to a separate 3 position s
 - Nothing is assigned when AUX3 switch fully down. This means the Heli is in Normal or 3D mode. 
 - Trainer mode is assigned to AUX6 at full up position of the AUX6 switch.
 
-After enabling 3G modes you can configure their settings from the [**Profiles**](../Configurator/Profiles.md#auto-leveling-settings) Tab.
+After enabling 3G modes you can configure their settings from the [**Profiles**](./profiles.md#auto-leveling-settings) Tab.
 
 ## BLACKBOX
 
-When you select [**Normal**](../Configurator/Blackbox.md#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
+When you select [**Normal**](./blackbox.md#logging-mode) logging mode, you need to activate the blackbox switch in the Modes Tab.
 
 Enable Blackbox from the tabs. Allocate an AUX channel and range to suit.
 
-![Modes](./img/modes-blackbox.png)
+![Modes](../img/modes-blackbox.png)
 
 Now in this example the blackbox logging will start when the heli is armed and AUX5 is at full up position.

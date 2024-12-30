@@ -1,7 +1,4 @@
----
-sidebar_position: 10
----
-# Status tab
+# Status
 
 A place for basic flight controller information. The status tab is the first tab you see when you connect to your flight controller. You can check the gyroscope live preview, view the arming prevention flags and other FC information.
 
@@ -13,11 +10,11 @@ Shows some basic data from the flight controller and model. This includes:
 * Firmware
 * Board
 
-![Status Tab](./img/status-info.png)
+![Status Tab](../img/status-info.png)
 
 ## Arming
 
-![Status Tab](./img/status-arming.png)
+![Status Tab](../img/status-arming.png)
 
 * **Enable Arming:** Use this switch to enable arming while the configurator is connected.
 
@@ -33,7 +30,7 @@ You can find out a description of these flags from the [List of Arming preventio
 
 ## Battery
 
-![Status Tab](./img/status-battery.png)
+![Status Tab](../img/status-battery.png)
 
 * **Voltage** - Shows the current battery voltage if the settings for it are set correctly.
 * **Current** - Shows the current drawn from the battery if the settings for it are set correctly.
@@ -45,7 +42,7 @@ You can find out a description of these flags from the [List of Arming preventio
 
 A live preview of the gyroscope data. This is useful to check if the gyroscope is aligned correctly, and if it isn't getting/giving noisy data.
 
-![Status Tab](./img/status-live-preview.png)
+![Status Tab](../img/status-live-preview.png)
 
 * **Reset Z axis** - This button resets the heli heading to 0 degrees.
 
@@ -57,11 +54,11 @@ You can set the gyroscope alignment in the `Configuration` tab.
 
 A graphic replica of real aircraft instruments.
 
-![Status Tab](./img/status-instruments.png)
+![Status Tab](../img/status-instruments.png)
 
 ## Receiver
 
 The receiver output preview shows the current state of the receiver channels, both in channel value and graph forms, and how those affect the heli movement.
 
-![Status Tab](./img/status-receiver.png)
+![Status Tab](../img/status-receiver.png)
 

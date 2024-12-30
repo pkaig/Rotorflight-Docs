@@ -1,8 +1,4 @@
----
-sidebar_position: 140
----
-
-# Adjustments tab
+# Adjustments
 
 There are total 32 adjustment slots, each assigning an AUX channel to a configuration parameter or a special function. An adjustment slot consist of an enabling condition, an adjustment function, and parameter limits.
 
@@ -10,7 +6,7 @@ The enabling condition is an AUX channel, which must be within the configured ra
 
 Any changes are taking effect immediately, and are saved in the configuration.
 
-![Adjustments](./img/adjustments-main.png)
+![Adjustments Tab](../img/adjustments-main.png)
 
 
 ## Example - Select a Profile In-Flight
@@ -19,7 +15,7 @@ Being able to switch between profiles in-flight allows you to use different head
 
 ### Simple example
 
-Here we use only one channel -AUX4- for *PID* and *Rates* Profiles Selection. Assign AUX4 to a 3-position switch on the TX, so that the switch outputs 1000/1500/2000us. [Profile Switching Example](../Tutorial-Setup/Profile-switching-example.md).
+Here we use only one channel -AUX4- for *PID* and *Rates* Profiles Selection. Assign AUX4 to a 3-position switch on the TX, so that the switch outputs 1000/1500/2000us. [Profile Switching Example](../../Wiki/Tutorial-Setup/Profile-switching-example.md).
 
 ## Adjustment Types
 
@@ -42,40 +38,40 @@ Continuous adjustment is enabled by setting the step size to zero.
 The adjustment function assigns the control AUX channel to a configuration parameter or a special function. The supported functions are listed below.
 
     **Profile change**  
-![Profiles](./img/adjustments-profiles.png)  
+![Profiles](../img/adjustments-profiles.png)  
 
     **Rates**  
-![Profiles](./img/adjustments-rates.png)  
+![Profiles](../img/adjustments-rates.png)  
 
     **PID**  
-    ![Profiles](./img/adjustments-pid.png)  
+    ![Profiles](../img/adjustments-pid.png)  
 
     **Gyro cutoffs**  
-![Profiles](./img/adjustments-cuttoff.png)  
+![Profiles](../img/adjustments-cuttoff.png)  
 
     **Dterm cutoffs**  
-![Profiles](./img/adjustments-dterm.png)  
+![Profiles](../img/adjustments-dterm.png)  
 
     **Rescue**  
-![Profiles](./img/adjustments-rescue.png)  
+![Profiles](../img/adjustments-rescue.png)  
 
     **Leveling**  
-![Profiles](./img/adjustments-level.png)  
+![Profiles](../img/adjustments-level.png)  
 
     **Governor**  
-![Profiles](./img/adjustments-gov.png)  
+![Profiles](../img/adjustments-gov.png)  
 
     **Boost gains**  
-![Profiles](./img/adjustments-boost.png)  
+![Profiles](../img/adjustments-boost.png)  
 
     **Offset gains**  
-![Profiles](./img/adjustments-offset.png)  
+![Profiles](../img/adjustments-offset.png)  
 
     **Cross-coupling**  
-![Profiles](./img/adjustments-coupling.png)  
+![Profiles](../img/adjustments-coupling.png)  
 
     **Accelerometer trims**  
-![Profiles](./img/adjustments-trim.png)  
+![Profiles](../img/adjustments-trim.png)  
 
 
 ### Parameter Change Functions

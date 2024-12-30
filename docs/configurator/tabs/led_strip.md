@@ -1,8 +1,4 @@
----
-sidebar_position: 145
----
-
-# LED Strip tab
+# LED Strip
 
 Rotorflight supports the use of addressable LEDs. Addressable LEDs allow each LED to be programmed with a unique and independent color. Addressable LEDs are available as individual LEDs (usually 5mm or 8mm) or LED strips.
 

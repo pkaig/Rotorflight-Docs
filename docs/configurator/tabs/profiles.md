@@ -1,15 +1,11 @@
----
-sidebar_position: 120
----
-
-# Profiles tab
+# Profiles
 :::info
-The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](../Tutorial-Setup/Profile-switching-example.md)
+The purpose of profiles are to store in flight tuning parameters. The aim is usually to have several 'profiles' that you can switch between during flight to change flight performance. Things like different headspeeds, tuning, rescue settings etc can be 'tuned' for the individual flight mode. Please see the [profile switching example](../../Wiki/Tutorial-Setup/Profile-switching-example.md)
 :::
 
 ## Main Tuning Parameters
 ### PID Controller Gains
-![Profiles](./img/profiles-pid-controller-gains.png)
+![Profiles](../img/profiles-pid-controller-gains.png)
 
 #### Proportional
 The gain factor that is proportional to the rate error. High proportional gain increase response speed of the helicopter. Low proportional gain results in overall slow system response. Too high results in fast oscillation (~20hz). It also helps reduce the slow oscillation due to high Integral gain.
@@ -26,11 +22,11 @@ The gain factor proportional to the input. In practice, feedforward gain is used
 #### Boost 
 The setpoint boost - or B-term will increase the stick reaction speed. In case the heli is not reacting fast enough, the reaction can be boosted with this new B-gain on each axis separately. This seems to be in the range of 20..50
 
-This provides a rapid short term increase in your command. This parameter is used in conjunction with the time [B-Cutoff](./Profiles#b-term-cut-off).
+This provides a rapid short term increase in your command. This parameter is used in conjunction with the time [B-Cutoff](./profiles.md#b-term-cut-off).
 
 ## Advanced Settings
 ### PID Controller Settings
-![Profiles](./img/profiles-pid-controller-settings.png)
+![Profiles](../img/profiles-pid-controller-settings.png)
 
 #### Error Rotation
 If turned on, the I-term can transfer between pitch and roll axis during pirouetting. Increase the performance of overall piro related maneuvers. This is sometimes referred to as piro compensation.  
@@ -50,7 +46,7 @@ The limit of how much I-term can be charged. During normal flights, it would not
 ### Offset Limit/Gain
 The offset gains are used for the [High Speed Integral](/docs/Tuning/High-Speed-Integral.md) feature.
 
-![Profiles](./img/profiles-offset-limit.png)
+![Profiles](../img/profiles-offset-limit.png)
 
 #### Offset Limits
 This is a hard limit for the offset angle in the PID loop. The absolute offset and thus the O-term will never go above these limits.
@@ -59,7 +55,7 @@ This is a hard limit for the offset angle in the PID loop. The absolute offset a
 Gain for offset term,(Integral for high speed flight).
 
 ## Main Rotor Settings
-![Profiles](./img/profiles-main-rotor-settings.png)
+![Profiles](../img/profiles-main-rotor-settings.png)
 
 ### Collective To Pitch Feedforward Gain
 The pre-compensation for pitch axis when collective is high. Since there is drag-induced pitching motion (there is more drag on the tail thus the helicopter would want to have nose-up tendency when climbing), increasing this gain would compensate that. High gain push the nose down during climb ups. However, it is also advised to select a relatively low value to be conservative.
@@ -77,7 +73,7 @@ Amount of Roll-to-Pitch compensation needed, vs. Pitch-to-Roll.
 Frequency limit for the compensation, higher value will make the compensation action faster.
 
 ## Tail Rotor Settings
-![Profiles](./img/profiles-tail-rotor-settings.png)
+![Profiles](../img/profiles-tail-rotor-settings.png)
 
 #### CW/CCW Stop Gain
 The increase of yaw (what) gain during stops. Higher gain results in crisper stops. Too high may cause fast oscillations.
@@ -95,7 +91,7 @@ The pre-compensation due to the sudden change of collective. Ideally it is desig
 Decay time for collective impulse feedforward mixed into yaw.
 
 ## PID Controller Bandwidth
-![Profiles](./img/profiles-pid-controller-bandwidth.png)
+![Profiles](../img/profiles-pid-controller-bandwidth.png)
 
 #### Row/Pitch/Yaw Bandwidth
 An extra low pass filter for each axis. It is specifically designed to preserve a weaker filter on the yaw axis to increase tail performance. High value corresponding to weaker filter. Too high may cause wobbles. Too low may cause delay and even instability in the control loop.
@@ -105,11 +101,11 @@ An extra first order low pass filter just for the D-gain to further reduce the s
 
 #### B-Term Cut-off
 This is controlling how "quick" or "twitchy" the boost is. This works exactly the same as D-cutoff, but on setpoint.
-It is safe to start with the same cutoffs as used with D. Usually in the range of 10..20. This is used in conjunction with [Boost](./Profiles#boost) or [B-gain](./Profiles#boost)
+It is safe to start with the same cutoffs as used with D. Usually in the range of 10..20. This is used in conjunction with [Boost](./profiles.md#boost) or [B-gain](./profiles.md#boost)
 
 
 ## Auto Leveling Settings
-![Profiles](./img/profiles-auto-leveling-settings.png)
+![Profiles](../img/profiles-auto-leveling-settings.png)
 
 #### Acro Trainer gain
 
@@ -133,7 +129,7 @@ This determines how aggressively the heli tilt back to level while in *HORIZON* 
 
 
 ## Rescue Settings
-![Profiles](./img/profiles-rescue.png)
+![Profiles](../img/profiles-rescue.png)
 
 ### Enable Rescue 
 Enable or disable the rescue mode.  
