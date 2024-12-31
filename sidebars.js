@@ -137,7 +137,7 @@ const sidebars = {
         "configurator/tabs/profiles",
         "configurator/tabs/modes",
         "configurator/tabs/adjustments",
-        "configurator/tabs/led_strip",
+        "configurator/tabs/led-strip",
         "configurator/tabs/beepers",
         "configurator/tabs/gps",
         "configurator/tabs/sensors",
