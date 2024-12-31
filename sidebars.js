@@ -22,8 +22,8 @@ const sidebars = {
 
         {
             type: 'doc',
-            id: 'intro', // document ID
-            label: 'Welcome', // sidebar label
+            id: 'intro',
+            label: 'Welcome',
           },
       {
         type: "category",
@@ -48,12 +48,10 @@ const sidebars = {
           "examples/example-1",
         ],
       },
- //     { type: 'category', dirName: 'setup' },
       {
         type: "category",
         label: "Tutorial - setup",
         collapsed: true,
-//        link: { type: "doc", id: "setup/intro" },
         items: [
                     {
                     type: 'category',
@@ -95,9 +93,6 @@ const sidebars = {
                     ],
                     },
 
-
-    //      "setup/radio-setup/radio-setup-jeti",
-      //    "setup/radio-setup/radio-setup-others",
           "setup/arming",
           "setup/Lua-Scripts",
           "setup/Backup-and-restore",

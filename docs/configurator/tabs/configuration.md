@@ -65,12 +65,6 @@ This is used when connecting an FrSky SmartPort receiver pin to this UART.
 
 Change the roll, pitch and yaw gyro alignment value until the model on the status page moves in the same direction as the gyro board.
 
-A method of determining what settings to use: 
-* set Roll, Pitch and Yaw values to 0 degrees.  
-* set Gyro alignment to CW-0 degrees.  
-* Move the FC around until the movement of the FC matches the movement of the helicopter on the "Status" page. You may have to "reset Z axis".  
-* Now take note of how you have to rotate/flip the board in order to get the FC oriented in the way you wish to mount it in the helicopter. An example would be that you have to rotate the board 180 and flip. You would chose 'CW180 Flip' in the Gyro alignment dropdown.    
-
 ![Configuration Tab](../img/config-sens-align.png)
 
 ## Accelerometer Trim
