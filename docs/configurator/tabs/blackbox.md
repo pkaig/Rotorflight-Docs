@@ -8,7 +8,7 @@ Blackbox is a flight data recording feature in Rotorflight. A Blackbox log conta
 
 * A flash chip on the FC. Logging is fast, but storage is limited, unless you are using a dedicated RF controller(FlyDragon F7 has 128MByte Flash), and copying log files can be slow.
 * An SD card on the FC, it's fast and storage is only limited by the capacity of the SD card.
-* An external logging device: [OpenLager](../setup/OpenLager.md). These devices write the log to a micro SD card.
+* An external logging device: [OpenLager](/docs/setup/OpenLager.md). These devices write the log to a micro SD card.
   
 A flash chip or an SD card on the FC are nice, but if your FC doesn't have that you can connect an OpenLager logging device.
 
@@ -25,15 +25,15 @@ Here you can select the device type.
 * **No Logging**: Disable Logging.
 * **Onboard Flash**: Log to the onboard flash chip (if available).
 * **SD Card**: Log to the onboard SD Card (if available).
-* **Serial Port**: Log to an external logging device (eg. [OpenLager](../setup/OpenLager.md)).
+* **Serial Port**: Log to an external logging device (eg. [OpenLager](/docs/setup/OpenLager.md)).
 
 ### Logging Mode
 
 Select the preferred logging mode.
 
 * **No Logging**: Disable Logging.
-* **Normal**: Start logging when both [**ARM**](../setup/arming.mdx) and [**BLACKBOX**](./modes.md#blackbox) switches are active.
-* **Armed**: Start logging when [**ARM**](../setup/arming.mdx) switch is active.
+* **Normal**: Start logging when both [**ARM**](/docs/setup/arming.mdx) and [**BLACKBOX**](./modes.md#blackbox) switches are active.
+* **Armed**: Start logging when [**ARM**](/docs/setup/arming.mdx) switch is active.
 * **Switch**: Start logging when [**BLACKBOX**](./modes.md#blackbox) switch is active.
 
 ### Logging Rate

@@ -133,7 +133,7 @@ save
 
 ### FlyDragon F722
 
-The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](../configurator/tabs/led_strip.md#warning) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are several options: SCL, SDA, RPM-S and F.Port. SCL and SDA are located on the GPS port, which also provides 5V. Using SCL or SDA is preferred because they can have their own dedicated timer.
+The FlyDragon F722 has a built in LED 'strip' with just one LED. It has the [Warning overlay](/docs/setup/led-strip-quick-start.md#flydragon-f722) enabled by default and is connected to the FC using pin B08. However, the *data out* pin of that LED isn't exposed, so you have to remap some other port to LED_STRIP to make use of your own LEDs. There are several options: SCL, SDA, RPM-S and F.Port. SCL and SDA are located on the GPS port, which also provides 5V. Using SCL or SDA is preferred because they can have their own dedicated timer.
 
 #### 1. Remap SCL to LED_STRIP
 

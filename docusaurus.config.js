@@ -79,15 +79,6 @@ const config = {
                   ];
             }
           },
-    /*      createRedirects(existingPath) {
-            if (existingPath.includes('/docs/Wiki')) {
-              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-              return [
-                existingPath.replace('/docs/Wiki', '/docs/2.1.0/Wiki'),
-              ];
-            }
-            return undefined; // Return a falsy value: no redirect created
-          }, */
       },
     ],
     [
@@ -162,13 +153,6 @@ const config = {
           srcDark: 'img/Rotorflight_outline_dark.svg',
         },
         items: [
- //         { to: '/announcement', label: 'Announcements', position: 'left' },
-//          {
-//            type: 'doc',
-//            docId: 'wiki',
-//            position: 'left',
-//            label: 'Wiki',
-//          },
                    {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -208,12 +192,7 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
             banner: 'unreleased',
-      /*      dropdownItemsAfter: [{
-                to: '/versions', label: 'All versions'
-            }
-            ],*/
-            //dropdownActiveClassDisabled: true,
-          },// { to: '/blog', label: 'Blog', position: 'left' },
+          },
           {
             href: 'https://paypal.me/rotorflightfc/',
             label: 'PayPal',
