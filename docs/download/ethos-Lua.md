@@ -16,6 +16,6 @@ There are two different Lua scripts available for Ethos radios. Eiter version ca
 [Download the Ethos RF Touch Suite - Release Candidate v2.1](https://github.com/rotorflight/rotorflight-lua-ethos-suite/releases/tag/release/2.1.0-RC2)
 :::
 
-![Ethos Tx](../Wiki/Tutorial-Setup/img/ethos-logo.png)
+![Ethos Tx](../setup/img/ethos-logo.png)
 
 

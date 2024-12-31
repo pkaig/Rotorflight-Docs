@@ -18,7 +18,7 @@ Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually t
 
 ### ESC Telemetry Protocol
 
-Set the ESC [*Telemetry*](../../Wiki/Tutorial-Setup/ESC-Telemetry.md) protocol if your esc supports it.
+Set the ESC [*Telemetry*](../setup/ESC-Telemetry.md) protocol if your esc supports it.
 
 ![Motor and ESC](../img/motor-telem.png)
 
@@ -34,7 +34,7 @@ Most RC helicopter ESCs manufacturers (e.g. Hobbywing, YGE, Scorpion ,or Castle)
 :::note
 A correct RPM measurement is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurement setup. 
 
-The FC also needs to know the [RPM](../../Wiki/Tutorial-Setup/Rpm-Measurement.mdx) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
+The FC also needs to know the [RPM](../setup/Rpm-Measurement.mdx) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
 
 With this info, the FC can calculate the:
 
@@ -60,7 +60,7 @@ If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. 
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### DShot RPM Telemetry 
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../../Wiki/Tutorial-Setup/Rpm-Measurement.mdx#bi-directional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../setup/Rpm-Measurement.mdx#bi-directional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 
@@ -77,11 +77,11 @@ For example if the main gear ratio is 11.8 then you set *[Teeth on Pinion gear =
 
 Similarly if the tail gear ratio is 4.8 then you set *[Teeth on Tail gear =10]/[Teeth on Autorotation Gear =48]*.
 
-note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](../../Wiki/Tutorial-Setup/RPM-Filters.md).
+note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](../setup/RPM-Filters.md).
 :::
 
 :::note
-For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../../Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios.md)
+For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../setup/Two-Stage-Gear-Train-Ratios.md)
 :::
 
 ### Motor Pole Count
@@ -91,7 +91,7 @@ Determine the number of magnetic poles for each motor. Count the number of magne
 
 ![Motor and ESC](../img/motor-pole-count-2.png)
 
-## [Governor Features](../../Wiki/Tutorial-Setup/Governor.md#governor-mode)
+## [Governor Features](../setup/Governor.md#governor-mode)
 
 ## Motor Override
 Motor Override functionality is provided to test the operation of each motor directly. This functionality will make the motors spool up. Do this WITHOUT the main or tail rotors fitted!

@@ -9,6 +9,6 @@ Lua script **must match** the current firmware version loaded into your Flight C
 [Download the Release Candidate v2.1](https://github.com/rotorflight/rotorflight-configurator/releases/tag/release/2.1.0-RC2)
 :::
 
-![Edge Tx](../Wiki/Tutorial-Setup/img/edgetx-logo.png)
+![Edge Tx](../setup/img/edgetx-logo.png)
 
 

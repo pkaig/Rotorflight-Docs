@@ -6,6 +6,6 @@ The GPS Tab is not visible by default. You must enable the GPS feature and chose
 
 ![GPS Tab](../img/gps-1.png)
 
-Select your GPS type from the dropdown. There is more details on the [Betaflight GPS tab](https://betaflight.com/docs/wiki/configurator/gps-tab) page.
+Select your GPS type from the dropdown. There is more details on the [Betaflight GPS tab](https://betaflight.com/docs/configurator/gps-tab) page.
 ![GPS Tab](../img/gps-2.png)
 

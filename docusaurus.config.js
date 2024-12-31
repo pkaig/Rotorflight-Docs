@@ -60,16 +60,16 @@ const config = {
           { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
           { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
-          { from: '/docs/2.1.0/Wiki/Configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
-          { from: '/docs/2.1.0/Wiki/Configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
+          { from: '/docs/2.1.0/configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
+          { from: '/docs/2.1.0/configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
           //Redirect for Radio setups to point to downloads
-          { from: '/docs/next/Wiki/Tutorial-Setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
+          { from: '/docs/next/setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
         ],
         createRedirects(existingPath) {
             if (existingPath.includes('/docs/next')) {
                 return [
-                  existingPath.replace('/docs/next', '/docs/2.1'),
+                  existingPath.replace('/docs/next', '/docs/2.1.0'),
                 ];
             }
 
@@ -118,7 +118,7 @@ const config = {
     //        lastVersion: 'current',
           versions: {
             current: {
-              label: '2.1',
+              label: '2.1.0',
               //path: '2.1',
               banner: 'unreleased'
             },
@@ -243,7 +243,7 @@ const config = {
               },
          /*     {
                 label: 'Setup',
-                to: '/docs/Tutorial-Setup/Status',
+                to: '/docs/setup/Status',
               },*/
               {
                 label: 'Download',
