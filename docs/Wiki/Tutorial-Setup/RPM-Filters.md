@@ -20,7 +20,7 @@ Once the FC knows the motor speed, it can calculate the main and tail rotor spee
 
 For example, here are the ratios for my Gaui X3.
 
-![Gear ratios](../Configurator/img/motors-gear-ratios.png)
+![Gear ratios](../../configurator/img/motors-gear-ratios.png)
 
 :::note
 Direct drive motors have a ratio of 1:1.

@@ -1,8 +1,4 @@
----
-sidebar_position: 70
----
-
-# Motor tab
+# Motors
 
 The *Motors* tab is used to configure the ESC communications protocols **( Motor Control Protocol & Telemetry Protocol )** ,as well as to provide the ability to test motor operation. Depending on the selected ESC protocol and selected Rotorflight features, you might need to specify some other parameters as well.
 
@@ -12,33 +8,33 @@ This section is about Rotorflight communicating with the ESC. The settings for y
 
 ## ESC/Motor Features
 
-![Motor and ESC](./img/motor-main.png)
+![Motor and ESC](../img/motor-main.png)
 
 ### ESC Throttle Protocol
 
 Set the ESC protocol required for your ESC under *ESC/Motor protocol*. Usually this would be *PWM* or *DSHOT300*.
 
-![Motor and ESC](./img/motor-protocol.png)
+![Motor and ESC](../img/motor-protocol.png)
 
 ### ESC Telemetry Protocol
 
-Set the ESC [*Telemetry*](../Tutorial-Setup/ESC-Telemetry.md) protocol if your esc supports it.
+Set the ESC [*Telemetry*](../../Wiki/Tutorial-Setup/ESC-Telemetry.md) protocol if your esc supports it.
 
-![Motor and ESC](./img/motor-telem.png)
+![Motor and ESC](../img/motor-telem.png)
 
 
 
 ### PWM Protocol
 Most RC helicopter ESCs manufacturers (e.g. Hobbywing, YGE, Scorpion ,or Castle) use [PWM](https://en.wikipedia.org/wiki/Servo_control), an analog protocol.
 
-![Motor and ESC](./img/motor-pwm.png)
+![Motor and ESC](../img/motor-pwm.png)
 
 **RPM Sensor:** Activate the RPM Sensor input for motor RPM, you can connect an RPM signal from the ESC, or from an external RPM sensor device.
 
 :::note
 A correct RPM measurement is crucial to the operation of *RPM_FILTER* and *GOVERNOR* features, therefore ensure that you have a correct RPM measurement setup. 
 
-The FC also needs to know the [RPM](../Tutorial-Setup/Rpm-Measurement.mdx) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
+The FC also needs to know the [RPM](../../Wiki/Tutorial-Setup/Rpm-Measurement.mdx) of the main rotor, and the tail rotor. For this you have to exactly specify the *Motor pole count* and the *Gear ratios*.
 
 With this info, the FC can calculate the:
 
@@ -57,18 +53,18 @@ With this info, the FC can calculate the:
 ### DSHOT Protocol
 Most drone ESCs support DSHOT, a digital protocol.
 
-![Motor and ESC](./img/motor-dshot.png)
+![Motor and ESC](../img/motor-dshot.png)
 
 If you use DSHOT, use either DSHOT150 or DSHOT300. DSHOT600 is not recommended. Also make sure that the main motor isn't actively being braked by the ESC, especially if you don't have a [one way bearing](https://youtu.be/ahWzhT5Bn28) on the main shaft.
 - BLHeli_32: set *Non Damped Mode* to *On* on the main motor ESC
 - Bluejay: set *Maximum Breaking Strength* to *0*
 
 #### DShot RPM Telemetry 
-This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../Tutorial-Setup/Rpm-Measurement.mdx#bi-directional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
+This switch is only visible when the *ESC/Motor protocol* is DSHOTxxx. It enables motor eRPM telemetry on supported ESCs via [bidirectional DSHOT](../../Wiki/Tutorial-Setup/Rpm-Measurement.mdx#bi-directional-dshot) and can be used to facilitate the *GOVERNOR* and/or *RPM_FILTER* features. If you use bidirectional DSHOT you don't have to use a frequency sensor for obtaining the eRPM of the motor(s).
 
 ### Gear Ratio Configuration
 
-![Motor and ESC](./img/motor-gear-ratio.png)
+![Motor and ESC](../img/motor-gear-ratio.png)
 
 Enter the number of teeth for the main rotor gearing [Teeth on Pinion gear]/[Teeth on Main Gear]. For a direct drive Main rotor this is just set to 1 / 1.
 
@@ -81,26 +77,26 @@ For example if the main gear ratio is 11.8 then you set *[Teeth on Pinion gear =
 
 Similarly if the tail gear ratio is 4.8 then you set *[Teeth on Tail gear =10]/[Teeth on Autorotation Gear =48]*.
 
-note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](../Tutorial-Setup/RPM-Filters.md).
+note that counting the gear tooth is preferable because an accurate gear ratio is essential to the operation of the [RPM Filters](../../Wiki/Tutorial-Setup/RPM-Filters.md).
 :::
 
 :::note
-For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../Tutorial-Setup/Two-Stage-Gear-Train-Ratios.md)
+For Helicopters with two-stage reduction, kindly read the [Two-Stage Gear Train WalkTrough](../../Wiki/Tutorial-Setup/Two-Stage-Gear-Train-Ratios.md)
 :::
 
 ### Motor Pole Count
 Determine the number of magnetic poles for each motor. Count the number of magnets on the motors rotor. In the example below the magnets (circled) are fixed to the outer bell which in total has 14. This allows the flight controller to know how many electrical phase rotations are required to complete one physical motor revolution.
 
-![Motor and ESC](./img/motor-pole-count-1.png)
+![Motor and ESC](../img/motor-pole-count-1.png)
 
-![Motor and ESC](./img/motor-pole-count-2.png)
+![Motor and ESC](../img/motor-pole-count-2.png)
 
-## [Governor Features](../Tutorial-Setup/Governor.md#governor-mode)
+## [Governor Features](../../Wiki/Tutorial-Setup/Governor.md#governor-mode)
 
 ## Motor Override
 Motor Override functionality is provided to test the operation of each motor directly. This functionality will make the motors spool up. Do this WITHOUT the main or tail rotors fitted!
 
-![Motor and ESC](./img/motor-6.png)
+![Motor and ESC](../img/motor-6.png)
 
 Throttle - This is the command being sent from the flight controller to the ESC.
 

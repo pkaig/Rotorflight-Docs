@@ -47,7 +47,7 @@ This simply switches the Arm channel (CH5/Aux1) from 0% (1000us) to 100% (2000us
 
 ## Flight Controller configuration
 As shown in the video below:  
-**1.** Open the [Modes tab](../Configurator/Modes.md)  
+**1.** Open the [Modes tab](../../configurator/tabs/modes.md)  
 **2.** Set the channel to match your switch (in this case AUX1)  
 **3.** Drag the sliders to the top end of the channel  
 **4.** Save  
@@ -111,11 +111,11 @@ There are several ways to identify what is preventing your helicopter from Armin
 |   'RUNAWAY'         | Runway Takeoff Prevention has been triggered. Disarm then re-arm to clear this condition.                                |
 |   'CRASH'           | Crash Recovery has been triggered. Disarm then re-arm to clear this condition.                                                |
 \   'GOVERNOR'        | Governor enabled but no valid 'fast' RPM source (RPM frequency input or bi-directional D-shot) OR Gove mode 2 and no Voltage input configured.|
-|   'THROTTLE'        | Lower throttle below [Throttle Channel value for arming](../Configurator/Receiver.mdx#receiver-settings)                 |
+|   'THROTTLE'        | Lower throttle below [Throttle Channel value for arming](../../configurator/tabs/receiver.mdx#receiver-settings)                 |
 |   'ANGLE'           | Craft is not level. Level craft to within (default) 25 degrees.                                                          |
 |   'BOOTGRACE'       | Arming too soon after power on. Turn off Arm; pause, then Arm again.             |
 |   'NOPREARM'        | Prearm switch has been set-up but is not activated or prearm has not been toggled after disarm   |
-|   'LOAD'            | System load is too high. This may happen with some low spec boards. Reduce the [PID loop frequency](../Configurator/Configuration.md#system-configuration) and/or number of filters|
+|   'LOAD'            | System load is too high. This may happen with some low spec boards. Reduce the [PID loop frequency](../../configurator/tabs/configuration.md#system-configuration) and/or number of filters|
 |   'CALIB'           | Sensor calibration is still ongoing. Wait for sensor calibration to complete.                       |
 |   'CLI'             | CLI is active. Exit the CLI.                                                     |
 |   'CMS'             | CMS (config menu) is Active - over OSD or other display. Exit the CMS (or OSD menu).                                                          |

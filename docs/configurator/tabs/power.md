@@ -1,12 +1,8 @@
----
-sidebar_position: 60
----
-
-# Power tab 
+# Power
 
 Set up all your power and battery related settings. Set the voltage and current sensor sources and calibration so that the FC can read the values and warn you accordingly. You can also check the current power measurements.
 
-![Power](./img/power-main.png)
+![Power](../img/power-main.png)
 
 ## Power State
 * **Connected** - Yes/No, if Yes, also shows cell count

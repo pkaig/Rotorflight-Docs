@@ -1,20 +1,16 @@
----
-sidebar_position: 90
----
-
-# Mixer tab
+# Mixer
 
 This section will describe the configuration of the mixer and calibrate the rotor blade angles.
 
 :::note
-Before proceeding with setting up the mixer, make sure that [gyro sensor alignment](./Configuration#board-and-sensor-alignment) is correct.
+Before proceeding with setting up the mixer, make sure that [gyro sensor alignment](./configuration.md#board-and-sensor-alignment) is correct.
 :::
 
 ### Main Rotor Settings
 #### Swashplate type
 Choose the swash type that suits your helicopter.
 
-![Mixer Tab](./img/mixer-main-rotor-settings.png)
+![Mixer Tab](../img/mixer-main-rotor-settings.png)
 
 #### Rotor direction
 Choose the direction of rotation for the main rotor. This is looking down from on the top of the rotor.
@@ -30,7 +26,7 @@ Push the collective stick forward (Increasing collective). The swash should now 
 
 ## Swashplate Link Trims
 
-![Mixer Tab](./img/mixer-swashplate-link-trims.png)
+![Mixer Tab](../img/mixer-swashplate-link-trims.png)
 
 Ideally the swashplate should be set with all 3 Collective servos at 90 deg while the blade angle is at 0 degrees. Some helicopters have fixed length swash links which means in order to get 0 degrees for blade centre the servo arms need to be raised or lowered. Use these link trims to provide that function.
 
@@ -38,10 +34,10 @@ For helicopters with adjustable swash links this should remain at 0 and the link
 
 ## Main Rotor Geometry
 
-![Mixer Tab](./img/mixer-main-rotor-geometry.png)
+![Mixer Tab](../img/mixer-main-rotor-geometry.png)
 
 #### Cyclic and Collective calibration
-These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](../Tutorial-Setup/setup-mixer.mdx#calibrating-the-mixer) for details.
+These settings are used to calibrate the mixer so that the blade angle matches the commanded angle for both the cyclic and collective. See the [calibration procedure](../../Wiki/Tutorial-Setup/setup-mixer.mdx#calibrating-the-mixer) for details.
 
 #### Collective geometry correction
 
@@ -74,7 +70,7 @@ Usually set it per manufacture recommendation. One could consider if theres bobb
 
 ## Tail Rotor Settings
 
-![Mixer Tab](./img/mixer-tail-rotor-settings.png)
+![Mixer Tab](../img/mixer-tail-rotor-settings.png)
 
 ### Tail rotor type
 

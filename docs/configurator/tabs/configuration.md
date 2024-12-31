@@ -1,16 +1,13 @@
----
-sidebar_position: 30
----
-# Configuration tab
+# Configuration
 
 ## Personalization
 Allows you to set your heli name to be shown in the OSD, blackbox logs and diff/dump outputs.
 
-![Configuration Tab](./img/config-prsnl.png)
+![Configuration Tab](../img/config-prsnl.png)
 
 ## System Configuration
 
-![Configuration Tab](./img/config-sys-conf.png)
+![Configuration Tab](../img/config-sys-conf.png)
 
 ### Gyro Update Frequency
 
@@ -33,7 +30,7 @@ Currently this does not provide any control functionality, however, it can be us
 ## Features
 This section is used to enable or disable features.
 
-![Configuration Tab](./img/config-features.png)
+![Configuration Tab](../img/config-features.png)
 
 :::tip
 Features such as the GPS must be selected in the [Serial ports](#serial-ports) section before selecting the Feature here. 
@@ -42,7 +39,7 @@ Features such as the GPS must be selected in the [Serial ports](#serial-ports) s
 ## Serial Ports
 Please choose the functions you wish to assign to your UART. 
 
-![Configuration Tab](./img/config-serial.png)
+![Configuration Tab](../img/config-serial.png)
 
 ### MSP
 
@@ -53,13 +50,13 @@ You can also set a specific baud rate.
 GPS is not currently used for Rotorflight for any flight controls. This can be used for telemetry purposes.
 
 ### Serial Rx
-Check [Receiver](../Configurator/Receiver.mdx) page for detailed info. 
+Check [Receiver](./receiver.mdx) page for detailed info. 
 
 ### ESC Telemetry
-Check [ESC Telemetry](../Tutorial-Setup/ESC-Telemetry.md) page for detailed info. 
+Check [ESC Telemetry](../../Wiki/Tutorial-Setup/ESC-Telemetry.md) page for detailed info. 
 
 ### Blackbox Logging
-This enables a UART for an external logging device such as [OpenLager](../Tutorial-Setup/OpenLager.md).
+This enables a UART for an external logging device such as [OpenLager](../../Wiki/Tutorial-Setup/OpenLager.md).
 
 ### Telemetry: FrSky SmartPort
 This is used when connecting an FrSky SmartPort receiver pin to this UART.
@@ -74,13 +71,13 @@ A method of determining what settings to use:
 * Move the FC around until the movement of the FC matches the movement of the helicopter on the "Status" page. You may have to "reset Z axis".  
 * Now take note of how you have to rotate/flip the board in order to get the FC oriented in the way you wish to mount it in the helicopter. An example would be that you have to rotate the board 180 and flip. You would chose 'CW180 Flip' in the Gyro alignment dropdown.    
 
-![Configuration Tab](./img/config-sens-align.png)
+![Configuration Tab](../img/config-sens-align.png)
 
 ## Accelerometer Trim
 This section is used to trim the roll and pitch axis while the helicopter is in Stability mode (e.g Angle, horizon or Rescue). 
 
 The Transmitter trims for each cyclic axis must be at neutral when using Rotorflight (at 1500us). This will usually result in the helicopter drifting while in a stable hover. To correct for this drift the Accelerometer roll and pitch trims are to be used. 
 
-This can be done either directly by the configurator or via the transmitter with [Lua](../Tutorial-Setup/Using-Stability-Modes-example.md) or Adjustments.
+This can be done either directly by the configurator or via the transmitter with [Lua](../../Wiki/Tutorial-Setup/Using-Stability-Modes-example.md) or Adjustments.
 
-![Configuration Tab](./img/config-accel-trim.png)
+![Configuration Tab](../img/config-accel-trim.png)

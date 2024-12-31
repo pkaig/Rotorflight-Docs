@@ -68,16 +68,16 @@ const config = {
         ],
         createRedirects(existingPath) {
             if (existingPath.includes('/docs/next')) {
-              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-              return [
-                existingPath.replace('/docs/next', '/docs/2.1.0'),
-              ];
-            } else if (existingPath.includes('/docs/Wiki')) {
+                return [
+                  existingPath.replace('/docs/next', '/docs/2.1'),
+                ];
+            }
+
+            if (existingPath.includes('/docs/Wiki')) {
                 return [
                     existingPath.replace('/docs/Wiki', '/docs/2.0.0/Wiki'),
                   ];
             }
-            return undefined; // Return a falsy value: no redirect created
           },
     /*      createRedirects(existingPath) {
             if (existingPath.includes('/docs/Wiki')) {
@@ -116,13 +116,13 @@ const config = {
             //Versioning
             //includeCurrentVersion: false,
     //        lastVersion: 'current',
-            versions: {
-              current: {
-                label: 'Version 2.1.0',
-                //path: '2.1.0',
-                banner: 'unreleased'
-              },
+          versions: {
+            current: {
+              label: '2.1',
+              //path: '2.1',
+              banner: 'unreleased'
             },
+          },
 
         }, 
         blog: {
