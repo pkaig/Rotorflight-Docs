@@ -1,7 +1,8 @@
-# Gyro
+# LED Strip
 
 ```mdx-code-block
 import {Redirect} from '@docusaurus/router';
 
-<Redirect to="../../setup/rpm-filters" />
+<Redirect to="../../setup/led-strip-quick-start
+" />
 ```
