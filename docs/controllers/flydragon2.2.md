@@ -121,7 +121,7 @@ the Rotorflight Configurator. Go to CLI (command line) page:
 ![disable](./img/disable.png)
 
 * Command to **ENABLE** the receiver:  
-`set pinio_config = 1,1,1,1`  
+`set pinio_config = 129,1,1,1`  
 
 ![Enable](./img/enable.png)
 
