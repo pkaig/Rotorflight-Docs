@@ -23,7 +23,7 @@ Servos: OMPHOBBY
 * Governor: Yes  
 
 ## Update Firmware
-Update the Flight Controller firmware to the current release. Follow the description on the [**Flashing the firmware**](../setup/Flashing-the-firmware.mdx) page. 
+Update the Flight Controller firmware to the current release. Follow the description on the [**Flashing the firmware**](../setup/flashing-the-firmware.mdx) page. 
 
 ## Setup Receiver
 
@@ -100,18 +100,18 @@ The purpose of this step is to [**setup and calibrate the mixer**](../setup/setu
 ## Motor and ESC Setup
 **ESC Throttle Protocol** - The OMPHobby 65A ESC uses a PWM protocol.  
 **ESC telemetry Protocol** - Set this to OMPHobby to match the ESC.  
-**RPM Sensor** - The nexus has an RPM input. The Yellow RPM signal wire from the ESC is plugged into this port. Enabling this toggle enables the RPM so it can be used for the [**Governor**](../setup/Governor.md) and [**RPM Filtering**](../setup/RPM-Filters.md)  
+**RPM Sensor** - The nexus has an RPM input. The Yellow RPM signal wire from the ESC is plugged into this port. Enabling this toggle enables the RPM so it can be used for the [**Governor**](../setup/governor.md) and [**RPM Filtering**](../setup/rpm-filters.md)  
 **Main Rotor Gear Ratio** - The M4 is a direct drive Helicopter so is set to `1 / 1`  
 **Tail Rotor Gear Ratio** - Counting the teeth on the M4 gears is `22 / 99`  
 **Main Motor Pole count** - The M4 motor has 42 poles `42`  
 
 :::info note
-If your helicopter has a two stage gear train, please [**follow this guide**](../setup/Two-Stage-Gear-Train-Ratios.md)
+If your helicopter has a two stage gear train, please [**follow this guide**](../setup/two-stage-gear-train-ratios.md)
 :::
 ![Example 1](./img/example-1-9.png)
 
 **Governor Mode** - Set this to "Mode 1". This will control the Headspeed and provide slow spoolup.  
-See the [**Govenor Modes**](../setup/Governor.md#governor-mode) and [**Governor setup**](../setup/governor-setup.mdx) for details and examples.
+See the [**Govenor Modes**](../setup/governor.md#governor-mode) and [**Governor setup**](../setup/governor-setup.mdx) for details and examples.
 
 ![Example 1](./img/example-1-10.png)
 
