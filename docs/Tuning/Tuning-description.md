@@ -22,7 +22,7 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 * Average: Do some flips with sudden stops, try going fast and tapping the stick, do some Tictocs
 * Advanced: Do crazy high speed high rate stuff that makes the FC sweat and see if it freaks out :stuck_out_tongue_winking_eye:.
 
-## Please also see the General Guidlines below for more specific descriptions
+## Please also see the General Guidelines below for more specific descriptions
 :::
 
 1. Increase Derivative (D) on each axis individually, (roll, pitch, yaw) until it wobbles, then back off a bit. **(remember!! don't do this if your filters are not working)**.  
@@ -53,4 +53,4 @@ When tuning parameters are too high the helicopter will wobble or shake during s
 * Check tick-tock stops to see if P and D are too high by observing the fast oscillations. If oscillations are mainly slow, I-gain might be too high.
 * The B-gain should be increased incrementally to fit how sharp the response you want. Usually only pitch needs a significant B-gain.
 * Too high on B-gain results in unwanted oscillations at stops if low B-gain did not cause it.
-* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. low number also hide gain imbalance that could show up during high-demand maneuvers or natural occurring disturbances (like a gust of wind)
+* One could also experiment the I-relax to tune out the I-oscillations at stops. Lower number means stronger relax. Notice that a extremely low number might make the helicopter feel unpredictable. Low number also hide gain imbalance that could show up during high-demand maneuvers or natural occurring disturbances (like a gust of wind)

@@ -4,7 +4,7 @@ sidebar_position: 20
 # Editing the Website
 Website is built using Docusaurus
 
-If you are interested in assisting us doccument Rotorflight please sign up to Github and send us your username so we can add you to the permissions. 
+If you are interested in assisting us document Rotorflight please sign up to Github and send us your username so we can add you to the permissions. 
 
 There are two ways you can Edit the Rotorflight Website. Directly online through the Github project repository or locally on your machine 
 

@@ -15,7 +15,7 @@ The default setting would more than likely ensure a controllable hover. Take off
 # Filter Tuning
 Open log and click on filtered gyro. Click Gyro[roll/pitch/yaw] legends on the right to show a FFT (frequency response) of the filtered gyro. Ideally, you should see very high magnitude at the very left, and low values at other range. If you see a peak, look for the frequency of the peak and try to divide it with its fundamental frequency. For example, 2800rpm/60 = 46.7hz. If you see a sharp peak at 186hz, which is 4 times, turn on the notch filter on the 4th harmonic of the main blades with Q = 4.0. 
 
-If theres a peak that is not divisible by main or tail blade fundamental and persist at different rpm, it might be due to some other sources of vibration, e.g. skids, tail fin, tail belt. etc. Check your helicopter first, but if you could not resolve it, use a notch filter centered at the exact frequency of the vibration and set the cutoff close to the left end of the peak. 
+If there's a peak that is not divisible by main or tail blade fundamental and persist at different rpm, it might be due to some other sources of vibration, e.g. skids, tail fin, tail belt. etc. Check your helicopter first, but if you could not resolve it, use a notch filter centered at the exact frequency of the vibration and set the cutoff close to the left end of the peak. 
 
 If there is a "bump" at the fundamental & second harmonic, consider lowering the Q values or use double filter on the fundamental. However, it is not advised to lower the Q value below 2.0 as it might significantly affect performance. Two of the main reasons that cause high vibration at those frequencies are blade tracking and blade imbalance. Check them first if you want to achieve a higher performance.
 

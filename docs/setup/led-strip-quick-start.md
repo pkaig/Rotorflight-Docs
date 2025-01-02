@@ -59,7 +59,7 @@ Your screen might now look like this, although the actual position of the three 
 - Select the square with '0' in it
 - In the color palette, left-click on green. The LED should now light up.
 - If you find the LED too bright, adjust the overall LED brightness under *LED Strip Global Settings*
-- Enable *Blink* and set one checkmark. The LED wil now shortly turn off (=black).
+- Enable *Blink* and set one checkmark. The LED will now shortly turn off (=black).
 - In the color palette, right-click on white. Now the LED will shortly flash a white light.
 - Press *Save*
 
