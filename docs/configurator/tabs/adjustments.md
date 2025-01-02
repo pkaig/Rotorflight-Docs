@@ -15,7 +15,7 @@ Being able to switch between profiles in-flight allows you to use different head
 
 ### Simple example
 
-Here we use only one channel -AUX4- for *PID* and *Rates* Profiles Selection. Assign AUX4 to a 3-position switch on the TX, so that the switch outputs 1000/1500/2000us. [Profile Switching Example](/docs/setup/Profile-switching-example.md).
+Here we use only one channel -AUX4- for *PID* and *Rates* Profiles Selection. Assign AUX4 to a 3-position switch on the TX, so that the switch outputs 1000/1500/2000us. [Profile Switching Example](../../setup/Profile-switching-example.md).
 
 ## Adjustment Types
 
