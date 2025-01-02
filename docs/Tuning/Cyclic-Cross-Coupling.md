@@ -14,7 +14,7 @@ The cross coupling compensation simply take a derivative on the pitch SETPOINT a
 
 ## How to tune it?
 
-Start with a low value and increase when theres no significant coupling is observed or when there is a dimishing return. You might also want to try piroflips because cross-coupling gain changes the corresponding commands at different orientations during piroflips. Try increase the gain slowly so you can get used to the feeling.
+Start with a low value and increase when there's no significant coupling is observed or when there is a diminishing return. You might also want to try piroflips because cross-coupling gain changes the corresponding commands at different orientations during piroflips. Try increase the gain slowly so you can get used to the feeling.
 
 From experience, the harder the main rotor dampener is, the lower cross coupling gain is required.
 

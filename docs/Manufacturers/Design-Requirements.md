@@ -12,7 +12,7 @@ The actual Reference Designs for Rotorflight-2 can be found [here](./Reference-D
 For an FC to be fully supported by Rotorflight-2 (RF2), it must follow one of the Reference Designs.
 :::
 
-## Betaflight Guidlines
+## Betaflight Guidelines
 
 Rotorflight is based on Betaflight, and thus has the same basic requirements for the hardware.
 

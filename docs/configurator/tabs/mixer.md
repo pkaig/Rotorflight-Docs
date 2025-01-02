@@ -62,11 +62,11 @@ Adjust until the collective positive and negative deflections are equal.
 * Set the collective pitch to max, then move the cyclic. Increase the limit until either there is a physical limit or the fish-eye bearing (the ball) in the center of the swash drops at the max cyclic due to one servo reaching its limit.
 * Repeat at lowest collective pitch
 * You could also increase cyclic servo travels to gain more total blade pitch. However, nothing should be interfering
-* Double check that theres NO binding or interference at ANY combination of collective and cyclic in their whole range.
+* Double check that there's NO binding or interference at ANY combination of collective and cyclic in their whole range.
 * Make sure to turn the I-gains back to default in the end if the I-gain trick is used.
 
 #### Swashplate phase angle
-Usually set it per manufacture recommendation. One could consider if theres bobbling that could not be resolved from changing the cross coupling gains or it is known that the rotor head design requires a non-zero phase angle.
+Usually set it per manufacture recommendation. One could consider if there's bobbling that could not be resolved from changing the cross coupling gains or it is known that the rotor head design requires a non-zero phase angle.
 
 ## Tail Rotor Settings
 
