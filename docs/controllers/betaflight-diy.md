@@ -9,8 +9,8 @@ Rotorflight is a fork of the popular Betaflight project commonly used for drones
 ### Flashing Rotorflight
 
 
-[Flashing Rotorflight firmware](../setup/Flashing-the-firmware.mdx)
+[Flashing Rotorflight firmware](../setup/flashing-the-firmware.mdx)
 
 ### Remap Betaflight board
 
-[Remapping servos and motors](../setup/Remapping.mdx)
+[Remapping servos and motors](../setup/remapping.mdx)

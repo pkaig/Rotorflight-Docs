@@ -64,7 +64,7 @@ As shown in the video below:
       />
 
 ## Swashplate Wiggle indication
-The swashplate is configured to indicated ready for Arming as well as Errors. More details can be found on the [Swashplate wiggle](../setup/Swash-wiggle.mdx) page.
+The swashplate is configured to indicated ready for Arming as well as Errors. More details can be found on the [Swashplate wiggle](../setup/swash-wiggle.mdx) page.
 
 ## Arming Disable flags
 The Arming disable flags are a list of issues that could be preventing your helicopter from Arming. These are things like Gyro not configured, Receiver fail ot throttle not at minimum. Please see the list below for details of each flag and how to fix it.   
@@ -124,7 +124,7 @@ There are several ways to identify what is preventing your helicopter from Armin
 |   'PARALYZE'        | Paralyze Mode has been configured and is currently active. Power cycle/reset FC board.                        |
 |   'GPS'             | GPS rescue mode is configured but required number of satellites has not been fixed. Wait for GPS fix, enable arming without GPS fix, or disable GPS rescue mode. **Note** **-** **Rotorflight** **GPS** **rescue** **is** **not** **functional** **so** **should** **not** **be** **configured.**|
 |   'RESCUE_SW'       | Rescue mode has been configured and is currently Active. Switch off rescue mode and toggle the Arm switch.|
-|   'RPMFILTER'       | RPM-based filtering is enabled but one or more ESC's are not configured or receiving valid RPM signals. RPM feedback can be from bi-directional Dshot or Frequency inputs using the ESC RPM signal or an external RPM sensor. See [RPM Measurement](../setup/Rpm-Measurement.mdx) for more details.|
+|   'RPMFILTER'       | RPM-based filtering is enabled but one or more ESC's are not configured or receiving valid RPM signals. RPM feedback can be from bi-directional Dshot or Frequency inputs using the ESC RPM signal or an external RPM sensor. See [RPM Measurement](../setup/rpm-measurement.mdx) for more details.|
 |   'REBOOT_REQD'     | Reboot required. Settings have been changed and the flight controller requires a Reboot for the settings changes to take effect.                                                          |
 |   'DSHOT_BBANG'     | DSHOT Bitbang is not working. Check configuration of timers and DMA for your controller. Generally Dshot Bitbang is not required for Rotorflight so try `set dshot_bitbang = OFF` in the CLI |
 |   'NO_ACC_CAL'      | Accelerometer calibration required. Calibrate the accelerometer or disable features that use it (e.g. Rescue, Horizon, Angle modes etc).|

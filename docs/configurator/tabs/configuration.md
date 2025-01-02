@@ -53,10 +53,10 @@ GPS is not currently used for Rotorflight for any flight controls. This can be u
 Check [Receiver](./receiver.mdx) page for detailed info. 
 
 ### ESC Telemetry
-Check [ESC Telemetry](../../setup/ESC-Telemetry.md) page for detailed info. 
+Check [ESC Telemetry](../../setup/esc-telemetry.md) page for detailed info. 
 
 ### Blackbox Logging
-This enables a UART for an external logging device such as [OpenLager](../../setup/OpenLager.md).
+This enables a UART for an external logging device such as [OpenLager](../../setup/openlager.md).
 
 ### Telemetry: FrSky SmartPort
 This is used when connecting an FrSky SmartPort receiver pin to this UART.
@@ -72,6 +72,6 @@ This section is used to trim the roll and pitch axis while the helicopter is in 
 
 The Transmitter trims for each cyclic axis must be at neutral when using Rotorflight (at 1500us). This will usually result in the helicopter drifting while in a stable hover. To correct for this drift the Accelerometer roll and pitch trims are to be used. 
 
-This can be done either directly by the configurator or via the transmitter with [Lua](../../setup/Using-Stability-Modes-example.md) or Adjustments.
+This can be done either directly by the configurator or via the transmitter with [Lua](../../setup/using-stability-modes-example.md) or Adjustments.
 
 ![Configuration Tab](../img/config-accel-trim.png)
