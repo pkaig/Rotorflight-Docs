@@ -1,0 +1,380 @@
+# diff all
+
+# version
+# Rotorflight / STM32F7X2 (S7X2) 4.3.0 May 15 2024 / 09:06:57 (05570fe) MSP API: 12.6
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FLYDRAGONF722_V2_2
+board_design RTFL
+manufacturer_id FDRC
+mcu_id 0011000e3432500220393650
+signature 
+
+# name: OMP M7 O
+
+# resources
+resource ADC_BEC 1 NONE
+resource ADC_BUS 1 NONE
+
+# feature
+feature TELEMETRY
+feature GOVERNOR
+feature ESC_SENSOR
+feature FREQ_SENSOR
+feature DYN_NOTCH
+feature RPM_FILTER
+
+# serial
+serial 1 1024 115200 57600 0 115200
+
+# servo
+servo 1 758 -300 300 214 214 500 20 2
+servo 2 755 -300 300 214 214 500 20 3
+servo 3 779 -300 300 214 214 500 20 2
+servo 4 768 -300 300 214 214 800 0 0
+
+# mixer input
+mixer input SR -1125 1125 870
+mixer input SP -1125 1125 -870
+mixer input SY -1792 1250 490
+mixer input SC -1250 1250 930
+
+# aux
+aux 0 0 0 1950 2060 0 0
+aux 1 0 0 900 900 0 0
+aux 2 0 0 900 900 0 0
+aux 3 0 0 900 900 0 0
+aux 4 0 0 900 900 0 0
+aux 5 0 0 900 900 0 0
+aux 6 0 0 900 900 0 0
+aux 7 0 0 900 900 0 0
+aux 8 0 0 900 900 0 0
+aux 9 0 0 900 900 0 0
+aux 10 0 0 900 900 0 0
+aux 11 0 0 900 900 0 0
+aux 12 0 0 900 900 0 0
+aux 13 0 0 900 900 0 0
+aux 14 0 0 900 900 0 0
+aux 15 0 0 900 900 0 0
+aux 16 0 0 900 900 0 0
+aux 17 0 0 900 900 0 0
+aux 18 0 0 900 900 0 0
+aux 19 0 0 900 900 0 0
+
+# master
+set gyro_lpf1_static_hz = 150
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 40
+set acc_calibration = -1,17,32,1
+set baro_hardware = NONE
+set blackbox_mode = ARMED
+set blackbox_rate_denom = 32
+set blackbox_log_rssi = OFF
+set blackbox_log_servos = OFF
+set min_throttle = 1100
+set max_throttle = 1940
+set use_unsynced_pwm = ON
+set motor_pwm_rate = 140
+set motor_poles = 10,8,8,8
+set main_rotor_gear_ratio = 13,120
+set tail_rotor_gear_ratio = 22,110
+set align_board_yaw = 180
+set bat_capacity = 4400
+set vbat_max_cell_voltage = 440
+set current_meter = ESC
+set battery_meter = ESC
+set battery_cell_count = 12
+set vbec_scale = 0
+set vbus_scale = 0
+set vext_scale = 0
+set ibata_scale = 0
+set tail_center_trim = 158
+set swash_pitch_limit = 1833
+set swash_geo_correction = -20
+set gov_mode = MODE1
+set gov_spoolup_time = 165
+set gov_tracking_time = 60
+set gov_pwr_filter = 10
+set gov_rpm_filter = 18
+set gov_ff_filter = 100
+set rc_deflection = 500
+set rc_arm_throttle = 1010
+set rc_min_throttle = 1020
+set rc_max_throttle = 2000
+set rc_smoothness = 40
+set rc_threshold = 70,70,70,100
+set deadband = 3
+set crsf_flight_mode_reuse = GOV_ADJFUNC
+set crsf_gps_ground_speed_reuse = ESC_TEMP
+set crsf_gps_altitude_reuse = HEADSPEED
+set crsf_gps_sats_reuse = MCU_TEMP
+set telemetry_enable_pitch = ON
+set telemetry_enable_roll = ON
+set ledstrip_brightness = 20
+set debug_mode = GOVERNOR
+set esc_sensor_protocol = HOBBYWINGV5
+set gyro_rpm_filter_bank_rpm_source = 10,11,12,12,13,14,21,22,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_rpm_ratio = 10000,10000,9975,10025,10000,10000,10000,10000,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_rpm_limit = 1000,1000,1000,1000,1000,1000,2400,2400,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_notch_q = 50,50,40,40,50,50,50,48,0,0,0,0,0,0,0,0
+set name = OMP M7 O
+set position_baro_alt_lpf = 25
+set position_vario_lpf = 25
+
+profile 0
+
+# profile 0
+set pitch_p_gain = 98
+set pitch_i_gain = 120
+set pitch_d_gain = 46
+set pitch_f_gain = 105
+set pitch_b_gain = 10
+set pitch_o_gain = 27
+set roll_p_gain = 35
+set roll_i_gain = 120
+set roll_d_gain = 5
+set roll_f_gain = 105
+set roll_o_gain = 27
+set yaw_p_gain = 97
+set yaw_i_gain = 181
+set yaw_b_gain = 12
+set yaw_f_gain = 15
+set pitch_d_cutoff = 20
+set pitch_b_cutoff = 20
+set pitch_gyro_cutoff = 60
+set roll_d_cutoff = 20
+set roll_b_cutoff = 20
+set roll_gyro_cutoff = 60
+set yaw_d_cutoff = 35
+set yaw_b_cutoff = 35
+set yaw_gyro_cutoff = 150
+set yaw_ccw_stop_gain = 65
+set yaw_precomp_cutoff = 20
+set yaw_precomp_filter_type = PT3
+set yaw_cyclic_ff_gain = 15
+set yaw_collective_ff_gain = 46
+set yaw_collective_dynamic_decay = 30
+set cyclic_cross_coupling_gain = 17
+set cyclic_cross_coupling_ratio = 3
+set error_limit = 35,35,45
+set offset_limit = 50,50
+set error_decay_time_cyclic = 150
+set iterm_relax_cutoff = 15,12,12
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_headspeed = 2200
+set gov_gain = 25
+set gov_f_gain = 20
+
+profile 1
+
+# profile 1
+set pitch_d_gain = 0
+set pitch_o_gain = 0
+set roll_d_gain = 0
+set roll_o_gain = 0
+set yaw_d_gain = 0
+set yaw_precomp_cutoff = 0
+set yaw_collective_ff_gain = 40
+set cyclic_cross_coupling_gain = 0
+set error_limit = 15,15,45
+set error_decay_time_cyclic = 18
+set error_decay_limit_cyclic = 20
+set offset_charge_curve = 0,100,100,100,90,80,68,60,54,49,45,42,39,37,35,33
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_gain = 50
+
+profile 2
+
+# profile 2
+set pitch_d_gain = 0
+set pitch_o_gain = 0
+set roll_d_gain = 0
+set roll_o_gain = 0
+set yaw_d_gain = 0
+set yaw_precomp_cutoff = 0
+set yaw_collective_ff_gain = 40
+set cyclic_cross_coupling_gain = 0
+set error_limit = 15,15,45
+set error_decay_time_cyclic = 18
+set error_decay_limit_cyclic = 20
+set offset_charge_curve = 0,100,100,100,90,80,68,60,54,49,45,42,39,37,35,33
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_gain = 50
+
+profile 3
+
+# profile 3
+set pitch_d_gain = 0
+set pitch_o_gain = 0
+set roll_d_gain = 0
+set roll_o_gain = 0
+set yaw_d_gain = 0
+set yaw_precomp_cutoff = 0
+set yaw_collective_ff_gain = 40
+set cyclic_cross_coupling_gain = 0
+set error_limit = 15,15,45
+set error_decay_time_cyclic = 18
+set error_decay_limit_cyclic = 20
+set offset_charge_curve = 0,100,100,100,90,80,68,60,54,49,45,42,39,37,35,33
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_gain = 50
+
+profile 4
+
+# profile 4
+set pitch_d_gain = 0
+set pitch_o_gain = 0
+set roll_d_gain = 0
+set roll_o_gain = 0
+set yaw_d_gain = 0
+set yaw_precomp_cutoff = 0
+set yaw_collective_ff_gain = 40
+set cyclic_cross_coupling_gain = 0
+set error_limit = 15,15,45
+set error_decay_time_cyclic = 18
+set error_decay_limit_cyclic = 20
+set offset_charge_curve = 0,100,100,100,90,80,68,60,54,49,45,42,39,37,35,33
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_gain = 50
+
+profile 5
+
+# profile 5
+set pitch_d_gain = 0
+set pitch_o_gain = 0
+set roll_d_gain = 0
+set roll_o_gain = 0
+set yaw_d_gain = 0
+set yaw_precomp_cutoff = 0
+set yaw_collective_ff_gain = 40
+set cyclic_cross_coupling_gain = 0
+set error_limit = 15,15,45
+set error_decay_time_cyclic = 18
+set error_decay_limit_cyclic = 20
+set offset_charge_curve = 0,100,100,100,90,80,68,60,54,49,45,42,39,37,35,33
+set rescue_flip_gain = 40
+set rescue_level_gain = 30
+set rescue_pull_up_time = 5
+set rescue_climb_time = 20
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 400
+set rescue_climb_collective = 300
+set rescue_hover_collective = 200
+set rescue_max_sp_rate = 250
+set rescue_max_sp_accel = 2000
+set gov_gain = 50
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 19
+set pitch_rc_rate = 19
+set yaw_rc_rate = 43
+set collective_rc_rate = 56
+set roll_srate = 27
+set pitch_srate = 27
+set yaw_srate = 56
+set collective_srate = 56
+set roll_response = 10
+set pitch_response = 10
+
+rateprofile 1
+
+# rateprofile 1
+set roll_response = 20
+set pitch_response = 20
+set yaw_response = 10
+set collective_response = 20
+
+rateprofile 2
+
+# rateprofile 2
+set roll_response = 20
+set pitch_response = 20
+set yaw_response = 10
+set collective_response = 20
+
+rateprofile 3
+
+# rateprofile 3
+set roll_response = 20
+set pitch_response = 20
+set yaw_response = 10
+set collective_response = 20
+
+rateprofile 4
+
+# rateprofile 4
+set roll_response = 20
+set pitch_response = 20
+set yaw_response = 10
+set collective_response = 20
+
+rateprofile 5
+
+# rateprofile 5
+set roll_response = 20
+set pitch_response = 20
+set yaw_response = 10
+set collective_response = 20
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

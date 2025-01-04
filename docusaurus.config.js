@@ -44,40 +44,44 @@ const config = {
         toExtensions: ['exe', 'zip'],
         redirects: [
           //Redirect Rotorflight v2.0 configurator links to new website links
-          { from: '/docs/Tutorial-Setup/Configuration', to: '/docs/Wiki/Configurator/Configuration', },
-          { from: '/docs/Tutorial-Setup/Receiver', to: '/docs/Wiki/Configurator/Receiver', },
-          { from: '/docs/Tutorial-Setup/Failsafe', to: '/docs/Wiki/Configurator/Failsafe', },
-          { from: '/docs/Tutorial-Setup/Beepers', to: '/docs/Wiki/Configurator/Beepers', },
-          { from: '/docs/Tutorial-Setup/Power', to: '/docs/Wiki/Configurator/Power', },
-          { from: '/docs/Tutorial-Setup/RPM-Filters', to: '/docs/Wiki/Tutorial-Setup/RPM-Filters', },
-          { from: '/docs/Tutorial-Setup/Motor-and-Esc', to: '/docs/Wiki/Configurator/Motor-and-Esc', },
-          { from: '/docs/Tutorial-Setup/Servos', to: '/docs/Wiki/Configurator/Servos', },
-          { from: '/docs/Tutorial-Setup/Mixer', to: '/docs/Wiki/Configurator/Mixer', },
-          { from: '/docs/Tutorial-Setup/Rates', to: '/docs/Wiki/Configurator/Rates', },
-          { from: '/docs/Tutorial-Setup/Profiles', to: '/docs/Wiki/Configurator/Profiles', },
-          { from: '/docs/Tutorial-Setup/Modes', to: '/docs/Wiki/Configurator/Modes', },
-          { from: '/docs/Tutorial-Setup/Adjustments', to: '/docs/Wiki/Configurator/Adjustments', },
-          { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
-          { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/Wiki/Configurator/Blackbox', },
-          { from: '/docs/Tutorial-Setup/CLI', to: '/docs/Wiki/Configurator/CLI', },
-          { from: '/docs/2.1.0/configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
-          { from: '/docs/2.1.0/configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
+          { from: '/docs/Tutorial-Setup/Configuration', to: '/docs/2.0.0/Wiki/Configurator/Configuration', },
+          { from: '/docs/Tutorial-Setup/Receiver', to: '/docs/2.0.0/Wiki/Configurator/Receiver', },
+          { from: '/docs/Tutorial-Setup/Failsafe', to: '/docs/2.0.0/Wiki/Configurator/Failsafe', },
+          { from: '/docs/Tutorial-Setup/Beepers', to: '/docs/2.0.0/Wiki/Configurator/Beepers', },
+          { from: '/docs/Tutorial-Setup/Power', to: '/docs/2.0.0/Wiki/Configurator/Power', },
+          { from: '/docs/Tutorial-Setup/RPM-Filters', to: '/docs/2.0.0/Wiki/Tutorial-Setup/RPM-Filters', },
+          { from: '/docs/Tutorial-Setup/Motor-and-Esc', to: '/docs/2.0.0/Wiki/Configurator/Motor-and-Esc', },
+          { from: '/docs/Tutorial-Setup/Servos', to: '/docs/2.0.0/Wiki/Configurator/Servos', },
+          { from: '/docs/Tutorial-Setup/Mixer', to: '/docs/2.0.0/Wiki/Configurator/Mixer', },
+          { from: '/docs/Tutorial-Setup/Rates', to: '/docs/2.0.0/Wiki/Configurator/Rates', },
+          { from: '/docs/Tutorial-Setup/Profiles', to: '/docs/2.0.0/Wiki/Configurator/Profiles', },
+          { from: '/docs/Tutorial-Setup/Modes', to: '/docs/2.0.0/Wiki/Configurator/Modes', },
+          { from: '/docs/Tutorial-Setup/Adjustments', to: '/docs/2.0.0/Wiki/Configurator/Adjustments', },
+          { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/2.0.0/Wiki/Configurator/Sensors', },
+          { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/2.0.0/Wiki/Configurator/Blackbox', },
+          { from: '/docs/Tutorial-Setup/CLI', to: '/docs/2.0.0/Wiki/Configurator/CLI', },
+//          { from: '/docs/2.1.0/configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
+//          { from: '/docs/2.1.0/configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
           //Redirect for Radio setups to point to downloads
           { from: '/docs/next/setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
         ],
-        createRedirects(existingPath) {
-            if (existingPath.includes('/docs/next')) {
-                return [
-                  existingPath.replace('/docs/next', '/docs/2.1.0'),
-                ];
-            }
 
+        createRedirects(existingPath) {
             if (existingPath.includes('/docs/Wiki')) {
                 return [
                     existingPath.replace('/docs/Wiki', '/docs/2.0.0/Wiki'),
                   ];
-            }
+            } else if (existingPath.includes('/docs/configurator')) {
+                return [
+                  existingPath.replace('/docs/configurator', '/docs/2.1.0/configurator'),
+                ];
+            } else if (existingPath.includes('/docs/next')) {
+                return [
+                  existingPath.replace('/docs/next', '/docs/2.2.0'),
+                ];
+            } 
+            return undefined; // Return a falsy value: no redirect created
           },
       },
     ],
@@ -109,7 +113,7 @@ const config = {
     //        lastVersion: 'current',
           versions: {
             current: {
-              label: '2.1.0',
+              label: 'Dev',
               //path: '2.1',
               banner: 'unreleased'
             },
@@ -133,15 +137,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-/*      announcementBar: {
+      announcementBar: {
         id: 'support_us',
         content:
-          'ROTORFLIGHT 2 Official Release 2.0.0 is now available. See Announcements to download',
-        backgroundColor: '#007cc7',  
-        backgroundColor: '#FF01D9',
+          'ROTORFLIGHT 2 Official Release 2.1.0 is now available. See downloads tab',
+        backgroundColor: '#FFFF00',  
         textColor: '#000000',
         isCloseable: false,
-      }, */
+      }, 
 
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -158,7 +161,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
-            to: '/docs/wiki/intro',
+            to: '/docs/examples/index',
           },
           {
             type: 'docSidebar',
@@ -218,7 +221,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/Wiki/intro',
+                to: '/docs/examples/index',
               },
          /*     {
                 label: 'Setup',
