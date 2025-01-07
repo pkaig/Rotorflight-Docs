@@ -60,8 +60,6 @@ const config = {
           { from: '/docs/Tutorial-Setup/Sensors', to: '/docs/2.0.0/Wiki/Configurator/Sensors', },
           { from: '/docs/Tutorial-Setup/Blackbox', to: '/docs/2.0.0/Wiki/Configurator/Blackbox', },
           { from: '/docs/Tutorial-Setup/CLI', to: '/docs/2.0.0/Wiki/Configurator/CLI', },
-//          { from: '/docs/2.1.0/configurator/Sensors', to: '/docs/Wiki/Configurator/Sensors', },
-//          { from: '/docs/2.1.0/configurator/CLI', to: '/docs/Wiki/Configurator/CLI', },
 
           //Redirect for Radio setups to point to downloads
           { from: '/docs/next/setup/radio-setup/radio-setup-edgetx/lua-RF2', to: '/docs/next/download/edge-tx-Lua', },
@@ -138,11 +136,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
-        id: 'support_us',
+        id: 'Announcement',
         content:
           'ROTORFLIGHT 2 Official Release 2.1.0 is now available. See downloads tab',
         backgroundColor: '#FFFF00',  
-        textColor: '#000000',
+  //      textColor: '#000000',
         isCloseable: false,
       }, 
 
@@ -223,10 +221,6 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/examples/index',
               },
-         /*     {
-                label: 'Setup',
-                to: '/docs/setup/Status',
-              },*/
               {
                 label: 'Download',
                 to: '/docs/download/configurator',
@@ -270,15 +264,6 @@ const config = {
           {
             title: 'More',
             items: [
-/*              {
-                label: 'Video Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Announcements',
-                to: '/announcement',
-              },    
-*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/rotorflight',
