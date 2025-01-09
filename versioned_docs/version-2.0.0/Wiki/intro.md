@@ -22,9 +22,9 @@ Since 2023 there are also commercial [**Rotorflight controllers**](../Wiki/Contr
 * [**Matek G474H-lite**](./Controllers/matek_hlite.md)  
 
 ## Latest Rotorflight 2 Version  
-Rotorflight v2.0 is the current stable release and can be found in the [**V2.0 Stable Downloads**](/versioned_docs/version-2.0.0/download/configurator.md). 
+Rotorflight v2.1 is the current stable release and can be found in the [**V2.1.0 Stable Downloads**](/docs/download/configurator). 
 
 ## Next release testing
-Rotorflight v2.1 is currently in the development phase.  Snapshots can be found [**V2.1 Development Downloads**](/docs/download/configurator.md).  
+The next release of Rotorflight is currently in the development phase.  Snapshots can be found [**Development Downloads**](/docs/next/download/configurator).  
 
 ![Introduction](../img/intro-1.jpg)
