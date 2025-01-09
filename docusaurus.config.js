@@ -194,8 +194,8 @@ const config = {
             banner: 'unreleased',
           },
           {
-            href: 'https://paypal.me/rotorflightfc/',
-            label: 'PayPal',
+            href: 'https://www.rotorflight.org/donate',
+            label: 'Support Us',
             position: 'right',
           },
           {
@@ -256,11 +256,11 @@ const config = {
             ],
           },
           {
-            title: 'Assist us',
+            title: 'Support Us',
             items: [
               {
-                label: 'PayPal',
-                href: 'https://paypal.me/rotorflightfc/',
+                label: 'Donate to Rotorflight',
+                href: 'https://www.rotorflight.org/donate',
               },
             ],
           },
