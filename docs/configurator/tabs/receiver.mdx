@@ -67,9 +67,39 @@ There are many receiver protocols supported in Rotorflight.
 
         ![Receiver Tab](../img/receiver-fport.png)
 
-        ### note
+        **note:**
         The **Inverted Serial Signaling** option will work only on **F7/H7** or **G4** type mcu, if you are using an **F4** mcu, then you need to use and external signal inverter, or hack your receiver to get an Un-Inverted signal for SBUS, S.Port, and F.Port.
         for more info check [Uninverted SBUS and Smart Port on Frsky Receivers](https://oscarliang.com/uninverted-sbus-smart-port-frsky-receivers/)
+    </TabItem>
+    <TabItem value="Spectrum" label="Spectrum">
+
+    There are a lot of different Spectrum Receivers and connections. Please review the list below for your particular receiver.
+
+        | Type       | Modulation | Supply Voltage   | UART I/O pin | RX Protocol | Telemetry         |
+        | -----------|------------|------------------|--------------|-------------|------------------ |
+        | SPM9545    |   DSM2     | 3.3V             |  Rx          | DSM/1024    |   No              |
+        | SPM4645    |   DSM2     | 3.3V             |  Rx          | DSM/1024    |   No              |
+        | SPM4645    |   DSMX     | 3.3V             |  Rx          | DSM/2048    |   No              |
+        | SPM4648    |   DSM2     | 3.3V             |  Rx          | DSM/1024    |   No              |
+        | SPM4648    |   DSMX     | 3.3V             |  Rx          | DSM/2048    |   No              |
+        | SPM4649T   |   DSMX     | 5V (4V - 8.4V)   |  Tx          | DSM/SRXL    |   Yes             |
+        | SPM9745    |   DSMX     | 3.3V             |  Rx          | DSM/2048    |   No              |
+        | SPM9746    |   DSMX     | 3.3V             |  Rx          | DSM/2048    |   No              |
+        | SPM4650(C) |   DSMX     | 5V (3.3V - 8.4V) |  Tx          | DSM/SRXL2   |   Yes             |
+        | SPM4651T   |   DSMX     | 5V (3.3V - 8.4V) |  Tx          | DSM/SRXL2   |   Yes             |
+        | SPM9747    |   DSMX     | 5V (3.3V - 8.4V) |  Tx          | DSM/SRXL2   |   Yes (Fly By)    |
+
+
+        **Notes:**
+        * SRXL and SRXL2 uses One-Wire bidirectional half-duplex connection, firmware sets this automatically so there 
+        is no need to manually select this. But it does not hurt to do it either.
+        * Leave Inverted Serial Signaling Off.
+        * Rx/Tx Pin swap can be used with SRXL/SRXL2 if no Tx pin is available on the FC connector, but with F7 MCUs only.
+        * Full size SRXL2 receivers are not supported by RotorFlight
+        * Binding.
+        SRXL2 Remote receivers can be bound by using RFC gui bind button or the button on the receiver.
+        Other receivers can use cli commands, see: https://betaflight.com/docs/development/spektrum-bind
+
     </TabItem>
     <TabItem value="OTHER" label="OTHER">
         If your receiver is not listed here it may still be compatible. Rotorflight can operate with all receiver protocols compatible with Betaflight. Please see the betaflight website and your Receiver documentation for more information.
