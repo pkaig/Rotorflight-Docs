@@ -1,0 +1,32 @@
+---
+sidebar_position: 10
+---
+
+# Futaba and Nexus example 
+
+**Rotorflight-Futaba-Setup**
+Instructions for Futaba Initial Radio and Configurator Setup, this is a generic setup using a Nexus FBL, Frsky transmitter with a Futaba exbus receiver
+
+## Wiring
+The simplest is to use a male to male servo lead to connect from the ***SBUS*** port on the FBL to the ***SBUS2*** port on your receiver.
+
+![Wiring](./img/wiring.png)
+
+## Configure the FC
+Next steps are to configure the fbl to receive the Exbus signal.
+
+### Setup UART ports
+Set the SBUS port to be used for serial rx communication
+
+![SerialRX](./img/serialrx.png)
+
+### Setup Receiver 
+Then visit the receiver page and configure as follows
+
+![ConfiguratorRXPage](./img/configurator.png)
+
+### Check sensors
+You should now have a control link and telemetry with all the sensors available on your radio.
+
+![ConfiguratorSensorsList](./img/sensors.png)
+![ConfiguratorSensorsList](./img/radio-screen.png)
