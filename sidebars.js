@@ -77,9 +77,16 @@ const sidebars = {
                         },
                         {
                             type: 'category',
+                            label: 'Futaba',
+                            items: [
+                            "setup/radio-setup/radio-setup-futaba/futaba-setup", 
+                            ],
+                        },
+                        {
+                            type: 'category',
                             label: 'Jeti',
                             items: [
-                            "setup/radio-setup/radio-setup-jeti/jeti-nexus-setup", 
+                            "setup/radio-setup/radio-setup-jeti/jeti-setup", 
                             ],
                         },
                         {
