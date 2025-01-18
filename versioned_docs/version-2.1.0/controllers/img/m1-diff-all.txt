@@ -1,0 +1,338 @@
+diff all
+
+# version
+# Rotorflight / STM32F411 (S411) 4.4.0 Jan  9 2025 / 09:50:47 (5fc142a) MSP API: 12.7
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MATEKF411
+board_design BTFL
+manufacturer_id MTKS
+mcu_id 0050005c3130510b30343830
+signature
+
+# name: _M1 Orange
+
+# resources
+resource MOTOR 1 B07
+resource MOTOR 2 B04
+resource MOTOR 3 NONE
+resource MOTOR 4 NONE
+resource SERVO 1 A00
+resource SERVO 2 B03
+resource SERVO 3 A08
+resource LED_STRIP 1 NONE
+
+# timer
+timer A10 AF1
+# pin A10: TIM1 CH3 (AF1)
+
+# dma
+dma pin B03 NONE
+dma pin A00 NONE
+dma pin A08 NONE
+
+# feature
+feature RX_SERIAL
+feature TELEMETRY
+feature GOVERNOR
+feature RPM_FILTER
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 128 115200 57600 0 2000000
+
+# servo
+servo 1 1540 -650 560 500 500 430 0 0
+servo 2 1500 -650 650 500 500 430 0 0
+servo 3 1410 -650 650 500 500 430 0 0
+
+# mixer input
+mixer input SR -1000 1000 950
+mixer input SP -1000 1000 -950
+mixer input SY -1000 1000 1000
+mixer input SC -1167 1167 950
+
+# map
+map AECR1T23
+
+# aux
+aux 0 0 0 1950 2050 0 0
+aux 1 2 1 1700 1800 0 0
+aux 2 53 1 1950 2050 0 0
+aux 3 0 0 900 900 0 0
+aux 4 0 0 900 900 0 0
+aux 5 0 0 900 900 0 0
+aux 6 0 0 900 900 0 0
+aux 7 0 0 900 900 0 0
+aux 8 0 0 900 900 0 0
+aux 9 0 0 900 900 0 0
+aux 10 0 0 900 900 0 0
+aux 11 0 0 900 900 0 0
+aux 12 0 0 900 900 0 0
+aux 13 0 0 900 900 0 0
+aux 14 0 0 900 900 0 0
+aux 15 0 0 900 900 0 0
+aux 16 0 0 900 900 0 0
+aux 17 0 0 900 900 0 0
+aux 18 0 0 900 900 0 0
+aux 19 0 0 900 900 0 0
+
+# adjfunc
+adjfunc 0 2 2 875 2125 2 1060 1940 1500 1500 0 1 6
+adjfunc 1 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 2 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 3 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 4 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 5 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 6 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 7 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 8 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 9 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 10 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 11 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 12 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 13 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 14 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 15 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 16 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 17 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 18 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 19 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 20 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 21 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 22 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 23 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 24 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 25 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 26 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 27 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 28 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 29 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 30 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+adjfunc 31 0 0 1500 1500 0 1500 1500 1500 1500 0 0 100
+
+# master
+set gyro_lpf2_static_hz = 0
+set acc_calibration = 50,-22,495,1
+set serialrx_provider = CRSF
+set blackbox_mode = ARMED
+set blackbox_rate_denom = 1
+set blackbox_log_attitude = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 14,8,8,8
+set align_board_roll = 180
+set align_board_yaw = -135
+set current_meter = NONE
+set ibata_scale = 4000
+set tail_rotor_mode = MOTORIZED
+set tail_motor_idle = 30
+set swash_collective_trim = 33
+set gov_mode = MODE1
+set gov_startup_time = 90
+set gov_spoolup_time = 60
+set gov_handover_throttle = 10
+set gov_tta_filter = 125
+set pid_process_denom = 1
+set crsf_telemetry_mode = CUSTOM
+set crsf_telemetry_sensors = 3,4,8,60,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+set gyro_1_align_yaw = 1800
+set gyro_rpm_filter_bank_rpm_source = 11,12,12,13,14,22,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_rpm_ratio = 10000,9960,10040,10000,10000,10000,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_rpm_limit = 1000,1000,1000,1000,1000,2000,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_filter_bank_notch_q = 50,25,25,75,100,50,0,0,0,0,0,0,0,0,0,0
+set name = M1 Orange
+
+profile 0
+
+# profile 0
+set pitch_p_gain = 70
+set pitch_i_gain = 200
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 100
+set roll_i_gain = 250
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 65
+set yaw_i_gain = 100
+set yaw_d_gain = 65
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 900
+set rescue_climb_collective = 700
+set rescue_hover_collective = 420
+set gov_headspeed = 4000
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+profile 1
+
+# profile 1
+set pitch_p_gain = 75
+set pitch_i_gain = 225
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 110
+set roll_i_gain = 275
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 70
+set yaw_i_gain = 125
+set yaw_d_gain = 70
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 800
+set rescue_climb_collective = 600
+set rescue_hover_collective = 380
+set gov_headspeed = 4750
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+profile 2
+
+# profile 2
+set pitch_p_gain = 80
+set pitch_i_gain = 250
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 120
+set roll_i_gain = 300
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 75
+set yaw_i_gain = 150
+set yaw_d_gain = 75
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 700
+set rescue_climb_collective = 500
+set gov_headspeed = 5500
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+profile 3
+
+# profile 3
+set pitch_p_gain = 70
+set pitch_i_gain = 200
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 100
+set roll_i_gain = 250
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 65
+set yaw_i_gain = 100
+set yaw_d_gain = 65
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 900
+set rescue_climb_collective = 700
+set rescue_hover_collective = 420
+set gov_headspeed = 4000
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+profile 4
+
+# profile 4
+set pitch_p_gain = 75
+set pitch_i_gain = 225
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 110
+set roll_i_gain = 275
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 70
+set yaw_i_gain = 125
+set yaw_d_gain = 70
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 800
+set rescue_climb_collective = 600
+set rescue_hover_collective = 380
+set gov_headspeed = 4750
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+profile 5
+
+# profile 5
+set pitch_p_gain = 80
+set pitch_i_gain = 250
+set pitch_d_gain = 0
+set pitch_f_gain = 90
+set pitch_b_gain = 20
+set roll_p_gain = 120
+set roll_i_gain = 300
+set roll_f_gain = 90
+set roll_b_gain = 20
+set yaw_p_gain = 75
+set yaw_i_gain = 150
+set yaw_d_gain = 75
+set rescue_mode = CLIMB
+set rescue_climb_time = 5
+set rescue_flip_time = 10
+set rescue_pull_up_collective = 700
+set rescue_climb_collective = 500
+set gov_headspeed = 5500
+set gov_gain = 30
+set gov_tta_gain = 100
+set gov_tta_limit = 100
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 17
+set pitch_rc_rate = 17
+set yaw_rc_rate = 25
+set collective_rc_rate = 56
+set roll_expo = 25
+set pitch_expo = 25
+set yaw_expo = 50
+set roll_srate = 28
+set pitch_srate = 28
+set yaw_srate = 52
+set collective_srate = 56
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+#
