@@ -25,9 +25,11 @@ Will do the same as **diff** above, but including all PID and rate profiles.
 Dump hardware will only show the hardware config. This is information like the pin assignments and board specific information (gyro bus address etc).  
 
 ### Step 3.
-![Step 3](./img/restore-2.png)
-* Click on **_[Clear output window]_**.  
-* Type the backup command (from step 2) in the window and click **_[ENTER]_**. 
+* Click on **_[Clear output window]_**. This removes any previous commands so they are not captured in your backup.  
+![Step 3](./img/restore-2a.png)
+ 
+* Type the backup command (from step 2) in the window and click **_[ENTER]_**.  
+![Step 3](./img/restore-2.png)  
 
 ### Step 4.
 ![Step 4](./img/restore-3.png)
