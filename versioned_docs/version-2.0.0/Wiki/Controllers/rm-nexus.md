@@ -48,7 +48,7 @@ Nexus supports F.Port on:
 The 'TX' pin of Port A, B or C or by remapping the SBUS to a TX for F.Port.  
 ![F.PORT](./img/nexus-fport.png)
 
-F.Port is an Unverted protocol over a single wire so must configured with both of these options enabled.  
+F.Port is an Inverted protocol over a single wire so must configured with both of these options enabled.  
 ![Remap SBUS to F.PORT](./img/nexus-remap.png) 
 
 ### Motorised Tail
