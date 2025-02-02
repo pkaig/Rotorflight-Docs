@@ -32,6 +32,7 @@ const sidebars = {
         link: { type: "doc", id: "controllers/index" },
         items: [
           "controllers/rm-nexus",
+          "controllers/frsky-007",
           "controllers/flydragon2.2",
           "controllers/flywingf405heli",
           "controllers/matek_heli",
