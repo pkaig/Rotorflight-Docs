@@ -1,0 +1,259 @@
+---
+sidebar_position: 90
+---
+import Tabs     from '@theme/Tabs';
+import TabItem  from '@theme/TabItem';
+import tabStyles   from './tabs.module.css';
+
+import crossCoupling        from './img/cross-coupling.png';
+import collectivePitch      from './img/collective-pitch.png';
+import cyclicP              from './img/cyclic-p.png'
+import cyclicD              from './img/cyclic-d.png'
+import cyclicI              from './img/cyclic-i.png'
+import cyclicFF             from './img/cyclic-ff.png'
+import cyclicB              from './img/cyclic-b.png'
+import itermRelax           from './img/iterm-relax.png'
+
+# Tuning process
+
+## Collective to Pitch Compensation
+:::info Collective to Pitch Compensation 
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        The tail boom is long and has mass. On a rapid collective change the tail will lag behind the movement of the helicopter resulting in the nose pitching up with rapid positive collective and pitching down with high negative collective. Collective to Pitch Compensations mixes in some pitch control as collective is applied to heep the helicopter level throughout. When this is tuned well the PID control loop does not have to work very hard to keep the helicopter level.    
+
+        **Note:** It is good to tune this early in your tuning process while you helicopter is on defaults. During this time the control loop is probably slow and it will be easier to see the tail lag.  
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={collectivePitch} alt="Collective to Pitch" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+        This is not a requirement as at low collective throws and headspeeds the control loop works fine. Just use default.  
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. From a hover give full collective. Watch for the tail dropping.  
+    2. If the tail lags. Increase the Collective to Pitch Compensation value.  
+    3. If the tail pitches up there is too much. Reduce the Collective to Pitch Compensation value.  
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Cyclic cross coupling 
+:::info Cyclic cross coupling 
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        There are several aerodynamic effects that result in the helicopter rolling slightly while pitching and pitching slightly when rolling. Cyclic cross coupling provides a small correction to the opposite axis so that the "cross coupling" is minimised and the helicopter only moves on the commanded axis. When this parameter is tuned well the PID control loop does not have to work very hard to keep the helicopter on its commanded axis.    
+
+        **Note:** It is good to tune this early in your tuning process while you helicopter is on defaults. During this time the control loop is probably slow and it will be easier to see the tail lag.  
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={crossCoupling} alt="Cyclic Cross Coupling" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+        This is not a requirement as at low collective throws and headspeeds the control loop works fine. Just use default.  
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. From a hover. Pitch the helicopter forward and backwards as rapidly as possible.  
+    2. If the helicopter rolls during this movement increase the Cyclic cross coupling.  
+    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+
+    </TabItem>
+</Tabs>
+:::
+
+## Tune Cyclic P
+:::info Tune Cyclic P
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        Proportional (P). Proportional control is fast and reacts immediately on the difference between your command and the movement of the helicopter (error). Generally we want P to be as high as possible so that our control is fast.  
+
+        **note:** if Proportional is set too high it will cause rapid oscillations. If this occurs we need to reduce it until the oscillations stop. 
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={cyclicP} alt="Cyclic P" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner">
+        1. Increase P on each axis until the helicopter begins to vibrate or wobble when you conduct an aggressive move.  
+            * Transition from forwards to backwards as hard as you are confident. Watch the boom and helicopter body for shuddering/wobbling.  
+            * Transition side to side as hard as you are confident. Watch the boom and helicopter body for shuddering/wobbling.  
+            *  Bump skids on the ground etc.  
+        2. When vibrations are seen, reduce your P value 
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Increase P until the helicopter begins to 
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Tune Cyclic D
+:::info Tune Cyclic D
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        **Purpose:** Derivative (D) 
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={cyclicD} alt="Cyclic D" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Tune Cyclic I
+:::info Tune Cyclic I
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        **Purpose:** Integral (I) 
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={cyclicI} alt="Cyclic I" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Tune Cyclic FF
+:::info Tune Cyclic FF
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        **Purpose:** Feed-Forward (FF) 
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={cyclicFF} alt="Cyclic FF" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Tune Cyclic Boost
+:::info Tune Cyclic Boost
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        **Purpose:** Boost (B) 
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={cyclicFF} alt="Cyclic FF" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+        This is not a requirement as at low collective throws and headspeeds the control loop works fine. Just use default.  
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Tune iTerm Relax
+:::info iTerm Relax
+
+<Tabs>
+    <TabItem value="Purpose" label="Purpose" default>
+        **Purpose:** iTerm Relax -  
+    </TabItem>
+    <TabItem value="Parameter" label="Parameter">
+    <div style={{textAlign: 'center'}}>
+        <img src={itermRelax} alt="Cyclic FF" width="100%"/>
+    </div>
+    </TabItem>
+    <TabItem value="Beginner" label="Beginner" default>
+        This is not a requirement as at low collective throws and headspeeds the control loop works fine. Just use default.  
+    </TabItem>
+    <TabItem value="Intermediate" label="Intermediate">
+    1. Fly xyz movement.  
+        * Watch for ??  
+        * If 'a' then increase Derivative until?    
+    <div style={{textAlign: 'center', fontWeight: "bold"}}>
+        Video to go here
+    </div>
+    </TabItem>
+</Tabs>
+:::
+
+## Yaw Tuning
+
+:::caution Slop and sticky linkages
+    If your helicopter wags continuously with varying PID values then there is a good change there is a mechanical issue. Hysterisis due to slop in the linkage or sticky jerky movement of the pitch slider cannot be tuned out with the controller. Review your linkage, sliders and servo if continuous wagging is encountered. Generally a helicopter using the default PID values the tail will be sluggish and wander. It should not 'Wag'.  
+
+:::
