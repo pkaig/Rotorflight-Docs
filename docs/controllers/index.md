@@ -8,6 +8,7 @@ sidebar_label: "Controllers"
 There are several flight controllers specifically made for Rotorflight. 
 
 * [Radiomaster NEXUS](rm-nexus.md)  
+* [FrSky Vantac 007](frsky-007.mdx)  
 * [Flydragon V2.2](flydragon2.2.md)  
 * [Flywing F405HELI](flywingf405heli.md)  
 * [Matek G474Heli](matek_heli.md)  
