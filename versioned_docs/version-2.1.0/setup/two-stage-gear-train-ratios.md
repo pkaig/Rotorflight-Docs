@@ -85,6 +85,7 @@ The below table shows some gear/pulley tooth counts for these KDS helis.
 |KDS Agile A5 | 20 or 21 ( Std 21T ) | 54 | 17 | 66 | 54 | 14 |
 |KDS Agile 7.2 | 19 to 21 ( Std 19T ) | 54 | 20 | 66 | 57 | 12 |
 |KDS Agile A7 | 19 to 21 ( Std 20T ) | 54 | 20 | 66 | 57 | 12 |
+|Align TN70 | 27 | 30 | 16 | 107 | 102 | 23 |
 
 For example for the KDS Agile A7 with STD 20T motor pulley, the calculation will be as follow:
 
@@ -96,3 +97,10 @@ For example for the KDS Agile A7 with STD 20T motor pulley, the calculation will
 After entering the value the ratios in the configurator motor page should look like this.
 
 ![Gear Train](./img/gear-train-kds-a7.png)
+
+For the Align TN70, the calculation will be as follow:
+
+* `motor pinion` = *(Z1 x Z3)* = *(27 x 16)* = `432`.
+* `main gear` = *(Z2 x Z4)* = *(30 x 107)* = `3210`.
+* `tail pulley` = *Z6*  = `23`.
+* `front pulley` = *Z5* = `102`.

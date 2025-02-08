@@ -14,18 +14,22 @@ Open Rotorflight Configurator and **_[Connect]_**. If the board is new and as su
 Choose what you want to back up. There are several options. 
 
 * `dump`
-This command dumps all of the hardware and software configuration. 
-* `diff`
-diff will download any configuration that is not equal to the custom defaults for that board. Things like your ESC protocol, RX type etc. This file is very small.   
+This command dumps all of the hardware and software configuration. for the current PID and rate profiles.  
 * `dump all`
-Dump all downloads all hardware and software the same as the dump command; however, it also includes all rate profiles.  
+Dump all downloads all hardware and software the same as the dump command; however, it also includes all PID and rate profiles.  
+* `diff`
+diff will download any configuration that is not equal to the custom defaults for that board. Things like your ESC protocol, RX type etc. This file is very small.  
+* `diff all` 
+Will do the same as **diff** above, but including all PID and rate profiles.
 * `dump hardware`
-Dump hardware will download all of the hardware config. This is information like the pin assignments and board specific information (gyro bus address etc).  
+Dump hardware will only show the hardware config. This is information like the pin assignments and board specific information (gyro bus address etc).  
 
 ### Step 3.
-![Step 3](./img/restore-2.png)
-* Click on **_[Clear output window]_**.  
-* Type the backup command (from step 2) in the window and click **_[ENTER]_**. 
+* Click on **_[Clear output window]_**. This removes any previous commands so they are not captured in your backup.  
+![Step 3](./img/restore-2a.png)
+ 
+* Type the backup command (from step 2) in the window and click **_[ENTER]_**.  
+![Step 3](./img/restore-2.png)  
 
 ### Step 4.
 ![Step 4](./img/restore-3.png)
@@ -39,10 +43,12 @@ You can also restore config files to your flight controller you have previously 
 ### Step 1.
 ![Step 1](./img/restore-4.png)
 * Open the CLI tab and click **_[Load from File]_** and select the file on your computer.  
-* Click on the **_[Execute]_** from the pop up.
-  
+
 ### Step 2.
+* Click on the **_[Execute]_** from the pop up.
 ![Step 2](./img/restore-5.png)
+  
+### Step 3.
+![Step 2](./img/restore-6.png)
 
 Once the backup is loaded type **save** in the command line and **_[ENTER]_**. The flight controller will now reboot.
-

@@ -11,7 +11,11 @@ resource SERIAL_RX 6 NONE
 
 resource BEEPER 1 C06
 
-The Beeper required MUST be a 5v active low and buffered to protect the UART output.
+The Beeper required MUST be 5v and buffered to protect the UART output.
+
+If the Beeper remains a constant tone on powerup enter this into the cli
+
+set beeper_inversion = ON, then type save and exit
 
 These have been tested and working, you may find these or similar local to your location.
 
