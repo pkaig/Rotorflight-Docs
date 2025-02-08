@@ -4,7 +4,7 @@ sidebar_position: 70
 
 # DIY board - Betaflight FC
 
-Rotorflight is a fork of the popular Betaflight project commonly used for drones. This means that all of the drone boards designed for betaflight are also compatible with Rotorflight. Drones most commonly use 4 motors and do not have servos so we need to do some additional configuration to add these items (as shown below).
+Rotorflight is a fork of the popular Betaflight project commonly used for drones. This means that all of the drone boards designed for Betaflight are also compatible with Rotorflight. Drones most commonly use 4 motors and do not have servos so we need to do some additional configuration to add these items (as shown below).
 
 ### Flashing Rotorflight
 
@@ -20,7 +20,7 @@ Rotorflight is a fork of the popular Betaflight project commonly used for drones
 The OMPHOBBY M1 is a small double brushless helicopter with an all-up weight of about 120g. The stock FC is so-so and has some peculiarities, such as a huge deadband around center and a tail that sometimes [spins volatile](https://www.youtube.com/watch?v=q4H1CzN1pPY).
 
 It's fairly easy to replace the stock FC and ESC with an AIO whoop board. Here we're using the [DarwinFPV 15A](https://darwinfpv.com/products/darwinfpv-15a-1-3s-f411-ultralight-whoop-aio).
-- It's' able to do 15A continuously with peaks of 17A, which should be enough for the main motor.
+- It's able to do 15A continuously with peaks of 17A, which should be enough for the main motor.
 - It also has a 2A 5V BEC, which is plenty for the servos.
 - There are enough connections (pads) for the servos, ELRS and -optional- an [OpenLager](../setup/openlager.md) blackbox logging device.
 
