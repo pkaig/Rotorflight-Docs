@@ -159,7 +159,7 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
-            to: '/docs/examples/index',
+            to: '/docs/examples/example-1',
           },
           {
             type: 'docSidebar',
