@@ -4,13 +4,13 @@ Rotorflight-Docs is the repository for [rotorflight.org](https://www.rotorflight
 
 The Rotorflight documentation is versioned, so each version of Rotorflight has its own documentation. The versioned documents can be found in `/versioned_docs`.
 
-# How to run Rotorflight-Docs on your machine
+# How to run rotorflight-docs on your machine
 
 First install Node.js on your machine, either by downloading the latest or by using NVM (Node Version Manager). Then:
 
 ```
-> git clone https://github.com/pkaig/Rotorflight-Docs
-> cd Rotorflight-Docs
+> git clone https://github.com/rotorflight/rotorflight-docs
+> cd rotorflight-docs
 > npm install
 > npm run start
 ```

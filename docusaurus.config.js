@@ -16,8 +16,8 @@ const config = {
 
   url: 'https://github.com/', // Your website URL
   baseUrl: '/',
-  projectName: 'pkaig.github.io',
-  organizationName: 'pkaig',
+  projectName: 'rotorflight.github.io',
+  organizationName: 'rotorflight',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -78,7 +78,7 @@ const config = {
                 return [
                   existingPath.replace('/docs/next', '/docs/2.2.0'),
                 ];
-            } 
+            }
             return undefined; // Return a falsy value: no redirect created
           },
       },
@@ -105,7 +105,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pkaig/Rotorflight-Docs/tree/main',
+            'https://github.com/rotorflight/rotorflight-docs/tree/main',
             //Versioning
             //includeCurrentVersion: false,
     //        lastVersion: 'current',
@@ -117,13 +117,13 @@ const config = {
             },
           },
 
-        }, 
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pkaig/Rotorflight-Docs/tree/main',
+            'https://github.com/rotorflight/rotorflight-docs/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -139,10 +139,10 @@ const config = {
         id: 'Announcement',
         content:
           'ROTORFLIGHT 2 Official Release 2.1.0 is now available. See downloads tab',
-        backgroundColor: '#FFFF00',  
+        backgroundColor: '#FFFF00',
         textColor: '#000000',
         isCloseable: false,
-      }, 
+      },
 
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
