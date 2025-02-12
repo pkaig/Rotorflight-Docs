@@ -129,7 +129,9 @@ import itermRelax           from './img/iterm-relax.png'
 
 <Tabs>
     <TabItem value="Purpose" label="Purpose" default>
-        **Purpose:** Derivative (D) 
+        **Purpose:** Derivative (D) is used to dampen oscillations. The ratio between the P and D also controls your stick feel. The higher the D gain is the more 'robotic' the feel.   
+        increase the D until we get the desired stick feel OR until we see high frequency vibrations (we have gone too far). 
+        **Caution:** Derivative is very susceptible to noise. Make sure your filters are enabled and working before increasing D.
     </TabItem>
     <TabItem value="Parameter" label="Parameter">
     <div style={{textAlign: 'center'}}>
@@ -147,6 +149,7 @@ import itermRelax           from './img/iterm-relax.png'
             * Transition from forwards to backwards as hard as you are confident. Watch the boom and helicopter body for shuddering/wobbling.  
             * Transition side to side as hard as you are confident. Watch the boom and helicopter body for shuddering/wobbling.  
             *  Bump skids on the ground etc.  
+        2. 
 
     <div style={{textAlign: 'center', fontWeight: "bold"}}>
         Video to go here
@@ -184,7 +187,8 @@ import itermRelax           from './img/iterm-relax.png'
     </div>
     </TabItem>
     <TabItem value="Intermediate" label="Intermediate">
-    Perform pirouetting long pitch pumps (piro pogo). If the heli does not stop clean and has a large shake, it is either I-gain being too high or P-gain being too low.
+    1. Perform pirouetting long pitch pumps (piro pogo). 
+        * On piro stop Watch for the If the heli does not stop clean and has a large shake, it is either I-gain being too high or P-gain being too low.
 
     Usually it is possible to use the same I-gain on pitch and roll axis.
     <div style={{textAlign: 'center', fontWeight: "bold"}}>
@@ -274,5 +278,4 @@ import itermRelax           from './img/iterm-relax.png'
 
 :::caution Slop and sticky linkages
     If your helicopter wags continuously with varying PID values then there is a good change there is a mechanical issue. Hysterisis due to slop in the linkage or sticky jerky movement of the pitch slider cannot be tuned out with the controller. Review your linkage, sliders and servo if continuous wagging is encountered. Generally a helicopter using the default PID values the tail will be sluggish and wander. It should not 'Wag'.  
-
 :::
