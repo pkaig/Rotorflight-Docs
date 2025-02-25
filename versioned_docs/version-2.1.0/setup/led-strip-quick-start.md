@@ -194,6 +194,25 @@ timer A00 AF2
 save
 ```
 
+### FrSky VANTAC RF007
+
+You can connect a LED strip using the SBUS out signal on the RF007. But remember that those strips usually need 5V, and if your BEC supplies more than 5V you'll need to power those LEDs alternatively. For example with the 5V from port A or C, which should be OK for a couple of LEDs. Or a step-down converter, if you have many LEDs.
+
+```
+# remap SBUS out as LED strip
+resource SERIAL_RX 1 none
+resource LED_STRIP 1 B07
+timer B07 AF2     #  TIM4 CH2
+dma pin B07 0
+
+# configure two leds
+feature LED_STRIP
+led 0 0,0::CB:2:20495:0:0
+led 1 1,0::CB:1:15:0:5
+set ledstrip_brightness = 30
+save
+```
+
 ### Flywing HELI405
 
 You can remap SBUS to LED_STRIP on the Flywing HELI405. To do this, enter the following in the CLI:

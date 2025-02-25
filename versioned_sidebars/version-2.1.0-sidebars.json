@@ -124,6 +124,7 @@
         "setup/esc-forward-programming",
         "setup/elrs-custom-telemetry",
         "setup/extra-servo",
+        "setup/setup-nitro",
         "setup/two-stage-gear-train-ratios",
         "setup/profile-switching-example",
         "setup/using-stability-modes-example",

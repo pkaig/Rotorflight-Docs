@@ -62,7 +62,7 @@ const sidebars = {
                             type: 'category',
                             label: 'Edge Tx',
                             items: [
-                            "setup/radio-setup/radio-setup-edgetx/edgetx-generic-radio-setup", 
+                            "setup/radio-setup/radio-setup-edgetx/edgetx-generic-radio-setup",
                             "setup/radio-setup/radio-setup-edgetx/lua-RF2-touch",
                             "setup/radio-setup/radio-setup-edgetx/widget-etx-bob00",
                             ],
@@ -80,21 +80,21 @@ const sidebars = {
                             type: 'category',
                             label: 'Futaba',
                             items: [
-                            "setup/radio-setup/radio-setup-futaba/futaba-setup", 
+                            "setup/radio-setup/radio-setup-futaba/futaba-setup",
                             ],
                         },
                         {
                             type: 'category',
                             label: 'Jeti',
                             items: [
-                            "setup/radio-setup/radio-setup-jeti/jeti-setup", 
+                            "setup/radio-setup/radio-setup-jeti/jeti-setup",
                             ],
                         },
                         {
                             type: 'category',
                             label: 'Others',
                             items: [
-                            "setup/radio-setup/radio-setup-others/others", 
+                            "setup/radio-setup/radio-setup-others/others",
 
                             ],
                         },
@@ -116,6 +116,7 @@ const sidebars = {
           "setup/esc-forward-programming",
           "setup/elrs-custom-telemetry",
           "setup/extra-servo",
+          "setup/setup-nitro",
           "setup/two-stage-gear-train-ratios",
           "setup/profile-switching-example",
           "setup/using-stability-modes-example",
