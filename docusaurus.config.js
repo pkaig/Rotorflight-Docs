@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/rffavicon.ico',
 
   url: 'https://github.com/', // Your website URL
-  baseUrl: '/',
+  baseUrl: '/rotorflight-docs/',
   projectName: 'rotorflight.github.io',
   organizationName: 'rotorflight',
   trailingSlash: false,
