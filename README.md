@@ -1,8 +1,8 @@
-# Rotorflight-Docs
+# rotorflight-docs
 
-Rotorflight-Docs is the repository for [rotorflight.org](https://www.rotorflight.org/) and is  made with [Docusaurus](https://docusaurus.io/). Docusaurus is a static-site generator using React and renders the [markdown](https://www.markdownguide.org/) documentation pages.
+rotorflight-docs is the repository for [rotorflight.org](https://www.rotorflight.org/) and is  made with [Docusaurus](https://docusaurus.io/). Docusaurus is a static-site generator using React and renders the [markdown](https://www.markdownguide.org/) documentation pages.
 
-The Rotorflight documentation is versioned, so each version of Rotorflight has its own documentation. The versioned documents can be found in `/versioned_docs`.
+The Rotorflight documentation is versioned, so each version of Rotorflight has its own documentation. The versioned documents can be found in `/versioned_docs`. However, the upcoming _Dev_ version is stored under `/docs`.
 
 # How to run rotorflight-docs on your machine
 
