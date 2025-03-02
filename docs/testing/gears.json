@@ -1,5 +1,15 @@
 {
     "heliGears": [
+
+{
+    "name": "Custom",
+    "z1":  20 ,
+    "z2":  50 ,
+    "z3":  20 ,
+    "z4":  60 ,
+    "z5":  30 ,
+    "z6":  20
+},
 {
     "name": "SAB Goblin 500 Sport",
     "z1":  18 ,
