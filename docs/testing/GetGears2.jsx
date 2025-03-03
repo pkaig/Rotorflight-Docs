@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Gears from './gears.json';
+import Gears from './gears2.json';
 import 'bootstrap/dist/css/bootstrap.css';
-import styles from './gears.module.css'
-import gearPic from './img/gears.png'
+import styles from './gears2.module.css'
+import gearPic from './img/gears2.png'
 
 const heliGear = Gears.heliGears
 let selectIndex = 0;
@@ -47,7 +47,7 @@ const handleGearChange = ()=> {
         </div>
         <div className={styles.content}>
             <div>
-                <p>SAB Style two stage gear</p>
+                <p>KDS Style two stage gear</p>
             </div>
             <div className="mt-4">
                 <select className="form-select" id="select" onChange={ handleOnChange } value={heli}>
@@ -73,9 +73,9 @@ const handleGearChange = ()=> {
                 <td><p>Calculated Main Ratio</p></td>
             </tr>
             <tr>
-                <td><input key='tail1' disabled='true' type='number' value={z3*z6}></input></td>
+                <td><input key='tail1' disabled='true' type='number' value={z5}></input></td>
                 <td><p> : </p></td>
-                <td><input key='tail2' disabled='true' type='number' value={z4*z5}></input></td>
+                <td><input key='tail2' disabled='true' type='number' value={z6}></input></td>
                 <td><p>Calculated Tail Ratio</p></td>
             </tr>
         </table>
